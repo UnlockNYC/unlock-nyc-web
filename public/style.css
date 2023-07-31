@@ -12,6 +12,11 @@ dev: MAB
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
+nav#main {
+  width: 100%;
+  background-color: Red;
+  padding: 8% 3%;
+}
 /* Our remix on glitch button */
 .btn--remix {
   font-family: HK Grotesk;
