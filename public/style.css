@@ -8,9 +8,10 @@ dev: MAB
   --orange: #ffac71;
   --dark-grey-text: #414141;
   --page-fonts: "Rubik";
+  --courier: "Courier Prime";
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
 
 nav#main {
   width: 100%;

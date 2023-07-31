@@ -1,12 +1,6 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
-
-/**
-* This is the JavaScript code that determines the config for your Eleventy site
-*
-* You can add lost of customization here to define how the site builds your content
-* Try extending it to suit your needs!
-*/
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -23,8 +17,10 @@ module.exports = function(eleventyConfig) {
     "woff",
     "woff2"
   ]);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPassthroughCopy("public");
-
+  
+  
   /* From: https://github.com/artstorm/eleventy-plugin-seo
   
   Adds SEO settings to the top of all pages
