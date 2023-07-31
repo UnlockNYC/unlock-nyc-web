@@ -30,6 +30,7 @@ nav#main {
   background-color: Red;
   padding: 15px 3%;
   box-sizing: border-box;
+  height: 80px;
 }
 
 nav * {
@@ -43,9 +44,16 @@ nav div#nav-logo {
   display: inline-block;
 }
 
+nav div#nav-wrapper {
+  display: block;
+  text-align: center;
+  
+}
+
 nav ul {
   display: inline-block;
   font-family: "Rubik", sans-serif;
+  margin: 0;
 }
 
 nav ul li {
@@ -62,6 +70,7 @@ nav ul li.login-button {
   color: Black;
   padding: 8px 16px;
   border-radius: 8px;
+  margin-left: 8px;
 }
 
 

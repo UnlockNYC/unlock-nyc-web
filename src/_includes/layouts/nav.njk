@@ -1,16 +1,18 @@
 <nav id="main">
-  <div id="nav-logo">
-    Unlock NYC
-  </div>
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-  {%- for entry in navPages %}
-    <li{% if entry.url == page.url %} class="active-header"{% endif %}>
-      <a href="{{ entry.url }}">{{ entry.title }}</a>
-    </li>
-  {%- endfor %}
-    <li>Donate</li>
-    <li class="login-button">Sign In</li>
-  </ul>
+  <div id="nav-wrapper">
+    <div id="nav-logo">
+      Unlock NYC
+    </div>
+    {% set navPages = collections.all | eleventyNavigation %}
+    <ul>
+    {%- for entry in navPages %}
+      <li{% if entry.url == page.url %} class="active-header"{% endif %}>
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+    {%- endfor %}
+      <li>Donate</li>
+      <li class="login-button">Sign In</li>
+    </ul>
+  </div> <!-- end of nav wrapper-->
   
 </nav>
