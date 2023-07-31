@@ -1,20 +1,12 @@
 /******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
+UNLOCK NYC - website 2.0 2023
+dev: MAB
 ******************************************************************************/
-/* Our default values set as CSS variables */
+
 :root {
-  --color-bg: #D7F5EF;
-  --color-text-main: #000000;
-  --color-primary: #AFECE0;
-  --wrapper-height: 85vh;
-  --image-max-width: 320px;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --yellow: #EEBF3D;
+  --orange: #FFAC71;
+  --page-fonts: "Rubik";
 }
 
 /* Basic page style resets */
