@@ -1,5 +1,7 @@
 ---
 layout: layouts/page.njk
+eleventyNavigation:
+  key: About
 ---
 
 ## About this site
@@ -11,3 +13,5 @@ Here you can write some details about you and your new blog:
 - 🌈 Thanks for reading!
 
 You can also make your project available for other people to remix in Glitch! 🎏✨
+
+

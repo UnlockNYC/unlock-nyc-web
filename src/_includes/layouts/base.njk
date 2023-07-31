@@ -10,9 +10,8 @@
     {% seo "" %}
   </head>
   <body>
-    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
     <main>
-
+      {% include 'layouts/nav.njk' %} 
       {# Page or post content will appear here #}
 
       {{ content | safe }}
