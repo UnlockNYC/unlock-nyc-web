@@ -3,7 +3,6 @@ UNLOCK NYC - website 2.0 2023
 dev: MAB
 ******************************************************************************/
 
-
 /** FONTS **/
 
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
@@ -13,15 +12,14 @@ dev: MAB
     format("truetype");
 }
 
-
 :root {
   --yellow: #eebf3d;
   --orange: #ffac71;
+  --cream: #f1f1e3;
   --dark-grey-text: #414141;
   --light-grey-text: #727272;
   --page-font: "Rubik";
   --courier: "Courier Prime";
-
 }
 
 /** HEADER/NAV **/
@@ -40,7 +38,7 @@ nav#main {
 nav * {
   vertical-align: middle;
 }
-  
+
 nav div#nav-logo {
   font-family: "Intro Rust", "Rubik", sans-serif;
   font-size: 26px;
@@ -52,7 +50,6 @@ nav div#nav-logo {
 nav div#nav-wrapper {
   display: block;
   text-align: center;
-  
 }
 
 nav ul {
@@ -68,7 +65,7 @@ nav ul li {
   line-height: 24px;
   font-size: 16px;
   font-weight: 500;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 nav ul li.login-button {
@@ -89,7 +86,6 @@ nav ul li a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
 }
-
 
 /** FOOTER/NAV **/
 
@@ -115,8 +111,6 @@ div#footer-right {
   display: inline-block;
 }
 
-
-
 /* Page structure */
 html {
   font-size: 16px;
@@ -127,14 +121,17 @@ body {
   margin: 0;
 }
 
-
 /* Typography */
 p {
   margin: 0 0 1rem 0;
   line-height: 1.45 !important;
   font-size: 1rem;
 }
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   /*margin: 2rem 0 0.8rem;*/
   line-height: 1.1;
 }
@@ -168,11 +165,9 @@ p.small {
   color: var(--light-grey-text);
 }
 
-
 /* BUTTONS */
-button.yellow {
+button {
   height: 48px;
-  background-color: var(--yellow);
   padding: 8px 16px;
   display: inline-block;
   border-radius: 8px;
@@ -180,6 +175,16 @@ button.yellow {
   font-family: var(--page-font);
   font-weight: 500;
   cursor: pointer;
+}
+
+button.yellow {
+  background-color: var(--yellow);
+  color: Black;
+}
+
+button.black {
+  background-color: Black;
+  color: White;
 }
 
 /* BANNERS */
@@ -200,6 +205,21 @@ div.banner-content {
   text-align: center;
   width: 50%;
   margin: auto;
+}
+
+div.banner-full {
+  padding: 6% 12%;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+div.banner-full.cream {
+  background-color: var(--cream);
+}
+
+div.banner-full.orange {
+  background-color: var(--orange);
 }
 
 /* PAGE LAYOUTS */
