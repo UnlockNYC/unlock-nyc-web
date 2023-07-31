@@ -4,31 +4,13 @@ dev: MAB
 ******************************************************************************/
 
 :root {
-  --yellow: #EEBF3D;
-  --orange: #FFAC71;
+  --yellow: #eebf3d;
+  --orange: #ffac71;
+  --dark-grey-text: #414141;
   --page-fonts: "Rubik";
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -40,7 +22,7 @@ dev: MAB
   height: 2.75rem;
   align-items: center;
   cursor: pointer;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -53,7 +35,7 @@ dev: MAB
   margin-right: 0.5rem;
 }
 .btn--remix:hover {
-  background-color: #D0FFF1;
+  background-color: #d0fff1;
 }
 
 /* Navigation grid */
@@ -121,7 +103,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 2rem 0 .8rem;
+  margin: 2rem 0 0.8rem;
   font-family: var(--font-family-header);
   font-weight: 600;
   line-height: 1.1;
@@ -132,7 +114,7 @@ h1 {
   margin-bottom: 1.75rem;
   font-size: 5rem;
   display: inline-flex;
-  color: #2800FF;
+  color: #2800ff;
 }
 h2 {
   font-size: 4rem;
