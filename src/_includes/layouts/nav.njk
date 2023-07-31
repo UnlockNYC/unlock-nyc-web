@@ -2,5 +2,13 @@
   <div id="nav-logo">
     Unlock NYC
   </div>
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul>
+  {%- for entry in navPages %}
+    <li{% if entry.url == page.url %} class="active-header"{% endif %}>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+  {%- endfor %}
+  </ul>
   
 </nav>

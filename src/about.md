@@ -2,6 +2,7 @@
 layout: layouts/page.njk
 eleventyNavigation:
   key: About
+  order: 5
 ---
 
 ## About this site

@@ -18,6 +18,25 @@ nav#main {
   background-color: Red;
   padding: 8% 3%;
 }
+
+nav *
+
+  
+nav div#nav-logo {
+  width: 20%;
+  display: inline-block;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 3px 25px;
+}
+
+
 /* Our remix on glitch button */
 .btn--remix {
   font-family: HK Grotesk;
