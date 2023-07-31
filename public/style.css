@@ -3,65 +3,68 @@ UNLOCK NYC - website 2.0 2023
 dev: MAB
 ******************************************************************************/
 
+
+/** FONTS **/
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: "Intro Rust";
+  src: url("https://cdn.glitch.com/b185c63a-8d27-412b-b4cb-047ca0c8de79%2FIntroRust-Base.otf")
+    format("truetype");
+}
+
+
 :root {
   --yellow: #eebf3d;
   --orange: #ffac71;
   --dark-grey-text: #414141;
-  --page-fonts: "Rubik";
+  --page-font: "Rubik";
   --courier: "Courier Prime";
+
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
+/** HEADER/NAV **/
 
 nav#main {
   width: 100%;
   background-color: Red;
-  padding: 8% 3%;
+  padding: 15px 3%;
+  box-sizing: border-box;
 }
 
-nav *
-
+nav * {
+  vertical-align: middle;
+}
   
 nav div#nav-logo {
+  font-family: "Intro Rust", "Rubik", sans-serif;
+  font-size: 26px;
   width: 20%;
   display: inline-block;
 }
 
 nav ul {
   display: inline-block;
+  font-family: "Rubik", sans-serif;
 }
 
 nav ul li {
   display: inline-block;
   padding: 3px 25px;
-}
-
-
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
+  line-height: 24px;
+  font-size: 16px;
   font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
+  text-transform: capitalize
 }
-.btn--remix img {
-  margin-right: 0.5rem;
+
+nav ul li.login-button {
+  background-color: White;
+  color: Black;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
-.btn--remix:hover {
-  background-color: #d0fff1;
-}
+
+
 
 /* Navigation grid */
 .footer {
@@ -74,48 +77,13 @@ nav ul li {
   border-top: 4px solid #fff;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
 
 /* Page structure */
 body {
-  font-family: var(--font-family);
-  background-color: var(--color-bg);
+  font-family: var(--page-font);
+  background-color: White;
 }
-.wrapper {
-  min-height: var(--wrapper-height);
-  place-items: center;
-  margin: 3rem 2rem 0;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  max-width: 900px;
-  margin: 0 auto;
-}
+
 
 /* Typography */
 p {
@@ -123,11 +91,7 @@ p {
   line-height: 1.5 !important;
   font-size: 1rem;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5 {
   margin: 2rem 0 0.8rem;
   font-family: var(--font-family-header);
   font-weight: 600;
@@ -157,19 +121,7 @@ small,
 .text_small {
   font-size: 0.8rem;
 }
-ul > li,
-ol > li {
-  margin-bottom: 0.75rem;
-  line-height: 1.5;
-  font-size: 1rem;
-}
-ul {
-  padding: 0 0 0 18px;
-  margin: 0;
-}
-ul.no-bullet {
-  list-style-type: none;
-}
+
 
 /* Link styles */
 a:not(.btn--remix):link,
