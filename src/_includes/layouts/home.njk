@@ -19,18 +19,29 @@ templateClass: tmpl-home
     </div>
   </div>
 </div>
-<div class="wrapper home">
-  <div class="content">
-    {{ content | safe }}
-    
-    {# After the the content defined in index.md, list the blog posts in the collection #}
-    <ul>
-      {%- for post in collections.posts -%}
-        <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{{ post.data.title }}</a></li>
-      {%- endfor -%}
-      <li><a href="/posts">View all posts</a></li>
-    </ul>
+<div class="content">
+  <div style="background-color: #727272; height: 100vh;">
+    {{ content | safe }}  
   </div>
 </div>
+<div class="content" style="background-color: #222; height: 50vh">
+  <h1 style="font-family: 'Intro Rust', sans-serif; text-align: center; color: White;">
+    WHAT PEOPLE ARE SAYING
+  </h1>"
+</div>
+<div class="content">
+  <div style="text-align: center; max-width: 45%; margin: auto;">
+    <h3>
+      Latest Action Lorem Ipsum
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+    </p>
+    <div style="width: 100%; height: 600px; background-color: #727272;">
+      
+    </div>
+  </div>
+</div>
+
 
 

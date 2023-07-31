@@ -151,7 +151,9 @@ h2 {
   line-height: 1.6;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 3;
 }
 h4 {
   font-size: 1.2rem;
@@ -187,8 +189,6 @@ div.top-banner {
   height: 70vh;
   background-color: Purple;
   display: table;
-  position: absolute;
-  top: 0;
 }
 
 div.banner-wrapper {
@@ -201,16 +201,11 @@ div.banner-content {
   width: 50%;
   margin: auto;
 }
-/* Post */
-.post {
-  place-items: normal;
-}
-.postTitle {
-  font-size: 4rem;
-  color: #000;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-}
-.controls {
-  margin: 3rem 0 2rem;
+
+/* PAGE LAYOUTS */
+
+div.content {
+  width: 100%;
+  padding: 6% 12%;
+  box-sizing: border-box;
 }
