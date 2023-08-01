@@ -74,7 +74,7 @@ nav ul#top li {
   text-transform: capitalize;
 }
 
-nav ul#top > li.main {
+nav ul#top > li {
   display: inline-block;
 }
 

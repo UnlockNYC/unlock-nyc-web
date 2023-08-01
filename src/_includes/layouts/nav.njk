@@ -16,7 +16,7 @@
     </ul>-->
     {% set navPages = collections.all | eleventyNavigation %}
     {% macro renderNavListItem(entry) -%}
-    <li class="main {% if entry.url == page.url %} active-header{% endif %}">
+    <li {% if entry.url == page.url %} class="active-header"{% endif %}>
       <a href="{{ entry.url }}">{{ entry.title }}</a>
     {%- if entry.children.length -%}
       <ul class="submenu">
@@ -28,8 +28,8 @@
 
     <ul id="top">
     {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-    <li class="main"><a>Donate</a></li>
-    <li class="main login-button">Sign In</li>
+    <li><a>Donate</a></li>
+    <li class="login-button">Sign In</li>
     </ul>
   </div> <!-- end of nav wrapper-->
   

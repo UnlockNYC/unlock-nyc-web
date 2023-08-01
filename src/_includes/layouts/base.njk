@@ -29,10 +29,10 @@
         $("nav ul").toggleClass("mobile-open");
       }
     });
-    $("nav#main ul#top li.main").on("mouseenter", function(){
+    $("nav#main ul#top > li").on("mouseenter", function(){
       if ($(window).width() > 1100) {
-        /*$("ul.submenu").hide();*/
-        $(this).children("ul").show();
+        $("ul.submenu").hide();
+        $(this).children("ul.submenu").show();
       }
     });
     $("ul.submenu").on("mouseleave", function() {
