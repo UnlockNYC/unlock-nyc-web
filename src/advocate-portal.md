@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: Rights Recorder
+  key: Advocate Portal
   parent: Tools
   title: Rights Recorder App
-  order: 1
+  order: 2
 ---

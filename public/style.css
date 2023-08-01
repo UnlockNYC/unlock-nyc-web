@@ -56,7 +56,7 @@ nav div#nav-wrapper {
   text-align: center;
 }
 
-nav ul {
+nav ul#top {
   display: inline-block;
   font-family: "Rubik", sans-serif;
   margin: 0;
@@ -66,8 +66,7 @@ nav ul {
   box-sizing: border-box;
 }
 
-nav ul li {
-  display: inline-block;
+nav ul#top li {
   padding: 3px 25px;
   line-height: 24px;
   font-size: 16px;
@@ -75,7 +74,11 @@ nav ul li {
   text-transform: capitalize;
 }
 
-nav ul li.login-button {
+nav ul#top li.main {
+  display: inline-block;
+}
+
+nav ul#top li.login-button {
   background-color: White;
   color: Black;
   padding: 8px 16px;
@@ -84,23 +87,26 @@ nav ul li.login-button {
   box-sizing: border-box;
 }
 
-nav ul li a {
+nav ul#top li a {
   text-decoration: none;
   color: Black;
   padding-bottom: 9px;
 }
 
-nav ul li a:hover {
+nav ul#top li a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
 }
 
-nav ul.submenu {
+nav li ul.submenu {
   background-color: cornflowerblue;
   position: absolute;
   display: none;
   margin-top: 10px;
-  
+}
+
+nav li ul.submenu li {
+  display: block;
 }
 
 /** MOBILE NAV **/
@@ -112,7 +118,7 @@ nav ul.submenu {
   nav div#nav-wrapper {
     grid-column-gap: 20px;
   }
-  nav ul li {
+  nav ul#top li {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -122,7 +128,7 @@ nav ul.submenu {
   nav div#nav-wrapper {
     grid-column-gap: 15px;
   }
-  nav ul li {
+  nav ul#top li {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -145,7 +151,7 @@ nav ul.submenu {
     padding: 20px 0;
     cursor: pointer;
   }
-  nav ul {
+  nav ul#top {
     background-color: White;
     width: 100%;
     padding: 0;
@@ -154,24 +160,24 @@ nav ul.submenu {
   nav ul.mobile-open {
     display: block;
   }
-  nav ul li {
+  nav ul#top li {
     width: 100%;
     display: block;
     text-align: left;
     padding: 16px 0px;
     border-top: 1px solid #C4C4C4;
   }
-  nav ul li:nth-last-child(2) {
+  nav ul#top li:nth-last-child(2) {
     border-bottom: 1px solid #C4C4C4;
   }
-  nav ul li.login-button {
+  nav ul#top li.login-button {
     background-color: Black;
     color: White;
     margin-left: 0;
     text-align: center;
     margin-top: 16px;
   }
-  nav ul li a:hover {
+  nav ul#top li a:hover {
     border-bottom: 0px;
     padding-bottom: 9px;
   }
