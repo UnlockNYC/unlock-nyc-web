@@ -28,6 +28,7 @@
     $("#nav-logo").click(function() {
       if ($(window).width() <= 1100) {
         $("nav ul#top").toggleClass("mobile-open");
+        $("nav#main").toggleClass("mobile-open");
       }
     });
     $("nav#main ul#top > li").on("mouseenter", function(){
