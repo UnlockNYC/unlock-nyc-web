@@ -6,9 +6,19 @@ templateClass: tmpl-home
 {# page template, extends the base template #}
 
 <div class="top-banner">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+      <h2>
+        {{ bannerText }}
+      </h2>
+    </div>
+  </div>
 </div>
-<div class="wrapper">
-  <div class="content">
-    {{ content | safe }}
+<div class="content">
+  <div style="background-color: #727272; height: 100vh;">
+    {{ content | safe }}  
   </div>
 </div>

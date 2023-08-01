@@ -23,6 +23,7 @@ nav#main.mobile-open {
 
 /* TOP BANNER */
 div.top-banner {
+  height: 70vh;
   background-color: Purple;
 }
 div.top-banner div.banner-content {
