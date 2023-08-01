@@ -142,6 +142,7 @@ nav ul.submenu > li {
     background-color: transparent;
     padding: 15px;
     height: auto;
+    font-size: 1.2rem;
   }
   nav div#nav-wrapper {
     grid-template-columns: 100%;
@@ -163,14 +164,14 @@ nav ul.submenu > li {
     display: block;
     background-color: White;
   }
-  nav ul#top li {
+  nav ul#top > li {
     width: 100%;
     display: block;
     text-align: left;
     padding: 16px 0px;
     border-top: 1px solid #C4C4C4;
   }
-  nav ul#top li:nth-last-child(2) {
+  nav ul#top > li:nth-last-child(2) {
     border-bottom: 1px solid #C4C4C4;
   }
   nav ul#top li.login-button {

@@ -23,14 +23,8 @@
   </main>
     
   <script>
-  /*MAB: MOVE INTO FILE! */
-  /* HEADER BEHAVIOR */
-    $("#nav-logo").click(function() {
-      if ($(window).width() <= 1100) {
-        $("nav ul#top").toggleClass("mobile-open");
-        $("nav#main").toggleClass("mobile-open");
-      }
-    });
+    /*MAB: MOVE INTO FILE! */
+    /* DESKTOP, HEADER BEHAVIOR */
     $("nav#main ul#top > li").on("mouseenter", function(){
       if ($(window).width() > 1100) {
         $("ul.submenu").hide();
@@ -38,8 +32,25 @@
       }
     });
     $("ul.submenu").on("mouseleave", function() {
-      $(this).hide();
+      if ($(window).width() > 1100) {
+        $(this).hide();
+      }
     });
+    /* MOBILE MENU BEHAVIOR */
+    $("#nav-logo").click(function() {
+      if ($(window).width() <= 1100) {
+        $("nav ul#top").toggleClass("mobile-open");
+        $("nav#main").toggleClass("mobile-open");
+      }
+    });
+    $("nav#main ul#top > li > a").click(function(e) {
+      if ($(window).width() <= 1100) {
+        e.preventDefault();
+        $(this).parent("li").children("ul.submenu").addClass("mobile-open");
+      }
+    })
+  
+    
   </script>
    
   </body>
