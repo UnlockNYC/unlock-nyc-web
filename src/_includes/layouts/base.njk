@@ -24,9 +24,10 @@
     
   <script>
   /*MAB: MOVE INTO FILE! */
+  /* HEADER BEHAVIOR */
     $("#nav-logo").click(function() {
       if ($(window).width() <= 1100) {
-        $("nav ul").toggleClass("mobile-open");
+        $("nav ul#top").toggleClass("mobile-open");
       }
     });
     $("nav#main ul#top > li").on("mouseenter", function(){

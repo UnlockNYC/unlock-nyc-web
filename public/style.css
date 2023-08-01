@@ -99,7 +99,7 @@ nav ul#top li a:hover {
 }
 
 nav ul li ul.submenu {
-  background-color: cornflowerblue;
+  background-color: White;
   position: absolute;
   display: none;
   margin-top: 20px;
@@ -160,7 +160,7 @@ nav ul li ul.submenu li {
     padding: 0;
     display: none;
   }
-  nav ul.mobile-open {
+  nav ul#top.mobile-open, nav ul.submenu.mobile-open {
     display: block;
   }
   nav ul#top li {
@@ -184,7 +184,7 @@ nav ul li ul.submenu li {
     border-bottom: 0px;
     padding-bottom: 9px;
   }
-  nav ul.submenu {
+  nav ul li ul.submenu {
     position: static;
     padding-left: 20px;
     background-color: White;
