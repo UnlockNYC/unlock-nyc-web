@@ -8,6 +8,8 @@
     <meta name="description" content="Unlock NYC Website 2.0 Draft" />
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     {% seo "" %}
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
   </head>
   <body>
     <main>
@@ -19,6 +21,14 @@
       {% include 'layouts/footer.njk' %} 
 
   </main>
+    
+  <script>
+      $("#nav-logo").click(function() {
+        if ($(window).width() <= 1100) {
+          $("nav ul").toggleClass("mobile-open");
+        }
+      });
+  </script>
    
   </body>
 </html>

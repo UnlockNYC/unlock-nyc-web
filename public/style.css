@@ -121,6 +121,7 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
+  /** MOBILE MENU BREAKPOINT! **/
   nav#main {
     background-color: White;
     padding: 15px;
@@ -134,11 +135,16 @@ nav ul li a:hover {
     text-align: left;
     border: none;
     padding: 20px 0;
+    cursor: pointer;
   }
   nav ul {
     background-color: White;
     width: 100%;
     padding: 0;
+    display: none;
+  }
+  nav ul.mobile-open {
+    display: block;
   }
   nav ul li {
     width: 100%;
@@ -156,6 +162,9 @@ nav ul li a:hover {
     margin-left: 0;
     text-align: center;
     margin-top: 16px;
+  }
+  nav ul li a:hover {
+    border-bottom: 0px;
   }
 }
 
@@ -185,8 +194,18 @@ div#footer-right {
 
 /** MOBILE FOOTER **/
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 900px) {
   
+  div#footer-wrapper {
+    grid-template-columns: 100%;
+  }  
+  
+  div#footer-columns {
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 25px;
+  }
+  
+}
 
 /* Page structure */
 html {
