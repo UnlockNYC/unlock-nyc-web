@@ -1,0 +1,12 @@
+/** HOME PAGE CSS! **/
+
+/* HEADER */
+
+nav#main {
+  background-color: transparent;
+  color: White;
+}
+
+nav ul#top li a {
+  color: White;
+}
