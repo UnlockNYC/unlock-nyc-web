@@ -86,13 +86,13 @@ nav ul#top li.login-button {
   box-sizing: border-box;
 }
 
-nav ul#top li a {
+nav ul#top > li a {
   text-decoration: none;
   color: Black;
   padding-bottom: 9px;
 }
 
-nav ul#top li a:hover {
+nav ul#top > li a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
 }
@@ -107,7 +107,7 @@ nav ul li ul.submenu {
   text-align: left;
 }
 
-nav ul li ul.submenu li {
+nav ul.submenu > li {
   display: block;
 }
 

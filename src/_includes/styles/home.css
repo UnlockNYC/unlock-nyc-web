@@ -7,12 +7,18 @@
     background-color: transparent;
     color: White;
   }
+
+  nav#main ul#top > li > a {
+    color: White;
+  }
+
+  nav#main ul#top > li > a:hover {
+    border-color: White;
+  }
 }
 
-nav#main > ul#top > li a {
-  color: White !important;
-}
+/* TOP BANNER */
 
-nav#main > ul#top > li a:hover {
-  border-color: White !important;
+div.top-banner div.banner-content {
+  color: White;
 }
