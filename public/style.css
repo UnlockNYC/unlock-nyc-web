@@ -74,6 +74,7 @@ nav ul li.login-button {
   padding: 8px 16px;
   border-radius: 8px;
   margin-left: 8px;
+  box-sizing: border-box;
 }
 
 nav ul li a {
@@ -85,6 +86,37 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
+}
+
+/** MOBILE NAV **/
+
+@media only screen and (max-width: 900px) {
+  nav#main {
+    background-color: White;
+    padding: 15px;
+    height: auto;
+  }
+  nav div#nav-logo {
+    width: 100%;
+    text-align: left;
+  }
+  nav ul {
+    background-color: White;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul li {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 16px 0px;
+  }
+  nav ul li.login-button {
+    background-color: Black;
+    color: White;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 /** FOOTER/NAV **/
