@@ -169,6 +169,7 @@ nav ul.submenu > li {
     display: block;
     text-align: left;
     padding: 16px 0px;
+    font-size: 1.4rem;
     border-top: 1px solid #C4C4C4;
   }
   nav ul#top > li:nth-last-child(2) {
@@ -190,6 +191,10 @@ nav ul.submenu > li {
     padding-left: 20px;
     background-color: White;
     display: none;
+  }
+  nav ul#top li > ul.submenu > li {
+    font-size: 1.2rem;
+    padding: 12px 0;
   }
 }
 
