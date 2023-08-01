@@ -94,6 +94,14 @@ nav ul li a:hover {
   padding-bottom: 7px;
 }
 
+nav ul.submenu {
+  background-color: cornflowerblue;
+  position: absolute;
+  display: none;
+  margin-top: 10px;
+  
+}
+
 /** MOBILE NAV **/
 
 @media only screen and (max-width: 1400px) {
@@ -165,6 +173,7 @@ nav ul li a:hover {
   }
   nav ul li a:hover {
     border-bottom: 0px;
+    padding-bottom: 9px;
   }
 }
 

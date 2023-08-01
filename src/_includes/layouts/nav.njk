@@ -3,6 +3,7 @@
     <div id="nav-logo">
       Unlock NYC
     </div>
+    <!--
     {% set navPages = collections.all | eleventyNavigation %}
     <ul>
     {%- for entry in navPages %}
@@ -12,6 +13,23 @@
     {%- endfor %}
       <li><a>Donate</a></li>
       <a><li class="login-button">Sign In</li></a>
+    </ul>-->
+    {% set navPages = collections.all | eleventyNavigation %}
+    {% macro renderNavListItem(entry) -%}
+    <li{% if entry.url == page.url %} class="active-header"{% endif %}>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    {%- if entry.children.length -%}
+      <ul class="submenu">
+        {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+      </ul>
+    {%- endif -%}
+    </li>
+    {%- endmacro %}
+
+    <ul>
+    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+    <li><a>Donate</a></li>
+    <a><li class="login-button">Sign In</li></a>
     </ul>
   </div> <!-- end of nav wrapper-->
   
