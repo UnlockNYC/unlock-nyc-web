@@ -11,9 +11,6 @@ nav#main.mobile-open {
 }
 
 @media only screen and (min-width: 1100px) {
-  nav#main {
-    background-color: transparent;
-  }
 
   nav#main ul#top > li > a {
     color: White;
@@ -25,7 +22,9 @@ nav#main.mobile-open {
 }
 
 /* TOP BANNER */
-
+div.top-banner {
+  background-color: Purple;
+}
 div.top-banner div.banner-content {
   color: White;
 }

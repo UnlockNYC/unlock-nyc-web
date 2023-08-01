@@ -1,4 +1,6 @@
 ---
+layout: layouts/page.njk
+bg: White
 eleventyNavigation:
   key: Tools
   title: Our Tools
