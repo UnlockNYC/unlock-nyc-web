@@ -160,7 +160,9 @@ nav ul.submenu > li {
     padding: 0;
     display: none;
   }
-  nav ul#top.mobile-open, nav ul.submenu.mobile-open, nav#main.mobile-open {
+  nav ul#top.mobile-open,
+  nav ul.submenu.mobile-open,
+  nav#main.mobile-open {
     display: block;
     background-color: White;
   }
@@ -170,17 +172,21 @@ nav ul.submenu > li {
     text-align: left;
     padding: 16px 0px;
     font-size: 1.4rem;
-    border-top: 1px solid #C4C4C4;
+    border-top: 1px solid #c4c4c4;
   }
   nav ul#top > li:nth-last-child(2) {
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid #c4c4c4;
   }
   nav ul#top li.login-button {
     background-color: Black;
     color: White;
     margin-left: 0;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 32px;
+    padding: 16px;
+    border-top: 0;
+    margin-bottom: 32px;
+    font-size: 24px;
   }
   nav ul#top li a:hover {
     border-bottom: 0px;
@@ -188,13 +194,13 @@ nav ul.submenu > li {
   }
   nav ul li ul.submenu {
     position: static;
-    padding-left: 20px;
+    padding: 0;
     background-color: White;
     display: none;
   }
   nav ul#top li > ul.submenu > li {
-    font-size: 1.2rem;
-    padding: 12px 0;
+    font-size: 1.1rem;
+    padding: 12px 0 12px 16px;
   }
 }
 
@@ -225,16 +231,14 @@ div#footer-right {
 /** MOBILE FOOTER **/
 
 @media only screen and (max-width: 900px) {
-  
   div#footer-wrapper {
     grid-template-columns: 100%;
-  }  
-  
+  }
+
   div#footer-columns {
     grid-template-columns: 50% 50%;
     grid-row-gap: 25px;
   }
-  
 }
 
 /* Page structure */
