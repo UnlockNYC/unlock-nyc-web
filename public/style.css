@@ -42,14 +42,17 @@ nav * {
 nav div#nav-logo {
   font-family: "Intro Rust", "Rubik", sans-serif;
   font-size: 26px;
+  min-width: 175px;
   width: 100%;
   display: inline-block;
   border: 1px solid Black;
+  margin-top: 5px;
 }
 
 nav div#nav-wrapper {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 175px auto;
+  grid-column-gap: 35px;
   text-align: center;
 }
 
@@ -57,6 +60,8 @@ nav ul {
   display: inline-block;
   font-family: "Rubik", sans-serif;
   margin: 0;
+  padding-left: 0;
+  text-align: right;
   margin-top: 5px;
 }
 
@@ -91,11 +96,20 @@ nav ul li a:hover {
 
 /** MOBILE NAV **/
 
+@media only screen and (max-width: 1300px) {
+  nav#main {
+    padd
+  }
+}
+
 @media only screen and (max-width: 900px) {
   nav#main {
     background-color: White;
     padding: 15px;
     height: auto;
+  }
+  nav div#nav-wrapper {
+    grid-template-columns: 100%;
   }
   nav div#nav-logo {
     width: 100%;
