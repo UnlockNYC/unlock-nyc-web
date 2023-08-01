@@ -2,11 +2,17 @@
 
 /* HEADER */
 
-nav#main {
-  background-color: transparent;
-  color: White;
+@media only screen and (min-width: 1100px) {
+  nav#main {
+    background-color: transparent;
+    color: White;
+  }
 }
 
-nav ul#top li a {
-  color: White;
+nav#main > ul#top > li a {
+  color: White !important;
+}
+
+nav#main > ul#top > li a:hover {
+  border-color: White !important;
 }

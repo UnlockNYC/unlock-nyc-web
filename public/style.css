@@ -45,7 +45,6 @@ nav div#nav-logo {
   min-width: 175px;
   width: 100%;
   display: inline-block;
-  border: 1px solid Black;
   margin-top: 5px;
 }
 
@@ -162,6 +161,7 @@ nav ul li ul.submenu li {
   }
   nav ul#top.mobile-open, nav ul.submenu.mobile-open {
     display: block;
+    background-color: White;
   }
   nav ul#top li {
     width: 100%;
