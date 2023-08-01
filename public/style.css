@@ -74,7 +74,7 @@ nav ul#top li {
   text-transform: capitalize;
 }
 
-nav ul#top li.main {
+nav ul#top > li.main {
   display: inline-block;
 }
 
@@ -98,14 +98,17 @@ nav ul#top li a:hover {
   padding-bottom: 7px;
 }
 
-nav li ul.submenu {
+nav ul li ul.submenu {
   background-color: cornflowerblue;
   position: absolute;
   display: none;
-  margin-top: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 16px 0;
+  text-align: left;
 }
 
-nav li ul.submenu li {
+nav ul li ul.submenu li {
   display: block;
 }
 
