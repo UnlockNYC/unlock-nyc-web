@@ -23,17 +23,21 @@
   </main>
     
   <script>
-    /*MAB: MOVE INTO FILE! */
-      $("#nav-logo").click(function() {
-        if ($(window).width() <= 1100) {
-          $("nav ul").toggleClass("mobile-open");
-        }
-      });
-      $("nav#main ul#top li.main").hover(function(){
-        if ($(window).width() > 1100) {
-          $(this).children("ul").toggleClass("mobile-open");
-        }
-      })
+  /*MAB: MOVE INTO FILE! */
+    $("#nav-logo").click(function() {
+      if ($(window).width() <= 1100) {
+        $("nav ul").toggleClass("mobile-open");
+      }
+    });
+    $("nav#main ul#top li.main").on("mouseenter", function(){
+      if ($(window).width() > 1100) {
+        /*$("ul.submenu").hide();*/
+        $(this).children("ul").show();
+      }
+    });
+    $("ul.submenu").on("mouseleave", function() {
+      $(this).hide();
+    });
   </script>
    
   </body>
