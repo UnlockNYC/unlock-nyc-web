@@ -42,13 +42,14 @@ nav * {
 nav div#nav-logo {
   font-family: "Intro Rust", "Rubik", sans-serif;
   font-size: 26px;
-  width: 20%;
+  width: 100%;
   display: inline-block;
   border: 1px solid Black;
 }
 
 nav div#nav-wrapper {
-  display: block;
+  display: grid;
+  grid-template-columns: 20% 80%;
   text-align: center;
 }
 
@@ -99,6 +100,8 @@ nav ul li a:hover {
   nav div#nav-logo {
     width: 100%;
     text-align: left;
+    border: none;
+    padding: 20px 0;
   }
   nav ul {
     background-color: White;
@@ -110,12 +113,17 @@ nav ul li a:hover {
     display: block;
     text-align: left;
     padding: 16px 0px;
+    border-top: 1px solid #C4C4C4;
+  }
+  nav ul li:nth-last-child(2) {
+    border-bottom: 1px solid #C4C4C4;
   }
   nav ul li.login-button {
     background-color: Black;
     color: White;
     margin-left: 0;
     text-align: center;
+    margin-top: 16px;
   }
 }
 
