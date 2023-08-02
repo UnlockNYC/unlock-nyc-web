@@ -384,3 +384,7 @@ div.block {
   min-height: 200px;
   border: 1px dotted #444;
 }
+
+div.block.image {
+  background-color: var(--light-grey-text);
+}
