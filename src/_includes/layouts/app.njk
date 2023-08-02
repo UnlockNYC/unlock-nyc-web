@@ -1,0 +1,76 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# page template, extends the base template #}
+
+<div class="top-banner" style="background-color: #EEBF3D;">
+  <div class="banner-wrapper split">
+    <div class="banner-split-text">
+      <p class="subtitle">
+        Our Tools
+      </p>
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+      <h2 style="max-width: 90%;">
+        {{ bannerText }}
+      </h2>
+      <button class="black">
+        Sign up
+      </button>
+    </div>
+    <div style="background-color: #444;">
+      image placeholder
+    </div>
+  </div>
+</div>
+<div class="content">
+  <p style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto;">
+    Stay one step ahead of landlords with our Rights Recorder app. Record your phone calls, capture evidence of shady behavior, and report brokers and landlords when they violate your rights!
+  </p>
+  <h3 class="center-title">
+    How it Works
+  </h3>
+  {% include 'layouts/blocks-icons.njk' %}  
+  <h3 class="center-title">
+    Where can you send a report?
+  </h3>
+  <p style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto;">
+    Unlock NYC partners with organizations around the city so that we can connect you to someone who can help. For instance, you can send your report to:
+  </p>
+  <div style="margin-top: 60px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-column-gap: 30px;">
+    <div style="border: 1px dotted #444; height: 33vh;">
+    </div>
+   <div style="border: 1px dotted #444; height: 33vh;">
+    </div>
+    <div style="border: 1px dotted #444; height: 33vh;">
+    </div>
+    <div style="border: 1px dotted #444; height: 33vh;">
+    </div>
+  </div>
+  <h3 class="center-title">
+    FAQs
+  </h3>
+  <div style="border: 1px dotted Black; height: 600px;">
+    build FAQ collection here
+  </div>
+  <h3 class="center-title">
+    Learn more
+  </h3>
+  <div class="banner-full orange">
+    <h3>
+      {{ orangeBannerTitle }}
+    </h3>
+    <p>
+      {{ orangeBannerText }}
+    </p>
+    <button class="black">
+      Sign Up
+    </button>
+  </div>
+  <div style="border: 1px dotted Black; height: 33vh; margin-top: 60px">
+    build collection here - articles? w/tags etc.
+  </div>
+</div>
