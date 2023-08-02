@@ -1,6 +1,12 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+blockText1: test test test MAB lorem ipsum
+blockImage1: 
+blockText2: 
+blockImage2:
+blockText3: 
+blockImage3:
 ---
 <style>
 {% include "styles/home.css" %}
@@ -10,10 +16,10 @@ templateClass: tmpl-home
   <div class="banner-wrapper">
     <div class="banner-content">
       <h1>
-        Unlock your city.
+        {{ bannerTitle }}
       </h1>
       <h2>
-        The tools you need to stand up for yourself on your housing search. Created with and led by tenants who've been there.
+        {{ bannerText }}
       </h2>
       <button class="yellow">
         Get started
@@ -23,7 +29,7 @@ templateClass: tmpl-home
 </div>
 <div class="content">
   <div style="background-color: #727272; height: 100vh;">
-    {{ content | safe }}  
+    {% include 'layouts/blocks50.njk' %}  
   </div>
 </div>
 <div class="content" style="background-color: #222; height: 50vh">

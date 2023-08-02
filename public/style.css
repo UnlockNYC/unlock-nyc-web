@@ -305,6 +305,7 @@ button {
   font-family: var(--page-font);
   font-weight: 500;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 button.yellow {
@@ -368,4 +369,18 @@ div.content {
   div.banner-content {
     width: 80%;
   }
+}
+
+/* COMPONENTS */
+
+div.blocks-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+div.block {
+  min-height: 200px;
+  border: 1px dotted #444;
 }
