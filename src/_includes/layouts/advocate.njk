@@ -6,14 +6,23 @@ templateClass: tmpl-home
 {# page template, extends the base template #}
 
 <div class="top-banner" style="background-color: #B79DFF;">
-  <div class="banner-wrapper">
-    <div class="banner-content">
+  <div class="banner-wrapper split">
+    <div class="banner-split-text">
+      <p class="subtitle">
+        Our Tools
+      </p>
       <h1>
         {{ bannerTitle }}
       </h1>
-      <h2>
+      <h2 style="max-width: 90%;">
         {{ bannerText }}
       </h2>
+      <button class="yellow">
+        Schedule now
+      </button>
+    </div>
+    <div style="background-color: #444;">
+      image placeholder
     </div>
   </div>
 </div>
