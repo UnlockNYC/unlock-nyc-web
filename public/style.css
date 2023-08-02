@@ -111,6 +111,11 @@ nav ul.submenu > li {
   display: block;
 }
 
+nav ul#top > li.active-header > a {
+  border-bottom: 2px solid Black;
+  padding-bottom: 7px;
+}
+
 /** MOBILE NAV **/
 
 @media only screen and (max-width: 1400px) {
@@ -365,7 +370,7 @@ div.content {
 }
 
 div div.half-wide {
-  max-width: 65%;
+  max-width: 70%;
   margin: auto;
   text-align: center;
 }
