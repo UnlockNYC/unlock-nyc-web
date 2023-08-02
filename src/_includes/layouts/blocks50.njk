@@ -19,10 +19,13 @@
   </div> 
 </div>-->
 
+{%- for item in blocks.items %}
 <div class="blocks-wrapper">
-  {% for block in blocks.blocks %}
+  <div class="block">
+    Text placeholder {{item}}
+  </div>
   <div class="block">
     Image placeholder
   </div>
-  {% endfor %}
 </div>
+{% endfor -%}
