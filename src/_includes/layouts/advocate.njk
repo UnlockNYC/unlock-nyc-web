@@ -27,29 +27,29 @@ templateClass: tmpl-home
   </div>
 </div>
 <div class="content">
-  {% include 'layouts/blocks-icons.njk' %}  
-</div>
-<div class="banner-full cream">
-  <div class="half-wide">
-    <h4>
-      How We Design
-    </h4>
-    <p>
-      {{ howDesignText }}
-    </p>
-    <div style="height: 600px; background-color: #444; width: 100%; margin-top: 3rem;">
-      image placeholder
-    </div>
-  </div>
-</div>
-<div class="banner-full orange">
-  <h3>
-    Stay in the loop
+  <h3 class="center-title" style="margin-top: -30px;">
+    How it Works
   </h3>
-  <p>
-    text text text here
-  </p>
-  <button class="black">
-    Sign Up
-  </button>
+  {% include 'layouts/blocks-icons.njk' %}  
+  <h3 class="center-title">
+    FAQs
+  </h3>
+  <div style="border: 1px dotted Black; height: 600px;">
+    build FAQ collection here
+  </div>
+  <h3 class="center-title">
+    Learn more
+  </h3>
+  <div class="banner-full orange">
+    <h3>
+      {{ orangeBannerTitle }}
+    </h3>
+    <p>
+      {{ orangeBannerText }}
+    </p>
+    <button class="black">
+      Sign Up
+    </button>
+  </div>
+  <div style="background-color: #444;"
 </div>

@@ -17,6 +17,9 @@ blockTitle4: Here to listen and problem solve with you
 blockText4: If you ever have questions or need help, we're here for you during our Office Hours. We’re standing by to listen to your challenges, show you how our tools work, and answer any questions you have about source of income discrimination or our programs.
 blockImage4: image placeholder
 
+orangeBannerTitle: Join a virtual workshop
+orangeBannerText: SOI Discrimination is Illegal in NY State – join the workshop to [value prop.] Most of our partners start out in the community via our welcoming, informative workshops.
+
 eleventyNavigation:
   key: Advocate Portal
   parent: Tools

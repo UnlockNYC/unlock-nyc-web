@@ -288,6 +288,11 @@ h3 {
   line-height: 3;
   margin-bottom: 0;
 }
+h3.center-title { /*how it works, etc. */
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
 h4 {
   font-size: 1.2rem;
   margin-top: 0;
@@ -349,6 +354,7 @@ div.banner-content {
 div.banner-wrapper.split {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 60vh;
 }
 
 div.banner-split-text {
