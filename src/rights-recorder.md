@@ -1,5 +1,5 @@
 ---
-layout: layouts/app.njk
+layout: layouts/app-page.njk
 
 bannerTitle: Rights Recorder App
 bannerText: You don’t need to download anything, just enter your phone number to get started.

@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# page template, extends the base template #}
+
+<div class="top-banner">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+      <h2>
+        {{ bannerText }}
+      </h2>
+    </div>
+  </div>
+</div>
+<h3 class="center-title">
+    FAQs
+  </h3>
+  <div style="border: 1px dotted Black; height: 600px;">
+    build FAQ collection here
+  </div>
+  <h3 class="center-title">
+    Learn more
+  </h3>
+  <div class="banner-full orange">
+    <h3>
+      {{ orangeBannerTitle }}
+    </h3>
+    <p>
+      {{ orangeBannerText }}
+    </p>
+    <button class="black">
+      Sign Up
+    </button>
+  </div>
