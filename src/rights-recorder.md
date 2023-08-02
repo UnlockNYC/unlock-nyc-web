@@ -17,6 +17,8 @@ blockTitle4: Take action by sharing your report
 blockText4: Our team will review your report and may ask you additional questions. We can help you mediate, investigate, or advocate on your journey to seek justice.
 blockImage4: image placeholder
 
+orangeBannerTitle: Join a virtual workshop
+orangeBannerText: SOI Discrimination is Illegal in NY State – join the workshop to [value prop.] Most of our partners start out in the community via our welcoming, informative workshops.
 
 eleventyNavigation:
   key: Rights Recorder
