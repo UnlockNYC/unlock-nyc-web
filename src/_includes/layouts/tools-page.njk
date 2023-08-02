@@ -18,7 +18,18 @@ templateClass: tmpl-home
   </div>
 </div>
 <div class="content">
-  <div style="background-color: #727272; height: 100vh;">
-    {{ content | safe }}  
+  {% include 'layouts/blocks50.njk' %}  
+</div>
+<div class="banner-full cream">
+  <div class="half-wide">
+    <h4>
+      How We Design
+    </h4>
+    <p>
+      {{ howDesignText }}
+    </p>
+    <div style="height: 30vh; background-color: #444; width: 100%;">
+      image placeholder
+    </div>
   </div>
 </div>
