@@ -398,6 +398,7 @@ div div.half-wide {
 
 /* COMPONENTS */
 
+/* 50-50 image/text, blocks50 template */
 div.blocks-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -405,7 +406,7 @@ div.blocks-wrapper {
   grid-row-gap: 60px;
 }
 
-div.block {
+div.blocks-wrapper div.block {
   min-height: 200px;
   /*border: 1px dotted #444444;*/
   padding: 5%;
@@ -414,4 +415,21 @@ div.block {
 
 div.block.image {
   background-color: var(--light-grey-text);
+}
+
+/* blocks with icon/infographics, blocks-icons template */
+div.blocks-icons-wrapper {
+  display: grid;
+  grid-template-columns: 33% auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+div.blocks-icons-wrapper h3 {
+  margin-top: 0;
+  line-height: 2;
+}
+
+div.blocks-icons-wrapper div.block.image {
+  height: 22vh;
 }
