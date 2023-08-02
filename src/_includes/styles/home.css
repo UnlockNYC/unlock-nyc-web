@@ -6,7 +6,16 @@ nav#main {
   color: White;
 }
 
+nav div#nav-logo a {
+  color: White;
+}
+
 nav#main.mobile-open {
+  color: Black;
+}
+
+nav ul#top li.login-button {
+  background-color: White;
   color: Black;
 }
 
