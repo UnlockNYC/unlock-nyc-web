@@ -10,7 +10,7 @@ nav div#nav-logo a {
   color: White;
 }
 
-nav#main.mobile-open {
+nav#main.mobile-open div#nav-logo a {
   color: Black;
 }
 
@@ -20,7 +20,7 @@ nav ul#top li.login-button {
 }
 
 @media only screen and (min-width: 1100px) {
-
+  
   nav#main ul#top > li > a {
     color: White;
   }

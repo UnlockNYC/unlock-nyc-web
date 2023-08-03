@@ -176,6 +176,9 @@ nav ul#top > li.active-header > a {
     display: block;
     background-color: White;
   }
+  nav#main.mobile-open div#nav-logo a {
+    pointer-events: none;
+  }
   nav ul#top > li {
     width: 100%;
     display: block;
