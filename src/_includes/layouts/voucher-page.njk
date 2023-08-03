@@ -63,16 +63,25 @@ templateClass: tmpl-home
       </div>
     </div>
   </div>
-  <h3 class="center-title">
-    {{ quote }}
+  <h3 class="quote">
+    "{{ quote }}"
   </h3>
+  <div style="text-align: center; margin-top: 60px;">
+    <div class="bg-purple" style="width: 100px; height: 100px; border-radius: 50%; display: inline-block;">
+      img
+    </div>
+    <p style="font-weight: 500; margin-top: 15px;">
+      {{ quoteAuthor }}
+    </p>
+    <p style="margin-top: -10px;">
+      {{ authorTitle }}
+    </p>
+  </div>
 </div>
-  
-
-<div class="content">
+<div class="content bg-cream">
   <div class="half-wide">
     <h3 style="margin-top: 0;">
-      Latest Action Lorem Ipsum
+      Not quite what you're looking for?
     </h3>
     <p style="max-width: 80%; margin: auto; margin-bottom: 2rem;">
       {{ latestActionText }}

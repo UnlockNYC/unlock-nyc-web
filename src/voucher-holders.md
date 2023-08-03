@@ -32,7 +32,9 @@ keyImage2: image placeholder
 keyImage3: image placeholder
 keyImage4: image placeholder
 
-quote: "[My response from Unlock NYC] was SO different from every single agency I had to interact with. I was just like wow, you read the whole thing? And that _mattered._"
+quote: "[My response from Unlock NYC] was SO different from every single agency I had to interact with. I was just like wow, you read the whole thing? And that mattered."
+quoteAuthor: Kamilha Newton
+authorTitle: Unlock NYC user and Scholar-in-Residence
 
     
 eleventyNavigation:
