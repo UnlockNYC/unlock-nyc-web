@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# page template, extends the base template #}
+
+<div class="top-banner bg-cream">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+      <h2>
+        {{ bannerText }}
+      </h2>
+      <button class="black">
+        Submit a media request
+      </button>
+    </div>
+  </div>
+</div>
+<div class="content">
+  {% include 'layouts/blocks50.njk' %}  
+</div>
+<div class="banner-full bg-cream">
+  <div class="half-wide">
+    <h4>
+      How We Design
+    </h4>
+    <p>
+      {{ howDesignText }}
+    </p>
+    <div style="height: 600px; background-color: #444; width: 100%; margin-top: 3rem;">
+      image placeholder
+    </div>
+  </div>
+</div>
+<div class="banner-full bg-orange">
+  <h3>
+    Stay in the loop
+  </h3>
+  <p>
+    text text text here
+  </p>
+  <button class="black">
+    Sign Up
+  </button>
+</div>
