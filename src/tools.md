@@ -5,6 +5,7 @@ bg: White
 bannerTitle: Our Tools
 bannerText: "At Unlock NYC, we create tools that make it easier for New Yorkers with housing vouchers (like CityFHEPS, Section 8, HASA, and more) to keep a paper trail of your housing search, get justice after you’re treated unfairly, and make the voucher system work better for everyone."
 
+# MAB NOTE: below is without loops, but loop may be more elegant?! 
 firstBlock: text
 blockTitle1: Rights Recorder
 blockText1: Keep getting denied, ghosted, or treated unfairly after you mention your housing voucher? Use our free tools to make a paper trail, flex your rights, and get support.
@@ -20,11 +21,17 @@ howDesignText: We always make sure that New Yorkers who have been directly impac
 
 numBlocks:
   - block1:
-    - title: TEST
+    title: Rights Recorder
+    text: Keep getting denied, ghosted, or treated unfairly after you mention your housing voucher? Use our free tools to make a paper trail, flex your rights, and get support.
+    image: image placeholder
   - block2:
-    - title: TEST2
+    title: Tech for housing advocates
+    text: lorem ipsum dolor simit
+    image: image placeholder
   - block3:
-    - title: TEST3
+    title: SOI Mapping Tool
+    text: mab text text proton lorem ipsum
+    image: image placeholder
   
 
 eleventyNavigation:

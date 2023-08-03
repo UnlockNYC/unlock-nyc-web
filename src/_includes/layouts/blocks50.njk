@@ -43,7 +43,17 @@
   </div> 
 </div>-->
 {% for thing in numBlocks %}
-  <p>
-    test
-  </p>
+<div class="blocks-wrapper">
+  <div class="block">
+    <h4>
+    {{ thing.title}}
+    </h4>
+    <p>
+      {{ thing.text }}
+    </p>
+  </div>
+  <div class="block image">
+    {{ thing.image }}
+  </div>
+</div>
 {% endfor %}

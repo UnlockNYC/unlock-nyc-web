@@ -416,6 +416,11 @@ div.blocks-wrapper {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 60px;
+  margin-bottom: 60px;
+}
+
+div.blocks-wrapper:nth-of-type(even) div.block.image{
+  order: 1;
 }
 
 div.blocks-wrapper div.block {
