@@ -36,6 +36,44 @@ quote: "[My response from Unlock NYC] was SO different from every single agency 
 quoteAuthor: Kamilha Newton
 authorTitle: Unlock NYC user and Scholar-in-Residence
 
+linksList:
+  - block1:
+    title: Apple for a voucher
+    text: test test test
+    image: image placeholder
+    button: yes
+    buttonText: Make appointment
+  - block2:
+    title: Get help with your housing search
+    text: lorem ipsum dolor simit
+    image: image placeholder
+    button: yes
+    buttonText: See location
+  - block3:
+    title: Prevent or delay an eviction
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+  - block4:
+    title: Address a housing situation
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Call the Met Council
+  - block5:
+    title: Request repairs in your apartment
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Request repairs
+  - block6:
+    title: Document heading issues
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+
     
 eleventyNavigation:
   key: Voucher Holders

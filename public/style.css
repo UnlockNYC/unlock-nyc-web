@@ -368,6 +368,11 @@ button.black {
   color: White;
 }
 
+button.white {
+  background-color: White;
+  color: Black;
+}
+
 /* BANNERS */
 
 div.top-banner {
