@@ -443,6 +443,7 @@ div.blocks-icons-wrapper {
   grid-template-columns: 33% auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  margin-bottom: 20px;
 }
 
 div.blocks-icons-wrapper h4 {

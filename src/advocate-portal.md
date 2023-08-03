@@ -4,6 +4,7 @@ layout: layouts/advocate-page.njk
 bannerTitle: Unlock NYC Advocate Portal
 bannerText: Schedule a 30-minute intro call with our partnerships team to to learn more about how Unlock NYC can help your clients fight back against discrimination and find housing faster.
 
+# MAB: use loops below instead!!
 blockTitle1: Sign Up
 blockText1: When you sign up, you’ll receive our Partner Welcome Kit with digital resources to help you spread the word about Unlock NYC. Your clients can also create their own account with us (and designate you as their advocate) to access resources to help them stay confident, informed, and engaged in their housing search.
 blockImage1: image placeholder
@@ -16,6 +17,32 @@ blockImage3: image placeholder
 blockTitle4: Here to listen and problem solve with you
 blockText4: If you ever have questions or need help, we're here for you during our Office Hours. We’re standing by to listen to your challenges, show you how our tools work, and answer any questions you have about source of income discrimination or our programs.
 blockImage4: image placeholder
+
+iconBlocksList:
+  - block1:
+    title: Sign Up
+    text: test test test
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+  - block2:
+    title: Report for your clients
+    text: lorem ipsum dolor simit
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+  - block3:
+    title: See insight & impact
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+  - block4:
+    title: Here to listen and problem solve with you
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
 
 orangeBannerTitle: Join a virtual workshop
 orangeBannerText: SOI Discrimination is Illegal in NY State – join the workshop to [value prop.] Most of our partners start out in the community via our welcoming, informative workshops.

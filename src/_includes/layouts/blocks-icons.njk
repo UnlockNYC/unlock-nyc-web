@@ -1,3 +1,19 @@
+{% for thing in iconBlocksList %}
+<div class="blocks-icons-wrapper">
+  <div class="block image">
+    {{ thing.image }}
+  </div>
+  <div class="block">
+    <h4>
+    {{ thing.title }}
+    </h4>
+    <p>
+      {{ thing.text }}
+    </p>
+  </div>
+</div>
+{% endfor %}
+
 <!--<div class="blocks-icons-wrapper">
   <div class="block image">
     {{ blockImage1 }}
@@ -44,19 +60,5 @@
     </p>
   </div>
 </div>-->
-{% for thing in iconBlockList %}
-<div class="blocks-wrapper">
-  <div class="block image">
-    <h4>
-    {{ thing.title }}
-    </h4>
-    <p>
-      {{ thing.text }}
-    </p>
-  </div>
-  <div class="block">
-    {{ thing.image }}
-  </div>
-</div>
-{% endfor %}
+
 

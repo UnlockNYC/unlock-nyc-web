@@ -1,3 +1,24 @@
+{% for thing in blocksList %}
+<div class="blocks-wrapper">
+  <div class="block">
+    <h4>
+    {{ thing.title }}
+    </h4>
+    <p>
+      {{ thing.text }}
+    </p>
+    {% if thing.button == 'yes' %}
+    <button class="yellow">
+      {{ thing.buttonText }}
+    </button>
+    {% endif %}
+  </div>
+  <div class="block image">
+    {{ thing.image }}
+  </div>
+</div>
+{% endfor %}
+
 <!--<div class="blocks-wrapper">
   <div class="block">
     <h4>
@@ -42,18 +63,3 @@
     {{ blockImage3 }}
   </div> 
 </div>-->
-{% for thing in blocksList %}
-<div class="blocks-wrapper">
-  <div class="block">
-    <h4>
-    {{ thing.title }}
-    </h4>
-    <p>
-      {{ thing.text }}
-    </p>
-  </div>
-  <div class="block image">
-    {{ thing.image }}
-  </div>
-</div>
-{% endfor %}
