@@ -16,10 +16,32 @@ dev: MAB
   --yellow: #eebf3d;
   --orange: #ffac71;
   --cream: #f1f1e3;
+  --purple: #b79dff;
+  --green: #94e0a4;
   --dark-grey-text: #414141;
   --light-grey-text: #727272;
   --page-font: "Rubik";
   --courier: "Courier Prime";
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-green {
+  background-color: var(--green);
 }
 
 /** HEADER/NAV **/
@@ -296,7 +318,8 @@ h3 {
   line-height: 3;
   margin-bottom: 0;
 }
-h3.center-title { /*how it works, etc. */
+h3.center-title {
+  /*how it works, etc. */
   /*margin-top: 30px;*/
   margin-bottom: 30px;
   text-align: center;
@@ -383,14 +406,6 @@ div.banner-full {
   text-align: center;
 }
 
-div.banner-full.cream {
-  background-color: var(--cream);
-}
-
-div.banner-full.orange {
-  background-color: var(--orange);
-}
-
 /* PAGE LAYOUTS */
 
 div.content {
@@ -433,10 +448,10 @@ div.block.image {
   background-color: var(--light-grey-text);
 }
 
-div.blocks-wrapper:nth-of-type(even) div.block.image{
+div.blocks-wrapper:nth-of-type(even) div.block.image {
   order: 1;
 }
-div.blocks-wrapper:nth-of-type(even) div.block{
+div.blocks-wrapper:nth-of-type(even) div.block {
   order: 2;
 }
 
