@@ -1,5 +1,5 @@
 {% for thing in blocksList %}
-<div class="blocks-wrapper">
+<div class="blocks-wrapper{% if blocksFirst == 'image'%} image-first{% endif %}">
   <div class="block">
     <h4>
     {{ thing.title }}

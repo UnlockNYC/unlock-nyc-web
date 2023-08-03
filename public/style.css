@@ -448,11 +448,27 @@ div.block.image {
   background-color: var(--light-grey-text);
 }
 
+/* default: text first, alternates each row */
 div.blocks-wrapper:nth-of-type(even) div.block.image {
   order: 1;
 }
 div.blocks-wrapper:nth-of-type(even) div.block {
   order: 2;
+}
+
+/* if component labeled image-first */
+div.blocks-wrapper.image-first:nth-of-type(odd) div.block.image {
+  order: 1;
+}
+div.blocks-wrapper.image-first:nth-of-type(odd) div.block {
+  order: 2;
+}
+
+div.blocks-wrapper.image-first:nth-of-type(even) div.block.image {
+  order: 2;
+}
+div.blocks-wrapper.image-first:nth-of-type(even) div.block {
+  order: 1;
 }
 
 /* blocks with icon/infographics, blocks-icons template */

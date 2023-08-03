@@ -1,5 +1,6 @@
 ---
 layout: layouts/voucher-page.njk
+bg: White
 
 bannerTitle: For Voucher Holders
 bannerText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -24,6 +25,7 @@ blocksList:
     button: yes
     buttonText: Learn more
     
+blocksFirst: image
     
 eleventyNavigation:
   key: Voucher Holders

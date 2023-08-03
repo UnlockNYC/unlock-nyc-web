@@ -28,6 +28,9 @@ nav ul#top li.login-button {
   nav#main ul#top > li > a:hover {
     border-color: White;
   }
+  nav#main ul#top > li.active-header > a {
+    border-bottom: 2px solid White;
+  }
 }
 
 /* TOP BANNER */
