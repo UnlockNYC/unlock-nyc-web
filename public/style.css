@@ -209,6 +209,9 @@ nav ul#top > li.active-header > a {
     font-size: 1.4rem;
     border-top: 1px solid #c4c4c4;
   }
+  nav ul#top > li.active-header > a {
+    border-bottom: 0;
+  }
   nav ul#top > li:nth-last-child(2) {
     border-bottom: 1px solid #c4c4c4;
   }
@@ -351,6 +354,10 @@ p.grey {
 }
 
 p.black {
+  color: Black;
+}
+
+p.subtitle {
   color: Black;
 }
 
