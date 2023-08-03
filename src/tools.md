@@ -19,19 +19,25 @@ blockImage3: image placeholder
 
 howDesignText: We always make sure that New Yorkers who have been directly impacted by voucher discrimination are involved at every step of our design process. Half of our staff and 100% of our governing board have used vouchers in NYC, and we frequently invite others in our community to speak up about what new tools we should build and how to improve our existing tools.
 
-numBlocks:
+blocksList:
   - block1:
     title: Rights Recorder
-    text: Keep getting denied, ghosted, or treated unfairly after you mention your housing voucher? Use our free tools to make a paper trail, flex your rights, and get support.
+    text: test test test
     image: image placeholder
+    button: yes
+    buttonText: Learn more
   - block2:
     title: Tech for housing advocates
     text: lorem ipsum dolor simit
     image: image placeholder
+    button: yes
+    buttonText: Learn more
   - block3:
     title: SOI Mapping Tool
     text: mab text text proton lorem ipsum
     image: image placeholder
+    button: yes
+    buttonText: Learn more
   
 
 eleventyNavigation:

@@ -4,6 +4,7 @@ bg: White
 bannerTitle: Unlock your next home.
 bannerText: The tools you need to stand up for yourself on your housing search - created with an led by tenants who've been there.
 
+# mab: looping option better below!! if works in CMS ... 
 firstBlock: text
 blockTitle1: For Voucher Holders
 blockText1: Keep getting denied, ghosted, or treated unfairly after you mention your housing voucher? Use our free tools to make a paper trail, flex your rights, and get support.
@@ -14,6 +15,26 @@ blockImage2: image image image image
 blockTitle3: Data for the movement
 blockText3: mab text text proton lorem ipsum
 blockImage3: image placeholder
+
+blocksList:
+  - block1:
+    title: For Voucher Holders
+    text: test test test
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+  - block2:
+    title: For Fair Housing Fighters
+    text: lorem ipsum dolor simit
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
+  - block3:
+    title: Data for the movement
+    text: mab text text proton lorem ipsum
+    image: image placeholder
+    button: yes
+    buttonText: Learn more
 
 latestActionText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
 latestActionVideo:

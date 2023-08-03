@@ -419,10 +419,6 @@ div.blocks-wrapper {
   margin-bottom: 60px;
 }
 
-div.blocks-wrapper:nth-of-type(even) div.block.image{
-  order: 1;
-}
-
 div.blocks-wrapper div.block {
   min-height: 200px;
   /*border: 1px dotted #444444;*/
@@ -432,6 +428,13 @@ div.blocks-wrapper div.block {
 
 div.block.image {
   background-color: var(--light-grey-text);
+}
+
+div.blocks-wrapper:nth-of-type(even) div.block.image{
+  order: 1;
+}
+div.blocks-wrapper:nth-of-type(even) div.block{
+  order: 2;
 }
 
 /* blocks with icon/infographics, blocks-icons template */
