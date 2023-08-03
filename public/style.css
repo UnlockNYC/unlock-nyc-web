@@ -350,6 +350,10 @@ p.grey {
   color: var(--light-grey-text);
 }
 
+p.black {
+  color: Black;
+}
+
 /* BUTTONS */
 button {
   height: 48px;
