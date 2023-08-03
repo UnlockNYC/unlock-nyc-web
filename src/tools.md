@@ -18,6 +18,15 @@ blockImage3: image placeholder
 
 howDesignText: We always make sure that New Yorkers who have been directly impacted by voucher discrimination are involved at every step of our design process. Half of our staff and 100% of our governing board have used vouchers in NYC, and we frequently invite others in our community to speak up about what new tools we should build and how to improve our existing tools.
 
+numBlocks:
+  - block1:
+    - title: TEST
+  - block2:
+    - title: TEST2
+  - block3:
+    - title: TEST3
+  
+
 eleventyNavigation:
   key: Tools
   title: Our Tools
