@@ -7,7 +7,7 @@ bg: ""
 {# page template, extends the base template #}
 
 <div class="top-banner">
-  <div class="content" style="padding-bottom: 0;">
+  <div class="content" style="padding-bottom: 0; padding-top: 0;">
   <div class="banner-wrapper split">
     <div class="banner-split-text">
       <p class="subtitle">
@@ -23,64 +23,21 @@ bg: ""
         Download Report
       </button>
     </div>
-    <div>
-      <div class="bg-yellow" style="margin-left: 10%; margin-top: 50px; height: 100%; width: 60%;">
-        
+    <div style="display:grid; grid-template-rows: 100px auto; width: 60%; margin-left: 20%;">
+      <div></div>
+      <div class="bg-yellow">
       </div>
     </div>
   </div>
 </div>
 </div>
 <div class="content" style="background-color: White;">
-  <div style="display: grid; grid-template-columns: 40% auto; grid-column-gap: 50px;">
-    <div style="padding-top: 30px;">
-      <h4>
-        People-Powered Data for Fair Housing
-      </h4>
-      <p>
-        We leverage user-generated data to illuminate source of income (SOI) discrimination trends, inform targeted fair housing investigations, and amplify campaigns that catalyze policy change and unlock doors for New Yorkers. 
-      </p>
-    </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
-      <div style="background-color: #EEBF3D; height: 40vh;">
-        REPORT
-      </div>
-      <div style="background-color: #94E0A4; height: 40vh;">
-        REPORT
-      </div>
-    </div>
+  <div class="padding: 50px;">
+    <h3>
+      Summary
+    </h3>
+    <p>
+      {{ reportSummary }}
+    </p>
   </div>
-  <div style="width: 100%; background-color: #B79DFF; height: 40vh; margin-top: 30px;">
-    mapping
-  </div>
-  <h3 class="center-title">
-    Our Data in Action
-  </h3>
-  <div style="height: 600px; border: 1px dotted #444; margin-bottom: 30px;">
-    build collection in here - is this related to press?
-  </div>
-  <div style="text-align: center; width: 100%;">
-    <button class="black">
-      Read more
-    </button>
-  </div>
-</div>
-<div class="content" style="padding-top: 3%; background-color: White;">
-  <h3 class="center-title">
-    FAQs
-  </h3>
-  <div style="border: 1px dotted Black; height: 600px;">
-    build FAQ collection here
-  </div>
-</div>
-<div class="banner-full bg-orange">
-  <h3>
-    {{ orangeBannerTitle }}
-  </h3>
-  <h2 style="max-width: 60%; margin: auto; margin-bottom: 30px;">
-    {{ orangeBannerText }}
-  </h2>
-  <button class="black">
-    Make a Request
-  </button>
 </div>
