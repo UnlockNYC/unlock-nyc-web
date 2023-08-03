@@ -39,13 +39,13 @@ authorTitle: Unlock NYC user and Scholar-in-Residence
 linksList:
   - block1:
     title: Apple for a voucher
-    text: test test test
+    text: If you need a voucher, make an appointment at your local Homebase location to see if you are eligible.
     image: image placeholder
     button: yes
     buttonText: Make appointment
   - block2:
     title: Get help with your housing search
-    text: lorem ipsum dolor simit
+    text: Neighbors Together hosts regular workshops at their office in Bed-Stuy where you can learn tricks for finding an apartment and search for housing.
     image: image placeholder
     button: yes
     buttonText: See location

@@ -291,6 +291,7 @@ p {
   margin: 0 0 1rem 0;
   line-height: 1.45 !important;
   font-size: 1rem;
+  color: var(--light-grey-text); /*MAB: revisit? everywhere?*/
 }
 h1,
 h2,
@@ -342,6 +343,10 @@ h5 {
 small,
 p.small {
   font-size: 0.85rem;
+  color: var(--light-grey-text);
+}
+
+p.grey {
   color: var(--light-grey-text);
 }
 

@@ -4,8 +4,8 @@ templateClass: tmpl-home
 ---
 <style>
 {% include "styles/home.css" %}
-  div.blocks-icons-wrapper links {
-    
+  div.blocks-icons-wrapper.links {
+    margin-bottom: 50px;
   }
 </style>
 {# page uses this template–it extends the base template #}
@@ -30,16 +30,16 @@ templateClass: tmpl-home
     Unlocking doors headline
   </h3>
   <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-column-gap: 20px; margin-bottom: 50px;">
-    <div style="background-color: #444; height: 300px;">
+    <div style="background-color: #444; height: 350px;">
       {{ keyImage1 }}
     </div>
-    <div style="background-color: #444; height: 300px;">
+    <div style="background-color: #444; height: 350px;">
       {{ keyImage2 }}
     </div>
-    <div style="background-color: #444; height: 300px;">
+    <div style="background-color: #444; height: 350px;">
       {{ keyImage3 }}
     </div>
-    <div style="background-color: #444; height: 300px;">
+    <div style="background-color: #444; height: 350px;">
       {{ keyImage4 }}
     </div>
   </div>
@@ -52,7 +52,9 @@ templateClass: tmpl-home
         </h1>
       </div>
       <div>
-        stat description 1
+        <h4 style="margin: 0;">
+          stat description 1
+        </h4>
       </div>
     </div>
     <div style="padding: 30px; display: grid; grid-template-columns: 50% auto; grid-column-gap: 15px;">
@@ -62,7 +64,9 @@ templateClass: tmpl-home
         </h1>
       </div>
       <div>
-        stat description 2
+        <h4 style="margin: 0;">
+          stat description 2
+        </h4>
       </div>
     </div>
   </div>
@@ -103,7 +107,7 @@ templateClass: tmpl-home
         {{ thing.text }}
       </p>
       {% if thing.button == 'yes' %}
-      <button class="yellow">
+      <button class="white">
         {{ thing.buttonText }}
       </button>
       {% endif %}
