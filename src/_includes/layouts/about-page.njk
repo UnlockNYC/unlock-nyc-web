@@ -2,14 +2,22 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
+<!-- MAB - put CSS HERE?! OR ELSE WHERE -->
+<style>
 
+  @media only screen and (max-width: 800px) {
+    div.content:nth-of-type(1) {
+      margin-top: 100px;
+    }
+  }
+</style>
 {# page template, extends the base template #}
 
 <div class="content">
   <h1 style="text-align: center; margin-top: 6%;">
     {{ bannerTitle }}
   </h1>
-  <div style="background-color: #444; width: 70%; margin: auto; height: 400px; margin-top: 50px;">
+  <div class="center-stage">
     placeholder
   </div>
   <div class="half-wide">
@@ -55,7 +63,7 @@ templateClass: tmpl-home
     </p>
     <!-- MAB: re-use as component!-->
   </div>
-  <div class="bg-yellow" style="display: grid; padding: 30px; grid-template-columns: 1fr 1fr 1fr; text-align: center; margin-top: 60px; margin-bottom: 60px;">
+  <div class="three-stats bg-yellow">
       <div style="border-right: 1px solid Black; padding: 20px;">
         <h1>
           50+

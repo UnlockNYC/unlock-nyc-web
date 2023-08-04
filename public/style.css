@@ -598,7 +598,7 @@ div.blocks-icons-wrapper div.block.image {
 
 div.question {
   border-top: 2px solid #D9D9D9; 
-  padding: 30px 0; 
+  padding: 30px 0 7px 0;
   width: 100%;
 }
 
@@ -612,6 +612,10 @@ img.faq-plus {
   height: 20px;
 }
 
+/* 3 stats */
+div.style="display: grid; padding: 30px; grid-template-columns: 1fr 1fr 1fr; text-align: center; margin-top: 60px; margin-bottom: 60px;
+
+/* mobile components */
 @media only screen and (max-width: 800px) {
   div.blocks-wrapper {
     grid-template-columns: 1fr;
