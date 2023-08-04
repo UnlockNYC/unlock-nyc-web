@@ -467,6 +467,13 @@ div.page-content-50-50 {
   grid-column-gap: 50px;
 }
 
+div.center-stage {
+  width: 65%;
+  margin: auto;
+  height: 450px;
+  background-color: #444444;
+}
+
 @media only screen and (min-width: 1600px) {
   div.content, div.banner-full {
     padding: 6% 18%;
@@ -487,6 +494,9 @@ div.page-content-50-50 {
   }
   div.page-content-50-50 {
     grid-template-columns: 1fr;
+  }
+  div.center-stage {
+    width: 100%;
   }
 }
 
