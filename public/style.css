@@ -361,6 +361,14 @@ p.subtitle {
   color: Black;
 }
 
+@media only screen and (max-width: 800px) {
+  h3 {
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+}
+
 /* BUTTONS */
 button {
   height: 48px;
@@ -452,10 +460,17 @@ div div.half-wide {
   margin: auto;
   text-align: center;
 }
+
+div.page-content-50-50 {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
 @media only screen and (min-width: 1600px) {
-  div.content {
+  div.content, div.banner-full {
     padding: 6% 18%;
-  }
+  }  
 }
 @media only screen and (max-width: 1100px) {
   div.banner-content {
@@ -464,11 +479,14 @@ div div.half-wide {
 }
 
 @media only screen and (max-width: 800px) {
-  div.content {
+  div.content, div.banner-full {
     padding: 20px;
   }
   div div.half-wide {
-    max-width: 70%;
+    max-width: 100%;
+  }
+  div.page-content-50-50 {
+    grid-template-columns: 1fr;
   }
 }
 

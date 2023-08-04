@@ -44,3 +44,27 @@ div.top-banner div.banner-content {
 div.top-banner h2 {
   font-size: 1.2rem;
 }
+
+/* LATEST ACTION SECTION */
+
+div.latest-action p {
+  max-width: 80%; 
+  margin: auto; 
+  margin-bottom: 2rem;
+}
+
+div.latest-action div.video-container {
+  width: 65%;
+  margin: auto;
+  height: 450px;
+  background-color: #444;
+}
+
+@media only screen and (max-width: 800px) {
+  div.latest-action p {
+    max-width: 90%;
+  }
+  div.latest-action div.video-container {
+    width: 100%;
+  }
+}
