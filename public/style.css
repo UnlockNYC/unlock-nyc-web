@@ -322,13 +322,13 @@ h2 {
 h3 {
   font-size: 2rem;
   font-weight: 500;
-  line-height: 3;
-  margin-bottom: 0;
+  line-height: 1.5;
 }
 h3.center-title {
   /*how it works, etc. */
   /*margin-top: 30px;*/
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-align: center;
 }
 h3.center-title.top {
@@ -636,6 +636,10 @@ div.three-stats div.stat:last-child {
   border-right: 0;
 }
 
+div.three-stats div.stat h1 {
+  font-size: 2.5rem;
+}
+
 div.three-stats div.stat p {
   max-width: 80%;
   margin: auto;
@@ -661,6 +665,20 @@ div.three-stats div.stat p {
     max-width: 80%;
   }
   div.three-stats {
-    grid-
+    grid-template-columns: 1fr;
+  }
+  div.three-stats div.stat {
+    border-right: 0;
+    border-bottom: 1px solid Black;
+    padding: 40px;
+  }
+  div.three-stats div.stat:first-child {
+    padding-top: 0;
+    padding-left: 40px;
+  }
+
+  div.three-stats div.stat:last-child {
+    padding-left: 0px;
+    border-bottom: 0;
   }
 }
