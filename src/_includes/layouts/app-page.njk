@@ -5,6 +5,34 @@ templateClass: tmpl-home
 
 {# page template, extends the base template #}
 
+<!-- MAB: include here? or separate page or fold into style.css? -->
+<style>
+  div.four-infos {
+    margin-top: 60px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column-gap: 30px;
+  }
+  div.infograph-container {
+    border: 1px dotted #444; 
+    height: 33vh;
+    text-align: center;
+    padding: 10px;
+  }
+  div.four-infos p {
+    font-weight: 500;
+    padding-top: 30px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    div.four-infos {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 30px;
+    }
+  }
+</style>
+
+
 <div class="top-banner bg-yellow">
   <div class="banner-wrapper split">
     <div class="banner-split-text">
@@ -14,14 +42,14 @@ templateClass: tmpl-home
       <h1>
         {{ bannerTitle }}
       </h1>
-      <h2 style="max-width: 90%;">
+      <h2>
         {{ bannerText }}
       </h2>
       <button class="black">
         Sign up
       </button>
     </div>
-    <div style="border: 1px dotted gray; padding: 20px;">
+    <div style="border: 1px dotted gray; min-height: 200px; padding: 20px;">
       image placeholder
     </div>
   </div>
@@ -37,17 +65,33 @@ templateClass: tmpl-home
   <h3 class="center-title">
     Where can you send a report?
   </h3>
-  <p style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto;">
+  <p class="black" style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto;">
     Unlock NYC partners with organizations around the city so that we can connect you to someone who can help. For instance, you can send your report to:
   </p>
-  <div style="margin-top: 60px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-column-gap: 30px;">
-    <div style="border: 1px dotted #444; height: 33vh;">
+  <div class="four-infos">
+    <div class="infograph-container">
+      <div class="bg-green" style="width: 100px; height: 100px; border-radius: 50%; margin: auto;"></div>
+      <p class="black">
+        The NYC Commission on Human Rights for a fair chance at applying for an apartment they were turned away from
+      </p>
     </div>
-   <div style="border: 1px dotted #444; height: 33vh;">
+    <div class="infograph-container">
+      <div class="bg-green" style="width: 100px; height: 100px; border-radius: 50%; margin: auto;"></div>
+      <p class="black">
+        The NYC Commission on Human Rights for a fair chance at applying for an apartment they were turned away from
+      </p>
     </div>
-    <div style="border: 1px dotted #444; height: 33vh;">
+    <div class="infograph-container">
+      <div class="bg-green" style="width: 100px; height: 100px; border-radius: 50%; margin: auto;"></div>
+      <p class="black">
+        The NYC Commission on Human Rights for a fair chance at applying for an apartment they were turned away from
+      </p>
     </div>
-    <div style="border: 1px dotted #444; height: 33vh;">
+    <div class="infograph-container">
+      <div class="bg-green" style="width: 100px; height: 100px; border-radius: 50%; margin: auto;"></div>
+      <p class="black">
+        The NYC Commission on Human Rights for a fair chance at applying for an apartment they were turned away from
+      </p>
     </div>
   </div>
   <!-- MAB: make this a partial? story bit -->

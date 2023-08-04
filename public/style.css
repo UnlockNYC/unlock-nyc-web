@@ -277,6 +277,9 @@ div#footer-right {
     grid-template-columns: 50% 50%;
     grid-row-gap: 25px;
   }
+  div#footer-columns h5 {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Page structure */
