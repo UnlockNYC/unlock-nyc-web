@@ -463,6 +463,15 @@ div div.half-wide {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  div.content {
+    padding: 20px;
+  }
+  div div.half-wide {
+    max-width: 70%;
+  }
+}
+
 /* COMPONENTS */
 
 /* 50-50 image/text, blocks50 template */
@@ -475,7 +484,6 @@ div.blocks-wrapper {
 }
 
 div.blocks-wrapper div.block {
-  min-height: 200px;
   /*border: 1px dotted #444444;*/
   padding: 5%;
   padding-top: 0;
@@ -483,6 +491,7 @@ div.blocks-wrapper div.block {
 
 div.block.image {
   background-color: var(--light-grey-text);
+  min-height: 200px; /*MAB: ONLY FOR MOCKUPS!!*/
 }
 
 /* default: text first, alternates each row */
@@ -506,6 +515,20 @@ div.blocks-wrapper.image-first:nth-of-type(even) div.block.image {
 }
 div.blocks-wrapper.image-first:nth-of-type(even) div.block {
   order: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  div.blocks-wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    margin-bottom: 20px;
+  }
+  div.blocks-wrapper div.block.image {
+    order: 1;
+  }
+  div.blocks-wrapper div.block {
+    order: 2;
+  }
 }
 
 /* blocks with icon/infographics, blocks-icons template */
