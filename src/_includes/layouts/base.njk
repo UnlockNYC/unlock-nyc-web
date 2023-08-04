@@ -37,10 +37,16 @@
       }
     });
     /* MOBILE MENU BEHAVIOR */
-    $("#nav-logo").click(function() {
+    $("#nav-logo").click(function(e) {
       if ($(window).width() <= 1100) {
-        $("nav ul#top").toggleClass("mobile-open");
-        $("nav#main").toggleClass("mobile-open");
+        if($(this).parent("nav").children("ul#top").hasClass("mobile-open") {
+           
+        }
+        else {
+          e.preventDefault();
+          $("nav ul#top").toggleClass("mobile-open");
+          $("nav#main").toggleClass("mobile-open");
+        }
       }
     });
     $("nav#main ul#top > li > a").click(function(e) {
@@ -48,7 +54,11 @@
         e.preventDefault();
         $(this).parent("li").children("ul.submenu").toggleClass("mobile-open");
       }
-    })
+    });
+    /*$("div#nav-logo a").click(function(e) {
+      if ($(window).width() <= 1100) {
+        e.preventDefault();
+    });*/
   
     
   </script>

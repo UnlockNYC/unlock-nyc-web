@@ -2,7 +2,18 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
+<!-- MAB - CSS WHERE?!-->
+<style>
+  div#how-design p {
+  }
+  
+  @media only screen and (max-width: 800px) {
+    div#how-design p {
+      text-align: left;
+    }
+  }
 
+</style>
 {# page template, extends the base template #}
 
 <div class="top-banner">
@@ -21,7 +32,7 @@ templateClass: tmpl-home
   {% include 'layouts/blocks50.njk' %}  
 </div>
 <div class="banner-full bg-cream">
-  <div class="half-wide">
+  <div id="how-design" class="half-wide">
     <h4>
       How We Design
     </h4>
