@@ -663,6 +663,8 @@ div.two-stats {
   text-align: center; 
   margin-top: 60px; 
   margin-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 div.two-stats div.stat {
@@ -671,6 +673,11 @@ div.two-stats div.stat {
   display: grid; 
   grid-template-columns: 50% auto; 
   grid-column-gap: 15px;
+  box-sizing: border-box;
+}
+
+div.two-stats div.stat:last-child {
+  border-right: 0;
 }
 
 /* mobile components */
@@ -713,6 +720,18 @@ div.two-stats div.stat {
 
   div.three-stats div.stat:last-child {
     padding-left: 0px;
+    border-bottom: 0;
+  }
+  div.two-stats {
+    grid-template-columns: 1fr;
+  }
+  div.two-stats div.stat {
+    border-right: 0;
+    border-bottom: 1px solid Black;
+    padding: 40px;
+    grid-template-columns: 1fr;
+  }
+  div.two-stats div.stat:last-child {
     border-bottom: 0;
   }
 }
