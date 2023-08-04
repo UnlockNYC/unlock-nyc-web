@@ -370,6 +370,10 @@ p.subtitle {
     margin-bottom: 20px;
     font-size: 1.4rem;
   }
+  h3.center-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   h3.center-title.top {
     margin-top: 30px;
     margin-bottom: 60px;
@@ -587,6 +591,24 @@ div.blocks-icons-wrapper div.block.image {
   height: 22vh;
 }
 
+/* FAQ blocks */
+
+div.question {
+  border-top: 2px solid #D9D9D9; 
+  padding: 30px 0; 
+  width: 100%;
+}
+
+div.question:last-child {
+  border-bottom: 2px solid #D9D9D9;
+}
+
+img.faq-plus {
+  float: right; 
+  width: 20px; 
+  height: 20px;
+}
+
 @media only screen and (max-width: 800px) {
   div.blocks-wrapper {
     grid-template-columns: 1fr;
@@ -601,5 +623,8 @@ div.blocks-icons-wrapper div.block.image {
   }
   div.blocks-icons-wrapper {
     grid-template-columns: 1fr;
+  }
+  div.faq-container h4 {
+    max-width: 80%;
   }
 }
