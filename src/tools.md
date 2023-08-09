@@ -43,7 +43,7 @@ blocksList:
 eleventyNavigation:
   key: Tools
   title: Our Tools
-  url: #
+  url: blank
   permalink: false
   order: 1
 ---

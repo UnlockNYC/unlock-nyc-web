@@ -38,6 +38,9 @@
         $(this).hide();
       }
     });
+    $("nav#main ul#top > li > a.dropdown").each(function() {
+      $(this).attr("href", "");
+    });
     /* MOBILE MENU BEHAVIOR */
     $("#nav-logo").click(function(e) {
       if ($(window).width() <= 1100) {
@@ -46,7 +49,7 @@
           $("nav#main").toggleClass("mobile-open");
       }
     });
-    $("nav#main ul#top > li > a").click(function(e) {
+    $("nav#main ul#top > li > a.dropdown").click(function(e) {
       if ($(window).width() <= 1100) {
         e.preventDefault();
         $(this).parent("li").children("ul.submenu").toggleClass("mobile-open");

@@ -119,6 +119,10 @@ nav ul#top > li a {
   padding-bottom: 9px;
 }
 
+nav ul#top > li a.dropdown:active {
+  pointer-events: none;
+}
+
 nav ul#top > li a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
@@ -216,6 +220,9 @@ nav ul#top > li.active-header > a {
     padding: 16px 0px;
     font-size: 1.4rem;
     border-top: 1px solid #c4c4c4;
+  }
+  nav ul#top > li a.dropdown:active{
+    pointer-events: auto;
   }
   nav ul#top > li.active-header > a {
     border-bottom: 0;
