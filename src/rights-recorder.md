@@ -49,7 +49,7 @@ orangeBannerTitle: Join a virtual workshop
 orangeBannerText: SOI Discrimination is Illegal in NY State – join the workshop to [value prop.] Most of our partners start out in the community via our welcoming, informative workshops.
 
 eleventyNavigation:
-  key: Rights Recorder
+  key: Rights Recorder App
   parent: Tools
   title: Rights Recorder App
   order: 1

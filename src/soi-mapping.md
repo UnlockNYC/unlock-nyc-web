@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: SOI Mapping
+  key: SOI Mapping Tool
   parent: Tools
-  title: SOI Mapping Tool, 2023
+  title: SOI Mapping Tool
   order: 3
 ---
