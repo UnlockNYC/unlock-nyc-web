@@ -249,12 +249,20 @@ nav ul#top > li.active-header > a {
   nav ul#top > li:nth-last-child(2) {
     border-bottom: 1px solid #c4c4c4;
   }
+  nav ul#top li.report-button {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-top: 0;
+    font-size: 24px;
+  }
   nav ul#top li.login-button {
     background-color: Black;
     color: White;
     margin-left: 0;
     text-align: center;
-    margin-top: 32px;
     padding: 16px;
     border-top: 0;
     margin-bottom: 32px;
