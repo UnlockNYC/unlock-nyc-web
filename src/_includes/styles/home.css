@@ -14,10 +14,10 @@ nav#main.mobile-open div#nav-logo a {
   color: Black;
 }
 
-nav ul#top li.login-button {
+/*nav ul#top li.login-button {
   background-color: White;
   color: Black;
-}
+}*/
 
 @media only screen and (min-width: 1100px) {
   

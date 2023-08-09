@@ -105,6 +105,15 @@ nav ul#top > li {
 }
 
 nav ul#top li.login-button {
+  background-color: White;
+  color: Black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+
+nav ul#top li.report-button {
   background-color: Black;
   color: White;
   padding: 8px 16px;
@@ -155,9 +164,9 @@ nav ul#top > li.active-header > a {
   margin-top: -10px;
 }
 
-/** MOBILE NAV **/
+/** RESPONSIVE NAV **/
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) { /* was 1400, 1 button*/
   nav#main {
     padding: 15px 3vw;
   }
@@ -170,7 +179,7 @@ nav ul#top > li.active-header > a {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) { /*was 1200px with 1 button*/
   nav div#nav-wrapper {
     grid-column-gap: 15px;
   }
@@ -180,7 +189,17 @@ nav ul#top > li.active-header > a {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) { /*ADDED for 2 buttons, wider menu*/
+  nav div#nav-wrapper {
+    grid-column-gap: 5px;
+  }
+  nav ul#top li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1150px) { /* was 1100 for 1 button*/
   /** MOBILE MENU BREAKPOINT! **/
   nav#main {
     background-color: transparent;
