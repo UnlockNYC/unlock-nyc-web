@@ -199,7 +199,13 @@ nav ul#top > li.active-header > a {
   }
 }
 
-@media only screen and (max-width: 1150px) { /* was 1100 for 1 button*/
+@media only screen and (max-width: 1150px) { /*ADDED for 2 buttons, wider menu*/
+  nav#main {
+    padding: 8px 14px;
+  }
+}
+
+@media only screen and (max-width: 1076px) { /* was 1100 for 1 button*/
   /** MOBILE MENU BREAKPOINT! **/
   nav#main {
     background-color: transparent;
@@ -214,7 +220,7 @@ nav ul#top > li.active-header > a {
     width: 100%;
     text-align: left;
     border: none;
-    padding: 20px 0;
+    padding: 0; /* was 20px 0, looks more like figma*/
     cursor: pointer;
   }
   nav ul#top {
