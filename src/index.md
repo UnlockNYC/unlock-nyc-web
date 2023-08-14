@@ -18,19 +18,19 @@ blockImage3: image placeholder
 
 blocksList:
   - block1:
-    title: For Voucher Holders
+    title: Rights Recorder
     text: test test test
     image: image placeholder
     button: yes
     buttonText: Learn more
   - block2:
-    title: For Fair Housing Fighters
+    title: Tech for housing advocates
     text: lorem ipsum dolor simit
     image: image placeholder
     button: yes
     buttonText: Learn more
   - block3:
-    title: Data for the movement
+    title: SOI Mapping Tool
     text: mab text text proton lorem ipsum
     image: image placeholder
     button: yes

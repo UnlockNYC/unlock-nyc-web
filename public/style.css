@@ -251,6 +251,7 @@ nav ul#top > li.active-header > a {
   }
   nav ul#top > li.active-header > a {
     border-bottom: 0;
+    padding-bottom: 0;
   }
   nav ul#top > li:nth-last-child(2) {
     border-bottom: 1px solid #c4c4c4;
@@ -581,14 +582,17 @@ div.center-stage {
 }
 
 @media only screen and (max-width: 800px) {
-  div.content, div.banner-full{
+  div.content {
     padding: 20px;
-    padding-bottom: 0px;
   }
-  div.banner-full.bg-orange {
+  div.banner-full { 
+    padding: 20px;
+  }
+  div.banner-full.bg-orange.last-banner {
     padding: 10% 18%;
     width: calc(100% + 40px);
     margin-left: -20px;
+    /*margin-top: -20px;*/
   }
   div div.half-wide {
     max-width: 100%;
