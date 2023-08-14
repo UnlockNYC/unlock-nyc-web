@@ -13,7 +13,6 @@ dev: MAB
 }
 
 :root {
-  font-size: 16px;
   --yellow: #eebf3d;
   --orange: #ffac71;
   --cream: #f1f1e3;
@@ -452,6 +451,7 @@ button {
   border-radius: 8px;
   border: 1px solid Black;
   font-family: var(--page-font);
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   margin-top: 5px;
@@ -581,8 +581,14 @@ div.center-stage {
 }
 
 @media only screen and (max-width: 800px) {
-  div.content, div.banner-full {
+  div.content, div.banner-full{
     padding: 20px;
+    padding-bottom: 0px;
+  }
+  div.banner-full.bg-orange {
+    padding: 10% 18%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
   div div.half-wide {
     max-width: 100%;
