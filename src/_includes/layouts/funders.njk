@@ -1,0 +1,160 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<!-- MAB include here?! or somewhere else?! -->
+<style>
+  div.content.first {
+    padding-top: 0;
+    margin-top: -10vh;
+  }
+  div.blocks-25-75 {
+    padding: 5% 8%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  div.blocks-25-75 div:nth-child(1) {
+    padding: 3%;
+  }
+  div.blocks-25-75 div:nth-child(2) {
+    border-left: 1px solid Black;
+    padding: 0 0 0 8%;
+  }
+  div.slides.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+</style>
+{# page template, extends the base template #}
+
+<div class="top-banner">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <p class="subtitle">
+        For Partners
+      </p>
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="content first">
+  <div class="banner-wrapper split" style="height: auto;">
+    <div class="bg-purple" style="border: 1px dotted gray; min-height: 200px; padding: 20px;">
+      image placeholder
+    </div>
+    <div class="banner-split-text">
+      <h4>
+        {{ bannerSubtitle }}
+      </h4>
+      <p>
+        {{ bannerText}}
+      </p>
+      <button class="black">
+        Request a demo
+      </button>
+      <button class="black">
+        Sign up
+      </button>
+    </div>
+  </div>
+  <!-- MAB do I need to move this to larger CSS, and make a component? -->
+  <div class="blocks-25-75">
+    <div style="border: 1px dotted gray">
+      image placeholder, logo
+    </div>
+    <div>
+      <h4 style="margin-bottom: 2rem">
+        {{ quote }}
+      </h4>
+      <p style="margin-bottom: 0;">
+        <strong>{{ quoteAuthor }},</strong>
+      </p>
+      <p>
+        {{ quoteTitle }}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="content bg-cream" style="padding-left: 20%; padding-right: 20%;">
+  <h3 style="text-align: center; margin-top: 0;">
+    Reporting gets you results
+  </h3>
+  <p class="black">
+    KEY IMPACT METRICS and WHY YOU SHOULD LISTEN TO US Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+  </p>
+  <div class="three-stats" style="margin-top: 0; margin-bottom: 0;">
+    <div class="stat">
+      <h1>
+        50+
+      </h1>
+      <p class="black">
+        Years navigating the housing voucher system
+      </p>
+    </div>
+    <div class="stat">
+      <h1>
+        70%
+      </h1>
+      <p class="black">
+        of our team identify as women of color
+      </p>
+    </div>
+    <div class="stat">
+      <h1>
+        5
+      </h1>
+      <p class="black">
+        NYC boroughs represented
+      </p>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <h3 class="center-title" style="margin-top: 0;">
+    More ways we support
+  </h3>
+  {% for thing in linksList %}
+  <div class="blocks-icons-wrapper links">
+    <div class="block image">
+      {{ thing.image }}
+    </div>
+    <div class="block">
+      <h4>
+      {{ thing.title }}
+      </h4>
+      <p>
+        {{ thing.text }}
+      </p>
+      {% if thing.button == 'yes' %}
+      <button class="white">
+        {{ thing.buttonText }}
+      </button>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  <!-- MAB, make slideshow!!-->
+  <div class="half-wide" style="margin-top: 80px;">
+    <h3>
+      Featured Partners
+    </h3>
+    <p>
+      Slides, carousel. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+    </p>
+    <div class="slides partners" style="margin-top: 60px;">
+      <div class="bg-cream" style="height: 150px;">
+        partner logo
+      </div>
+      <div class="bg-cream" style="height: 150px;">
+        partner logo
+      </div>
+      <div class="bg-cream" style="height: 150px;">
+        partner logo
+      </div>
+    </div>
+  </div>
+</div>
