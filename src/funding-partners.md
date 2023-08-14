@@ -21,6 +21,8 @@ blocksList:
     button: yes
     buttonText: Read more
     
+orangeBannerTitle: Have Questions? Get in Touch
+    
 eleventyNavigation:
   key: Funding Partners
   parent: Partners

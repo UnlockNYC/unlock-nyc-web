@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<!-- MAB include here?! or somewhere else?! -->
+<style>
+
+</style>
+{# page template, extends the base template #}
+
+<div class="top-banner" style="height: auto;">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+      <h2>
+        {{ bannerText }}
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="content">
+  {% include 'layouts/blocks50.njk' %}  
+  <div class="banner-full bg-orange last-banner">
+    <h3>
+      {{ orangeBannerTitle }}
+    </h3>
+    <h2>
+      {{ orangeBannerText }}
+    </h2>
+    <button class="black">
+      Share Feedback
+    </button>
+  </div>
+</div>
