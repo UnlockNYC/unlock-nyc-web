@@ -758,6 +758,7 @@ div.two-stats div.stat:last-child {
     order: 1;
   }
   div.blocks-wrapper div.block {
+    padding-left: 0;
     order: 2;
   }
   div.blocks-wrapper.image-first div.block.image {

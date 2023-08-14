@@ -26,6 +26,23 @@ templateClass: tmpl-home
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
   }
+  @media only screen and (max-width: 800px) {
+    div.banner-split-text {
+      text-align: left;
+      padding-left: 0;
+    }
+    div.blocks-25-75 {
+      grid-template-columns: 1fr;
+    }
+    div.blocks-25-75 div:nth-child(1) {
+      height: 150px;
+    }
+    div.blocks-25-75 div:nth-child(2) {
+      border-left: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
 </style>
 {# page template, extends the base template #}
 
@@ -70,7 +87,7 @@ templateClass: tmpl-home
       <h4 style="margin-bottom: 2rem">
         {{ quote }}
       </h4>
-      <p style="margin-bottom: 0;">
+      <p class="black" style="margin-bottom: 0;">
         <strong>{{ quoteAuthor }},</strong>
       </p>
       <p>
