@@ -23,7 +23,7 @@ templateClass: tmpl-home
   }
   div.slides.partners {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-column-gap: 20px;
   }
   @media only screen and (max-width: 800px) {
@@ -164,16 +164,22 @@ templateClass: tmpl-home
     <p>
       Slides, carousel. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
     </p>
-    <div class="slides partners" style="margin-top: 60px;">
-      <div class="bg-cream" style="height: 150px;">
-        partner logo
+  </div>
+  <div class="slides partners" style="margin-top: 60px;">
+      <div style="text-align: center;"> <!-- arrow -->
+        <svg style="width: 25px; margin-top: 50%;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
       </div>
       <div class="bg-cream" style="height: 150px;">
         partner logo
       </div>
       <div class="bg-cream" style="height: 150px;">
         partner logo
+      </div>
+      <div class="bg-cream" style="height: 150px;">
+        partner logo
+      </div>
+      <div style="text-align: center;"> <!-- arrow -->
+        <svg style="width: 25px; margin-top: 50%; transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
       </div>
     </div>
-  </div>
 </div>
