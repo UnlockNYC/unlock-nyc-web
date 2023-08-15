@@ -5,7 +5,7 @@ bg: ""
 ---
 <style>
 
-  div.card-wrapper {
+  div.report-card-wrapper {
     display: table-cell; 
     vertical-align: bottom; 
     padding-left: 10%;
@@ -23,6 +23,15 @@ bg: ""
   }
   div.report-card div:first-child {
     border-bottom: 1px solid Black;
+  }
+  span.tag {
+    /*background-color: Black;
+    color: White;*/
+    border: 1px solid Black;
+    border-radius: 1.25rem;
+    padding: 6px 8px;
+    margin-right: 6px;
+    font-size: 0.8rem;
   }
   div.top-banner {
     height: auto;
@@ -58,6 +67,10 @@ bg: ""
     div.top-banner {
       padding-bottom: 0;
     }
+    div.press-item {
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+    }
   }
 
 </style>
@@ -81,15 +94,22 @@ bg: ""
       </button>
     </div>
     <div style="display: table">
-      <div class="card-wrapper">
+      <div class="report-card-wrapper">
         <div class="bg-yellow report-card">   
           <div>
-            top
+            <span class="tag">Report</span>
+            <span class="tag">2022</span>
           </div>
           <div>
-            <h4>
+            <p class="black" style="text-decoration: underline;">
+              <strong>Featured Report</strong>
+            </p>
+            <h4 style="font-size: 1.5rem;">
               {{ reportTitle }}
             </h4>
+            <p class="black">
+              {{ reportSummaryTop }}
+            </p>
           </div>
         </div>
       </div>
