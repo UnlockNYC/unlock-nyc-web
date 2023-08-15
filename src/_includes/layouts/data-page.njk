@@ -54,11 +54,43 @@ templateClass: tmpl-home
       </p>
     </div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
-      <div class="bg-yellow" style="height: 40vh;">
-        REPORT
+      <div class="report-card-wrapper">
+        <div class="bg-yellow report-card">   
+          <div>
+            <span class="tag">Report</span>
+            <span class="tag">2022</span>
+          </div>
+          <div>
+            <p class="black" style="text-decoration: underline;">
+              <strong>Featured Report</strong>
+            </p>
+            <h4 style="font-size: 1.5rem;">
+              {{ reportTitle }}
+            </h4>
+            <p class="black">
+              {{ reportSummaryTop }}
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="bg-green" style="height: 40vh;">
-        REPORT
+      <div class="report-card-wrapper">
+        <div class="bg-green report-card">   
+          <div>
+            <span class="tag">Report</span>
+            <span class="tag">2022</span>
+          </div>
+          <div>
+            <p class="black" style="text-decoration: underline;">
+              <strong>Featured Report</strong>
+            </p>
+            <h4 style="font-size: 1.5rem;">
+              {{ reportTitle }}
+            </h4>
+            <p class="black">
+              {{ reportSummaryTop }}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
