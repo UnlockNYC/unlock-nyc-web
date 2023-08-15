@@ -5,9 +5,14 @@ bg: ""
 ---
 <style>
 
+  div.card-wrapper {
+    display: table-cell; 
+    vertical-align: bottom; 
+    padding-left: 10%;
+  }
   div.report-card {
-    height: 22vw; 
-    width: 20vw; 
+    height: 17.2vw; 
+    width: 15vw; 
     min-height: 350px; 
     min-width: 320px;
   }
@@ -16,6 +21,25 @@ bg: ""
   }
   div.banner-wrapper.split {
     height: auto;
+  }
+  div.banner-split-text {
+    padding-bottom: 20%;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    div.card-wrapper {
+      display: block;
+      padding-left: 0;
+    }
+    div.report-card {
+      margin: auto;
+    }
+    div.banner-split-text {
+      padding-bottom: 12%;
+    }
+    div.top-banner {
+      padding-bottom: 0;
+    }
   }
 
 </style>
@@ -39,7 +63,7 @@ bg: ""
       </button>
     </div>
     <div style="display: table">
-      <div style="display: table-cell; vertical-align: bottom; padding-left: 10%;">
+      <div class="card-wrapper">
         <div class="bg-yellow report-card">         
         </div>
       </div>
@@ -56,11 +80,23 @@ bg: ""
     <p>
       {{ reportSummary }}
     </p>
-    <p class="black" style="font-size: 1.15em; font-weight: 500;">
+    <p class="black" style="font-size: 1.15em; font-weight: 500; margin-top: 1rem;">
       Press Features
     </p>
-    <div style="border: 1px dotted Gray; height: 500px; width: 100%;">
-      build press collection here
+    <div class="press-collection">
+      <div class="press-item">
+        <div class="bg-cream">
+          logo
+        </div>
+        <div class="press-summary">
+          <p class="date">March 7, 2023</p>
+          <p>
+            <a class="press-link">With free digtial tols, Unlock NYC is expanding </a>
+          </p>
+        </div>
+      </div>
+        
     </div>
+
   </div>
 </div>
