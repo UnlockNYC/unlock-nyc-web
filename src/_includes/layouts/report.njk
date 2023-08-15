@@ -3,7 +3,22 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 bg: ""
 ---
+<style>
 
+  div.report-card {
+    height: 22vw; 
+    width: 20vw; 
+    min-height: 350px; 
+    min-width: 320px;
+  }
+  div.top-banner {
+    height: auto;
+  }
+  div.banner-wrapper.split {
+    height: auto;
+  }
+
+</style>
 {# page template, extends the base template #}
 
 <div class="top-banner">
@@ -23,11 +38,13 @@ bg: ""
         Download Report
       </button>
     </div>
-    <div style="display:grid; grid-template-rows: 100px auto; width: 60%; margin-left: 20%;">
-      <div></div>
-      <div class="bg-yellow" style="height: 350px; width: 320px;">
+    <div style="display: table">
+      <div style="display: table-cell; vertical-align: bottom; padding-left: 10%;">
+        <div class="bg-yellow report-card">         
+        </div>
       </div>
     </div>
+    
   </div>
 </div>
 </div>
