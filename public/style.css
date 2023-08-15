@@ -148,8 +148,13 @@ nav ul li ul.submenu {
   text-align: left;
 }
 
-nav ul.submenu > li {
+nav ul#top ul.submenu > li {
   display: block;
+}
+
+nav ul#top ul.submenu > li a:hover {
+  color: var(--light-grey-text);
+  border-color: transparent;
 }
 
 nav ul#top > li.active-header > a {
