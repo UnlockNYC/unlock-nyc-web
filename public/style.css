@@ -245,6 +245,7 @@ nav ul#top > li.active-header > a {
   nav#main.mobile-open {
     display: block;
     background-color: White;
+    box-shadow: none;
   }
   nav#main.mobile-open div#nav-logo a {
     pointer-events: none;
@@ -262,7 +263,7 @@ nav ul#top > li.active-header > a {
   }
   nav ul#top > li.active-header > a {
     border-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
   nav ul#top > li:nth-last-child(2) {
     border-bottom: 1px solid #c4c4c4;
@@ -586,11 +587,7 @@ div.center-stage {
 @media only screen and (min-width: 1650px) {
   div.content,
   div.banner-full {
-    padding: 6% 12%;
-  }
-  div.content {
-    max-width: 1650px;
-    margin: auto;
+    padding: 6% 18%;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -643,7 +640,7 @@ div.blocks-wrapper div.block {
 
 div.block.image {
   background-color: var(--light-grey-text);
-  min-height: 200px; /*MAB: ONLY FOR MOCKUPS!!*/
+  min-height: 250px; /*MAB: ONLY FOR MOCKUPS!!*/
 }
 
 /* default: text first, alternates each row */
