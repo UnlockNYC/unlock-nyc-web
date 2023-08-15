@@ -6,6 +6,7 @@ bannerTitle: Get Involved
 bannerText: At Unlock NYC, we know New York City’s housing crisis will not be solved through a single intervention; it will take a mass, people-powered movement to win transformative change.
 
 blocksFirst: image
+blocksButtonColor: black
 
 blocksList:
   - block1:
