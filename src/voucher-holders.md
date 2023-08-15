@@ -11,19 +11,22 @@ blocksList:
     text: test test test
     image: image placeholder
     button: yes
-    buttonText: Attend a workshop
+    buttonList:
+      - buttonText: Attend a workshop
   - block2:
     title: Flex your rights
     text: lorem ipsum dolor simit
     image: image placeholder
     button: yes
-    buttonText: Get started
+    buttonList:
+      - buttonText: Get started
   - block3:
     title: Unlock housing opportunitie
     text: mab text text proton lorem ipsum
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
     
 blocksFirst: image
 

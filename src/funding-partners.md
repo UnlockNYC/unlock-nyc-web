@@ -6,6 +6,7 @@ bannerTitle: Funding Partners
 bannerText: If you have clients, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur.
 
 blocksFirst: image
+blocksButtonColor: black
 
 blocksList:
   - block1:
@@ -15,6 +16,7 @@ blocksList:
     button: yes
     buttonList:
       - buttonText: Read more
+      - buttonText: See the Data
   - block2:
     title: Wins we bring to partners
     text: lorem ipsum dolor simit
@@ -22,6 +24,7 @@ blocksList:
     button: yes
     buttonList:
       - buttonText: Read more
+      - buttonText: See the Data
     
 orangeBannerTitle: Have Questions? Get in Touch
     
