@@ -48,7 +48,7 @@ dev: MAB
 
 nav#main {
   width: 100%;
-  background-color: transparent; 
+  background-color: transparent;
   padding: 15px 6%;
   box-sizing: border-box;
   height: 80px;
@@ -135,6 +135,13 @@ nav ul#top > li a.dropdown:active {
 nav ul#top > li a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
+}
+
+nav ul#top > li a.dropdown svg {
+  width: 30px;
+  float: right;
+  margin-right: 10px;
+  display: none;
 }
 
 nav ul li ul.submenu {
@@ -250,6 +257,9 @@ nav ul#top > li.active-header > a {
   nav#main.mobile-open div#nav-logo a {
     pointer-events: none;
   }
+  nav#main.mobile-open div#nav-logo svg {
+    color: Black;
+  }
   nav ul#top > li {
     width: 100%;
     display: block;
@@ -260,6 +270,10 @@ nav ul#top > li.active-header > a {
   }
   nav ul#top > li a.dropdown:active {
     pointer-events: auto;
+  }
+
+  nav ul#top > li a.dropdown svg {
+    display: block;
   }
   nav ul#top > li.active-header > a {
     border-bottom: 0;

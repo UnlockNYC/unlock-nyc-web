@@ -53,6 +53,16 @@
       if ($(window).width() <= 1100) {
         e.preventDefault();
         $(this).parent("li").children("ul.submenu").toggleClass("mobile-open");
+        if ($(this).children("svg").hasClass("plus")) {
+          $(this).children("svg").removeClass("plus");
+          $(this).children("svg").addClass("minus");
+          $(this).children("svg").html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>');
+        } 
+        else {
+          $(this).children("svg").removeClass("minus");
+          $(this).children("svg").addClass("plus");
+          $(this).children("svg").html('<svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>');
+        }
       }
     });
 
