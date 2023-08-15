@@ -15,6 +15,14 @@ bg: ""
     width: 15vw; 
     min-height: 350px; 
     min-width: 320px;
+    display: grid;
+    grid-template-rows: 60px auto;
+  }
+  div.report-card div {
+    padding: 20px;
+  }
+  div.report-card div:first-child {
+    border-bottom: 1px solid Black;
   }
   div.top-banner {
     height: auto;
@@ -24,6 +32,16 @@ bg: ""
   }
   div.banner-split-text {
     padding-bottom: 20%;
+  }
+  div.press-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+  }
+  a.press-link {
+    color: Black;
+    text-decoration: underline;
   }
   
   @media only screen and (max-width: 800px) {
@@ -64,39 +82,56 @@ bg: ""
     </div>
     <div style="display: table">
       <div class="card-wrapper">
-        <div class="bg-yellow report-card">         
+        <div class="bg-yellow report-card">   
+          <div>
+            top
+          </div>
+          <div>
+            <h4>
+              {{ reportTitle }}
+            </h4>
+          </div>
         </div>
       </div>
     </div>
-    
   </div>
 </div>
 </div>
-<div class="content" style="background-color: White; padding-top: 30px;">
+<div class="content" style="background-color: White; padding-top: 4%;">
   <div style="padding: 0 5%;">
     <h4>
       Summary
     </h4>
-    <p>
+    <p style="margin-bottom: 2rem;">
       {{ reportSummary }}
     </p>
-    <p class="black" style="font-size: 1.15em; font-weight: 500; margin-top: 1rem;">
+    <p class="black" style="font-size: 1.15em; font-weight: 500; margin-bottom: 2rem;">
       Press Features
     </p>
+    <!-- MAB make repeatable!! component, CSS, etc.-->
     <div class="press-collection">
       <div class="press-item">
-        <div class="bg-cream">
+        <div class="bg-cream" style="height: 150px; padding: 20px;">
           logo
         </div>
         <div class="press-summary">
           <p class="date">March 7, 2023</p>
-          <p>
-            <a class="press-link">With free digtial tols, Unlock NYC is expanding </a>
-          </p>
+          <h4>
+            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
+          </h4>
         </div>
       </div>
-        
+      <div class="press-item">
+        <div class="bg-cream" style="height: 150px; padding: 20px;">
+          logo
+        </div>
+        <div class="press-summary">
+          <p class="date">March 7, 2023</p>
+          <h4>
+            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
+          </h4>
+        </div>
+      </div> 
     </div>
-
   </div>
 </div>
