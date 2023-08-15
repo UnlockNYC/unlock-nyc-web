@@ -16,6 +16,8 @@ blockTitle3: Data for the movement
 blockText3: mab text text proton lorem ipsum
 blockImage3: image placeholder
 
+blocksButtonColor: yellow
+
 blocksList:
   - block1:
     title: Rights Recorder

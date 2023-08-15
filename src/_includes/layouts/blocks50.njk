@@ -9,7 +9,8 @@
     </p>
     {% if thing.button == 'yes' %}
     {% for button in thing.buttonList %}
-      <button {% if blocksButtonColor == 'black'%} class="black" {% else %} class="yellow" {% endif %}>
+      <!--<button {% if blocksButtonColor == 'black'%} class="black" {% else %} class="yellow" {% endif %}>-->
+      <button {% if blocksButtonColor == 'yellow'%} class="yellow" {% else %} class="black" {% endif %}>
         {{ button.buttonText }}
       </button>
     {% endfor %}
