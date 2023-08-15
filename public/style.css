@@ -48,7 +48,7 @@ dev: MAB
 
 nav#main {
   width: 100%;
-  background-color: transparent; /*Red*/
+  background-color: transparent; 
   padding: 15px 6%;
   box-sizing: border-box;
   height: 80px;
@@ -244,7 +244,7 @@ nav ul#top > li.active-header > a {
   nav ul.submenu.mobile-open,
   nav#main.mobile-open {
     display: block;
-    background-color: White;
+    background-color: var(--cream);
     box-shadow: none;
   }
   nav#main.mobile-open div#nav-logo a {
@@ -278,8 +278,6 @@ nav ul#top > li.active-header > a {
     font-size: 24px;
   }
   nav ul#top li.login-button {
-    background-color: Black;
-    color: White;
     margin-left: 0;
     text-align: center;
     padding: 16px;
