@@ -577,15 +577,20 @@ div.page-content-50-50 {
 
 div.center-stage {
   width: 65%;
+  min-width: 600px;
   margin: auto;
   height: 450px;
   background-color: #444444;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1650px) {
   div.content,
   div.banner-full {
-    padding: 6% 18%;
+    padding: 6% 12%;
+  }
+  div.content {
+    max-width: 1650px;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -615,6 +620,7 @@ div.center-stage {
   }
   div.center-stage {
     width: 100%;
+    min-width: unset;
   }
 }
 
