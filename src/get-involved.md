@@ -13,25 +13,29 @@ blocksList:
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
     image: image placeholder
     button: yes
-    buttonText: Sign Up
+    buttonList:
+      - buttonText: Sign up
   - block2:
     title: Follow us on Social
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
     image: image placeholder
     button: yes
-    buttonText: Social
+    buttonList:
+      - buttonText: Social
   - block3:
     title: Email your council member
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
     image: image placeholder
     button: yes
-    buttonText: Find your district
+    buttonList:
+      - buttonText: Find your district
   - block4:
     title: Volunteer or donate
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
     image: image placeholder
     button: yes
-    buttonText: Sign up for a workshop
+    buttonList:
+      - buttonText: Sign up for a workshop
     
 orangeBannerTitle: Have feedback fro the team? We'd love to hear from you.
 

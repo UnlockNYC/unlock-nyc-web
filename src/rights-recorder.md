@@ -24,25 +24,29 @@ iconBlocksList:
     text: test test test
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
   - block2:
     title: Collect evidence with our Rights Recorder app
     text: lorem ipsum dolor simit
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
   - block3:
     title: Build your report
     text: mab text text proton lorem ipsum
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
   - block4:
     title: Take action by sharing your report
     text: mab text text proton lorem ipsum
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
     
 
 orangeBannerTitle: Join a virtual workshop

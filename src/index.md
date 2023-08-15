@@ -22,19 +22,22 @@ blocksList:
     text: test test test
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
   - block2:
     title: Tech for housing advocates
     text: lorem ipsum dolor simit
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
   - block3:
     title: SOI Mapping Tool
     text: mab text text proton lorem ipsum
     image: image placeholder
     button: yes
-    buttonText: Learn more
+    buttonList:
+      - buttonText: Learn more
 
 latestActionText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
 latestActionVideo:

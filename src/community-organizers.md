@@ -7,6 +7,7 @@ bannerSubtitle: Secured funding for CCHR
 bannerText: If you have clients, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur.
 
 blocksFirst: image 
+blocksButtonColor: black
 
 blocksList:
   - block1:
@@ -14,19 +15,24 @@ blocksList:
     text: test test test
     image: image placeholder
     button: yes
-    buttonText: Read our press
+    buttonList:
+      - buttonText: Read our press
+      - buttonText: See the Data
   - block2:
     title: Hold discriminators accountable
     text: lorem ipsum dolor simit
     image: image placeholder
     button: yes
-    buttonText: Read article
+    buttonList:
+      - buttonText: Read article
+      - buttonText: Read article
   - block3:
     title: Participatory Research
     text: mab text text proton lorem ipsum
     image: image placeholder
     button: yes
-    buttonText: Read more
+    buttonList:
+      - buttonText: Read more
     
 orangeBannerTitle: Interested in working with us?
 

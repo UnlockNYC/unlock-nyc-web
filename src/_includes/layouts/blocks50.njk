@@ -8,9 +8,11 @@
       {{ thing.text }}
     </p>
     {% if thing.button == 'yes' %}
-    <button class="yellow">
-      {{ thing.buttonText }}
-    </button>
+    {% for button in thing.buttonList %}
+      <button {% if blocksButtonColor == 'black'%} class="black" {% else %} class="yellow" {% endif %}>
+        {{ button.buttonText }}
+      </button>
+    {% endfor %}
     {% endif %}
   </div>
   <div class="block image">

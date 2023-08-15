@@ -13,13 +13,15 @@ blocksList:
     text: test test test
     image: image placeholder
     button: yes
-    buttonText: Read more
+    buttonList:
+      - buttonText: Read more
   - block2:
     title: Wins we bring to partners
     text: lorem ipsum dolor simit
     image: image placeholder
     button: yes
-    buttonText: Read more
+    buttonList:
+      - buttonText: Read more
     
 orangeBannerTitle: Have Questions? Get in Touch
     
