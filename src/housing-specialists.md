@@ -15,13 +15,16 @@ linksList:
     title: Informational Booklets
     text: Request 25 free copies of our Record it. Report it! informational booklet by emailing ashley@weunlock.nyc* Available in English and Spanish
     button: yes
-    buttonText: See digital resource list
+    buttonList:
+      - buttonText: See digital resource list
   - block2:
     title: Virtual Workshops
     text: Workshops hosted on Zoom text text etc. etc. etc. 
     image: image placeholder
     button: yes
-    buttonText: For Housing Specialists
+    buttonList:
+      - buttonText: For Tenants
+      - buttonText: For Housing Specialists
   - block3:
     title: Tabling at your event or Resource Fair
     text: We can table at your event or resource fair pending availability – we’re a small team!
