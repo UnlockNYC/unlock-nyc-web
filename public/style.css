@@ -139,6 +139,7 @@ nav ul#top > li a:hover {
 
 nav ul li ul.submenu {
   background-color: White;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
   position: absolute;
   display: none;
   margin-top: 20px;
