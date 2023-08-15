@@ -2,9 +2,8 @@
 layout: layouts/report.njk
 bg: "#F1F1E3"
 
-reportTitle: SOI Report 2022
-reportSummaryTop: A participatory action research report documenting how SOI discrimination and voucher policies perpetuate housing inequality.
-reportSummary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+reportTitle: "An Illusion of Choice"
+reportSummaryTop: How Source of Income Discrimination and Voucher Policies Perpetuate Housing Inequality. The data in this report was crowdsourced directly from New Yorkers experiencing and documenting discrimination in real-time. Given the sensitive nature of the data, we do not plan on releasing the row-by-row data publicly.
 
 reportLink: 
 ---
