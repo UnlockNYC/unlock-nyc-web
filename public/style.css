@@ -757,7 +757,7 @@ div.two-stats div.stat:last-child {
 /* report cards */
 
 div.report-card {
-  height: 17.2vw;
+  height: 22vw;
   min-height: 350px;
   display: grid;
   grid-template-rows: 60px auto;
