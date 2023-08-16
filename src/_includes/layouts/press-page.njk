@@ -2,7 +2,23 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
-
+<style>
+  #press-release-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+  div.press-release div.tags {
+    margin-bottom: 1.2rem; 
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #press-release-collection {
+      
+    }
+  }
+</style>
 {# page template, extends the base template #}
 
 <div class="top-banner bg-cream">
@@ -27,19 +43,88 @@ templateClass: tmpl-home
   <button class="white" style="float: right; margin-top: -70px;">
     View All
   </button>
-  <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 50vh;">
-    build press collection here
-  </div>
+  <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
+  <div class="press-collection">
+      <div class="press-item">
+        <div class="bg-cream" style="height: 150px; padding: 20px;">
+          logo
+        </div>
+        <div class="press-summary">
+          <p class="date">March 7, 2023</p>
+          <h4>
+            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
+          </h4>
+        </div>
+      </div>
+      <div class="press-item">
+        <div class="bg-cream" style="height: 150px; padding: 20px;">
+          logo
+        </div>
+        <div class="press-summary">
+          <p class="date">March 7, 2023</p>
+          <h4>
+            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
+          </h4>
+        </div>
+      </div>
+      <div class="press-item">
+        <div class="bg-cream" style="height: 150px; padding: 20px;">
+          logo
+        </div>
+        <div class="press-summary">
+          <p class="date">March 7, 2023</p>
+          <h4>
+            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
+          </h4>
+        </div>
+      </div>
+    </div>
 </div>
-<div class="content">
+<div class="content" style="padding-top: 0;">
   <h3>
     Press Releases
   </h3>
   <button class="white" style="float: right; margin-top: -70px;">
     View All
   </button>
-  <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 25vh;">
-    build press release collection here
+  <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
+  <div id="press-release-collection">
+    <div class="press-release">
+      <div class="tags">
+        <span class="tag">Data & Research</span>
+        <span class="tag">Tools</span>
+        <span class="tag">2023</span>
+      </div>
+      <div class="press-release-info">
+        <h4>
+          <a>In the face of homelessness crisis, advocates release citywide mapping tool to combat source of income discrimination</a>
+        </h4>
+        <p>
+          Unlock NYC and Neighbors Together launch an interactive tool to map source of income discrimination in New York City.
+        </p>
+        <button class="black">
+          Download PDF
+        </button>
+      </div>
+    </div>
+    <div class="press-release">
+      <div class="tags">
+        <span class="tag">Data & Research</span>
+        <span class="tag">Tools</span>
+        <span class="tag">2023</span>
+      </div>
+      <div class="press-release-info">
+        <h4>
+          <a>In the face of homelessness crisis, advocates release citywide mapping tool to combat source of income discrimination</a>
+        </h4>
+        <p>
+          Unlock NYC and Neighbors Together launch an interactive tool to map source of income discrimination in New York City.
+        </p>
+        <button class="black">
+          Download PDF
+        </button>
+      </div>
+    </div>
   </div>
   <h3 class="center-title">
     Press Kits
