@@ -470,6 +470,10 @@ div.content a {
     margin-top: 30px;
     margin-bottom: 60px;
   }
+  /*div.grid {
+    grid-template-columns: 1fr;
+    grid-row gap: 1.25rem;
+  }*/ /* MAB could find a way to make this more global ... */
 }
 
 /* BUTTONS */
