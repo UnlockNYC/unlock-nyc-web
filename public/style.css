@@ -708,7 +708,7 @@ div.blocks-icons-wrapper div.block.image {
 
 div.question {
   border-top: 2px solid #d9d9d9;
-  padding: 30px 0 7px 0;
+  padding: 30px 0 20px 0;
   width: 100%;
 }
 
@@ -720,6 +720,10 @@ img.faq-plus {
   float: right;
   width: 20px;
   height: 20px;
+}
+div.faq-answer {
+  display: none;
+  column-count: 2;
 }
 
 /* 3 stats */
