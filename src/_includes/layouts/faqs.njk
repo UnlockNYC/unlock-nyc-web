@@ -6,7 +6,7 @@
   </h3>
   <div class="faq-container">
     <div class="question"> 
-      <img class="faq-plus" src="https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/plus.svg?v=1691098955964">
+      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
       <h4>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?
       </h4>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="question"> 
-      <img class="faq-plus" src="https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/plus.svg?v=1691098955964">
+      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
       <h4>
         Lorem ipsum dolor sit amet, consectetur adipiscing?
       </h4>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="question"> 
-      <img class="faq-plus" src="https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/plus.svg?v=1691098955964">
+      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
       <h4>
         Sed ut perspiciatis unde omnis iste natus error sit?
       </h4>
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="question"> 
-      <img class="faq-plus" src="https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/plus.svg?v=1691098955964">
+      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
       <h4>
         Voluptatem accusantium doloremque laudantium, totam rem aperiam?
       </h4>
@@ -47,8 +47,18 @@
 <!-- MAB - where to put this?! -->
 <script>
   $(document).ready(function() {
-    $("div#faq-container div.question").click(function() {
-      $(this).children("div.fa")
-    })
+    $("div.faq-container div.question").click(function() {
+      $(this).children("div.faq-answer").toggle();
+      if ($(this).children("svg").hasClass("plus")) {
+        $(this).children("svg").removeClass("plus");
+        $(this).children("svg").addClass("minus");
+        $(this).children("svg").html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>');
+      } 
+      else {
+        $(this).children("svg").removeClass("minus");
+        $(this).children("svg").addClass("plus");
+        $(this).children("svg").html('<svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>');
+      }
+    });
   });
 </script>

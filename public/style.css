@@ -710,13 +710,14 @@ div.question {
   border-top: 2px solid #d9d9d9;
   padding: 30px 0 20px 0;
   width: 100%;
+  cursor: pointer;
 }
 
 div.question:last-child {
   border-bottom: 2px solid #d9d9d9;
 }
 
-img.faq-plus {
+div.question svg {
   float: right;
   width: 20px;
   height: 20px;
@@ -724,6 +725,7 @@ img.faq-plus {
 div.faq-answer {
   display: none;
   column-count: 2;
+  margin-top: 1.25rem;
 }
 
 /* 3 stats */
@@ -871,6 +873,9 @@ div.report-card div:first-child {
   }
   div.faq-container h4 {
     max-width: 80%;
+  }
+  div.faq-answer {
+    column-count: 1;
   }
   div.three-stats {
     grid-template-columns: 1fr;
