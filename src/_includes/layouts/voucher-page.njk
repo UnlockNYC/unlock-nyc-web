@@ -42,7 +42,7 @@ templateClass: tmpl-home
       <h2>
         {{ bannerText }}
       </h2>
-      <button class="White">
+      <button class="yellow">
         Get Started
       </button>
     </div>
@@ -120,24 +120,24 @@ templateClass: tmpl-home
     </p>
     <!-- MAB, maybe make this a partial? Also used in housing specialist page-->
     {% for thing in linksList %}
-  <div class="blocks-icons-wrapper links">
-    <div class="block image">
-      {{ thing.image }}
+    <div class="blocks-icons-wrapper links">
+      <div class="block image">
+        {{ thing.image }}
+      </div>
+      <div class="block">
+        <h4>
+        {{ thing.title }}
+        </h4>
+        <p>
+          {{ thing.text }}
+        </p>
+        {% if thing.button == 'yes' %}
+        <button>
+          {{ thing.buttonText }}
+        </button>
+        {% endif %}
+      </div>
     </div>
-    <div class="block">
-      <h4>
-      {{ thing.title }}
-      </h4>
-      <p>
-        {{ thing.text }}
-      </p>
-      {% if thing.button == 'yes' %}
-      <button class="white">
-        {{ thing.buttonText }}
-      </button>
-      {% endif %}
-    </div>
-  </div>
   {% endfor %}
     </div>
   </div>

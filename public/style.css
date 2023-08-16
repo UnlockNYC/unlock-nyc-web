@@ -481,6 +481,7 @@ button {
   cursor: pointer;
   margin-top: 5px;
   margin-right: 8px;
+  background-color: transparent;
 }
 
 button.yellow {
