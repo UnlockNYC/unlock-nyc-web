@@ -452,6 +452,10 @@ p.subtitle {
   color: Black;
 }
 
+div.content a {
+  text-decoration: underline
+}
+
 @media only screen and (max-width: 800px) {
   h3 {
     line-height: 1.2;

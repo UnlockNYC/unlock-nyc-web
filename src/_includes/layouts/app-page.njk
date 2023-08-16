@@ -7,6 +7,18 @@ templateClass: tmpl-home
 
 <!-- MAB: include here? or separate page or fold into style.css? -->
 <style>
+  div.article-collection {
+    margin-top: 60px;
+  }
+  div.article-item {
+    margin-bottom: 60px;
+  }
+  div.article-summary {
+    padding-top: 1.25rem;
+  }
+  div.article-summary h4 {
+    font-size: 1.5rem;
+  }
   div.four-infos {
     margin-top: 60px; 
     display: grid; 
@@ -136,36 +148,32 @@ templateClass: tmpl-home
     </button>
   </div>
   <!-- MAB: TURN INTO COLLECTION COMPONENT!! -->
-  <div class="page-content-50-50" style="margin-bottom: 60px; margin-top: 60px;">
-    <div style="background-color: #555; height: 300px;">
-       img placeholder 
+  <div class="article-collection">
+    <div class="page-content-50-50 article-item">
+      <div style="background-color: #555; height: 300px;">
+         img placeholder 
+      </div>
+      <div class="article-summary">
+        <h4>
+          <a>Help improve the voucher system for all New Yorkers</a>
+        </h4>
+        <p>
+          Whatever path you choose, you’ll also be helping improve the voucher system for all New Yorkers. We add your report anonymously to our Discrimination Mapping Tool so researchers and policymakers can better understand the issue and create positive change.
+        </p>
+      </div>
     </div>
-    <div>
-      <h4 style="margin-top: 20px;">
-        Help improve the voucher system for all New Yorkers
-      </h4>
-      <p>
-        Whatever path you choose, you’ll also be helping improve the voucher system for all New Yorkers. We add your report anonymously to our Discrimination Mapping Tool so researchers and policymakers can better understand the issue and create positive change.
-      </p>
-      <button class="black">
-        Learn more
-      </button>
-    </div>
-  </div>
-  <div class="page-content-50-50" style="margin-bottom: 60px;">
-    <div style="background-color: #555; height: 300px;">
-       img placeholder 
-    </div>
-    <div>
-      <h4 style="margin-top: 20px;">
-        Help improve the voucher system for all New Yorkers
-      </h4>
-      <p>
-        Whatever path you choose, you’ll also be helping improve the voucher system for all New Yorkers. We add your report anonymously to our Discrimination Mapping Tool so researchers and policymakers can better understand the issue and create positive change.
-      </p>
-      <button class="black">
-        Learn more
-      </button>
+    <div class="page-content-50-50 article-item" style="margin-bottom: 60px;">
+      <div style="background-color: #555; height: 300px;">
+         img placeholder 
+      </div>
+      <div class="article-summary">
+        <h4>
+          <a>Help improve the voucher system for all New Yorkers</a>
+        </h4>
+        <p>
+          Whatever path you choose, you’ll also be helping improve the voucher system for all New Yorkers. We add your report anonymously to our Discrimination Mapping Tool so researchers and policymakers can better understand the issue and create positive change.
+        </p>
+      </div>
     </div>
   </div>
 </div>
