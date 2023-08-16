@@ -617,9 +617,6 @@ div.center-stage {
   }
   div.banner-full.bg-orange.last-banner {
     padding: 10% 18% 15% 18%;
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-bottom: -20px;
   }
   div div.half-wide {
     max-width: 100%;
