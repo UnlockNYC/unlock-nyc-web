@@ -454,6 +454,7 @@ p.subtitle {
 
 div.content a {
   text-decoration: underline;
+  color: Black;
 }
 
 @media only screen and (max-width: 800px) {
@@ -848,6 +849,19 @@ div.report-card div:first-child {
   border-bottom: 1px solid Black;
 }
 
+/* funder grid */
+
+div.funder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin-bottom: 60px;
+}
+div.funder-grid div {
+  height: 100px;
+}
+
 /* mobile components */
 @media only screen and (max-width: 800px) {
   div.blocks-wrapper {
@@ -919,5 +933,8 @@ div.report-card div:first-child {
   }
   div.report-card {
     margin: auto;
+  }
+  div.funder-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

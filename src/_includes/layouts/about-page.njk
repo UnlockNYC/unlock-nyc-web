@@ -17,16 +17,6 @@ templateClass: tmpl-home
     grid-column-gap: 30px; 
     margin-bottom: 30px;
   }
-  div.funder-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1.25rem;
-    grid-row-gap: 1.25rem;
-    margin-bottom: 60px;
-  }
-  div.funder-grid div {
-    height: 150px;
-  }
 
   @media only screen and (max-width: 800px) {
     div.content:nth-of-type(1) {
@@ -42,9 +32,6 @@ templateClass: tmpl-home
     div.bio:last-child {
       border-bottom: 2px solid #D9D9D9;
       padding-bottom: 30px;
-    }
-    div.funder-grid {
-      grid-template-columns: 1fr 1fr;
     }
   }
 </style>
@@ -361,7 +348,13 @@ templateClass: tmpl-home
     <h4>
       Special thanks
     </h4>
+    <p style="max-width: 80%; margin-top: 2rem; margin-bottom: 2rem;">
+      As a group of lifelong learners, we’re grateful for the community of collaborators who have built up our team’s capacity to design a sustainable organization and workplace where we can thrive creatively, personally, and professionally.
+    </p>
     <div class="funder-grid">
+      <div class="bg-cream">
+        funder
+      </div>
       <div class="bg-cream">
         funder
       </div>
@@ -379,6 +372,6 @@ templateClass: tmpl-home
       Funding Partners
     </h4>
     <p>
-      For more information about our supporters, head to our Funders page.
+      For more information about our supporters, head to our <a href="/funding-partners">Funders page</a>.
     </p>
   </div>
