@@ -1,6 +1,7 @@
 ---
 bg: White
 layout: layouts/housing-specialists.njk
+_template: housingspecialists
 
 bannerTitle: Housing Specialists
 bannerSubtitle: Help your clients report discrimination
@@ -19,7 +20,7 @@ linksList:
       - buttonText: See digital resource list
   - block2:
     title: Virtual Workshops
-    text: Workshops hosted on Zoom text text etc. etc. etc. 
+    text: Workshops hosted on Zoom text text etc. etc. etc.
     image: image placeholder
     button: yes
     buttonList:
@@ -32,7 +33,7 @@ linksList:
     button: no
   - block4:
     title: Private training & workshops
-    text: Custom staff text etc. etc. etc. 
+    text: Custom staff text etc. etc. etc.
     image: image placeholder
     button: no
 

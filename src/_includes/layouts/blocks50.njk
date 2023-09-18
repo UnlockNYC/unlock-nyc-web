@@ -16,8 +16,9 @@
     {% endfor %}
     {% endif %}
   </div>
+  <!--<div class="block image" style="background: url('/public/{{ thing.image }}'); background-size: cover; background-position: center center; border: 1px solid lightgray;">-->
   <div class="block image">
-    {{ thing.image }}
+    <img src="/public/{{ thing.image }}" style="object-fit: cover; width: 100%;">
   </div>
 </div>
 {% endfor %}
@@ -64,5 +65,5 @@
   </div>
   <div class="block image">
     {{ blockImage3 }}
-  </div> 
+  </div>
 </div>-->

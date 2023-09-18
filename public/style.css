@@ -8,7 +8,7 @@ dev: MAB
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "Intro Rust";
-  src: url("https://cdn.glitch.com/b185c63a-8d27-412b-b4cb-047ca0c8de79%2FIntroRust-Base.otf")
+  src: url("https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/b185c63a-8d27-412b-b4cb-047ca0c8de79_IntroRust-Base.otf?v=1695070197850")
     format("truetype");
 }
 
@@ -581,7 +581,7 @@ div.content {
   box-sizing: border-box;
   /*large monitors ?*/
   /* then deal with different bg*/
-  /*or do with padding, below ... 
+  /*or do with padding, below ...
   /*max-width: 1550px;
   margin: auto;*/
 }
@@ -659,7 +659,8 @@ div.blocks-wrapper div.block {
 }
 
 div.block.image {
-  background-color: var(--light-grey-text);
+  /*background-color: var(--light-grey-text);*/
+  border: 1px dotted #444444;
   min-height: 250px; /*MAB: ONLY FOR MOCKUPS!!*/
 }
 

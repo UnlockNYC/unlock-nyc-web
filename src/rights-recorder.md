@@ -1,5 +1,6 @@
 ---
 layout: layouts/app-page.njk
+_template: rightsrecorder
 
 bannerTitle: Rights Recorder App
 bannerText: You don’t need to download anything, just enter your phone number to get started.
@@ -29,7 +30,7 @@ iconBlocksList:
     image: image placeholder
     button: yes
     buttonText: Learn more
-    
+
 
 yellowBannerTitle: Join a virtual workshop
 yellowBannerText: SOI Discrimination is Illegal in NY State – join the workshop to [value prop.] Most of our partners start out in the community via our welcoming, informative workshops.

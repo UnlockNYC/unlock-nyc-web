@@ -1,12 +1,13 @@
 ---
 bg: White
 layout: layouts/organizers.njk
+_template: communityorganizers
 
 bannerTitle: Community Organizers
 bannerSubtitle: Secured funding for CCHR
 bannerText: If you have clients, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur.
 
-blocksFirst: image 
+blocksFirst: image
 blocksButtonColor: black
 
 blocksList:
@@ -33,7 +34,7 @@ blocksList:
     button: yes
     buttonList:
       - buttonText: Read more
-    
+
 orangeBannerTitle: Interested in working with us?
 
 eleventyNavigation:

@@ -2,37 +2,53 @@
 layout: layouts/home.njk
 bg: White
 bannerTitle: Unlock your next home.
-bannerText: The tools you need to stand up for yourself on your housing search - created with an led by tenants who've been there.
-
+bannerText: >-
+  The tools you need to stand up for yourself on your housing search - created
+  with an led by tenants who've been there.
 blocksButtonColor: yellow
-
 blocksList:
-  - block1:
-    title: Rights Recorder
-    text: test test test
-    image: image placeholder
-    button: yes
+  - title: Rights Recorder
+    text: test test test test
+    image: /cardinal-bath.webp
+    button: 'yes'
     buttonList:
       - buttonText: Learn more
-  - block2:
-    title: Tech for housing advocates
+  - title: Tech for housing advocates
     text: lorem ipsum dolor simit
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonList:
       - buttonText: Learn more
-  - block3:
-    title: SOI Mapping Tool
+  - title: SOI Mapping Tool
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonList:
       - buttonText: Learn more
-
-latestActionText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-latestActionVideo:
-
-
+latestActionText: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+  nostrud.
+latestActionVideo: null
+_template: index
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 homepage content markdown hello world! 🌎

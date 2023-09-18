@@ -1,85 +1,81 @@
 ---
 layout: layouts/voucher-page.njk
 bg: White
-
 bannerTitle: For Voucher Holders
-bannerText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-
+bannerText: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+  nostrud exercitation ullamco.
 blocksList:
-  - block1:
-    title: Uncover your power
+  - title: Uncover your power
     text: test test test
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonList:
       - buttonText: Attend a workshop
-  - block2:
-    title: Flex your rights
+  - title: Flex your rights
     text: lorem ipsum dolor simit
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonList:
       - buttonText: Get started
-  - block3:
-    title: Unlock housing opportunitie
+  - title: Unlock housing opportunitie
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonList:
       - buttonText: Learn more
-    
 blocksFirst: image
-
 keyImage1: image placeholder
 keyImage2: image placeholder
 keyImage3: image placeholder
 keyImage4: image placeholder
-
-quote: "[My response from Unlock NYC] was SO different from every single agency I had to interact with. I was just like wow, you read the whole thing? And that mattered."
+quote: >-
+  [My response from Unlock NYC] was SO different from every single agency I had
+  to interact with. I was just like wow, you read the whole thing? And that
+  mattered.
 quoteAuthor: Kamilha Newton
 authorTitle: Unlock NYC user and Scholar-in-Residence
-
 linksList:
-  - block1:
-    title: Apple for a voucher
-    text: If you need a voucher, make an appointment at your local Homebase location to see if you are eligible.
+  - title: Apply for a voucher
+    text: >-
+      If you need a voucher, make an appointment at your local Homebase location
+      to see if you are eligible.
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonText: Make appointment
-  - block2:
-    title: Get help with your housing search
-    text: Neighbors Together hosts regular workshops at their office in Bed-Stuy where you can learn tricks for finding an apartment and search for housing.
+  - title: Get help with your housing search
+    text: >-
+      Neighbors Together hosts regular workshops at their office in Bed-Stuy
+      where you can learn tricks for finding an apartment and search for
+      housing.
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonText: See location
-  - block3:
-    title: Prevent or delay an eviction
+  - title: Prevent or delay an eviction
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonText: Learn more
-  - block4:
-    title: Address a housing situation
+  - title: Address a housing situation
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonText: Call the Met Council
-  - block5:
-    title: Request repairs in your apartment
+  - title: Request repairs in your apartment
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonText: Request repairs
-  - block6:
-    title: Document heading issues
+  - title: Document heading issues
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: yes
+    button: 'yes'
     buttonText: Learn more
-
-    
 eleventyNavigation:
   key: Voucher Holders
   title: For Voucher Holders
   order: 3
+_template: voucherholders
 ---
+
