@@ -3,7 +3,7 @@ layout: layouts/home.njk
 bg: White
 blocksButtonColor: yellow
 title: Home
-bannerTitle: Unlock your next home!!
+bannerTitle: Unlock your next home
 bannerText: >-
   The tools you need to stand up for yourself on your housing search - created
   with an led by tenants who've been there.
