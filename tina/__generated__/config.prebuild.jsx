@@ -14,7 +14,7 @@ var config_default = defineConfig({
   media: {
     tina: {
       mediaRoot: "media",
-      publicFolder: "build"
+      publicFolder: ""
     }
   },
   schema: {
