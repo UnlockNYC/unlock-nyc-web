@@ -1,12 +1,12 @@
 ---
 layout: layouts/home.njk
-title: Home
 bg: White
-bannerTitle: Unlock your next home.
+blocksButtonColor: yellow
+title: Home
+bannerTitle: Unlock your next home!!
 bannerText: >-
   The tools you need to stand up for yourself on your housing search - created
   with an led by tenants who've been there.
-blocksButtonColor: yellow
 blocksList:
   - title: Rights Recorder
     text: >-
@@ -49,33 +49,3 @@ latestActionVideo: null
 _template: index
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-homepage content markdown hello world! 🌎
