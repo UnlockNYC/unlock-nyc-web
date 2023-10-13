@@ -10,15 +10,15 @@
     {% if thing.button == 'yes' %}
     {% for button in thing.buttonList %}
       <!--<button {% if blocksButtonColor == 'black'%} class="black" {% else %} class="yellow" {% endif %}>-->
-      <button {% if blocksButtonColor == 'yellow'%} class="yellow" {% else %} class="black" {% endif %}>
+      <button {% if blocksButtonColor == 'yellow'%} class="yellow" {% else %} class="black" {% endif %} onclick=window.location.href='{{ button.buttonLink }}';>
         {{ button.buttonText }}
       </button>
     {% endfor %}
     {% endif %}
   </div>
-  <!--<div class="block image" style="background: url('/public/{{ thing.image }}'); background-size: cover; background-position: center center; border: 1px solid lightgray;">-->
+  <!--<div class="block image" style="background: url('media/{{ thing.image }}'); background-size: cover; background-position: center center; border: 1px solid lightgray;">-->
   <div class="block image">
-    <img src="/public/{{ thing.image }}" style="object-fit: cover; width: 100%;">
+    <img src="{{ thing.image }}" style="object-fit: cover; width: 100%;" alt="{{ thing.alt }}">
   </div>
 </div>
 {% endfor %}

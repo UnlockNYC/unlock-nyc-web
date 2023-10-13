@@ -76,6 +76,8 @@ eleventyNavigation:
   key: Voucher Holders
   title: For Voucher Holders
   order: 3
+title: For Voucher Holders
 _template: voucherholders
 ---
+
 

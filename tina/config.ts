@@ -10,12 +10,12 @@ export default defineConfig({
 
   build: {
     outputFolder: "admin",
-    publicFolder: "public",
+    publicFolder: "build",
   },
   media: {
     tina: {
-      mediaRoot: "",
-      publicFolder: "public",
+      mediaRoot: "media",
+      publicFolder: "build",
     },
   },
   schema: {
@@ -28,11 +28,23 @@ export default defineConfig({
             include: '*',
         },
         format: 'md',
+        ui: {
+          allowedActions: {
+            delete: false,
+          }
+        },
         templates: [
           {
             name: "index",
             label: "Home Page",
             fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
               {
                 type: "string",
                 name: "bannerTitle",
@@ -76,6 +88,11 @@ export default defineConfig({
                   },
                   {
                     type: "string",
+                    name: "alt",
+                    label: "Image Alt Text"
+                  },
+                  {
+                    type: "string",
                     name: "button",
                     label: "Include Button?",
                     options: [
@@ -106,6 +123,11 @@ export default defineConfig({
                         type: "string",
                         name: "buttonText",
                         label: "Button Text",
+                      },
+                      {
+                        type: "string",
+                        name: "buttonLink",
+                        label: "Button Link",
                       }
                     ]
                   },
@@ -127,9 +149,34 @@ export default defineConfig({
             ],
           },
           {
+            name: "about",
+            label: "About Page",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "string",
+                name: "bannerTitle",
+                label: "Banner Title"
+              }
+            ]
+          },
+          {
             name: "rightsrecorder",
             label: "Rights Recorder App",
             fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
               {
                 type: "string",
                 name: "bannerTitle",
@@ -199,6 +246,13 @@ export default defineConfig({
             name: "advocateportal",
             label: "Advocate Portal",
             fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
               {
                 type: "string",
                 name: "bannerTitle",
@@ -281,6 +335,13 @@ export default defineConfig({
             name: "datapage",
             label: "Data Page",
             fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
               {
                 type: "string",
                 name: "bannerTitle",
@@ -378,6 +439,13 @@ export default defineConfig({
             name: "voucherholders",
             label: "For Voucher Holders",
             fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
               {
                 type: "string",
                 name: "bannerTitle",
@@ -553,6 +621,13 @@ export default defineConfig({
             fields: [
               {
                 type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "string",
                 name: "bannerTitle",
                 label: "Banner Title"
               },
@@ -645,6 +720,13 @@ export default defineConfig({
             name: "housingspecialists",
             label: "Housing Specialists",
             fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
               {
                 type: "string",
                 name: "bannerTitle",
@@ -746,6 +828,13 @@ export default defineConfig({
             fields: [
               {
                 type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "string",
                 name: "bannerTitle",
                 label: "Banner Title"
               },
@@ -831,6 +920,74 @@ export default defineConfig({
           }
         ]
       },
+      {
+        name: "bio",
+        label: "Bios",
+        path: "src/bios",
+        format: 'md',
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title"
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Headshot"
+          }
+        ]
+      },
+      {
+        name: "faq",
+        label: "FAQs",
+        path: "src/faqs",
+        format: 'md',
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "question",
+            label: "Question",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "answer",
+            label: "Answer"
+          }
+        ]
+      },
+      {
+        name: "article",
+        label: "Articles",
+        path: "src/articles",
+        format: 'md',
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author"
+          }
+        ]
+      }
     ],
   },
 });

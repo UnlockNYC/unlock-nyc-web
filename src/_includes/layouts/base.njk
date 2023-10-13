@@ -9,23 +9,23 @@
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     {% seo "" %}
     <!--scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   </head>
   <body style="background-color: {{ bg }}">
     <main>
-      {% include 'layouts/nav.njk' %} 
-      
+      {% include 'layouts/nav.njk' %}
+
       {# Page or post content will appear here #}
       {{ content | safe }}
 
-      {% include 'layouts/footer.njk' %} 
+      {% include 'layouts/footer.njk' %}
 
   </main>
-    
+
   <script>
     /*MAB: MOVE INTO FILE! */
     /* examine resize; vs. window.screen.width etc.*/
-    
+
     /* DESKTOP, HEADER BEHAVIOR */
     $("nav#main ul#top > li").on("mouseenter", function(){
       if ($(window).width() > 1100) {
@@ -57,7 +57,7 @@
           $(this).children("svg").removeClass("plus");
           $(this).children("svg").addClass("minus");
           $(this).children("svg").html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>');
-        } 
+        }
         else {
           $(this).children("svg").removeClass("minus");
           $(this).children("svg").addClass("plus");
@@ -66,9 +66,9 @@
       }
     });
 
-  
-    
+
+
   </script>
-   
+
   </body>
 </html>

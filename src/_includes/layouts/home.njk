@@ -7,7 +7,11 @@ templateClass: tmpl-home
 </style>
 {# The Home page uses this template–it extends the base template #}
 <div class="top-banner" style="background: url('https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/Screenshot%202023-09-05%20at%202.29.26%20PM.png?v=1693938577146'); background-size: cover; background-position: center center;">
-  <div class="banner-wrapper">
+  <video class="video-banner" autoplay loop poster="https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/Screenshot%202023-09-05%20at%202.29.26%20PM.png?v=1693938577146">
+    <source src="/media/hero.webm" type="video/webm">
+    <source src="/media/hero.mp4" type="video/mp4">
+  </video>
+  <div class="banner-wrapper" style="position: relative; z-index: 2;">
     <div class="banner-content">
       <h1>
         {{ bannerTitle }}
@@ -22,7 +26,7 @@ templateClass: tmpl-home
   </div>
 </div>
 <div class="content">
-  {% include 'layouts/blocks50.njk' %}  
+  {% include 'layouts/blocks50.njk' %}
 </div>
 <div class="content" style="background-color: #222; height: 50vh">
   <h1 style="font-family: 'Intro Rust', sans-serif; text-align: center; color: White;">
@@ -39,7 +43,7 @@ templateClass: tmpl-home
     </p>
   </div>
   <div class="center-stage">
-    <!--video/img placeholder-->
+    <img src="http://localhost:8080/media/Video-Still.png" style="max-width: 100%;">
   </div>
 </div>
 <div class="banner-full bg-cream">
@@ -49,17 +53,18 @@ templateClass: tmpl-home
     </div>
     <div style="padding: 5%; text-align: left;">
       <h4>
-        Unlock NYC is a women-led tech nonprofit created with and by tenants who’ve been in your shoes. 
+        Unlock NYC is a women-led tech nonprofit created with and by tenants who’ve been in your shoes.
       </h4>
       <p>
         A majority of our team has had on-the-ground experience using vouchers to find a home for our families. We’re different because we know firsthand what you’re going through – that’s what inspired us to speak up in the first place.
       </p>
-      <button>
-        Learn more
-      </button>
-      <button style="margin-left: 15px;">
+      <a href="/about">
+        <button>
+            Learn more
+        </button></a>
+      <a href="/get-involved"><button style="margin-left: 15px;">
         Get involved
-      </button>
+      </button></a>
     </div>
   </div>
 </div>
@@ -71,6 +76,3 @@ templateClass: tmpl-home
     Sign Up
   </button>
 </div>
-
-
-

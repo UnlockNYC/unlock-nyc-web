@@ -20,7 +20,7 @@ nav#main.mobile-open div#nav-logo a {
 }*/
 
 @media only screen and (min-width: 1100px) {
-  
+
   nav#main ul#top > li > a {
     color: White;
   }
@@ -36,17 +36,30 @@ nav#main.mobile-open div#nav-logo a {
 /* TOP BANNER */
 div.top-banner {
   height: 70vh;
-  background-color: Purple;
+  background-color: Black;
 }
 div.top-banner div.banner-content {
   color: White;
 }
 
+/* HERO VIDEO */
+
+video.video-banner {
+    height: 70vh;
+    min-height: 450px;
+    /* matches min-height of div.top-banner */
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* LATEST ACTION SECTION */
 
 div.latest-action p {
-  max-width: 80%; 
-  margin: auto; 
+  max-width: 80%;
+  margin: auto;
   margin-bottom: 2rem;
 }
 
