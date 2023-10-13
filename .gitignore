@@ -1,4 +1,5 @@
 .glitchdotcom.json
 build
+!build/media/
 node_modules
 web_modules
