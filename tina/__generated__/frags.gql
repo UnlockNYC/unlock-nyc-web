@@ -1,0 +1,173 @@
+fragment PageParts on Page {
+  ... on PageIndex {
+    title
+    bannerTitle
+    bannerText
+    blocksList {
+      __typename
+      title
+      text
+      image
+      alt
+      button
+      buttonList {
+        __typename
+        buttonText
+        buttonLink
+      }
+    }
+    latestActionText
+    latestActionVideo
+  }
+  ... on PageAbout {
+    title
+    bannerTitle
+  }
+  ... on PageRightsrecorder {
+    title
+    bannerTitle
+    bannerText
+    iconBlocksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonText
+    }
+  }
+  ... on PageAdvocateportal {
+    title
+    bannerTitle
+    bannerText
+    iconBlocksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonText
+    }
+    yellowBannerTitle
+    yellowBannerText
+  }
+  ... on PageDatapage {
+    title
+    bannerTitle
+    bannerText
+    blocksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonList {
+        __typename
+        buttonText
+      }
+    }
+    orangeBannerTitle
+    orangeBannerText
+  }
+  ... on PageVoucherholders {
+    title
+    bannerTitle
+    bannerText
+    blocksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonList {
+        __typename
+        buttonText
+      }
+    }
+    keyImage1
+    keyImage2
+    keyImage3
+    keyImage4
+    quote
+    quoteAuthor
+    authorTitle
+    linksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonText
+    }
+  }
+  ... on PageCommunityorganizers {
+    title
+    bannerTitle
+    bannerSubtitle
+    bannerText
+    blocksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonList {
+        __typename
+        buttonText
+      }
+    }
+    orangeBannerTitle
+  }
+  ... on PageHousingspecialists {
+    title
+    bannerTitle
+    bannerSubtitle
+    quote
+    quoteAuthor
+    quoteTitle
+    linksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonList {
+        __typename
+        buttonText
+      }
+    }
+  }
+  ... on PageFunding {
+    title
+    bannerTitle
+    bannerText
+    blocksList {
+      __typename
+      title
+      text
+      image
+      button
+      buttonList {
+        __typename
+        buttonText
+      }
+    }
+    orangeBannerTitle
+  }
+}
+
+fragment BioParts on Bio {
+  name
+  title
+  image
+}
+
+fragment FaqParts on Faq {
+  question
+  answer
+}
+
+fragment ArticleParts on Article {
+  title
+  author
+}
