@@ -15,7 +15,7 @@ const mediaHandler = createMediaHandler({
       accessKeyId: process.env.SPACES_KEY || '',
       secretAccessKey: process.env.SPACES_SECRET_KEY || '',
     },
-    region: 'us-east-2',
+    region: 'nyc3',
   },
   bucket: process.env.SPACES_NAME || '',
   authorized: async (req, _res) => {
