@@ -9,7 +9,6 @@ const router = Router()
 
 const mediaHandler = createMediaHandler({
   // ...
-  console.log("MADE IT TO HERE!");
   config: {
     endpoint: process.env.SPACES_ENDPOINT,
     credentials: {
