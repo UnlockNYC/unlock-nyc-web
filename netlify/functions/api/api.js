@@ -9,13 +9,14 @@ const router = Router()
 
 const mediaHandler = createMediaHandler({
   // ...
+  console.log("MADE IT TO HERE!");
   config: {
     endpoint: process.env.SPACES_ENDPOINT,
     credentials: {
       accessKeyId: process.env.SPACES_KEY || '',
       secretAccessKey: process.env.SPACES_SECRET_KEY || '',
     },
-    region: 'nyc3',
+    region: 'us-east-1',
   },
   bucket: process.env.SPACES_NAME || '',
   authorized: async (req, _res) => {

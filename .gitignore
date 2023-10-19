@@ -3,3 +3,4 @@ build/*
 !build/media/
 node_modules
 web_modules
+.env
