@@ -12,9 +12,13 @@ var config_default = defineConfig({
     publicFolder: "build"
   },
   media: {
-    tina: {
+    /*tina: {
       mediaRoot: "media",
-      publicFolder: "build"
+      publicFolder: "build",
+      },*/
+    loadCustomStore: async () => {
+      const pack = await import("next-tinacms-dos");
+      return pack.TinaCloudDOSMediaStore;
     }
   },
   schema: {
