@@ -13,7 +13,7 @@ blocksList:
       Keep getting denied, ghosted, or treated unfairly after you mention your
       housing voucher? Use our free tools to make a paper trail, flex your
       rights, and get accountability.
-    image: /media/Image 1.png
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 1.png'
     alt: >-
       someone holding a recording smart phone in their hands, against a yellow
       background
