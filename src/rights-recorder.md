@@ -16,7 +16,7 @@ bannerText: >-
   You don’t need to download anything, just enter your phone number to get
   started.
 iconBlocksList:
-  - title: Make your free account
+  - title: Sign up
     text: >-
       Unlock NYC is the go-to resource for your housing search! Signing up is a
       breeze – just enter your phone number below and we'll send you a
