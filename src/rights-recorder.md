@@ -43,7 +43,7 @@ iconBlocksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 2.png'
     button: 'yes'
     buttonText: Learn more
-  - title: Build your report
+  - title: Submit your report
     text: >-
       Don't wait! Use our Rights Recorder app to make a report while the details
       are fresh in your mind. The sooner you report, the more options you may
