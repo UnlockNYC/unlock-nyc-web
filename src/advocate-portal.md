@@ -23,9 +23,14 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-1.png
     button: 'yes'
     buttonText: Learn more
-  - title: Report for your clients
-    text: lorem ipsum dolor simit
-    image: image placeholder
+  - title: Help your clients report
+    text: >-
+      With our easy-to-use reporting app, you can make reports for your clients
+      or have them report on their own. You and your clients will receive a copy
+      of any reports made, and we keep each report file in an encrypted digital
+      vault for added security.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-2.png
     button: 'yes'
     buttonText: Learn more
   - title: See insight & impact
