@@ -20,7 +20,7 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
-        buttonLink: /voucher-holders
+        buttonLink: /rights-recorder
   - title: Fair housing fighters
     text: >-
       If you’re a housing specialist or anyone who works 1-on-1 with voucher
