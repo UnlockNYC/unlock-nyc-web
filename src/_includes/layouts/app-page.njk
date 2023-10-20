@@ -134,12 +134,10 @@ templateClass: tmpl-home
       Sign Up
     </button>
   </div>
-  <!-- MAB: TURN INTO COLLECTION COMPONENT!! -->
   <div class="article-collection">
     {%- for article in collections.articles -%}
     <div class="page-content-50-50 article-item">
       <div style="background-color: #555; height: 300px;">
-         <!--<img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Article-GoodReport.png" style="width: 100%;">-->
          <img src="{{ article.data.image }}" style="width: 100%;">
       </div>
       <div class="article-summary">
