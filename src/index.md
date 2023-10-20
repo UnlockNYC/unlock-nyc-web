@@ -36,7 +36,7 @@ blocksList:
       New Yorkers, advocacy groups, and policymakers around the city use our map
       to see where our community reports facing discriminatory treatment by
       landlords and brokers.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 3.png'
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/home-Image 3.png'
     button: 'yes'
     buttonList:
       - buttonText: See the map
