@@ -56,8 +56,18 @@ iconBlocksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 3.png'
     button: 'yes'
     buttonText: Learn more
-  - title: Take action by sharing your report
-    text: mab text text proton lorem ipsum
+  - title: Take action!
+    text: >-
+      When your report is ready, you get to decide where to send it. It's all
+      about what you feel justice would look like in your situation. We've
+      helped hundreds of New Yorkers send reports to the NYC Commission on Human
+      Rights for a fair chance at applying for apartments they were turned away
+      from, to our trusted legal partners to file a complaint, to their local
+      council member for assistance, or to their housing attorney to support
+      their Housing Court case. Whatever path you choose, you’ll also be helping
+      improve the voucher system for all New Yorkers. We add your report
+      anonymously to our Discrimination Mapping Tool so researchers and
+      policymakers can better understand the issue and create positive change. 
     image: image placeholder
     button: 'yes'
     buttonText: Learn more
