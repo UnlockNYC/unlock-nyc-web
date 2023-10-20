@@ -1,7 +1,9 @@
 ---
-title: Test Article
+title: Tips on How to Make a Good Report
 author: MAB
-tags: ["app", "know your rights"]
+excerpt: >-
+  Hello world, hello proton. This is an article, with a summary that is
+  excerpted here.
+image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Article-GoodReport.png'
 ---
 
-Hello world hello proton, this is an article.
