@@ -708,7 +708,7 @@ div.blocks-icons-wrapper h4 {
 }
 
 div.blocks-icons-wrapper div.block.image {
-  height: 22vh;
+  /*height: 22vh;*/ /*MAB WAS JUST FOR PLACEHOLDERS*/
 }
 
 /* FAQ blocks */
