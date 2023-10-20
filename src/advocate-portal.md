@@ -43,8 +43,13 @@ iconBlocksList:
     button: 'yes'
     buttonText: Learn more
   - title: Here to listen and problem solve with you
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+    text: >-
+      If you ever have questions or need help, we're here for you during our
+      Office Hours. We’re standing by to listen to your challenges, show you how
+      our tools work, and answer any questions you have about source of income
+      discrimination or our programs.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-4.png
     button: 'yes'
     buttonText: Learn more
 yellowBannerTitle: Join a virtual workshop
