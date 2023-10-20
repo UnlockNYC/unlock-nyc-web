@@ -26,7 +26,7 @@ blocksList:
       If you’re a housing specialist or anyone who works 1-on-1 with voucher
       holders, join us for tips, tools, and ways to unlock more doors with your
       clients.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 2.png'
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/home-Image 2.png'
     button: 'yes'
     buttonList:
       - buttonText: Learn more
