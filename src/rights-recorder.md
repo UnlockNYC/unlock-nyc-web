@@ -68,7 +68,7 @@ iconBlocksList:
       improve the voucher system for all New Yorkers. We add your report
       anonymously to our Discrimination Mapping Tool so researchers and
       policymakers can better understand the issue and create positive change. 
-    image: image placeholder
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 4.png'
     button: 'yes'
     buttonText: Learn more
 _template: rightsrecorder
