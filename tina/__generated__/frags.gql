@@ -170,4 +170,6 @@ fragment FaqParts on Faq {
 fragment ArticleParts on Article {
   title
   author
+  excerpt
+  image
 }

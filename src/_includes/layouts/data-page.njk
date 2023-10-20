@@ -5,17 +5,23 @@ templateClass: tmpl-home
 
 <!-- MAB include here?! or somewhere else?! -->
 <style>
-  
+
   div#data-grid {
-    display: grid; 
-    grid-template-columns: 33% auto; 
+    display: grid;
+    grid-template-columns: 33% auto;
     grid-column-gap: 60px;
   }
-  
+
   div#data-grid-text {
     padding-top: 30px;
   }
-  
+
+  div#map-grid {
+      display: grid;
+      grid-template-columns: 66% auto;
+      grid-column-gap: 0;
+  }
+
   @media only screen and (max-width: 800px) {
     div#data-grid {
       grid-template-columns: 1fr;
@@ -55,7 +61,7 @@ templateClass: tmpl-home
     </div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
       <div class="report-card-wrapper">
-        <div class="bg-yellow report-card">   
+        <div class="bg-yellow report-card">
           <div>
             <span class="tag">Report</span>
             <span class="tag">2022</span>
@@ -74,7 +80,7 @@ templateClass: tmpl-home
         </div>
       </div>
       <div class="report-card-wrapper">
-        <div class="bg-green report-card">   
+        <div class="bg-green report-card">
           <div>
             <span class="tag">Report</span>
             <span class="tag">2022</span>
@@ -94,8 +100,30 @@ templateClass: tmpl-home
       </div>
     </div>
   </div>
-  <div class="bg-purple" style="width: 100%; height: 40vh; margin-top: 30px;">
-    mapping
+  <div id="map-grid" class="bg-purple" style="width: 100%; margin-top: 30px; overflow: hidden;">
+    <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Community-Map_Purple.png" style="width: 100%; object-position: bottom center;">
+    <div class="report-card-wrapper">
+        <div class="bg-purple report-card">
+            <div>
+                <span class="tag">Interactive Map</span>
+                <span class="tag">2022</span>
+            </div>
+            <div>
+                <p class="black" style="text-decoration: underline;">
+                    <strong>Featured</strong>
+                </p>
+                <h4 style="font-size: 1.5rem;">
+                  Community-powered Discrimination Map
+                </h4>
+                <p class="black" style="margin-top: 25px; font-size: 14px;">
+                    See where our users have reported unfair treatment by landlords and brokers and send an email to your council member about why you care about this issue.
+                </p>
+                <button class="black">
+                    Explore the map
+                </button>
+            </div>
+        </div>
+    </div>
   </div>
   <h3 class="center-title">
     Our Data in Action

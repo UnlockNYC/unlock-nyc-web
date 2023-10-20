@@ -572,6 +572,8 @@ type FaqConnection implements Connection {
 type Article implements Node & Document {
   title: String!
   author: String
+  excerpt: String
+  image: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -580,6 +582,8 @@ type Article implements Node & Document {
 input ArticleFilter {
   title: StringFilter
   author: StringFilter
+  excerpt: StringFilter
+  image: ImageFilter
 }
 
 type ArticleConnectionEdges {
@@ -828,6 +832,8 @@ input FaqMutation {
 input ArticleMutation {
   title: String
   author: String
+  excerpt: String
+  image: String
 }
 
 schema {

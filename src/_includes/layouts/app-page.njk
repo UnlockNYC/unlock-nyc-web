@@ -136,41 +136,29 @@ templateClass: tmpl-home
   </div>
   <!-- MAB: TURN INTO COLLECTION COMPONENT!! -->
   <div class="article-collection">
+    {%- for article in collections.articles -%}
     <div class="page-content-50-50 article-item">
       <div style="background-color: #555; height: 300px;">
-         <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Article-GoodReport.png" style="width: 100%;">
+         <!--<img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Article-GoodReport.png" style="width: 100%;">-->
+         <img src="{{ article.data.image }}" style="width: 100%;">
       </div>
       <div class="article-summary">
         <div>
+            <div class="article-tags">
+              <span class="tag">Tag 1</span>
+              <span class="tag">Tag 2</span>
+              <span class="tag">Tag 3</span>
+            </div>
           <h4>
-            <a>Help improve the voucher system for all New Yorkers</a>
+            <a>{{ article.data.title }}</a>
           </h4>
           <p>
-            Whatever path you choose, you’ll also be helping improve the voucher system for all New Yorkers. We add your report anonymously to our Discrimination Mapping Tool so researchers and policymakers can better understand the issue and create positive change.
+            {{ article.data.excerpt }}
           </p>
         </div>
       </div>
     </div>
-    <div class="page-content-50-50 article-item" style="margin-bottom: 60px;">
-      <div style="background-color: #555; height: 300px;">
-         <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Image%203.png" style="width: 100%;">
-      </div>
-      <div class="article-summary">
-        <div>
-          <div class="article-tags">
-            <span class="tag">Tag 1</span>
-            <span class="tag">Tag 2</span>
-            <span class="tag">Tag 3</span>
-          </div>
-          <h4>
-            <a>Help improve the voucher system for all New Yorkers</a>
-          </h4>
-          <p>
-            Whatever path you choose, you’ll also be helping improve the voucher system for all New Yorkers. We add your report anonymously to our Discrimination Mapping Tool so researchers and policymakers can better understand the issue and create positive change.
-          </p>
-        </div>
-      </div>
-    </div>
+    {%- endfor -%}
   </div>
 </div>
 

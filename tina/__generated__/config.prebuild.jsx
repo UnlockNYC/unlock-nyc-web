@@ -972,6 +972,16 @@ var config_default = defineConfig({
             type: "string",
             name: "author",
             label: "Author"
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt"
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Image"
           }
         ]
       }

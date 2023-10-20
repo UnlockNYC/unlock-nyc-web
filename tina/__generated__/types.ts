@@ -728,6 +728,8 @@ export type Article = Node & Document & {
   __typename?: 'Article';
   title: Scalars['String']['output'];
   author?: Maybe<Scalars['String']['output']>;
+  excerpt?: Maybe<Scalars['String']['output']>;
+  image?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -736,6 +738,8 @@ export type Article = Node & Document & {
 export type ArticleFilter = {
   title?: InputMaybe<StringFilter>;
   author?: InputMaybe<StringFilter>;
+  excerpt?: InputMaybe<StringFilter>;
+  image?: InputMaybe<ImageFilter>;
 };
 
 export type ArticleConnectionEdges = {
@@ -1062,6 +1066,8 @@ export type FaqMutation = {
 export type ArticleMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   author?: InputMaybe<Scalars['String']['input']>;
+  excerpt?: InputMaybe<Scalars['String']['input']>;
+  image?: InputMaybe<Scalars['String']['input']>;
 };
 
 type PageParts_PageIndex_Fragment = { __typename?: 'PageIndex', title: string, bannerTitle?: string | null, bannerText?: string | null, latestActionText?: string | null, latestActionVideo?: string | null, blocksList?: Array<{ __typename: 'PageIndexBlocksList', title?: string | null, text?: string | null, image?: string | null, alt?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageIndexBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null };
@@ -1088,7 +1094,7 @@ export type BioPartsFragment = { __typename?: 'Bio', name: string, title?: strin
 
 export type FaqPartsFragment = { __typename?: 'Faq', question: string, answer?: string | null };
 
-export type ArticlePartsFragment = { __typename?: 'Article', title: string, author?: string | null };
+export type ArticlePartsFragment = { __typename?: 'Article', title: string, author?: string | null, excerpt?: string | null, image?: string | null };
 
 export type PageQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -1152,7 +1158,7 @@ export type ArticleQueryVariables = Exact<{
 }>;
 
 
-export type ArticleQuery = { __typename?: 'Query', article: { __typename?: 'Article', id: string, title: string, author?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type ArticleQuery = { __typename?: 'Query', article: { __typename?: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type ArticleConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -1164,7 +1170,7 @@ export type ArticleConnectionQueryVariables = Exact<{
 }>;
 
 
-export type ArticleConnectionQuery = { __typename?: 'Query', articleConnection: { __typename?: 'ArticleConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ArticleConnectionEdges', cursor: string, node?: { __typename?: 'Article', id: string, title: string, author?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type ArticleConnectionQuery = { __typename?: 'Query', articleConnection: { __typename?: 'ArticleConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ArticleConnectionEdges', cursor: string, node?: { __typename?: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export const PagePartsFragmentDoc = gql`
     fragment PageParts on Page {
@@ -1342,6 +1348,8 @@ export const ArticlePartsFragmentDoc = gql`
     fragment ArticleParts on Article {
   title
   author
+  excerpt
+  image
 }
     `;
 export const PageDocument = gql`
