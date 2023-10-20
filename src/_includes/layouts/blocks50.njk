@@ -9,61 +9,14 @@
     </p>
     {% if thing.button == 'yes' %}
     {% for button in thing.buttonList %}
-      <!--<button {% if blocksButtonColor == 'black'%} class="black" {% else %} class="yellow" {% endif %}>-->
       <button {% if blocksButtonColor == 'yellow'%} class="yellow" {% else %} class="black" {% endif %} onclick=window.location.href='{{ button.buttonLink }}';>
         {{ button.buttonText }}
       </button>
     {% endfor %}
     {% endif %}
   </div>
-  <!--<div class="block image" style="background: url('media/{{ thing.image }}'); background-size: cover; background-position: center center; border: 1px solid lightgray;">-->
   <div class="block image">
     <img src="{{ thing.image }}" style="object-fit: cover; width: 100%;" alt="{{ thing.alt }}">
   </div>
 </div>
 {% endfor %}
-
-<!--<div class="blocks-wrapper">
-  <div class="block">
-    <h4>
-      {{ blockTitle1 }}
-    </h4>
-    <p>
-      {{ blockText1 }}
-    </p>
-    <button class="yellow">
-      Learn more
-    </button>
-  </div>
-  <div class="block image">
-    {{ blockImage1 }}
-  </div>
-  <div class="block image">
-    {{ blockImage2 }}
-  </div>
-  <div class="block">
-    <h4>
-      {{ blockTitle2 }}
-    </h4>
-    <p>
-      {{ blockText2 }}
-    </p>
-    <button class="yellow">
-      Learn more
-    </button>
-  </div>
-  <div class="block">
-    <h4>
-      {{ blockTitle3 }}
-    </h4>
-    <p>
-      {{ blockText3 }}
-    </p>
-    <button class="yellow">
-      See the map
-    </button>
-  </div>
-  <div class="block image">
-    {{ blockImage3 }}
-  </div>
-</div>-->

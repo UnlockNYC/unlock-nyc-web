@@ -1,7 +1,7 @@
 {% for thing in iconBlocksList %}
 <div class="blocks-icons-wrapper">
   <div class="block image">
-    {{ thing.image }}
+     <img src="{{ thing.image }}" style="object-fit: cover; width: 100%;" alt="{{ thing.alt }}">
   </div>
   <div class="block">
     <h4>

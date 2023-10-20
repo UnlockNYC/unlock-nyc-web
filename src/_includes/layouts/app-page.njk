@@ -8,13 +8,13 @@ templateClass: tmpl-home
 <!-- MAB: include here? or separate page or fold into style.css? -->
 <style>
   div.four-infos {
-    margin-top: 60px; 
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
   }
   div.infograph-container {
-    border: 1px dotted #444; 
+    border: 1px dotted #444;
     text-align: center;
     padding: 10px;
   }
@@ -23,18 +23,18 @@ templateClass: tmpl-home
     padding-top: 30px;
   }
   div.story {
-    margin-top: 60px; 
-    width: 100%; 
-    display: grid; 
+    margin-top: 60px;
+    width: 100%;
+    display: grid;
     grid-template-columns: 33% auto;
   }
-  
+
   @media only screen and (max-width: 800px) {
     div.four-infos {
       grid-template-columns: 1fr 1fr;
       grid-row-gap: 30px;
     }
-    div.infograph-container { 
+    div.infograph-container {
       height: auto;
     }
     div.story {
@@ -60,8 +60,8 @@ templateClass: tmpl-home
         Sign up
       </button>
     </div>
-    <div style="border: 1px dotted gray; min-height: 200px; padding: 20px;">
-      image placeholder
+    <div style="min-height: 200px; padding: 20px; position: relative;">
+      <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 1.png" class="baseline-banner">
     </div>
   </div>
 </div>
@@ -72,7 +72,7 @@ templateClass: tmpl-home
   <h3 class="center-title">
     How it Works
   </h3>
-  {% include 'layouts/blocks-icons.njk' %}  
+  {% include 'layouts/blocks-icons.njk' %}
   <h3 class="center-title">
     Where can you send a report?
   </h3>
@@ -139,7 +139,7 @@ templateClass: tmpl-home
   <div class="article-collection">
     <div class="page-content-50-50 article-item">
       <div style="background-color: #555; height: 300px;">
-         img placeholder 
+         img placeholder
       </div>
       <div class="article-summary">
         <div>
@@ -154,7 +154,7 @@ templateClass: tmpl-home
     </div>
     <div class="page-content-50-50 article-item" style="margin-bottom: 60px;">
       <div style="background-color: #555; height: 300px;">
-         img placeholder 
+         img placeholder
       </div>
       <div class="article-summary">
         <div>
