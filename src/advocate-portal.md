@@ -33,9 +33,13 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-2.png
     button: 'yes'
     buttonText: Learn more
-  - title: See insight & impact
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+  - title: See insights & impact
+    text: >-
+      Our dashboard helps you easily see how many reports your organization has
+      submitted, the impact they are having, and any areas that may need your
+      attention.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-3.png
     button: 'yes'
     buttonText: Learn more
   - title: Here to listen and problem solve with you
