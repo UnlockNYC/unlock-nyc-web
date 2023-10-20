@@ -30,7 +30,7 @@ iconBlocksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 1.png'
     button: 'yes'
     buttonText: Sign Up
-  - title: Collect evidence with our Rights Recorder app
+  - title: Collect evidence
     text: >-
       At Unlock NYC, we know how important it is to have proof when you face
       unfair treatment in your housing search. We're here to help you collect
