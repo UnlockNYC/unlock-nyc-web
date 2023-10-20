@@ -44,8 +44,16 @@ iconBlocksList:
     button: 'yes'
     buttonText: Learn more
   - title: Build your report
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+    text: >-
+      Don't wait! Use our Rights Recorder app to make a report while the details
+      are fresh in your mind. The sooner you report, the more options you may
+      have to seek justice. Our app will guide you through answering some
+      questions about what happened and allow you to upload any evidence you
+      have. Once we receive your report, our Unlock NYC team will review it, and
+      may ask you for more details if needed. We'll also conduct research on the
+      broker and landlord involved. In just 1-2 business days, we'll send you a
+      copy of your report for your records. 
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 3.png'
     button: 'yes'
     buttonText: Learn more
   - title: Take action by sharing your report
