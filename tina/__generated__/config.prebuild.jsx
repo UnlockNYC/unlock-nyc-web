@@ -948,9 +948,29 @@ var config_default = defineConfig({
             required: true
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "answer",
             label: "Answer"
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Page",
+            list: true,
+            options: [
+              {
+                value: "FAQ Rights Recorder",
+                label: "Rights Recorder"
+              },
+              {
+                value: "FAQ Advocate Portal",
+                label: "Advocate Portal"
+              },
+              {
+                value: "FAQ Data",
+                label: "Data"
+              }
+            ]
           }
         ]
       },
@@ -982,6 +1002,34 @@ var config_default = defineConfig({
             type: "image",
             name: "image",
             label: "Image"
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Collection",
+            list: true,
+            options: [
+              {
+                value: "Rights Recorder",
+                label: "Rights Recorder"
+              },
+              {
+                value: "Advocate Portal",
+                label: "Advocate Portal"
+              }
+            ]
+          },
+          {
+            type: "string",
+            name: "keywords",
+            label: "Keywords",
+            list: true
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Article Body",
+            isBody: true
           }
         ]
       }

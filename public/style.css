@@ -843,7 +843,7 @@ a.press-link {
 /* report cards */
 
 div.report-card {
-  height: 22vw;
+  /*height: 22vw;*/
   min-height: 350px;
   display: grid;
   grid-template-rows: 60px auto;

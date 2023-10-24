@@ -700,15 +700,23 @@ export type BioConnection = Connection & {
 export type Faq = Node & Document & {
   __typename?: 'Faq';
   question: Scalars['String']['output'];
-  answer?: Maybe<Scalars['String']['output']>;
+  answer?: Maybe<Scalars['JSON']['output']>;
+  tags?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
 };
 
+export type RichTextFilter = {
+  startsWith?: InputMaybe<Scalars['String']['input']>;
+  eq?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 export type FaqFilter = {
   question?: InputMaybe<StringFilter>;
-  answer?: InputMaybe<StringFilter>;
+  answer?: InputMaybe<RichTextFilter>;
+  tags?: InputMaybe<StringFilter>;
 };
 
 export type FaqConnectionEdges = {
@@ -730,6 +738,9 @@ export type Article = Node & Document & {
   author?: Maybe<Scalars['String']['output']>;
   excerpt?: Maybe<Scalars['String']['output']>;
   image?: Maybe<Scalars['String']['output']>;
+  tags?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  keywords?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  body?: Maybe<Scalars['JSON']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -740,6 +751,9 @@ export type ArticleFilter = {
   author?: InputMaybe<StringFilter>;
   excerpt?: InputMaybe<StringFilter>;
   image?: InputMaybe<ImageFilter>;
+  tags?: InputMaybe<StringFilter>;
+  keywords?: InputMaybe<StringFilter>;
+  body?: InputMaybe<RichTextFilter>;
 };
 
 export type ArticleConnectionEdges = {
@@ -1060,7 +1074,8 @@ export type BioMutation = {
 
 export type FaqMutation = {
   question?: InputMaybe<Scalars['String']['input']>;
-  answer?: InputMaybe<Scalars['String']['input']>;
+  answer?: InputMaybe<Scalars['JSON']['input']>;
+  tags?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
 export type ArticleMutation = {
@@ -1068,6 +1083,9 @@ export type ArticleMutation = {
   author?: InputMaybe<Scalars['String']['input']>;
   excerpt?: InputMaybe<Scalars['String']['input']>;
   image?: InputMaybe<Scalars['String']['input']>;
+  tags?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  keywords?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
 type PageParts_PageIndex_Fragment = { __typename?: 'PageIndex', title: string, bannerTitle?: string | null, bannerText?: string | null, latestActionText?: string | null, latestActionVideo?: string | null, blocksList?: Array<{ __typename: 'PageIndexBlocksList', title?: string | null, text?: string | null, image?: string | null, alt?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageIndexBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null };
@@ -1092,9 +1110,9 @@ export type PagePartsFragment = PageParts_PageIndex_Fragment | PageParts_PageAbo
 
 export type BioPartsFragment = { __typename?: 'Bio', name: string, title?: string | null, image?: string | null };
 
-export type FaqPartsFragment = { __typename?: 'Faq', question: string, answer?: string | null };
+export type FaqPartsFragment = { __typename?: 'Faq', question: string, answer?: any | null, tags?: Array<string | null> | null };
 
-export type ArticlePartsFragment = { __typename?: 'Article', title: string, author?: string | null, excerpt?: string | null, image?: string | null };
+export type ArticlePartsFragment = { __typename?: 'Article', title: string, author?: string | null, excerpt?: string | null, image?: string | null, tags?: Array<string | null> | null, keywords?: Array<string | null> | null, body?: any | null };
 
 export type PageQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -1139,7 +1157,7 @@ export type FaqQueryVariables = Exact<{
 }>;
 
 
-export type FaqQuery = { __typename?: 'Query', faq: { __typename?: 'Faq', id: string, question: string, answer?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type FaqQuery = { __typename?: 'Query', faq: { __typename?: 'Faq', id: string, question: string, answer?: any | null, tags?: Array<string | null> | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type FaqConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -1151,14 +1169,14 @@ export type FaqConnectionQueryVariables = Exact<{
 }>;
 
 
-export type FaqConnectionQuery = { __typename?: 'Query', faqConnection: { __typename?: 'FaqConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'FaqConnectionEdges', cursor: string, node?: { __typename?: 'Faq', id: string, question: string, answer?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type FaqConnectionQuery = { __typename?: 'Query', faqConnection: { __typename?: 'FaqConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'FaqConnectionEdges', cursor: string, node?: { __typename?: 'Faq', id: string, question: string, answer?: any | null, tags?: Array<string | null> | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type ArticleQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
 }>;
 
 
-export type ArticleQuery = { __typename?: 'Query', article: { __typename?: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type ArticleQuery = { __typename?: 'Query', article: { __typename?: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, tags?: Array<string | null> | null, keywords?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type ArticleConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -1170,7 +1188,7 @@ export type ArticleConnectionQueryVariables = Exact<{
 }>;
 
 
-export type ArticleConnectionQuery = { __typename?: 'Query', articleConnection: { __typename?: 'ArticleConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ArticleConnectionEdges', cursor: string, node?: { __typename?: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type ArticleConnectionQuery = { __typename?: 'Query', articleConnection: { __typename?: 'ArticleConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ArticleConnectionEdges', cursor: string, node?: { __typename?: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, tags?: Array<string | null> | null, keywords?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export const PagePartsFragmentDoc = gql`
     fragment PageParts on Page {
@@ -1342,6 +1360,7 @@ export const FaqPartsFragmentDoc = gql`
     fragment FaqParts on Faq {
   question
   answer
+  tags
 }
     `;
 export const ArticlePartsFragmentDoc = gql`
@@ -1350,6 +1369,9 @@ export const ArticlePartsFragmentDoc = gql`
   author
   excerpt
   image
+  tags
+  keywords
+  body
 }
     `;
 export const PageDocument = gql`

@@ -165,6 +165,7 @@ fragment BioParts on Bio {
 fragment FaqParts on Faq {
   question
   answer
+  tags
 }
 
 fragment ArticleParts on Article {
@@ -172,4 +173,7 @@ fragment ArticleParts on Article {
   author
   excerpt
   image
+  tags
+  keywords
+  body
 }

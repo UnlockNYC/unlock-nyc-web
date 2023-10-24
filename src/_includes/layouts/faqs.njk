@@ -1,46 +1,18 @@
-<!-- MAB: this will eventually be a collection, with filters -->
-<!-- maybe do with for loop on each page? or, pass filter into here-->
-
 <h3 class="center-title">
     FAQs
-  </h3>
-  <div class="faq-container">
-    <div class="question"> 
+</h3>
+<div class="faq-container">
+    {%- for post in collections[faqPageList] -%}
+    <div class="question">
       <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
       <h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?
+        {{ post.data.question }}
       </h4>
       <div class="faq-answer">
-        <p>Unlock NYC works with hundreds of voucher holders across New York City, and we work with community members to identify if they are willing to share their story with the press. When you fill out our Media Request Form, please give us as many details as possible about the number of interviewees you’re hoping to speak with, what experiences they’d ideally have (e.g., voucher type, current housing situation, borough, reports about a particular broker/landlord, etc.), interview format (phone, virtual, in-person) and access to the questions you plan to ask with as much specificity as possible. This helps us efficiently review the request, identify possible sources, and obtain full and informed consent before introducing them to you. We also ask that members of the press be willing to have an Unlock NYC Communications team member sit in on interview(s) with our users if they request someone from our team to accompany them. </p>
+        <p>{{ post.data.answer }}</p>
       </div>
     </div>
-    <div class="question"> 
-      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
-      <h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing?
-      </h4>
-      <div class="faq-answer">
-        <p>Unlock NYC works with hundreds of voucher holders across New York City, and we work with community members to identify if they are willing to share their story with the press. When you fill out our Media Request Form, please give us as many details as possible about the number of interviewees you’re hoping to speak with, what experiences they’d ideally have (e.g., voucher type, current housing situation, borough, reports about a particular broker/landlord, etc.), interview format (phone, virtual, in-person) and access to the questions you plan to ask with as much specificity as possible. This helps us efficiently review the request, identify possible sources, and obtain full and informed consent before introducing them to you. We also ask that members of the press be willing to have an Unlock NYC Communications team member sit in on interview(s) with our users if they request someone from our team to accompany them. </p>
-      </div>
-    </div>
-    <div class="question"> 
-      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
-      <h4>
-        Sed ut perspiciatis unde omnis iste natus error sit?
-      </h4>
-      <div class="faq-answer">
-        <p>Unlock NYC works with hundreds of voucher holders across New York City, and we work with community members to identify if they are willing to share their story with the press. When you fill out our Media Request Form, please give us as many details as possible about the number of interviewees you’re hoping to speak with, what experiences they’d ideally have (e.g., voucher type, current housing situation, borough, reports about a particular broker/landlord, etc.), interview format (phone, virtual, in-person) and access to the questions you plan to ask with as much specificity as possible. This helps us efficiently review the request, identify possible sources, and obtain full and informed consent before introducing them to you. We also ask that members of the press be willing to have an Unlock NYC Communications team member sit in on interview(s) with our users if they request someone from our team to accompany them. </p>
-      </div>
-    </div>
-    <div class="question"> 
-      <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
-      <h4>
-        Voluptatem accusantium doloremque laudantium, totam rem aperiam?
-      </h4>
-      <div class="faq-answer">
-        <p>Unlock NYC works with hundreds of voucher holders across New York City, and we work with community members to identify if they are willing to share their story with the press. When you fill out our Media Request Form, please give us as many details as possible about the number of interviewees you’re hoping to speak with, what experiences they’d ideally have (e.g., voucher type, current housing situation, borough, reports about a particular broker/landlord, etc.), interview format (phone, virtual, in-person) and access to the questions you plan to ask with as much specificity as possible. This helps us efficiently review the request, identify possible sources, and obtain full and informed consent before introducing them to you. We also ask that members of the press be willing to have an Unlock NYC Communications team member sit in on interview(s) with our users if they request someone from our team to accompany them. </p>
-      </div>
-    </div>
+    {%- endfor -%}
   </div>
 
 
@@ -53,7 +25,7 @@
         $(this).children("svg").removeClass("plus");
         $(this).children("svg").addClass("minus");
         $(this).children("svg").html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>');
-      } 
+      }
       else {
         $(this).children("svg").removeClass("minus");
         $(this).children("svg").addClass("plus");

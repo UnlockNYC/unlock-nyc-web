@@ -1,0 +1,29 @@
+<div class="article-collection">
+    {%- for post in collections[articlePageList] -%}
+    <div class="page-content-50-50 article-item">
+      <div style="background-color: #555; height: 300px;">
+         <img src="{{ post.data.image }}" style="width: 100%;">
+      </div>
+      <div class="article-summary">
+        <div>
+            <div class="article-tags">
+                {%- for item in post.data.keywords -%}
+                <span class="tag">{{ item }}</span>
+                {%- endfor -%}
+            </div>
+          <h4>
+            <a>{{ post.data.title }}</a>
+          </h4>
+          <p>
+            {{ post.data.excerpt }}
+          </p>
+          <a href="{{ post.url }}">
+            <button class="black">
+                Learn more
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
+</div>

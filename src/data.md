@@ -36,6 +36,7 @@ eleventyNavigation:
   title: Data & Research
   order: 2
 title: Data
+faqPageList: FAQ Data
 _template: datapage
 ---
 

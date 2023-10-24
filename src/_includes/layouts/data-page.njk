@@ -7,31 +7,42 @@ templateClass: tmpl-home
 <style>
 
   div#data-grid {
-    display: grid;
-    grid-template-columns: 33% auto;
-    grid-column-gap: 60px;
+      display: grid;
+      grid-template-columns: 33% auto;
+      grid-column-gap: 60px;
   }
 
   div#data-grid-text {
-    padding-top: 30px;
+      padding-top: 30px;
   }
 
   div#map-grid {
       display: grid;
-      grid-template-columns: 66% auto;
+      grid-template-columns: 58% auto;
       grid-column-gap: 0;
+  }
+
+  div#data-grid div.report-card-wrapper:nth-child(odd) div.report-card {
+      background-color: var(--yellow);
+  }
+
+  div#data-grid div.report-card-wrapper:nth-child(even) div.report-card {
+      background-color: var(--green);
   }
 
   @media only screen and (max-width: 800px) {
     div#data-grid {
-      grid-template-columns: 1fr;
-      margin-top: -30px;
+        grid-template-columns: 1fr;
+        margin-top: -30px;
     }
     div#data-grid-text {
-      text-align: center;
-      max-width: 80%;
-      margin: auto;
-      margin-bottom: 30px;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    div#map-grid {
+        grid-template-columns: 1fr;
     }
   }
 </style>
@@ -60,48 +71,37 @@ templateClass: tmpl-home
       </p>
     </div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
+      {%- for report in collections.featured -%}
       <div class="report-card-wrapper">
-        <div class="bg-yellow report-card">
+        <div class="report-card">
           <div>
-            <span class="tag">Report</span>
-            <span class="tag">2022</span>
+            <span class="tag">{{ report.data.keywords }}</span>
+            <span class="tag">{{ report.data.year }}</span>
           </div>
           <div>
             <p class="black" style="text-decoration: underline;">
               <strong>Featured Report</strong>
             </p>
             <h4 style="font-size: 1.5rem;">
-              {{ reportTitle }}
+              {{ report.data.reportTitle }}
             </h4>
             <p class="black">
-              {{ reportSummaryTop }}
+              {{ report.data.reportSummaryTop }}
             </p>
+            <br><br><br>
+            <a href="{{ report.data.reportLink }}">
+                <button class="black">
+                    Read report
+                </button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="report-card-wrapper">
-        <div class="bg-green report-card">
-          <div>
-            <span class="tag">Report</span>
-            <span class="tag">2022</span>
-          </div>
-          <div>
-            <p class="black" style="text-decoration: underline;">
-              <strong>Featured Report</strong>
-            </p>
-            <h4 style="font-size: 1.5rem;">
-              {{ reportTitle }}
-            </h4>
-            <p class="black">
-              {{ reportSummaryTop }}
-            </p>
-          </div>
-        </div>
-      </div>
+      {%- endfor -%}
     </div>
   </div>
   <div id="map-grid" class="bg-purple" style="width: 100%; margin-top: 30px; overflow: hidden;">
-    <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Community-Map_Purple.png" style="width: 100%; object-position: bottom center;">
+    <div style="background: url('https://public-unlock.nyc3.digitaloceanspaces.com/media/Community-Map_Purple.png'); background-size: cover; background-position: center center; min-height: 300px;"></div>
     <div class="report-card-wrapper">
         <div class="bg-purple report-card">
             <div>

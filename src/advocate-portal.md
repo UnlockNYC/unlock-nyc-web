@@ -57,6 +57,8 @@ yellowBannerText: >-
   SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]
   Most of our partners start out in the community via our welcoming, informative
   workshops.
+articlePageList: Advocate Portal
+faqPageList: FAQ Advocate Portal
 _template: advocateportal
 ---
 

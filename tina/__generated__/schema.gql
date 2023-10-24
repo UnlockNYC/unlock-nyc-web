@@ -547,15 +547,23 @@ type BioConnection implements Connection {
 
 type Faq implements Node & Document {
   question: String!
-  answer: String
+  answer: JSON
+  tags: [String]
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
 }
 
+input RichTextFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+}
+
 input FaqFilter {
   question: StringFilter
-  answer: StringFilter
+  answer: RichTextFilter
+  tags: StringFilter
 }
 
 type FaqConnectionEdges {
@@ -574,6 +582,9 @@ type Article implements Node & Document {
   author: String
   excerpt: String
   image: String
+  tags: [String]
+  keywords: [String]
+  body: JSON
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -584,6 +595,9 @@ input ArticleFilter {
   author: StringFilter
   excerpt: StringFilter
   image: ImageFilter
+  tags: StringFilter
+  keywords: StringFilter
+  body: RichTextFilter
 }
 
 type ArticleConnectionEdges {
@@ -826,7 +840,8 @@ input BioMutation {
 
 input FaqMutation {
   question: String
-  answer: String
+  answer: JSON
+  tags: [String]
 }
 
 input ArticleMutation {
@@ -834,6 +849,9 @@ input ArticleMutation {
   author: String
   excerpt: String
   image: String
+  tags: [String]
+  keywords: [String]
+  body: JSON
 }
 
 schema {
