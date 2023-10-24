@@ -988,6 +988,11 @@ export default defineConfig({
               },
             ]
           },
+          {
+            type: "number",
+            name: "order",
+            label: "Order"
+          },
         ]
       },
       {

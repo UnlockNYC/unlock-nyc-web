@@ -1,9 +1,9 @@
 <h3 class="center-title">
     FAQs
 </h3>
-<div class="faq-container">
+<div class="faq-container" style="display: grid;">
     {%- for post in collections[faqPageList] -%}
-    <div class="question">
+    <div class="question" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
       <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
       <h4>
         {{ post.data.question }}

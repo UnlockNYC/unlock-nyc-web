@@ -549,6 +549,7 @@ type Faq implements Node & Document {
   question: String!
   answer: JSON
   tags: [String]
+  order: Float
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -560,10 +561,21 @@ input RichTextFilter {
   exists: Boolean
 }
 
+input NumberFilter {
+  lt: Float
+  lte: Float
+  gte: Float
+  gt: Float
+  eq: Float
+  exists: Boolean
+  in: [Float]
+}
+
 input FaqFilter {
   question: StringFilter
   answer: RichTextFilter
   tags: StringFilter
+  order: NumberFilter
 }
 
 type FaqConnectionEdges {
@@ -842,6 +854,7 @@ input FaqMutation {
   question: String
   answer: JSON
   tags: [String]
+  order: Float
 }
 
 input ArticleMutation {

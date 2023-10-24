@@ -971,6 +971,11 @@ var config_default = defineConfig({
                 label: "Data"
               }
             ]
+          },
+          {
+            type: "number",
+            name: "order",
+            label: "Order"
           }
         ]
       },

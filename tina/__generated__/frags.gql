@@ -166,6 +166,7 @@ fragment FaqParts on Faq {
   question
   answer
   tags
+  order
 }
 
 fragment ArticleParts on Article {
