@@ -1,6 +1,12 @@
 ---
 layout: layouts/voucher-page.njk
 bg: White
+blocksFirst: image
+eleventyNavigation:
+  key: Voucher Holders
+  title: For Voucher Holders
+  order: 3
+title: For Voucher Holders
 bannerTitle: For Voucher Holders
 bannerText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -8,7 +14,11 @@ bannerText: >-
   nostrud exercitation ullamco.
 blocksList:
   - title: Uncover your power
-    text: test test test
+    text: >-
+      Unlock NYC helps you uncover your own power so you can flex your rights on
+      your housing search. Whether you’re hearing “no vouchers” or getting
+      ghosted over and over again, our team and our tools are here. We can
+      connect you to resources, amplify your voice, and help you unlock housing.
     image: image placeholder
     button: 'yes'
     buttonList:
@@ -25,7 +35,6 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
-blocksFirst: image
 keyImage1: image placeholder
 keyImage2: image placeholder
 keyImage3: image placeholder
@@ -72,12 +81,6 @@ linksList:
     image: image placeholder
     button: 'yes'
     buttonText: Learn more
-eleventyNavigation:
-  key: Voucher Holders
-  title: For Voucher Holders
-  order: 3
-title: For Voucher Holders
 _template: voucherholders
 ---
-
 
