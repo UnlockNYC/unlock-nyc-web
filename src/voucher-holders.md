@@ -32,9 +32,12 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Get started
-  - title: Unlock housing opportunitie
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+  - title: Unlock housing opportunities
+    text: >-
+      Share your report with a lawyer, government official, or someone else who
+      can help you resolve the issue you are facing. When you speak up about
+      housing discrimination, you can unlock housing for yourself – and others.
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/vouhcer-3.png'
     button: 'yes'
     buttonList:
       - buttonText: Learn more
