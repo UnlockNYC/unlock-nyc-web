@@ -19,7 +19,7 @@ blocksList:
       your housing search. Whether you’re hearing “no vouchers” or getting
       ghosted over and over again, our team and our tools are here. We can
       connect you to resources, amplify your voice, and help you unlock housing.
-    image: image placeholder
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/voucher-1.png'
     button: 'yes'
     buttonList:
       - buttonText: Attend a workshop
