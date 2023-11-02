@@ -721,7 +721,7 @@ div.question {
 }
 
 div.question:last-child {
-  border-bottom: 2px solid #d9d9d9;
+  /*border-bottom: 2px solid #d9d9d9;*/
 }
 
 div.question svg {
