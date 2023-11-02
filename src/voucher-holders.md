@@ -24,8 +24,11 @@ blocksList:
     buttonList:
       - buttonText: Attend a workshop
   - title: Flex your rights
-    text: lorem ipsum dolor simit
-    image: image placeholder
+    text: >-
+      Keep a paper trail of your search. You’ll be more confident, organized,
+      and prepared when you use our free Rights Recorder app to record phone
+      calls, collect evidence, and report unfair treatment.
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/voucher-2.png'
     button: 'yes'
     buttonList:
       - buttonText: Get started
