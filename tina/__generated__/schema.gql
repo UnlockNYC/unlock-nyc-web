@@ -524,9 +524,20 @@ type Bio implements Node & Document {
   title: String
   tags: [String]
   image: String
+  order: Float
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
+}
+
+input NumberFilter {
+  lt: Float
+  lte: Float
+  gte: Float
+  gt: Float
+  eq: Float
+  exists: Boolean
+  in: [Float]
 }
 
 input BioFilter {
@@ -534,6 +545,7 @@ input BioFilter {
   title: StringFilter
   tags: StringFilter
   image: ImageFilter
+  order: NumberFilter
 }
 
 type BioConnectionEdges {
@@ -561,16 +573,6 @@ input RichTextFilter {
   startsWith: String
   eq: String
   exists: Boolean
-}
-
-input NumberFilter {
-  lt: Float
-  lte: Float
-  gte: Float
-  gt: Float
-  eq: Float
-  exists: Boolean
-  in: [Float]
 }
 
 input FaqFilter {
@@ -851,6 +853,7 @@ input BioMutation {
   title: String
   tags: [String]
   image: String
+  order: Float
 }
 
 input FaqMutation {

@@ -17,6 +17,9 @@ templateClass: tmpl-home
     grid-column-gap: 30px;
     margin-bottom: 30px;
   }
+  div.bio div img {
+      max-width: 100%;
+  }
 
   @media only screen and (max-width: 800px) {
     div.content:nth-of-type(1) {
@@ -119,7 +122,7 @@ templateClass: tmpl-home
     </h4>
     <div class="bio-container">
       {%- for post in collections.Staff -%}
-      <div class="bio">
+      <div class="bio" style="order: {{ post.data.order }}">
         <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
            <img src="{{ post.data.image }}">
         </div>
@@ -140,17 +143,17 @@ templateClass: tmpl-home
     <div class="bio-container">
         {%- for post in collections.Team -%}
         <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-            <img src="{{ post.data.image }}">
-        </div>
-        <div style="padding-top: 15px;">
-            <h4>
-            {{ post.data.name }}
-            </h4>
-            <p style="margin-top: -10px;">
-            {{ post.data.title }}
-            </p>
-        </div>
+            <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
+                <img src="{{ post.data.image }}">
+            </div>
+            <div style="padding-top: 15px;">
+                <h4>
+                {{ post.data.name }}
+                </h4>
+                <p style="margin-top: -10px;">
+                {{ post.data.title }}
+                </p>
+            </div>
         </div>
         {%- endfor -%}
     </div>
@@ -163,17 +166,17 @@ templateClass: tmpl-home
     <div class="bio-container">
         {%- for post in collections.LC -%}
         <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-            <img src="{{ post.data.image }}">
-        </div>
-        <div style="padding-top: 15px;">
-            <h4>
-            {{ post.data.name }}
-            </h4>
-            <p style="margin-top: -10px;">
-            {{ post.data.title }}
-            </p>
-        </div>
+            <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
+                <img src="{{ post.data.image }}">
+            </div>
+            <div style="padding-top: 15px;">
+                <h4>
+                {{ post.data.name }}
+                </h4>
+                <p style="margin-top: -10px;">
+                {{ post.data.title }}
+                </p>
+            </div>
         </div>
         {%- endfor -%}
     </div>
@@ -183,17 +186,17 @@ templateClass: tmpl-home
     <div class="bio-container">
         {%- for post in collections.Advisors -%}
         <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-            <img src="{{ post.data.image }}">
-        </div>
-        <div style="padding-top: 15px;">
-            <h4>
-            {{ post.data.name }}
-            </h4>
-            <p style="margin-top: -10px;">
-            {{ post.data.title }}
-            </p>
-        </div>
+            <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
+                <img src="{{ post.data.image }}">
+            </div>
+            <div style="padding-top: 15px;">
+                <h4>
+                {{ post.data.name }}
+                </h4>
+                <p style="margin-top: -10px;">
+                {{ post.data.title }}
+                </p>
+            </div>
         </div>
         {%- endfor -%}
     </div>

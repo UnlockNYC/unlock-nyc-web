@@ -1,5 +1,5 @@
 ---
-name: Kristina Abajace`
+name: Kristina Abajace
 title: 'Virtual Assistant, Double'
 tags:
   - Team

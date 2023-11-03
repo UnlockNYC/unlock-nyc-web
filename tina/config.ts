@@ -970,6 +970,11 @@ export default defineConfig({
             type: "image",
             name: "image",
             label: "Headshot"
+          },
+          {
+            type: "number",
+            name: "order",
+            label: "Order"
           }
         ]
       },
