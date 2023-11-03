@@ -56,7 +56,7 @@ linksList:
     text: >-
       If you need a voucher, make an appointment at your local Homebase location
       to see if you are eligible.
-    image: image placeholder
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/homebase.png'
     button: 'yes'
     buttonText: Make appointment
   - title: Get help with your housing search
