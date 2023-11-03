@@ -142,7 +142,7 @@ templateClass: tmpl-home
     </h4>
     <div class="bio-container">
         {%- for post in collections.Team -%}
-        <div class="bio">
+        <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
                 <img src="{{ post.data.image }}">
             </div>
@@ -165,7 +165,7 @@ templateClass: tmpl-home
     </p>
     <div class="bio-container">
         {%- for post in collections.LC -%}
-        <div class="bio">
+        <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
                 <img src="{{ post.data.image }}">
             </div>
@@ -185,7 +185,7 @@ templateClass: tmpl-home
     </h4>
     <div class="bio-container">
         {%- for post in collections.Advisors -%}
-        <div class="bio">
+        <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
                 <img src="{{ post.data.image }}">
             </div>
