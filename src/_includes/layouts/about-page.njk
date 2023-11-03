@@ -4,17 +4,17 @@ templateClass: tmpl-home
 ---
 <!-- MAB - put CSS HERE?! OR ELSE WHERE -->
 <style>
-  
+
   div.bio-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    margin-top: 50px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
   div.bio {
-    display: grid; 
-    grid-template-columns: 25% auto; 
-    grid-column-gap: 30px; 
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 30px;
     margin-bottom: 30px;
   }
 
@@ -118,232 +118,84 @@ templateClass: tmpl-home
       Staff
     </h4>
     <div class="bio-container">
+      {%- for post in collections.Staff -%}
       <div class="bio">
         <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
+           <img src="{{ post.data.image }}">
         </div>
         <div style="padding-top: 15px;">
           <h4>
-            Name
+            {{ post.data.name }}
           </h4>
           <p style="margin-top: -10px;">
-            Title
+            {{ post.data.title }}
           </p>
         </div>
       </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
+      {%- endfor -%}
     </div>
     <h4>
       Team
     </h4>
     <div class="bio-container">
-      <div class="bio">
+        {%- for post in collections.Team -%}
+        <div class="bio">
         <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
+            <img src="{{ post.data.image }}">
         </div>
         <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
+            <h4>
+            {{ post.data.name }}
+            </h4>
+            <p style="margin-top: -10px;">
+            {{ post.data.title }}
+            </p>
         </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
         </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
+        {%- endfor -%}
     </div>
     <h4>
-      Leadership Collective 
+      Leadership Collective
     </h4>
     <p>
       Members of the Unlock NYC Leadership Collective are nominated each fall for a 6-month advisory board term followed by an optional capstone project. As engaged users of our tools and emerging leaders in their communities, the Leadership Collective meets monthly to help our programs team shape the direction of our organization and make key decisions.
     </p>
     <div class="bio-container">
-      <div class="bio">
+        {%- for post in collections.LC -%}
+        <div class="bio">
         <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
+            <img src="{{ post.data.image }}">
         </div>
         <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
+            <h4>
+            {{ post.data.name }}
+            </h4>
+            <p style="margin-top: -10px;">
+            {{ post.data.title }}
+            </p>
         </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
         </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
+        {%- endfor -%}
     </div>
     <h4>
       Advisors
     </h4>
     <div class="bio-container">
-      <div class="bio">
+        {%- for post in collections.Staff -%}
+        <div class="bio">
         <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
+            <img src="{{ post.data.image }}">
         </div>
         <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
+            <h4>
+            {{ post.data.name }}
+            </h4>
+            <p style="margin-top: -10px;">
+            {{ post.data.title }}
+            </p>
         </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
         </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
-      <div class="bio">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-           img 
-        </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            Name
-          </h4>
-          <p style="margin-top: -10px;">
-            Title
-          </p>
-        </div>
-      </div>
+        {%- endfor -%}
     </div>
     <h4>
       Special thanks

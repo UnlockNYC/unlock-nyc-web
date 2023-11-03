@@ -159,6 +159,7 @@ fragment PageParts on Page {
 fragment BioParts on Bio {
   name
   title
+  tags
   image
 }
 

@@ -944,6 +944,29 @@ export default defineConfig({
             label: "Title"
           },
           {
+            type: "string",
+            name: "tags",
+            label: "Category",
+            list: true,
+            options: [
+              {
+                value: "Staff",
+                label: "Staff"
+              }, {
+                value: "Team",
+                label: "Team"
+              },
+              {
+                value: "LC",
+                label: "LC"
+              },
+              {
+                value: "Advisors",
+                label: "Advsiors"
+              }
+            ]
+          },
+          {
             type: "image",
             name: "image",
             label: "Headshot"

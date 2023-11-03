@@ -522,6 +522,7 @@ type PageConnection implements Connection {
 type Bio implements Node & Document {
   name: String!
   title: String
+  tags: [String]
   image: String
   id: ID!
   _sys: SystemInfo!
@@ -531,6 +532,7 @@ type Bio implements Node & Document {
 input BioFilter {
   name: StringFilter
   title: StringFilter
+  tags: StringFilter
   image: ImageFilter
 }
 
@@ -847,6 +849,7 @@ input PageMutation {
 input BioMutation {
   name: String
   title: String
+  tags: [String]
   image: String
 }
 
