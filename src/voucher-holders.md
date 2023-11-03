@@ -64,7 +64,7 @@ linksList:
       Neighbors Together hosts regular workshops at their office in Bed-Stuy
       where you can learn tricks for finding an apartment and search for
       housing.
-    image: image placeholder
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/nt.png'
     button: 'yes'
     buttonText: See location
   - title: Prevent or delay an eviction
