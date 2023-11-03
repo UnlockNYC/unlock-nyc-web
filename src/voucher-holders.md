@@ -83,7 +83,9 @@ linksList:
     button: 'yes'
     buttonText: Call the Met Council
   - title: Request repairs in your apartment
-    text: mab text text proton lorem ipsum
+    text: >-
+      JustFix’s Letter of Complaint tool can help you send a free customized
+      letter to your landlord requesting repairs.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/justfix.png'
     button: 'yes'
     buttonText: Request repairs
