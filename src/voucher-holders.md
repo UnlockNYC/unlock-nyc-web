@@ -76,8 +76,10 @@ linksList:
     button: 'yes'
     buttonText: Learn more
   - title: Address a housing situation
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+    text: >-
+      Call the Met Council on Housing Tenant’s Rights Hotline to get answers
+      about your rights as a tenant; they may be able to refer you to a lawyer
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/metcouncil.png'
     button: 'yes'
     buttonText: Call the Met Council
   - title: Request repairs in your apartment
