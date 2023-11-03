@@ -41,10 +41,10 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
-keyImage1: image placeholder
-keyImage2: image placeholder
-keyImage3: image placeholder
-keyImage4: image placeholder
+keyImage1: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/key1.png'
+keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/key2.png'
+keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/key3.png'
+keyImage4: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/key4.png'
 quote: >-
   [My response from Unlock NYC] was SO different from every single agency I had
   to interact with. I was just like wow, you read the whole thing? And that
