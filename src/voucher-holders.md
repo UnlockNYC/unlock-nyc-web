@@ -84,7 +84,7 @@ linksList:
     buttonText: Call the Met Council
   - title: Request repairs in your apartment
     text: mab text text proton lorem ipsum
-    image: image placeholder
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/justfix.png'
     button: 'yes'
     buttonText: Request repairs
   - title: Document heading issues
