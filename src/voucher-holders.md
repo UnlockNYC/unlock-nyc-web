@@ -68,8 +68,11 @@ linksList:
     button: 'yes'
     buttonText: See location
   - title: Prevent or delay an eviction
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+    text: >-
+      Housing Court Answers can explain Housing Court and housing law, rent
+      arrears assistance, and homeless prevention guidance.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/housingcourtanswers.png
     button: 'yes'
     buttonText: Learn more
   - title: Address a housing situation
