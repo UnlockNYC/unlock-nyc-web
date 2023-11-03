@@ -89,9 +89,11 @@ linksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/justfix.png'
     button: 'yes'
     buttonText: Request repairs
-  - title: Document heading issues
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+  - title: Document heating issues
+    text: >-
+      If your landlord isn’t turning on the heat in winter, Heat Seek sensors
+      let you quickly and easily document the temperature in your home.
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/heatseek.png'
     button: 'yes'
     buttonText: Learn more
 _template: voucherholders
