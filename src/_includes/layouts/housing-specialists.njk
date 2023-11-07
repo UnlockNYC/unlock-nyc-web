@@ -5,6 +5,10 @@ templateClass: tmpl-home
 
 <!-- MAB include here?! or somewhere else?! -->
 <style>
+
+    div.blocks-icons-wrapper .block.image img {
+        max-width: 95%;
+    }
   div.content.first {
     padding-top: 0;
     margin-top: -10vh;
@@ -140,7 +144,7 @@ templateClass: tmpl-home
   {% for thing in linksList %}
   <div class="blocks-icons-wrapper links">
     <div class="block image">
-      {{ thing.image }}
+      <img src="{{ thing.image }}">
     </div>
     <div class="block">
       <h4>
@@ -195,7 +199,7 @@ templateClass: tmpl-home
     </div>
   </div>
   <!--<div class="slides partners" style="margin-top: 60px;">
-      <div style="text-align: center;"> 
+      <div style="text-align: center;">
         <svg style="width: 25px; margin-top: 50%;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
       </div>
       <div class="bg-cream" style="height: 150px;">
@@ -207,7 +211,7 @@ templateClass: tmpl-home
       <div class="bg-cream" style="height: 150px;">
         partner logo
       </div>
-      <div style="text-align: center;"> 
+      <div style="text-align: center;">
         <svg style="width: 25px; margin-top: 50%; transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
       </div>
     </div>-->
