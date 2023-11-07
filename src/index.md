@@ -33,15 +33,15 @@ blocksList:
     buttonList:
       - buttonText: Learn more
         buttonLink: /housing-specialists
-  - title: Data for the movement
+  - title: Community-powered mapping
     text: >-
-      New Yorkers, advocacy groups, and policymakers around the city use our map
-      to see where our community reports facing discriminatory treatment by
-      landlords and brokers.
+      Curious to see how widespread this issue is in your neighborhood? Check
+      out our unique crowdsourced map to see where Unlock NYC’s users have
+      reported suspected discrimination.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/home-Image 3.png'
     button: 'yes'
     buttonList:
-      - buttonText: See the map
+      - buttonText: Explore the map
         buttonLink: /soi-mapping
 latestActionText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
