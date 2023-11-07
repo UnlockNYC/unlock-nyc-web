@@ -1,12 +1,18 @@
 ---
 bg: White
 layout: layouts/housing-specialists.njk
-bannerTitle: Housing Specialists
-bannerSubtitle: Help your clients report discrimination
 bannerText: >-
   If you have clients, sed do eiusmod tempor incididunt ut labore et dolore
   magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
   amet, consectetur.
+eleventyNavigation:
+  key: Housing Specialists
+  parent: Partners
+  title: Housing Specialists
+  order: 2
+title: For Housing Specialists
+bannerTitle: Housing Specialists
+bannerSubtitle: Help your clients report discrimination
 quote: >-
   “I cannot recommend [Unlock NYC] enough. I have referred every voucher-holding
   client here and it dramatically improves chances of rehousing every time.”
@@ -21,8 +27,9 @@ linksList:
     buttonList:
       - buttonText: See digital resource list
   - title: Virtual Workshops
-    text: Workshops hosted on Zoom text text etc. etc. etc.
-    image: image placeholder
+    text: 'Monthly tenant workshops hosted on Zoom are open to the public '
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/WeUnlockNYCworkshopscreenshot1.png
     button: 'yes'
     buttonList:
       - buttonText: For Tenants
@@ -37,12 +44,6 @@ linksList:
     text: Custom staff text etc. etc. etc.
     image: image placeholder
     button: 'no'
-eleventyNavigation:
-  key: Housing Specialists
-  parent: Partners
-  title: Housing Specialists
-  order: 2
-title: For Housing Specialists
 _template: housingspecialists
 ---
 
