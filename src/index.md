@@ -20,7 +20,7 @@ blocksList:
       background
     button: 'yes'
     buttonList:
-      - buttonText: Learn more
+      - buttonText: How it works
       - buttonText: Get started
         buttonLink: /rights-recorder
   - title: Tools for housing advocates
