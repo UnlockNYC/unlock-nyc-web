@@ -43,10 +43,7 @@ blocksList:
     buttonList:
       - buttonText: Explore the map
         buttonLink: /soi-mapping
-latestActionText: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud.
+latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
 latestActionVideo: null
 _template: index
 ---
