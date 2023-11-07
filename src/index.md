@@ -23,11 +23,11 @@ blocksList:
       - buttonText: Learn more
       - buttonText: Get started
         buttonLink: /rights-recorder
-  - title: Fair housing fighters
+  - title: Tools for housing advocates
     text: >-
-      If you’re a housing specialist or anyone who works 1-on-1 with voucher
-      holders, join us for tips, tools, and ways to unlock more doors with your
-      clients.
+      Supporting voucher holders on their housing search? Join our community of
+      housing specialists and advocates for tips, tools, and ways to unlock more
+      doors with your clients.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/home-Image 2.png'
     button: 'yes'
     buttonList:
