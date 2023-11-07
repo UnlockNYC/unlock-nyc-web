@@ -6,13 +6,14 @@ title: Home
 bannerTitle: Unlock your next home
 bannerText: >-
   The tools you need to stand up for yourself on your housing search - created
-  with an led by tenants who've been there.
+  with and led by tenants who've been there.
 blocksList:
   - title: Rights Recorder
     text: >-
-      Keep getting denied, ghosted, or treated unfairly after you mention your
-      housing voucher? Use our free tools to make a paper trail, flex your
-      rights, and get accountability.
+      Looking for an apartment with a voucher? Use our free Rights Recorder app
+      to record phone calls you make to brokers and keep track of any unfair
+      treatment. We’ll help you put together a report – and do something about
+      it. 
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/home-Image 1.png'
     alt: >-
       someone holding a recording smart phone in their hands, against a yellow
@@ -20,6 +21,7 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
+      - buttonText: Get started
         buttonLink: /rights-recorder
   - title: Fair housing fighters
     text: >-
