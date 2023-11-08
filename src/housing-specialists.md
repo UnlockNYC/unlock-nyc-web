@@ -43,7 +43,7 @@ linksList:
     buttonList:
       - buttonText: For Tenants
       - buttonText: For Housing Specialists
-  - title: Book advisory hours with our experts
+  - title: Book "office hours" with our experts
     text: >-
       Whether you're an academic seeking an advisor on a grant proposal, a
       government agency trying to set up a similar program in your city, or a
@@ -55,10 +55,6 @@ linksList:
     button: 'yes'
     buttonList:
       - buttonText: Find a time
-  - title: Private training & workshops
-    text: Custom staff text etc. etc. etc.
-    image: image placeholder
-    button: 'no'
 _template: housingspecialists
 ---
 
