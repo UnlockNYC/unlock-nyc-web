@@ -21,11 +21,15 @@ quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 linksList:
   - title: Informational Booklets
     text: >-
-      Request 25 free copies of our Record it. Report it! informational booklet
-      by emailing ashley@weunlock.nyc* Available in English and Spanish
+      Nearly 10,000 New Yorkers have received a copy of Record it. Report it!,
+      our pocket-sized guide to your rights as a voucher holder and how to
+      report discrimination. Purchase copies for your clients in English and/or
+      Spanish.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-record-report-booklet-spanish.png
     button: 'yes'
     buttonList:
-      - buttonText: See digital resource list
+      - buttonText: Place an order
   - title: Virtual Workshops
     text: 'Monthly tenant workshops hosted on Zoom are open to the public '
     image: >-
