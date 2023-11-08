@@ -38,13 +38,13 @@ linksList:
     buttonList:
       - buttonText: For Tenants
       - buttonText: For Housing Specialists
-  - title: Book consulting hours with our experts
+  - title: Book advisory hours with our experts
     text: >-
-      Whether you are an academic institution seeking an advisor on a grant
-      proposal, a government agency trying to set up a similar program in your
-      city, or a housing nonprofit recruiting directly-impacted tenants for
-      focus groups, Unlock NYC can match you with a team member who has the
-      expertise you need to get unstuck and dream up new possibilities.
+      Whether you're an academic seeking an advisor on a grant proposal, a
+      government agency trying to set up a similar program in your city, or a
+      nonprofit recruiting directly-impacted tenants for focus groups, Unlock
+      NYC has the expertise you need to get unstuck and dream up new
+      possibilities.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc.png
     button: 'yes'
