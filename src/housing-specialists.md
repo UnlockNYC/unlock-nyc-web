@@ -44,13 +44,13 @@ linksList:
       - buttonText: Request a workshop
   - title: Book "office hours" with our experts
     text: >-
-      Whether you're an academic seeking an advisor on a grant proposal, a
-      government agency trying to set up a similar program in your city, or a
-      nonprofit recruiting directly-impacted tenants for focus groups, Unlock
+      We're only a phone call away! Whether you need a sounding board for your
+      housing research project, want to bring a program like Unlock NYC to your
+      city, or want to improve inclusive governance at your organization, Unlock
       NYC has the expertise you need to get unstuck and dream up new
       possibilities.
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc-2.png
     button: 'yes'
     buttonList:
       - buttonText: Find a time
