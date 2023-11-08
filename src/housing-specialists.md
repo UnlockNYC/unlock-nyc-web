@@ -19,7 +19,7 @@ quote: >-
 quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 linksList:
-  - title: Informational Booklets
+  - title: Distribute print resources to clients
     text: >-
       Nearly 10,000 New Yorkers have received a copy of Record it. Report it!,
       our pocket-sized guide to your rights as a voucher holder and how to
