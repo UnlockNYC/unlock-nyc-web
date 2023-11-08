@@ -19,7 +19,7 @@ quote: >-
 quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 linksList:
-  - title: Distribute print resources to clients
+  - title: Distribute resources to your clients
     text: >-
       Nearly 10,000 New Yorkers have received a copy of Record it. Report it!,
       our pocket-sized guide to your rights as a voucher holder and how to
@@ -31,7 +31,12 @@ linksList:
     buttonList:
       - buttonText: Place an order
   - title: Schedule a workshop
-    text: Unlock NYC can present to your team virtually or in person!
+    text: >-
+      Featuring real examples, practical tips, and a Q&A with an Unlock NYC
+      facilitator directly impacted by housing discrimination, our 75-minute
+      live virtual training for housing specialists helps your staff recognize
+      warning signs of source of income discrimination and advocate with their
+      clients when it happens. 
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
