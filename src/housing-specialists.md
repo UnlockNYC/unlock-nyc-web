@@ -41,8 +41,7 @@ linksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
     buttonList:
-      - buttonText: For Tenants
-      - buttonText: For Housing Specialists
+      - buttonText: Request a workshop
   - title: Book "office hours" with our experts
     text: >-
       Whether you're an academic seeking an advisor on a grant proposal, a
