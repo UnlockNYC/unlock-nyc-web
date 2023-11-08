@@ -38,12 +38,14 @@ linksList:
     buttonList:
       - buttonText: For Tenants
       - buttonText: For Housing Specialists
-  - title: Tabling at your event or Resource Fair
+  - title: Book consulting hours
     text: >-
       We can table at your event or resource fair pending availability – we’re a
       small team!
     image: image placeholder
-    button: 'no'
+    button: 'yes'
+    buttonList:
+      - buttonText: Find a time
   - title: Private training & workshops
     text: Custom staff text etc. etc. etc.
     image: image placeholder
