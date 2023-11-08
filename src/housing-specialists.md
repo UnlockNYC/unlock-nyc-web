@@ -30,10 +30,10 @@ linksList:
     button: 'yes'
     buttonList:
       - buttonText: Place an order
-  - title: Virtual Workshops
+  - title: Schedule a workshop
     text: 'Monthly tenant workshops hosted on Zoom are open to the public '
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/WeUnlockNYCworkshopscreenshot1.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
     buttonList:
       - buttonText: For Tenants
