@@ -32,11 +32,10 @@ linksList:
       - buttonText: Place an order
   - title: Schedule a workshop
     text: >-
-      Featuring real examples, practical tips, and a Q&A with an Unlock NYC
-      facilitator directly impacted by housing discrimination, our 75-minute
-      live virtual training for housing specialists helps your staff recognize
-      warning signs of source of income discrimination and advocate with their
-      clients when it happens. 
+      Featuring real examples, practical tips, and Q&A with a directly-impacted
+      facilitator, our 75-minute live virtual training for housing specialists
+      helps your staff recognize warning signs of voucher discrimination and
+      advocate effectively with their clients.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
