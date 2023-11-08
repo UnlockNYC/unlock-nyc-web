@@ -31,7 +31,7 @@ linksList:
     buttonList:
       - buttonText: Place an order
   - title: Schedule a workshop
-    text: 'Monthly tenant workshops hosted on Zoom are open to the public '
+    text: Unlock NYC can present to your team virtually or in person!
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
