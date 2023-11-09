@@ -44,10 +44,11 @@ blocksList:
         buttonLink: /soi-mapping
 latestBanner: 'Latest report: Serial Discriminators List'
 latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
+latestActionImage: >-
+  https://public-unlock.nyc3.digitaloceanspaces.com/media/home-nailah-megaphone-rally-protest.jpeg
 latestActionVideo: null
 latestActionButton: 'yes'
 latestActionLink: /
 _template: index
 ---
-
 
