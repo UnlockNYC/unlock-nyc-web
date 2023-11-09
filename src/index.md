@@ -12,7 +12,7 @@ blocksList:
     text: >-
       Looking for an apartment? Use our free Rights Recorder app to record phone
       calls you make to brokers, keep track of any unfair treatment – and do
-      something about it. 
+      something about it.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/home-Image 1.png'
     alt: >-
       someone holding a recording smart phone in their hands, against a yellow
@@ -42,8 +42,12 @@ blocksList:
     buttonList:
       - buttonText: Explore the map
         buttonLink: /soi-mapping
+latestBanner: 'Latest report: Serial Discriminators List'
 latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
 latestActionVideo: null
+latestActionButton: 'yes'
+latestActionLink: /
 _template: index
 ---
+
 

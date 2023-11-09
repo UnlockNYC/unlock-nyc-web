@@ -114,8 +114,12 @@ type PageIndex implements Node & Document {
   bannerTitle: String
   bannerText: String
   blocksList: [PageIndexBlocksList]
+  latestBanner: String
   latestActionText: String
+  latestActionImage: String
   latestActionVideo: String
+  latestActionButton: String
+  latestActionLink: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -336,8 +340,12 @@ input PageIndexFilter {
   bannerTitle: StringFilter
   bannerText: StringFilter
   blocksList: PageIndexBlocksListFilter
+  latestBanner: StringFilter
   latestActionText: StringFilter
+  latestActionImage: ImageFilter
   latestActionVideo: StringFilter
+  latestActionButton: StringFilter
+  latestActionLink: StringFilter
 }
 
 input PageAboutFilter {
@@ -676,8 +684,12 @@ input PageIndexMutation {
   bannerTitle: String
   bannerText: String
   blocksList: [PageIndexBlocksListMutation]
+  latestBanner: String
   latestActionText: String
+  latestActionImage: String
   latestActionVideo: String
+  latestActionButton: String
+  latestActionLink: String
 }
 
 input PageAboutMutation {

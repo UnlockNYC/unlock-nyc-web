@@ -139,6 +139,11 @@ export default defineConfig({
               },
               {
                 type: "string",
+                name: "latestBanner",
+                label: "Latest Update: Banner",
+              },
+              {
+                type: "string",
                 name: "latestActionText",
                 label: "Latest Action: Text",
                 ui: {
@@ -146,9 +151,34 @@ export default defineConfig({
                 },
               },
               {
+                type: "image",
+                name: "latestActionImage",
+                label: "Latest Action: Image",
+              },
+              {
                 type: "string",
                 name: "latestActionVideo",
-                label: "Latest Action: Video",
+                label: "Latest Action: Video Link (leave blank if image!)",
+              },
+              {
+                type: "string",
+                name: "latestActionButton",
+                label: "Latest Action: Include Button?",
+                options: [
+                  {
+                    value: "yes",
+                    label: "Yes"
+                  },
+                  {
+                    value: "no",
+                    label: "No"
+                  }
+                ]
+              },
+              {
+                type: "string",
+                name: "latestActionLink",
+                label: "Latest Action: Button Link",
               },
             ],
           },

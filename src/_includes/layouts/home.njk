@@ -36,19 +36,26 @@ templateClass: tmpl-home
 <div class="content latest-action">
   <div class="half-wide">
     <h3 style="margin-top: 0;">
-      Latest Action Lorem Ipsum
+      {{ latestBanner }}
     </h3>
     <p>
       {{ latestActionText }}
     </p>
+    <p>
+        {% if latestActionButton == 'yes' %}
+          <button class="black" onclick=window.location.href='{{ latestActionLink }}';>
+            Learn More
+          </button>
+        {% endif %}
+    </p>
   </div>
   <div class="center-stage">
-    <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Video-Still.png" style="width: 100%;">
+    <img src="{{ latestActionImage }}" style="width: 100%;">
   </div>
 </div>
 <div class="banner-full bg-cream">
   <div class="page-content-50-50">
-    <div style="width: 100%; height: 350px; background-color: #727272; overflow: hidden;">
+    <div style="width: 100%; height: 350px; overflow: hidden;">
       <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/Team.png" style="object-fit: cover; max-width: 100%;">
     </div>
     <div style="padding: 5%; text-align: left;">
@@ -62,17 +69,54 @@ templateClass: tmpl-home
         <button>
             Learn more
         </button></a>
-      <a href="/get-involved"><button style="margin-left: 15px;">
-        Get involved
-      </button></a>
+      <a href="/get-involved">
+        <button>
+            Get involved
+        </button>
+      </a>
     </div>
   </div>
 </div>
 <div class="banner-full bg-orange last-banner">
   <h3>
-    Sign up for Newsletter Updates
+    Unlock news, tips, and more!
   </h3>
-  <button class="black">
-    Sign Up
-  </button>
+  <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+          #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup" style="background-color: transparent; font-family: var(--page-font); margin: auto;">
+    <form action="https://nyc.us7.list-manage.com/subscribe/post?u=0ae2fa69280f8742acf76156d&amp;id=5f5419ccb9&amp;f_id=00afcee4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <div id="mc_embed_signup_scroll">
+            <!--<div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+                </div>-->
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Your email <span class="asterisk">*</span></label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="border: none; border-radius: 0; font-size: 1.5em;" placeholder="me@me.com">
+            </div>
+            <div class="mc-field-group">
+                <label for="mce-FNAME">First name (optional) </label>
+                <input type="text" name="FNAME" class=" text" id="mce-FNAME" value="" style="border: none; border-radius: 0; font-size: 1.5em;">
+            </div>
+          <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+          </div>
+      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+          <input type="text" name="b_0ae2fa69280f8742acf76156d_5f5419ccb9" tabindex="-1" value="">
+      </div>
+      <div class="optionalParent">
+        <div class="clear foot" style="display: block !important; text-align: center;">
+            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Sign Up" style="background-color: Black; color: White;height: 48px;padding: 8px 16px;display: inline-block;border-radius: 8px;border: 1px solid Black;font-family: var(--page-font);font-size: 1rem;font-weight: 500;cursor: pointer;margin: auto;">
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[11]='MMERGE11';ftypes[11]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
 </div>

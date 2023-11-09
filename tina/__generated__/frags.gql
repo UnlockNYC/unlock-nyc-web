@@ -16,8 +16,12 @@ fragment PageParts on Page {
         buttonLink
       }
     }
+    latestBanner
     latestActionText
+    latestActionImage
     latestActionVideo
+    latestActionButton
+    latestActionLink
   }
   ... on PageAbout {
     title

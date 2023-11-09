@@ -609,7 +609,6 @@ div.center-stage {
   min-width: 600px;
   margin: auto;
   height: 450px;
-  background-color: #444444;
 }
 
 @media only screen and (min-width: 1650px) {
@@ -622,6 +621,10 @@ div.center-stage {
   div.banner-content {
     width: 80%;
   }
+  div.bg-cream div.page-content-50-50 {
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -632,7 +635,8 @@ div.center-stage {
     padding: 20px;
   }
   div.banner-full.bg-orange.last-banner {
-    padding: 10% 18% 15% 18%;
+      /*padding: 10% 18% 15% 18%;*/
+      padding: 18% 3%;
   }
   div div.half-wide {
     max-width: 100%;
