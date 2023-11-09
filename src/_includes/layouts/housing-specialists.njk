@@ -6,9 +6,9 @@ templateClass: tmpl-home
 <!-- MAB include here?! or somewhere else?! -->
 <style>
 
-    div.blocks-icons-wrapper .block.image img {
+  div.blocks-icons-wrapper .block.image img {
         max-width: 95%;
-    }
+  }
   div.content.first {
     padding-top: 0;
     margin-top: -10vh;
@@ -151,11 +151,11 @@ templateClass: tmpl-home
       {{ thing.title }}
       </h4>
       <p>
-        {{ thing.text }}
+        {{ thing.content }}
       </p>
       {% if thing.button == 'yes' %}
         {% for button in thing.buttonList %}
-          <button class="white">
+          <button class="white" onclick=window.location.href='{{ button.buttonLink }}'>
             {{ button.buttonText }}
           </button>
         {% endfor %}

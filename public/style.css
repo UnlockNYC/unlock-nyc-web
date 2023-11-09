@@ -648,6 +648,7 @@ div.center-stage {
   div.center-stage {
     width: 100%;
     min-width: unset;
+    height: auto;
   }
 }
 

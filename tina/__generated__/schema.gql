@@ -259,11 +259,12 @@ type PageCommunityorganizers implements Node & Document {
 
 type PageHousingspecialistsLinksListButtonList {
   buttonText: String
+  buttonLink: String
 }
 
 type PageHousingspecialistsLinksList {
   title: String
-  text: String
+  content: JSON
   image: String
   button: String
   buttonList: [PageHousingspecialistsLinksListButtonList]
@@ -462,13 +463,20 @@ input PageCommunityorganizersFilter {
   orangeBannerTitle: StringFilter
 }
 
+input RichTextFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+}
+
 input PageHousingspecialistsLinksListButtonListFilter {
   buttonText: StringFilter
+  buttonLink: StringFilter
 }
 
 input PageHousingspecialistsLinksListFilter {
   title: StringFilter
-  text: StringFilter
+  content: RichTextFilter
   image: ImageFilter
   button: StringFilter
   buttonList: PageHousingspecialistsLinksListButtonListFilter
@@ -575,12 +583,6 @@ type Faq implements Node & Document {
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
-}
-
-input RichTextFilter {
-  startsWith: String
-  eq: String
-  exists: Boolean
 }
 
 input FaqFilter {
@@ -808,11 +810,12 @@ input PageCommunityorganizersMutation {
 
 input PageHousingspecialistsLinksListButtonListMutation {
   buttonText: String
+  buttonLink: String
 }
 
 input PageHousingspecialistsLinksListMutation {
   title: String
-  text: String
+  content: JSON
   image: String
   button: String
   buttonList: [PageHousingspecialistsLinksListButtonListMutation]

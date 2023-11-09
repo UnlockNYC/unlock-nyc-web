@@ -132,12 +132,13 @@ fragment PageParts on Page {
     linksList {
       __typename
       title
-      text
+      content
       image
       button
       buttonList {
         __typename
         buttonText
+        buttonLink
       }
     }
   }

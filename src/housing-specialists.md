@@ -20,8 +20,8 @@ quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 linksList:
   - title: Distribute resources to your clients
-    text: >-
-      Nearly 10,000 New Yorkers have received a copy of Record it. Report it!,
+    content: >
+      Nearly 10,000 New Yorkers have received a copy of *Record It. Report It!*,
       our pocket-sized guide to your rights as a voucher holder and how to
       report discrimination. Purchase copies for your clients in English and/or
       Spanish.
@@ -30,19 +30,21 @@ linksList:
     button: 'yes'
     buttonList:
       - buttonText: Place an order
+        buttonLink: /about
   - title: Schedule a workshop
-    text: >-
-      Featuring real examples, practical tips, and Q&A with a directly-impacted
-      facilitator, our 75-minute live virtual training for housing specialists
-      helps your staff recognize warning signs of voucher discrimination and
-      advocate effectively with their clients.
+    content: >
+      Featuring real examples, practical tips, and Q\&A with a directly-impacted
+      facilitator, our 75-minute live virtual training for
+
+      housing specialists helps your staff recognize warning signs of voucher
+      discrimination and advocate effectively with their clients.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
     buttonList:
       - buttonText: Request a workshop
   - title: Book "office hours" with our experts
-    text: >-
+    content: >
       We're only a phone call away! Whether you need a sounding board for your
       housing research project, want to bring a program like Unlock NYC to your
       city, or want to improve inclusive governance at your organization, Unlock
@@ -55,4 +57,12 @@ linksList:
       - buttonText: Find a time
 _template: housingspecialists
 ---
+
+
+
+
+
+
+
+
 

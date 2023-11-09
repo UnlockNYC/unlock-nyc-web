@@ -805,12 +805,15 @@ export default defineConfig({
                     label: "Block Title"
                   },
                   {
-                    type: "string",
-                    name: "text",
+                    type: "rich-text",
+                    name: "content",
                     label: "Block Text",
-                    ui: {
+                    parser: {
+                            type: "md",
+                          },
+                    /*ui: {
                       component: "textarea"
-                    }
+                      }*/
                   },
                   {
                     type: "image",
@@ -849,6 +852,11 @@ export default defineConfig({
                         type: "string",
                         name: "buttonText",
                         label: "Button Text",
+                      },
+                      {
+                        type: "string",
+                        name: "buttonLink",
+                        label: "Button Link",
                       }
                     ]
                   },
