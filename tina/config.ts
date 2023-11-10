@@ -874,17 +874,24 @@ export default defineConfig({
                 list: true,
                 itemProps: (item) => {
                   // Field values are accessed by item?.<Field name>
-                  return { label: item?.title };
+                  return { label: item?.name };
                 },
                 fields: [
                   {
+                    type: "string",
+                    name: "name",
+                    label: "Partner Name",
+                    isTitle: true,
+                    required: true
+                  },
+                  {
                     type: "image",
-                    name: "partnerLogo",
+                    name: "logo",
                     label: "Partner Logo",
                   },
                   {
                     type: "string",
-                    name: "partnerLink",
+                    name: "link",
                     label: "Partner URL",
                   },
                 ]

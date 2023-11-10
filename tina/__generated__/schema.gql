@@ -271,8 +271,9 @@ type PageHousingspecialistsLinksList {
 }
 
 type PageHousingspecialistsPartnersList {
-  partnerLogo: String
-  partnerLink: String
+  name: String!
+  logo: String
+  link: String
 }
 
 type PageHousingspecialists implements Node & Document {
@@ -490,8 +491,9 @@ input PageHousingspecialistsLinksListFilter {
 }
 
 input PageHousingspecialistsPartnersListFilter {
-  partnerLogo: ImageFilter
-  partnerLink: StringFilter
+  name: StringFilter
+  logo: ImageFilter
+  link: StringFilter
 }
 
 input PageHousingspecialistsFilter {
@@ -836,8 +838,9 @@ input PageHousingspecialistsLinksListMutation {
 }
 
 input PageHousingspecialistsPartnersListMutation {
-  partnerLogo: String
-  partnerLink: String
+  name: String
+  logo: String
+  link: String
 }
 
 input PageHousingspecialistsMutation {

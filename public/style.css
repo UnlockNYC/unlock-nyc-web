@@ -871,6 +871,15 @@ div.funder-grid {
 }
 div.funder-grid div {
   height: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+div.funder-grid div img {
+    max-width: 100%;
 }
 
 /* mobile components */

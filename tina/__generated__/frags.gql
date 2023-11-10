@@ -144,8 +144,9 @@ fragment PageParts on Page {
     }
     partnersList {
       __typename
-      partnerLogo
-      partnerLink
+      name
+      logo
+      link
     }
   }
   ... on PageFunding {

@@ -173,30 +173,13 @@ templateClass: tmpl-home
     </p>
   </div>
   <div class="funder-grid">
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
-    <div class="bg-cream">
-      funder
-    </div>
+    {% for partner in partnersList %}
+    <a href="{{ partner.link }}" target="_blank">
+        <div class="bg-cream">
+            <img src="{{ partner.logo }}">
+        </div>
+    </a>
+    {% endfor %}
   </div>
   <!--<div class="slides partners" style="margin-top: 60px;">
       <div style="text-align: center;">
