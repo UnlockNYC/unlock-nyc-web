@@ -58,12 +58,11 @@ linksList:
       - buttonText: Find a time
 partnersList:
   - name: Asian Americans for Equality
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/housingspecialists-asian-americans-equality-logo.png
     link: 'https://www.aafe.org/'
   - name: Brooklyn Defenders
     link: 'https://bds.org/home'
 _template: housingspecialists
 ---
-
-
-
 
