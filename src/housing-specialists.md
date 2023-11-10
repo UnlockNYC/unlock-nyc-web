@@ -21,9 +21,10 @@ quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 linksList:
   - title: Distribute resources to your clients
     content: >
-      Nearly 10,000 New Yorkers have received a copy of *Record It. Report It!*,
-      our pocket-sized guide to your rights as a voucher holder and how to
-      report discrimination. Purchase copies for your clients in English and/or
+      Nearly 10,000 New Yorkers have received a copy of *[Record It. Report
+      It!](https://welcometocup.org/projects/record-it-report-it)*, our
+      pocket-sized guide to your rights as a voucher holder and how to report
+      discrimination. Purchase copies for your clients in English and/or
       Spanish.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-record-report-booklet-spanish.png
@@ -57,6 +58,7 @@ linksList:
       - buttonText: Find a time
 _template: housingspecialists
 ---
+
 
 
 

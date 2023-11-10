@@ -129,6 +129,7 @@ fragment PageParts on Page {
     quote
     quoteAuthor
     quoteTitle
+    quoteImg
     linksList {
       __typename
       title
@@ -140,6 +141,11 @@ fragment PageParts on Page {
         buttonText
         buttonLink
       }
+    }
+    partnersList {
+      __typename
+      partnerLogo
+      partnerLink
     }
   }
   ... on PageFunding {

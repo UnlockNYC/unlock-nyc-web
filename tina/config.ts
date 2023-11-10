@@ -790,6 +790,11 @@ export default defineConfig({
                 label: "Author Title",
               },
               {
+                type: "image",
+                name: "quoteImg",
+                label: "Quote Logo",
+              },
+              {
                 type: "object",
                 name: "linksList",
                 label: "Ways We Support",
@@ -861,6 +866,28 @@ export default defineConfig({
                     ]
                   },
                 ],
+              },
+              {
+                type: "object",
+                name: "partnersList",
+                label: "Featured Partners",
+                list: true,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.title };
+                },
+                fields: [
+                  {
+                    type: "image",
+                    name: "partnerLogo",
+                    label: "Partner Logo",
+                  },
+                  {
+                    type: "string",
+                    name: "partnerLink",
+                    label: "Partner URL",
+                  },
+                ]
               }
             ]
           },
