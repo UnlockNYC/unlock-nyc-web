@@ -36,8 +36,6 @@ fragment PageParts on Page {
       title
       text
       image
-      button
-      buttonText
     }
   }
   ... on PageAdvocateportal {
@@ -86,6 +84,7 @@ fragment PageParts on Page {
       buttonList {
         __typename
         buttonText
+        buttonLink
       }
     }
     keyImage1
@@ -102,6 +101,7 @@ fragment PageParts on Page {
       image
       button
       buttonText
+      buttonLink
     }
   }
   ... on PageCommunityorganizers {
@@ -118,6 +118,7 @@ fragment PageParts on Page {
       buttonList {
         __typename
         buttonText
+        buttonLink
       }
     }
     orangeBannerTitle
@@ -162,7 +163,14 @@ fragment PageParts on Page {
       buttonList {
         __typename
         buttonText
+        buttonLink
       }
+    }
+    fundersList {
+      __typename
+      name
+      logo
+      link
     }
     orangeBannerTitle
   }

@@ -247,26 +247,6 @@ var config_default = defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
-                  },
-                  {
-                    type: "string",
-                    name: "button",
-                    label: "Include Button?",
-                    options: [
-                      {
-                        value: "yes",
-                        label: "Yes"
-                      },
-                      {
-                        value: "no",
-                        label: "No"
-                      }
-                    ]
-                  },
-                  {
-                    type: "string",
-                    name: "buttonText",
-                    label: "Button Text"
                   }
                 ]
               }
@@ -544,6 +524,11 @@ var config_default = defineConfig({
                         type: "string",
                         name: "buttonText",
                         label: "Button Text"
+                      },
+                      {
+                        type: "string",
+                        name: "buttonLink",
+                        label: "Button Link"
                       }
                     ]
                   }
@@ -633,6 +618,11 @@ var config_default = defineConfig({
                     type: "string",
                     name: "buttonText",
                     label: "Button Text"
+                  },
+                  {
+                    type: "string",
+                    name: "buttonLink",
+                    label: "Button Link"
                   }
                 ]
               }
@@ -725,6 +715,11 @@ var config_default = defineConfig({
                         type: "string",
                         name: "buttonText",
                         label: "Button Text"
+                      },
+                      {
+                        type: "string",
+                        name: "buttonLink",
+                        label: "Button Link"
                       }
                     ]
                   }
@@ -964,8 +959,41 @@ var config_default = defineConfig({
                         type: "string",
                         name: "buttonText",
                         label: "Button Text"
+                      },
+                      {
+                        type: "string",
+                        name: "buttonLink",
+                        label: "Button Link"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                type: "object",
+                name: "fundersList",
+                label: "Current Funders",
+                list: true,
+                itemProps: (item) => {
+                  return { label: item?.name };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Funder Name",
+                    isTitle: true,
+                    required: true
+                  },
+                  {
+                    type: "image",
+                    name: "logo",
+                    label: "Funder Logo"
+                  },
+                  {
+                    type: "string",
+                    name: "link",
+                    label: "Funder URL"
                   }
                 ]
               },

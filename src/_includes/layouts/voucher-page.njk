@@ -155,7 +155,7 @@ templateClass: tmpl-home
           {{ thing.text }}
         </p>
         {% if thing.button == 'yes' %}
-        <button>
+        <button onclick=window.location.href='{{ button.buttonLink }}'>
           {{ thing.buttonText }}
         </button>
         {% endif %}

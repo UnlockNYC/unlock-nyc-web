@@ -137,8 +137,6 @@ type PageRightsrecorderIconBlocksList {
   title: String
   text: String
   image: String
-  button: String
-  buttonText: String
 }
 
 type PageRightsrecorder implements Node & Document {
@@ -197,6 +195,7 @@ type PageDatapage implements Node & Document {
 
 type PageVoucherholdersBlocksListButtonList {
   buttonText: String
+  buttonLink: String
 }
 
 type PageVoucherholdersBlocksList {
@@ -213,6 +212,7 @@ type PageVoucherholdersLinksList {
   image: String
   button: String
   buttonText: String
+  buttonLink: String
 }
 
 type PageVoucherholders implements Node & Document {
@@ -235,6 +235,7 @@ type PageVoucherholders implements Node & Document {
 
 type PageCommunityorganizersBlocksListButtonList {
   buttonText: String
+  buttonLink: String
 }
 
 type PageCommunityorganizersBlocksList {
@@ -293,6 +294,7 @@ type PageHousingspecialists implements Node & Document {
 
 type PageFundingBlocksListButtonList {
   buttonText: String
+  buttonLink: String
 }
 
 type PageFundingBlocksList {
@@ -303,11 +305,18 @@ type PageFundingBlocksList {
   buttonList: [PageFundingBlocksListButtonList]
 }
 
+type PageFundingFundersList {
+  name: String!
+  logo: String
+  link: String
+}
+
 type PageFunding implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
   blocksList: [PageFundingBlocksList]
+  fundersList: [PageFundingFundersList]
   orangeBannerTitle: String
   id: ID!
   _sys: SystemInfo!
@@ -366,8 +375,6 @@ input PageRightsrecorderIconBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
-  button: StringFilter
-  buttonText: StringFilter
 }
 
 input PageRightsrecorderFilter {
@@ -417,6 +424,7 @@ input PageDatapageFilter {
 
 input PageVoucherholdersBlocksListButtonListFilter {
   buttonText: StringFilter
+  buttonLink: StringFilter
 }
 
 input PageVoucherholdersBlocksListFilter {
@@ -433,6 +441,7 @@ input PageVoucherholdersLinksListFilter {
   image: ImageFilter
   button: StringFilter
   buttonText: StringFilter
+  buttonLink: StringFilter
 }
 
 input PageVoucherholdersFilter {
@@ -452,6 +461,7 @@ input PageVoucherholdersFilter {
 
 input PageCommunityorganizersBlocksListButtonListFilter {
   buttonText: StringFilter
+  buttonLink: StringFilter
 }
 
 input PageCommunityorganizersBlocksListFilter {
@@ -510,6 +520,7 @@ input PageHousingspecialistsFilter {
 
 input PageFundingBlocksListButtonListFilter {
   buttonText: StringFilter
+  buttonLink: StringFilter
 }
 
 input PageFundingBlocksListFilter {
@@ -520,11 +531,18 @@ input PageFundingBlocksListFilter {
   buttonList: PageFundingBlocksListButtonListFilter
 }
 
+input PageFundingFundersListFilter {
+  name: StringFilter
+  logo: ImageFilter
+  link: StringFilter
+}
+
 input PageFundingFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
   blocksList: PageFundingBlocksListFilter
+  fundersList: PageFundingFundersListFilter
   orangeBannerTitle: StringFilter
 }
 
@@ -719,8 +737,6 @@ input PageRightsrecorderIconBlocksListMutation {
   title: String
   text: String
   image: String
-  button: String
-  buttonText: String
 }
 
 input PageRightsrecorderMutation {
@@ -770,6 +786,7 @@ input PageDatapageMutation {
 
 input PageVoucherholdersBlocksListButtonListMutation {
   buttonText: String
+  buttonLink: String
 }
 
 input PageVoucherholdersBlocksListMutation {
@@ -786,6 +803,7 @@ input PageVoucherholdersLinksListMutation {
   image: String
   button: String
   buttonText: String
+  buttonLink: String
 }
 
 input PageVoucherholdersMutation {
@@ -805,6 +823,7 @@ input PageVoucherholdersMutation {
 
 input PageCommunityorganizersBlocksListButtonListMutation {
   buttonText: String
+  buttonLink: String
 }
 
 input PageCommunityorganizersBlocksListMutation {
@@ -857,6 +876,7 @@ input PageHousingspecialistsMutation {
 
 input PageFundingBlocksListButtonListMutation {
   buttonText: String
+  buttonLink: String
 }
 
 input PageFundingBlocksListMutation {
@@ -867,11 +887,18 @@ input PageFundingBlocksListMutation {
   buttonList: [PageFundingBlocksListButtonListMutation]
 }
 
+input PageFundingFundersListMutation {
+  name: String
+  logo: String
+  link: String
+}
+
 input PageFundingMutation {
   title: String
   bannerTitle: String
   bannerText: String
   blocksList: [PageFundingBlocksListMutation]
+  fundersList: [PageFundingFundersListMutation]
   orangeBannerTitle: String
 }
 
