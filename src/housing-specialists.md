@@ -56,15 +56,10 @@ linksList:
     button: 'yes'
     buttonList:
       - buttonText: Find a time
+partnersList:
+  - partnerLogo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/housingspecialists-asian-americans-equality-logo.png
+    partnerLink: 'https://www.aafe.org/'
 _template: housingspecialists
 ---
-
-
-
-
-
-
-
-
-
 
