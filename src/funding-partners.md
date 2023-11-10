@@ -1,13 +1,19 @@
 ---
 bg: White
 layout: layouts/funders.njk
+blocksFirst: image
+blocksButtonColor: black
+eleventyNavigation:
+  key: Funding Partners
+  parent: Partners
+  title: Funding Partners
+  order: 3
+title: For Funding Partners
 bannerTitle: Funding Partners
 bannerText: >-
   If you have clients, sed do eiusmod tempor incididunt ut labore et dolore
   magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
   amet, consectetur.
-blocksFirst: image
-blocksButtonColor: black
 blocksList:
   - title: Our programs will impact your mission
     text: test test test
@@ -23,13 +29,9 @@ blocksList:
     buttonList:
       - buttonText: Read more
       - buttonText: See the Data
+fundersList:
+  - name: Funder 1
 orangeBannerTitle: Have Questions? Get in Touch
-eleventyNavigation:
-  key: Funding Partners
-  parent: Partners
-  title: Funding Partners
-  order: 3
-title: For Funding Partners
 _template: funding
 ---
 
