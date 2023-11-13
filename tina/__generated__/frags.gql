@@ -1,4 +1,5 @@
 fragment PageParts on Page {
+  __typename
   ... on PageIndex {
     title
     bannerTitle
@@ -174,9 +175,14 @@ fragment PageParts on Page {
     }
     orangeBannerTitle
   }
+  ... on PagePolicy {
+    title
+    body
+  }
 }
 
 fragment BioParts on Bio {
+  __typename
   name
   title
   tags
@@ -185,6 +191,7 @@ fragment BioParts on Bio {
 }
 
 fragment FaqParts on Faq {
+  __typename
   question
   answer
   tags
@@ -192,6 +199,7 @@ fragment FaqParts on Faq {
 }
 
 fragment ArticleParts on Article {
+  __typename
   title
   author
   excerpt
@@ -199,4 +207,21 @@ fragment ArticleParts on Article {
   tags
   keywords
   body
+}
+
+fragment PressParts on Press {
+  __typename
+  title
+  excerpt
+  image
+  keywords
+  link
+}
+
+fragment ReleaseParts on Release {
+  __typename
+  title
+  excerpt
+  keywords
+  link
 }

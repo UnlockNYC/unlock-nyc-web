@@ -3,6 +3,12 @@ import { defineConfig } from "tinacms";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
+// server code
+/*const getStaticProps = () => {
+  const post = await client.queries.post({ relativePath: 'HelloWorld.md' })
+  return { data: { post: post } }
+}*/
+
 export default defineConfig({
   branch,
   clientId: "a67abc2a-ec7a-438a-8d1b-9944b190abfd",// Get this from tina.io
@@ -809,11 +815,8 @@ export default defineConfig({
                     name: "content",
                     label: "Block Text",
                     parser: {
-                            type: "md",
-                          },
-                    /*ui: {
-                      component: "textarea"
-                      }*/
+                      type: 'markdown',
+                    },
                   },
                   {
                     type: "image",
@@ -1022,6 +1025,28 @@ export default defineConfig({
                 label: "Orange Banner Title"
               }
             ]
+          },
+          {
+            name: "policy",
+            label: "Policies",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "rich-text",
+                parser: {
+                  type: 'markdown',
+                },
+                name: "body",
+                label: "Policy Text",
+                isBody: true
+              }
+            ]
           }
         ]
       },
@@ -1181,7 +1206,76 @@ export default defineConfig({
             isBody: true
           }
         ]
-      }
+      },
+      {
+        name: "press",
+        label: "Press Stories",
+        path: "src/press-stories",
+        format: 'md',
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt"
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Logo"
+          },
+          {
+            type: "string",
+            name: "keywords",
+            label: "Keywords",
+            list: true
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Story Link"
+          },
+        ]
+      },
+      {
+        name: "release",
+        label: "Press Releases",
+        path: "src/press-releases",
+        format: 'md',
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt"
+          },
+          {
+            type: "string",
+            name: "keywords",
+            label: "Keywords",
+            list: true
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Press Release Link"
+          }
+        ]
+      },
     ],
   },
 });

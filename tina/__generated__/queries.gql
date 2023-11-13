@@ -209,3 +209,109 @@ query articleConnection($before: String, $after: String, $first: Float, $last: F
     }
   }
 }
+
+query press($relativePath: String!) {
+  press(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PressParts
+  }
+}
+
+query pressConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PressFilter) {
+  pressConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...PressParts
+      }
+    }
+  }
+}
+
+query release($relativePath: String!) {
+  release(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...ReleaseParts
+  }
+}
+
+query releaseConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: ReleaseFilter) {
+  releaseConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...ReleaseParts
+      }
+    }
+  }
+}

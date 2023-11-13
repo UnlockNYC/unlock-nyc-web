@@ -795,11 +795,8 @@ var config_default = defineConfig({
                     name: "content",
                     label: "Block Text",
                     parser: {
-                      type: "md"
+                      type: "markdown"
                     }
-                    /*ui: {
-                      component: "textarea"
-                      }*/
                   },
                   {
                     type: "image",
@@ -1003,6 +1000,28 @@ var config_default = defineConfig({
                 label: "Orange Banner Title"
               }
             ]
+          },
+          {
+            name: "policy",
+            label: "Policies",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "rich-text",
+                parser: {
+                  type: "markdown"
+                },
+                name: "body",
+                label: "Policy Text",
+                isBody: true
+              }
+            ]
           }
         ]
       },
@@ -1163,6 +1182,75 @@ var config_default = defineConfig({
             name: "body",
             label: "Article Body",
             isBody: true
+          }
+        ]
+      },
+      {
+        name: "press",
+        label: "Press Stories",
+        path: "src/press-stories",
+        format: "md",
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt"
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Logo"
+          },
+          {
+            type: "string",
+            name: "keywords",
+            label: "Keywords",
+            list: true
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Story Link"
+          }
+        ]
+      },
+      {
+        name: "release",
+        label: "Press Releases",
+        path: "src/press-releases",
+        format: "md",
+        ui: {},
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt"
+          },
+          {
+            type: "string",
+            name: "keywords",
+            label: "Keywords",
+            list: true
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Press Release Link"
           }
         ]
       }

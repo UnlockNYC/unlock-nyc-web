@@ -350,6 +350,15 @@ div#footer p.small {
   color: var(--light-grey-text);
 }
 
+div#footer p a, div#footer a {
+    color: White;
+    text-decoration: none;
+}
+
+div#footer a:hover {
+    text-decoration: underline;
+}
+
 /** MOBILE FOOTER **/
 
 @media only screen and (max-width: 900px) {

@@ -61,6 +61,10 @@ type Query {
   faqConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: FaqFilter): FaqConnection!
   article(relativePath: String): Article!
   articleConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: ArticleFilter): ArticleConnection!
+  press(relativePath: String): Press!
+  pressConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: PressFilter): PressConnection!
+  release(relativePath: String): Release!
+  releaseConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: ReleaseFilter): ReleaseConnection!
 }
 
 input DocumentFilter {
@@ -68,6 +72,8 @@ input DocumentFilter {
   bio: BioFilter
   faq: FaqFilter
   article: ArticleFilter
+  press: PressFilter
+  release: ReleaseFilter
 }
 
 type DocumentConnectionEdges {
@@ -93,7 +99,7 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | Bio | Faq | Article | Folder
+union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | Bio | Faq | Article | Press | Release | Folder
 
 type PageIndexBlocksListButtonList {
   buttonText: String
@@ -323,7 +329,15 @@ type PageFunding implements Node & Document {
   _values: JSON!
 }
 
-union Page = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding
+type PagePolicy implements Node & Document {
+  title: String!
+  body: JSON
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+union Page = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy
 
 input StringFilter {
   startsWith: String
@@ -546,6 +560,11 @@ input PageFundingFilter {
   orangeBannerTitle: StringFilter
 }
 
+input PagePolicyFilter {
+  title: StringFilter
+  body: RichTextFilter
+}
+
 input PageFilter {
   index: PageIndexFilter
   about: PageAboutFilter
@@ -556,6 +575,7 @@ input PageFilter {
   communityorganizers: PageCommunityorganizersFilter
   housingspecialists: PageHousingspecialistsFilter
   funding: PageFundingFilter
+  policy: PagePolicyFilter
 }
 
 type PageConnectionEdges {
@@ -671,6 +691,64 @@ type ArticleConnection implements Connection {
   edges: [ArticleConnectionEdges]
 }
 
+type Press implements Node & Document {
+  title: String!
+  excerpt: String
+  image: String
+  keywords: [String]
+  link: String
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+input PressFilter {
+  title: StringFilter
+  excerpt: StringFilter
+  image: ImageFilter
+  keywords: StringFilter
+  link: StringFilter
+}
+
+type PressConnectionEdges {
+  cursor: String!
+  node: Press
+}
+
+type PressConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [PressConnectionEdges]
+}
+
+type Release implements Node & Document {
+  title: String!
+  excerpt: String
+  keywords: [String]
+  link: String
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+input ReleaseFilter {
+  title: StringFilter
+  excerpt: StringFilter
+  keywords: StringFilter
+  link: StringFilter
+}
+
+type ReleaseConnectionEdges {
+  cursor: String!
+  node: Release
+}
+
+type ReleaseConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [ReleaseConnectionEdges]
+}
+
 type Mutation {
   addPendingDocument(collection: String!, relativePath: String!, template: String): DocumentNode!
   updateDocument(collection: String, relativePath: String!, params: DocumentUpdateMutation!): DocumentNode!
@@ -684,6 +762,10 @@ type Mutation {
   createFaq(relativePath: String!, params: FaqMutation!): Faq!
   updateArticle(relativePath: String!, params: ArticleMutation!): Article!
   createArticle(relativePath: String!, params: ArticleMutation!): Article!
+  updatePress(relativePath: String!, params: PressMutation!): Press!
+  createPress(relativePath: String!, params: PressMutation!): Press!
+  updateRelease(relativePath: String!, params: ReleaseMutation!): Release!
+  createRelease(relativePath: String!, params: ReleaseMutation!): Release!
 }
 
 input DocumentUpdateMutation {
@@ -691,6 +773,8 @@ input DocumentUpdateMutation {
   bio: BioMutation
   faq: FaqMutation
   article: ArticleMutation
+  press: PressMutation
+  release: ReleaseMutation
   relativePath: String
 }
 
@@ -699,6 +783,8 @@ input DocumentMutation {
   bio: BioMutation
   faq: FaqMutation
   article: ArticleMutation
+  press: PressMutation
+  release: ReleaseMutation
 }
 
 input PageIndexBlocksListButtonListMutation {
@@ -902,6 +988,11 @@ input PageFundingMutation {
   orangeBannerTitle: String
 }
 
+input PagePolicyMutation {
+  title: String
+  body: JSON
+}
+
 input PageMutation {
   index: PageIndexMutation
   about: PageAboutMutation
@@ -912,6 +1003,7 @@ input PageMutation {
   communityorganizers: PageCommunityorganizersMutation
   housingspecialists: PageHousingspecialistsMutation
   funding: PageFundingMutation
+  policy: PagePolicyMutation
 }
 
 input BioMutation {
@@ -937,6 +1029,21 @@ input ArticleMutation {
   tags: [String]
   keywords: [String]
   body: JSON
+}
+
+input PressMutation {
+  title: String
+  excerpt: String
+  image: String
+  keywords: [String]
+  link: String
+}
+
+input ReleaseMutation {
+  title: String
+  excerpt: String
+  keywords: [String]
+  link: String
 }
 
 schema {

@@ -151,7 +151,7 @@ templateClass: tmpl-home
       {{ thing.title }}
       </h4>
       <p>
-        {{ thing.content }}
+        {{ thing.content | markdown | safe }}
       </p>
       {% if thing.button == 'yes' %}
         {% for button in thing.buttonList %}

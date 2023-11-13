@@ -123,7 +123,7 @@ templateClass: tmpl-home
     <div class="bio-container">
       {%- for post in collections.Staff -%}
       <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
+        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center; overflow: hidden;">
            <img src="{{ post.data.image }}">
         </div>
         <div style="padding-top: 15px;">

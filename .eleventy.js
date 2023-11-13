@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -19,6 +20,19 @@ module.exports = function(eleventyConfig) {
   ]);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPassthroughCopy("public");
+
+  let options = {
+      html: true,
+      breaks: true,
+      linkify: true
+    };
+
+  eleventyConfig.setLibrary("md", markdownIt(options));
+  const markdownLib = markdownIt();
+  eleventyConfig.addFilter("markdown", (content) => {
+    return markdownLib.render(content);
+  });
+
 
   /* From: https://github.com/artstorm/eleventy-plugin-seo
 
