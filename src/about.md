@@ -18,6 +18,8 @@ thanksList:
   - name: F.Y.Eye
     link: 'https://www.fyeye.org/'
   - name: Nonprofit Finance Fund
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/about-logo-consultant-nonprofit-finance-fund.png
     link: 'https://nff.org/'
 _template: about
 ---
