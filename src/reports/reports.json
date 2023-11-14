@@ -1,4 +1,6 @@
 {
   "tags": ["report"],
+  "layout": "layouts/report.njk",
+  "keywords": ["Report"],
   "bg": "#F1F1E3"
 }

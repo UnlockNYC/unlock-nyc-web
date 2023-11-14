@@ -71,7 +71,8 @@ templateClass: tmpl-home
       </p>
     </div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
-      {%- for report in collections.featured -%}
+      {%- for report in collections.report -%}
+      {% if report.data.featured %}
       <div class="report-card-wrapper">
         <div class="report-card">
           <div>
@@ -97,6 +98,7 @@ templateClass: tmpl-home
           </div>
         </div>
       </div>
+      {% endif %}
       {%- endfor -%}
     </div>
   </div>

@@ -1032,6 +1032,70 @@ var config_default = defineConfig({
                 isBody: true
               }
             ]
+          },
+          {
+            name: "press",
+            label: "Press Page",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "string",
+                name: "bannerTitle",
+                label: "Banner Title"
+              },
+              {
+                type: "string",
+                name: "bannerText",
+                label: "Banner Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "kit1",
+                label: "Press Kit 1"
+              },
+              {
+                type: "image",
+                name: "kit1PDF",
+                label: "Press Kit 1 Upload"
+              },
+              {
+                type: "string",
+                name: "kit2",
+                label: "Press Kit 2"
+              },
+              {
+                type: "string",
+                name: "kit2Text",
+                label: "Press Kit 2: Details"
+              },
+              {
+                type: "image",
+                name: "kit2Link",
+                label: "Press Kit 2 Upload"
+              },
+              {
+                type: "string",
+                name: "orangeBannerTitle",
+                label: "Orange Banner Title"
+              },
+              {
+                type: "string",
+                name: "orangeBannerText",
+                label: "Orange Banner Text",
+                ui: {
+                  component: "textarea"
+                }
+              }
+            ]
           }
         ]
       },
@@ -1212,6 +1276,16 @@ var config_default = defineConfig({
             required: true
           },
           {
+            type: "boolean",
+            name: "featured",
+            label: "Featured"
+          },
+          {
+            type: "string",
+            name: "year",
+            label: "Year"
+          },
+          {
             type: "string",
             name: "reportSummaryTop",
             label: "Report Description"
@@ -1220,6 +1294,12 @@ var config_default = defineConfig({
             type: "string",
             name: "reportSummary",
             label: "Report Summary"
+          },
+          {
+            type: "string",
+            name: "keywords",
+            label: "Keywords",
+            list: true
           },
           {
             type: "image",
@@ -1244,19 +1324,13 @@ var config_default = defineConfig({
           },
           {
             type: "string",
-            name: "excerpt",
-            label: "Excerpt"
+            name: "pubdate",
+            label: "Story Date"
           },
           {
             type: "image",
             name: "image",
             label: "Logo"
-          },
-          {
-            type: "string",
-            name: "keywords",
-            label: "Keywords",
-            list: true
           },
           {
             type: "string",
@@ -1292,8 +1366,13 @@ var config_default = defineConfig({
           },
           {
             type: "string",
-            name: "link",
-            label: "Press Release Link"
+            name: "year",
+            label: "Year"
+          },
+          {
+            type: "image",
+            name: "pdf",
+            label: "Press Release PDF"
           }
         ]
       }

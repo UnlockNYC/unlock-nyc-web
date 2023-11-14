@@ -847,8 +847,13 @@ div.press-item {
   grid-column-gap: 20px;
   margin-bottom: 20px;
 }
+div.press-summary-wrap {
+    display: table;
+}
 div.press-summary {
-  padding: 1.25rem 0.5rem;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1.25rem 0.5rem;
 }
 a.press-link {
   color: Black;

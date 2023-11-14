@@ -181,6 +181,18 @@ fragment PageParts on Page {
     revised
     body
   }
+  ... on PagePress {
+    title
+    bannerTitle
+    bannerText
+    kit1
+    kit1PDF
+    kit2
+    kit2Text
+    kit2Link
+    orangeBannerTitle
+    orangeBannerText
+  }
 }
 
 fragment BioParts on Bio {
@@ -214,17 +226,19 @@ fragment ArticleParts on Article {
 fragment ReportParts on Report {
   __typename
   reportTitle
+  featured
+  year
   reportSummaryTop
   reportSummary
+  keywords
   reportPDF
 }
 
 fragment PressParts on Press {
   __typename
   title
-  excerpt
+  pubdate
   image
-  keywords
   link
 }
 
@@ -233,5 +247,6 @@ fragment ReleaseParts on Release {
   title
   excerpt
   keywords
-  link
+  year
+  pdf
 }

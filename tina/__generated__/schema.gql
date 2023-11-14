@@ -102,7 +102,7 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | Bio | Faq | Article | Report | Press | Release | Folder
+union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | PagePress | Bio | Faq | Article | Report | Press | Release | Folder
 
 type PageIndexBlocksListButtonList {
   buttonText: String
@@ -342,7 +342,23 @@ type PagePolicy implements Node & Document {
   _values: JSON!
 }
 
-union Page = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy
+type PagePress implements Node & Document {
+  title: String!
+  bannerTitle: String
+  bannerText: String
+  kit1: String
+  kit1PDF: String
+  kit2: String
+  kit2Text: String
+  kit2Link: String
+  orangeBannerTitle: String
+  orangeBannerText: String
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+union Page = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | PagePress
 
 input StringFilter {
   startsWith: String
@@ -572,6 +588,19 @@ input PagePolicyFilter {
   body: RichTextFilter
 }
 
+input PagePressFilter {
+  title: StringFilter
+  bannerTitle: StringFilter
+  bannerText: StringFilter
+  kit1: StringFilter
+  kit1PDF: ImageFilter
+  kit2: StringFilter
+  kit2Text: StringFilter
+  kit2Link: ImageFilter
+  orangeBannerTitle: StringFilter
+  orangeBannerText: StringFilter
+}
+
 input PageFilter {
   index: PageIndexFilter
   about: PageAboutFilter
@@ -583,6 +612,7 @@ input PageFilter {
   housingspecialists: PageHousingspecialistsFilter
   funding: PageFundingFilter
   policy: PagePolicyFilter
+  press: PagePressFilter
 }
 
 type PageConnectionEdges {
@@ -700,18 +730,29 @@ type ArticleConnection implements Connection {
 
 type Report implements Node & Document {
   reportTitle: String!
+  featured: Boolean
+  year: String
   reportSummaryTop: String
   reportSummary: String
+  keywords: [String]
   reportPDF: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
 }
 
+input BooleanFilter {
+  eq: Boolean
+  exists: Boolean
+}
+
 input ReportFilter {
   reportTitle: StringFilter
+  featured: BooleanFilter
+  year: StringFilter
   reportSummaryTop: StringFilter
   reportSummary: StringFilter
+  keywords: StringFilter
   reportPDF: ImageFilter
 }
 
@@ -728,9 +769,8 @@ type ReportConnection implements Connection {
 
 type Press implements Node & Document {
   title: String!
-  excerpt: String
+  pubdate: String
   image: String
-  keywords: [String]
   link: String
   id: ID!
   _sys: SystemInfo!
@@ -739,9 +779,8 @@ type Press implements Node & Document {
 
 input PressFilter {
   title: StringFilter
-  excerpt: StringFilter
+  pubdate: StringFilter
   image: ImageFilter
-  keywords: StringFilter
   link: StringFilter
 }
 
@@ -760,7 +799,8 @@ type Release implements Node & Document {
   title: String!
   excerpt: String
   keywords: [String]
-  link: String
+  year: String
+  pdf: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -770,7 +810,8 @@ input ReleaseFilter {
   title: StringFilter
   excerpt: StringFilter
   keywords: StringFilter
-  link: StringFilter
+  year: StringFilter
+  pdf: ImageFilter
 }
 
 type ReleaseConnectionEdges {
@@ -1034,6 +1075,19 @@ input PagePolicyMutation {
   body: JSON
 }
 
+input PagePressMutation {
+  title: String
+  bannerTitle: String
+  bannerText: String
+  kit1: String
+  kit1PDF: String
+  kit2: String
+  kit2Text: String
+  kit2Link: String
+  orangeBannerTitle: String
+  orangeBannerText: String
+}
+
 input PageMutation {
   index: PageIndexMutation
   about: PageAboutMutation
@@ -1045,6 +1099,7 @@ input PageMutation {
   housingspecialists: PageHousingspecialistsMutation
   funding: PageFundingMutation
   policy: PagePolicyMutation
+  press: PagePressMutation
 }
 
 input BioMutation {
@@ -1074,16 +1129,18 @@ input ArticleMutation {
 
 input ReportMutation {
   reportTitle: String
+  featured: Boolean
+  year: String
   reportSummaryTop: String
   reportSummary: String
+  keywords: [String]
   reportPDF: String
 }
 
 input PressMutation {
   title: String
-  excerpt: String
+  pubdate: String
   image: String
-  keywords: [String]
   link: String
 }
 
@@ -1091,7 +1148,8 @@ input ReleaseMutation {
   title: String
   excerpt: String
   keywords: [String]
-  link: String
+  year: String
+  pdf: String
 }
 
 schema {

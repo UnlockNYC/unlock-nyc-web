@@ -1,5 +1,7 @@
 ---
 reportTitle: An Illusion of Choice
+featured: true
+year: '2022'
 reportSummaryTop: >-
   How Source of Income Discrimination and Voucher Policies Perpetuate Housing
   Inequality.

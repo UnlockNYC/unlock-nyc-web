@@ -31,14 +31,16 @@ templateClass: tmpl-home
       <h2>
         {{ bannerText }}
       </h2>
-      <button class="black">
-        Submit a media request
-      </button>
+      <a href="https://airtable.com/apphhLpaGOzffAyCW/shrl4dCWVD8qewvpw" target="_blank">
+          <button class="black">
+              Submit a media request
+          </button>
+      </a>
     </div>
   </div>
 </div>
 <div class="content">
-  <h3>
+  <h3 id="latest-news">
     Latest News Stories
   </h3>
   <button class="white" style="float: right; margin-top: -70px;">
@@ -46,43 +48,25 @@ templateClass: tmpl-home
   </button>
   <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
   <div class="press-collection">
+      {% for story in collections.press | reverse %}
       <div class="press-item">
         <div class="bg-cream" style="height: 150px; padding: 20px;">
-          logo
+          {{ story.data.logo }}
         </div>
-        <div class="press-summary">
-          <p class="date">March 7, 2023</p>
-          <h4>
-            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
-          </h4>
-        </div>
-      </div>
-      <div class="press-item">
-        <div class="bg-cream" style="height: 150px; padding: 20px;">
-          logo
-        </div>
-        <div class="press-summary">
-          <p class="date">March 7, 2023</p>
-          <h4>
-            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
-          </h4>
+        <div class="press-summary-wrap">
+            <div class="press-summary">
+                <p class="date">{{ story.data.pubdate }}</p>
+                <h4>
+                    <a class="press-link" href="{{ story.data.link }}" target="_blank">{{ story.data.title }}</a>
+                </h4>
+            </div>
         </div>
       </div>
-      <div class="press-item">
-        <div class="bg-cream" style="height: 150px; padding: 20px;">
-          logo
-        </div>
-        <div class="press-summary">
-          <p class="date">March 7, 2023</p>
-          <h4>
-            <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
-          </h4>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 </div>
 <div class="content" style="padding-top: 0;">
-  <h3>
+  <h3 id="press-releases">
     Press Releases
   </h3>
   <button class="white" style="float: right; margin-top: -70px;">
@@ -90,67 +74,57 @@ templateClass: tmpl-home
   </button>
   <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
   <div id="press-release-collection">
+    {% for release in collections.release %}
     <div class="press-release">
       <div class="tags">
-        <span class="tag">Data & Research</span>
-        <span class="tag">Tools</span>
-        <span class="tag">2023</span>
+        {% for item in release.data.keywords %}
+        <span class="tag">{{ item }}</span>
+        {% endfor %}
+        <span class="tag">{{ release.data.year }}</span>
       </div>
       <div class="press-release-info">
         <h4>
-          <a>In the face of homelessness crisis, advocates release citywide mapping tool to combat source of income discrimination</a>
+          <a>{{ release.data.title }}</a>
         </h4>
         <p>
-          Unlock NYC and Neighbors Together launch an interactive tool to map source of income discrimination in New York City.
+          {{ release.data.excerpt }}
         </p>
-        <button class="black">
-          Download PDF
-        </button>
+        <a href="{{ release.data.pdf }}" target="_blank">
+            <button class="black">
+                Download PDF
+            </button>
+        </a>
       </div>
     </div>
-    <div class="press-release">
-      <div class="tags">
-        <span class="tag">Data & Research</span>
-        <span class="tag">Tools</span>
-        <span class="tag">2023</span>
-      </div>
-      <div class="press-release-info">
-        <h4>
-          <a>In the face of homelessness crisis, advocates release citywide mapping tool to combat source of income discrimination</a>
-        </h4>
-        <p>
-          Unlock NYC and Neighbors Together launch an interactive tool to map source of income discrimination in New York City.
-        </p>
-        <button class="black">
-          Download PDF
-        </button>
-      </div>
-    </div>
+    {% endfor %}
   </div>
-  <h3 class="center-title">
+  <h3 class="center-title" id="press-kits">
     Press Kits
   </h3>
   <!-- MAB this needs to be editable-->
   <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
-    <div class="bg-purple" style="position: relative; height: 352h; padding: 6%;">
+    <div class="bg-purple" style="position: relative; height: 32vh; padding: 6%;">
       <h4 style="font-size: 1.5rem;">
-        Unlock NYC
-        Fact Sheet 2023
+        {{ kit1 }}
       </h4>
-      <button class="black" style="position: absolute; bottom: 6%;">
-        Download PDF
-      </button>
+      <a href="{{ kit1PDF }}" target="_blank">
+        <button class="black" style="position: absolute; bottom: 6%;">
+            Download PDF
+        </button>
+      </a>
     </div>
     <div class="bg-green" style="position: relative; height: 32vh; padding: 6%;">
       <h4 style="font-size: 1.5rem;">
-        Unlock NYC Media Kit, 2023
+        {{ kit2 }}
       </h4>
       <p class="black">
-        Includes: Logo, 1-pager, etc. etc.
+        {{ kit2Text }}
       </p>
-      <button class="black" style="position: absolute; bottom: 6%;">
-        Download ZIP
-      </button>
+      <a href="{{ kit2Link }}" target="_blank">
+        <button class="black" style="position: absolute; bottom: 6%;">
+            Download ZIP
+        </button>
+      </a>
     </div>
   </div>
   {% include 'layouts/faqs.njk' %}
@@ -162,7 +136,9 @@ templateClass: tmpl-home
   <h2>
     {{ orangeBannerText }}
   </h2>
-  <button class="black">
-    Submit a media request
-  </button>
+  <a href="https://airtable.com/apphhLpaGOzffAyCW/shrl4dCWVD8qewvpw" target="_blank">
+      <button class="black">
+          Submit a media request
+      </button>
+  </a>
 </div>

@@ -23,7 +23,7 @@ bg: ""
   div.banner-split-text {
     padding-bottom: 20%;
   }
-  
+
   @media only screen and (max-width: 800px) {
     div.report-card-wrapper {
       padding-left: 0;
@@ -52,13 +52,15 @@ bg: ""
       <p>
         {{ reportSummaryTop }}
       </p>
-      <button class="black">
-        Download Report
-      </button>
+      <a href="{{ reportPDF }}" target="_blank">
+          <button class="black">
+              Download Report
+          </button>
+      </a>
     </div>
     <div style="display: table">
       <div class="report-card-wrapper">
-        <div class="bg-yellow report-card">   
+        <div class="bg-yellow report-card">
           <div>
             <span class="tag">Report</span>
             <span class="tag">2022</span>
@@ -114,7 +116,7 @@ bg: ""
             <a class="press-link">With free digital tools, Unlock NYC is expanding access to rental subsidies to homless New Yorkers</a>
           </h4>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 </div>
