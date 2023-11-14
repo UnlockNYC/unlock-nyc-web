@@ -210,6 +210,59 @@ query articleConnection($before: String, $after: String, $first: Float, $last: F
   }
 }
 
+query report($relativePath: String!) {
+  report(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...ReportParts
+  }
+}
+
+query reportConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: ReportFilter) {
+  reportConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...ReportParts
+      }
+    }
+  }
+}
+
 query press($relativePath: String!) {
   press(relativePath: $relativePath) {
     ... on Document {

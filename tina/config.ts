@@ -1221,6 +1221,37 @@ export default defineConfig({
         ]
       },
       {
+        name: "report",
+        label: "Reports",
+        path: "src/reports",
+        format: 'md',
+        fields: [
+          {
+            type: "string",
+            name: "reportTitle",
+            label: "Report Title",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "reportSummaryTop",
+            label: "Report Description",
+          },
+          {
+            type: "string",
+            name: "reportSummary",
+            label: "Report Summary",
+          },
+          {
+            type: "image",
+            name: "reportPDF",
+            label: "Report PDF"
+          }
+
+        ]
+      },
+      {
         name: "press",
         label: "Press Stories",
         path: "src/press-stories",

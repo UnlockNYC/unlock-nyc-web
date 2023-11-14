@@ -61,6 +61,8 @@ type Query {
   faqConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: FaqFilter): FaqConnection!
   article(relativePath: String): Article!
   articleConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: ArticleFilter): ArticleConnection!
+  report(relativePath: String): Report!
+  reportConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: ReportFilter): ReportConnection!
   press(relativePath: String): Press!
   pressConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: PressFilter): PressConnection!
   release(relativePath: String): Release!
@@ -72,6 +74,7 @@ input DocumentFilter {
   bio: BioFilter
   faq: FaqFilter
   article: ArticleFilter
+  report: ReportFilter
   press: PressFilter
   release: ReleaseFilter
 }
@@ -99,7 +102,7 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | Bio | Faq | Article | Press | Release | Folder
+union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | Bio | Faq | Article | Report | Press | Release | Folder
 
 type PageIndexBlocksListButtonList {
   buttonText: String
@@ -695,6 +698,34 @@ type ArticleConnection implements Connection {
   edges: [ArticleConnectionEdges]
 }
 
+type Report implements Node & Document {
+  reportTitle: String!
+  reportSummaryTop: String
+  reportSummary: String
+  reportPDF: String
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+input ReportFilter {
+  reportTitle: StringFilter
+  reportSummaryTop: StringFilter
+  reportSummary: StringFilter
+  reportPDF: ImageFilter
+}
+
+type ReportConnectionEdges {
+  cursor: String!
+  node: Report
+}
+
+type ReportConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [ReportConnectionEdges]
+}
+
 type Press implements Node & Document {
   title: String!
   excerpt: String
@@ -766,6 +797,8 @@ type Mutation {
   createFaq(relativePath: String!, params: FaqMutation!): Faq!
   updateArticle(relativePath: String!, params: ArticleMutation!): Article!
   createArticle(relativePath: String!, params: ArticleMutation!): Article!
+  updateReport(relativePath: String!, params: ReportMutation!): Report!
+  createReport(relativePath: String!, params: ReportMutation!): Report!
   updatePress(relativePath: String!, params: PressMutation!): Press!
   createPress(relativePath: String!, params: PressMutation!): Press!
   updateRelease(relativePath: String!, params: ReleaseMutation!): Release!
@@ -777,6 +810,7 @@ input DocumentUpdateMutation {
   bio: BioMutation
   faq: FaqMutation
   article: ArticleMutation
+  report: ReportMutation
   press: PressMutation
   release: ReleaseMutation
   relativePath: String
@@ -787,6 +821,7 @@ input DocumentMutation {
   bio: BioMutation
   faq: FaqMutation
   article: ArticleMutation
+  report: ReportMutation
   press: PressMutation
   release: ReleaseMutation
 }
@@ -1035,6 +1070,13 @@ input ArticleMutation {
   tags: [String]
   keywords: [String]
   body: JSON
+}
+
+input ReportMutation {
+  reportTitle: String
+  reportSummaryTop: String
+  reportSummary: String
+  reportPDF: String
 }
 
 input PressMutation {

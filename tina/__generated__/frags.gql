@@ -211,6 +211,14 @@ fragment ArticleParts on Article {
   body
 }
 
+fragment ReportParts on Report {
+  __typename
+  reportTitle
+  reportSummaryTop
+  reportSummary
+  reportPDF
+}
+
 fragment PressParts on Press {
   __typename
   title

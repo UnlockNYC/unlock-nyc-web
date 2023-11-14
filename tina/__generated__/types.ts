@@ -89,6 +89,8 @@ export type Query = {
   faqConnection: FaqConnection;
   article: Article;
   articleConnection: ArticleConnection;
+  report: Report;
+  reportConnection: ReportConnection;
   press: Press;
   pressConnection: PressConnection;
   release: Release;
@@ -177,6 +179,21 @@ export type QueryArticleConnectionArgs = {
 };
 
 
+export type QueryReportArgs = {
+  relativePath?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryReportConnectionArgs = {
+  before?: InputMaybe<Scalars['String']['input']>;
+  after?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Float']['input']>;
+  last?: InputMaybe<Scalars['Float']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  filter?: InputMaybe<ReportFilter>;
+};
+
+
 export type QueryPressArgs = {
   relativePath?: InputMaybe<Scalars['String']['input']>;
 };
@@ -211,6 +228,7 @@ export type DocumentFilter = {
   bio?: InputMaybe<BioFilter>;
   faq?: InputMaybe<FaqFilter>;
   article?: InputMaybe<ArticleFilter>;
+  report?: InputMaybe<ReportFilter>;
   press?: InputMaybe<PressFilter>;
   release?: InputMaybe<ReleaseFilter>;
 };
@@ -252,7 +270,7 @@ export type CollectionDocumentsArgs = {
   folder?: InputMaybe<Scalars['String']['input']>;
 };
 
-export type DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | Bio | Faq | Article | Press | Release | Folder;
+export type DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | Bio | Faq | Article | Report | Press | Release | Folder;
 
 export type PageIndexBlocksListButtonList = {
   __typename?: 'PageIndexBlocksListButtonList';
@@ -886,6 +904,37 @@ export type ArticleConnection = Connection & {
   edges?: Maybe<Array<Maybe<ArticleConnectionEdges>>>;
 };
 
+export type Report = Node & Document & {
+  __typename?: 'Report';
+  reportTitle: Scalars['String']['output'];
+  reportSummaryTop?: Maybe<Scalars['String']['output']>;
+  reportSummary?: Maybe<Scalars['String']['output']>;
+  reportPDF?: Maybe<Scalars['String']['output']>;
+  id: Scalars['ID']['output'];
+  _sys: SystemInfo;
+  _values: Scalars['JSON']['output'];
+};
+
+export type ReportFilter = {
+  reportTitle?: InputMaybe<StringFilter>;
+  reportSummaryTop?: InputMaybe<StringFilter>;
+  reportSummary?: InputMaybe<StringFilter>;
+  reportPDF?: InputMaybe<ImageFilter>;
+};
+
+export type ReportConnectionEdges = {
+  __typename?: 'ReportConnectionEdges';
+  cursor: Scalars['String']['output'];
+  node?: Maybe<Report>;
+};
+
+export type ReportConnection = Connection & {
+  __typename?: 'ReportConnection';
+  pageInfo: PageInfo;
+  totalCount: Scalars['Float']['output'];
+  edges?: Maybe<Array<Maybe<ReportConnectionEdges>>>;
+};
+
 export type Press = Node & Document & {
   __typename?: 'Press';
   title: Scalars['String']['output'];
@@ -964,6 +1013,8 @@ export type Mutation = {
   createFaq: Faq;
   updateArticle: Article;
   createArticle: Article;
+  updateReport: Report;
+  createReport: Report;
   updatePress: Press;
   createPress: Press;
   updateRelease: Release;
@@ -1046,6 +1097,18 @@ export type MutationCreateArticleArgs = {
 };
 
 
+export type MutationUpdateReportArgs = {
+  relativePath: Scalars['String']['input'];
+  params: ReportMutation;
+};
+
+
+export type MutationCreateReportArgs = {
+  relativePath: Scalars['String']['input'];
+  params: ReportMutation;
+};
+
+
 export type MutationUpdatePressArgs = {
   relativePath: Scalars['String']['input'];
   params: PressMutation;
@@ -1074,6 +1137,7 @@ export type DocumentUpdateMutation = {
   bio?: InputMaybe<BioMutation>;
   faq?: InputMaybe<FaqMutation>;
   article?: InputMaybe<ArticleMutation>;
+  report?: InputMaybe<ReportMutation>;
   press?: InputMaybe<PressMutation>;
   release?: InputMaybe<ReleaseMutation>;
   relativePath?: InputMaybe<Scalars['String']['input']>;
@@ -1084,6 +1148,7 @@ export type DocumentMutation = {
   bio?: InputMaybe<BioMutation>;
   faq?: InputMaybe<FaqMutation>;
   article?: InputMaybe<ArticleMutation>;
+  report?: InputMaybe<ReportMutation>;
   press?: InputMaybe<PressMutation>;
   release?: InputMaybe<ReleaseMutation>;
 };
@@ -1334,6 +1399,13 @@ export type ArticleMutation = {
   body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
+export type ReportMutation = {
+  reportTitle?: InputMaybe<Scalars['String']['input']>;
+  reportSummaryTop?: InputMaybe<Scalars['String']['input']>;
+  reportSummary?: InputMaybe<Scalars['String']['input']>;
+  reportPDF?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type PressMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   excerpt?: InputMaybe<Scalars['String']['input']>;
@@ -1376,6 +1448,8 @@ export type BioPartsFragment = { __typename: 'Bio', name: string, title?: string
 export type FaqPartsFragment = { __typename: 'Faq', question: string, answer?: any | null, tags?: Array<string | null> | null, order?: number | null };
 
 export type ArticlePartsFragment = { __typename: 'Article', title: string, author?: string | null, excerpt?: string | null, image?: string | null, tags?: Array<string | null> | null, keywords?: Array<string | null> | null, body?: any | null };
+
+export type ReportPartsFragment = { __typename: 'Report', reportTitle: string, reportSummaryTop?: string | null, reportSummary?: string | null, reportPDF?: string | null };
 
 export type PressPartsFragment = { __typename: 'Press', title: string, excerpt?: string | null, image?: string | null, keywords?: Array<string | null> | null, link?: string | null };
 
@@ -1456,6 +1530,25 @@ export type ArticleConnectionQueryVariables = Exact<{
 
 
 export type ArticleConnectionQuery = { __typename?: 'Query', articleConnection: { __typename?: 'ArticleConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ArticleConnectionEdges', cursor: string, node?: { __typename: 'Article', id: string, title: string, author?: string | null, excerpt?: string | null, image?: string | null, tags?: Array<string | null> | null, keywords?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+
+export type ReportQueryVariables = Exact<{
+  relativePath: Scalars['String']['input'];
+}>;
+
+
+export type ReportQuery = { __typename?: 'Query', report: { __typename: 'Report', id: string, reportTitle: string, reportSummaryTop?: string | null, reportSummary?: string | null, reportPDF?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+
+export type ReportConnectionQueryVariables = Exact<{
+  before?: InputMaybe<Scalars['String']['input']>;
+  after?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Float']['input']>;
+  last?: InputMaybe<Scalars['Float']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  filter?: InputMaybe<ReportFilter>;
+}>;
+
+
+export type ReportConnectionQuery = { __typename?: 'Query', reportConnection: { __typename?: 'ReportConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ReportConnectionEdges', cursor: string, node?: { __typename: 'Report', id: string, reportTitle: string, reportSummaryTop?: string | null, reportSummary?: string | null, reportPDF?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type PressQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -1712,6 +1805,15 @@ export const ArticlePartsFragmentDoc = gql`
   body
 }
     `;
+export const ReportPartsFragmentDoc = gql`
+    fragment ReportParts on Report {
+  __typename
+  reportTitle
+  reportSummaryTop
+  reportSummary
+  reportPDF
+}
+    `;
 export const PressPartsFragmentDoc = gql`
     fragment PressParts on Press {
   __typename
@@ -1951,6 +2053,61 @@ export const ArticleConnectionDocument = gql`
   }
 }
     ${ArticlePartsFragmentDoc}`;
+export const ReportDocument = gql`
+    query report($relativePath: String!) {
+  report(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...ReportParts
+  }
+}
+    ${ReportPartsFragmentDoc}`;
+export const ReportConnectionDocument = gql`
+    query reportConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: ReportFilter) {
+  reportConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...ReportParts
+      }
+    }
+  }
+}
+    ${ReportPartsFragmentDoc}`;
 export const PressDocument = gql`
     query press($relativePath: String!) {
   press(relativePath: $relativePath) {
@@ -2087,6 +2244,12 @@ export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) 
       },
     articleConnection(variables?: ArticleConnectionQueryVariables, options?: C): Promise<{data: ArticleConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ArticleConnectionQueryVariables, query: string}> {
         return requester<{data: ArticleConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ArticleConnectionQueryVariables, query: string}, ArticleConnectionQueryVariables>(ArticleConnectionDocument, variables, options);
+      },
+    report(variables: ReportQueryVariables, options?: C): Promise<{data: ReportQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ReportQueryVariables, query: string}> {
+        return requester<{data: ReportQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ReportQueryVariables, query: string}, ReportQueryVariables>(ReportDocument, variables, options);
+      },
+    reportConnection(variables?: ReportConnectionQueryVariables, options?: C): Promise<{data: ReportConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ReportConnectionQueryVariables, query: string}> {
+        return requester<{data: ReportConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ReportConnectionQueryVariables, query: string}, ReportConnectionQueryVariables>(ReportConnectionDocument, variables, options);
       },
     press(variables: PressQueryVariables, options?: C): Promise<{data: PressQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PressQueryVariables, query: string}> {
         return requester<{data: PressQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PressQueryVariables, query: string}, PressQueryVariables>(PressDocument, variables, options);
