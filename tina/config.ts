@@ -203,7 +203,36 @@ export default defineConfig({
                 type: "string",
                 name: "bannerTitle",
                 label: "Banner Title"
-              }
+              },
+              {
+                type: "object",
+                name: "thanksList",
+                label: "Special Thanks",
+                list: true,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.name };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Org Name",
+                    isTitle: true,
+                    required: true
+                  },
+                  {
+                    type: "image",
+                    name: "logo",
+                    label: "Org Logo",
+                  },
+                  {
+                    type: "string",
+                    name: "link",
+                    label: "Org URL",
+                  },
+                ]
+              },
             ]
           },
           {
@@ -1359,6 +1388,21 @@ export default defineConfig({
             type: "string",
             name: "link",
             label: "Story Link"
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Collection",
+            list: true,
+            options: [
+              {
+                value: "An Illusion of Choice",
+                label: "An Illusion of Choice"
+              }, {
+                value: "Serial Discriminators",
+                label: "Serial Discriminators"
+              }
+            ]
           },
         ]
       },

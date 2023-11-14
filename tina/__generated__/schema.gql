@@ -134,9 +134,16 @@ type PageIndex implements Node & Document {
   _values: JSON!
 }
 
+type PageAboutThanksList {
+  name: String!
+  logo: String
+  link: String
+}
+
 type PageAbout implements Node & Document {
   title: String!
   bannerTitle: String
+  thanksList: [PageAboutThanksList]
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -401,9 +408,16 @@ input PageIndexFilter {
   latestActionLink: StringFilter
 }
 
+input PageAboutThanksListFilter {
+  name: StringFilter
+  logo: ImageFilter
+  link: StringFilter
+}
+
 input PageAboutFilter {
   title: StringFilter
   bannerTitle: StringFilter
+  thanksList: PageAboutThanksListFilter
 }
 
 input PageRightsrecorderIconBlocksListFilter {
@@ -772,6 +786,7 @@ type Press implements Node & Document {
   pubdate: String
   image: String
   link: String
+  tags: [String]
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -782,6 +797,7 @@ input PressFilter {
   pubdate: StringFilter
   image: ImageFilter
   link: StringFilter
+  tags: StringFilter
 }
 
 type PressConnectionEdges {
@@ -894,9 +910,16 @@ input PageIndexMutation {
   latestActionLink: String
 }
 
+input PageAboutThanksListMutation {
+  name: String
+  logo: String
+  link: String
+}
+
 input PageAboutMutation {
   title: String
   bannerTitle: String
+  thanksList: [PageAboutThanksListMutation]
 }
 
 input PageRightsrecorderIconBlocksListMutation {
@@ -1142,6 +1165,7 @@ input PressMutation {
   pubdate: String
   image: String
   link: String
+  tags: [String]
 }
 
 input ReleaseMutation {

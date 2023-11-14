@@ -27,6 +27,12 @@ fragment PageParts on Page {
   ... on PageAbout {
     title
     bannerTitle
+    thanksList {
+      __typename
+      name
+      logo
+      link
+    }
   }
   ... on PageRightsrecorder {
     title
@@ -240,6 +246,7 @@ fragment PressParts on Press {
   pubdate
   image
   link
+  tags
 }
 
 fragment ReleaseParts on Release {

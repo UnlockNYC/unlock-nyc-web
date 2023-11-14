@@ -207,21 +207,13 @@ templateClass: tmpl-home
       As a group of lifelong learners, we’re grateful for the community of collaborators who have built up our team’s capacity to design a sustainable organization and workplace where we can thrive creatively, personally, and professionally.
     </p>
     <div class="funder-grid">
-      <div class="bg-cream">
-        funder
-      </div>
-      <div class="bg-cream">
-        funder
-      </div>
-      <div class="bg-cream">
-        funder
-      </div>
-      <div class="bg-cream">
-        funder
-      </div>
-      <div class="bg-cream">
-        funder
-      </div>
+        {% for org in thanksList %}
+        <a href="{{ org.link }}" target="_blank">
+            <div class="bg-cream">
+                <img src="{{ org.logo }}">
+            </div>
+        </a>
+        {% endfor %}
     </div>
     <h4>
       Funding Partners
