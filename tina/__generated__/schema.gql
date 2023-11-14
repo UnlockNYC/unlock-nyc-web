@@ -331,6 +331,8 @@ type PageFunding implements Node & Document {
 
 type PagePolicy implements Node & Document {
   title: String!
+  effective: String
+  revised: String
   body: JSON
   id: ID!
   _sys: SystemInfo!
@@ -562,6 +564,8 @@ input PageFundingFilter {
 
 input PagePolicyFilter {
   title: StringFilter
+  effective: StringFilter
+  revised: StringFilter
   body: RichTextFilter
 }
 
@@ -990,6 +994,8 @@ input PageFundingMutation {
 
 input PagePolicyMutation {
   title: String
+  effective: String
+  revised: String
   body: JSON
 }
 

@@ -17,11 +17,10 @@ templateClass: tmpl-home
         font-family: var(--courier);
         margin-bottom: 3px;
         font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 0.5px;
+        font-size: 16px;
     }
     div.content {
-        padding: 3% 18%;
+        padding: 3% 18% 6%;
     }
     div.content h1 {
         font-size: 24px;
@@ -52,10 +51,10 @@ templateClass: tmpl-home
         {{ title }}
       </h1>
       <h5>
-          <span style="text-decoration: underline;">Effective date:</span> DATE
+          <span style="text-decoration: underline;">Effective date:</span> {{ effective }}
       </h5>
       <h5>
-          <span style="text-decoration: underline;">Last revised:</span> DATE
+          <span style="text-decoration: underline;">Last revised:</span> {{ revised }}
       </h5>
     </div>
   </div>

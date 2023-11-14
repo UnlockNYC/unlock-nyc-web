@@ -1,6 +1,8 @@
 ---
-layout: layouts/policies.njk
+layout: layouts/policy.njk
 title: Legal Disclaimers
+effective: 'October 18, 2023'
+revised: 'October 18, 2023'
 _template: policy
 ---
 

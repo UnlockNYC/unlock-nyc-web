@@ -177,6 +177,8 @@ fragment PageParts on Page {
   }
   ... on PagePolicy {
     title
+    effective
+    revised
     body
   }
 }

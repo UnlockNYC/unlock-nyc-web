@@ -1,3 +1,5 @@
 {
-  "tags": ["articles"]
+  "tags": ["articles"],
+  "layout": "layouts/article.njk",
+  "date": "Last Modified"
 }

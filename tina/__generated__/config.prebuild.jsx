@@ -1013,6 +1013,16 @@ var config_default = defineConfig({
                 required: true
               },
               {
+                type: "string",
+                name: "effective",
+                label: "Effective Date"
+              },
+              {
+                type: "string",
+                name: "revised",
+                label: "Last Revised Date"
+              },
+              {
                 type: "rich-text",
                 parser: {
                   type: "markdown"
@@ -1179,6 +1189,9 @@ var config_default = defineConfig({
           },
           {
             type: "rich-text",
+            parser: {
+              type: "markdown"
+            },
             name: "body",
             label: "Article Body",
             isBody: true

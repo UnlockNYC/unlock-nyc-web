@@ -1,6 +1,8 @@
 ---
-layout: layouts/policies.njk
+layout: layouts/policy.njk
 title: User Agreement
+effective: 'December 28, 2020'
+revised: 'November 30, 2021'
 _template: policy
 ---
 
