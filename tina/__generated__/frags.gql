@@ -101,6 +101,7 @@ fragment PageParts on Page {
     quote
     quoteAuthor
     authorTitle
+    authorImg
     linksList {
       __typename
       title

@@ -51,6 +51,7 @@ quote: >-
   mattered.
 quoteAuthor: Kamilha Newton
 authorTitle: Unlock NYC user and Scholar-in-Residence
+authorImg: 'https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot.png'
 linksList:
   - title: Apply for a voucher
     text: >-

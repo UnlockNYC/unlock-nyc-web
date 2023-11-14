@@ -359,6 +359,12 @@ div#footer a:hover {
     text-decoration: underline;
 }
 
+div#footer img.social-foot {
+    width: 20px;
+    vertical-align: top;
+    margin-right: 3px;
+}
+
 /** MOBILE FOOTER **/
 
 @media only screen and (max-width: 900px) {

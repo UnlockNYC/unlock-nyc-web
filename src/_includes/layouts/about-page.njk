@@ -5,6 +5,28 @@ templateClass: tmpl-home
 <!-- MAB - put CSS HERE?! OR ELSE WHERE -->
 <style>
 
+  div.info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 50px;
+      text-align: center;
+      margin-top: 50px;
+  }
+
+  div.info-circle {
+      background-color: #888;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+
+  div.info-circle img {
+      max-width: 100%;
+  }
+
   div.bio-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,26 +77,26 @@ templateClass: tmpl-home
     <p class="grey">
       Everyone deserves to be treated fairly in their search for a home. At Unlock NYC, we equip voucher holders with the paper trail, voice, and connections to create accountability when they’re facing housing discrimination. Through our direct services, data analysis, and advocacy, we’re creating a power shift where landlords and brokers fear the social and financial costs of discriminating against voucher holders.
     </p>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-column-gap: 50px; text-align: center; margin-top: 50px;">
+    <div class="info-grid">
       <div>
-        <div style="background-color: #888; border-radius: 50%; width: 100px; height: 100px; display: block; margin: auto; margin-bottom: 20px;">
-          img
+        <div class="info-circle">
+          <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/about-individual-justice-icon.png">
         </div>
         <h4>
           Individual justice
         </h4>
       </div>
       <div>
-        <div style="background-color: #888; border-radius: 50%; width: 100px; height: 100px; display: block; margin: auto; margin-bottom: 20px;">
-          img
+        <div class="info-circle">
+          <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/about-systems-change-icon.png">
         </div>
         <h4>
           Systems change
         </h4>
       </div>
       <div>
-        <div style="background-color: #888; border-radius: 50%; width: 100px; height: 100px; display: block; margin: auto; margin-bottom: 20px;">
-          img
+        <div class="info-circle">
+          <img src="https://public-unlock.nyc3.digitaloceanspaces.com/media/about-leadership-development-icon.png">
         </div>
         <h4>
           Leadership development

@@ -601,6 +601,11 @@ var config_default = defineConfig({
                 label: "Author Title"
               },
               {
+                type: "image",
+                name: "authorImg",
+                label: "Author Image"
+              },
+              {
                 type: "object",
                 name: "linksList",
                 label: "Resource Links",

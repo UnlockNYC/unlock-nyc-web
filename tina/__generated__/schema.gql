@@ -243,6 +243,7 @@ type PageVoucherholders implements Node & Document {
   quote: String
   quoteAuthor: String
   authorTitle: String
+  authorImg: String
   linksList: [PageVoucherholdersLinksList]
   id: ID!
   _sys: SystemInfo!
@@ -505,6 +506,7 @@ input PageVoucherholdersFilter {
   quote: StringFilter
   quoteAuthor: StringFilter
   authorTitle: StringFilter
+  authorImg: ImageFilter
   linksList: PageVoucherholdersLinksListFilter
 }
 
@@ -1007,6 +1009,7 @@ input PageVoucherholdersMutation {
   quote: String
   quoteAuthor: String
   authorTitle: String
+  authorImg: String
   linksList: [PageVoucherholdersLinksListMutation]
 }
 
