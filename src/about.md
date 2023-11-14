@@ -12,6 +12,8 @@ thanksList:
     link: 'https://www.kavyaraman.com/'
   - name: Harmonize
   - name: Fund for the City of New York
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/media/about-logo-consultant-fund-for-the-city-of-new-york.png
     link: 'https://www.fcny.org/'
   - name: F.Y.Eye
     link: 'https://www.fyeye.org/'
