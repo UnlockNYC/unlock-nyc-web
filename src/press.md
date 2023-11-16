@@ -13,6 +13,7 @@ orangeBannerTitle: Working on a story?
 orangeBannerText: >-
   Please complete our Media Request Form and a member of our Communications team
   will get back to you as soon as possible
+faqPageList: FAQ Press
 _template: press
 ---
 
