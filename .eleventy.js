@@ -27,17 +27,28 @@ module.exports = function(eleventyConfig) {
       linkify: true
   };
 
-  /*let markdownAnchorOptions = {
-      permalink: false
-  };*/
-
-
-  const markdownLib = markdownIt(markdownOptions); //.use(markdownItAnchor, markdownAnchorOptions);
+  // markdown rendering for rich-text blocks
+  const markdownLib = markdownIt(markdownOptions);
   eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addFilter("markdown", (content) => {
     return markdownLib.render(content);
   });
 
+  eleventyConfig.addFilter("sortByPubDate", function(array) {
+    return array.slice().sort((a, b) => {
+        // Convert 'DD.MM.YYYY' to 'YYYY-MM-DD'
+        let dateA = convertDate(a.data.pubdate);
+        let dateB = convertDate(b.data.pubdate);
+
+        return new Date(dateB) - new Date(dateA);
+    });
+  });
+
+  // convert 'MM.DD.YYYY' (data.pubdate) to 'YYYY-MM-DD'
+  function convertDate(dateString) {
+      let parts = dateString.split(".");
+      return `${parts[2]}-${parts[0]}-${parts[1]}`;
+  }
 
   /* From: https://github.com/artstorm/eleventy-plugin-seo
 

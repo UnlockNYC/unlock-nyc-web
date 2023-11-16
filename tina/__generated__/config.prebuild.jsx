@@ -1442,7 +1442,7 @@ var config_default = defineConfig({
           {
             type: "string",
             name: "pubdate",
-            label: "Story Date"
+            label: "Story Date (MM.DD.YYYY - important!)"
           },
           {
             type: "image",
