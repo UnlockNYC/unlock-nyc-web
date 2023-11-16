@@ -1298,6 +1298,10 @@ export default defineConfig({
                 value: "FAQ Data",
                 label: "Data"
               },
+              {
+                value: "FAQ Press",
+                label: "Press Page"
+              },
             ]
           },
           {
