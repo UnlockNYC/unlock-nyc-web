@@ -650,6 +650,11 @@ export default defineConfig({
                 ],
               },
               {
+                type: "string",
+                name: "keysHeadline",
+                label: "Keys Headline"
+              },
+              {
                 type: "image",
                 name: "keyImage1",
                 label: "Key Image 1"

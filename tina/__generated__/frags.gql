@@ -107,6 +107,7 @@ fragment PageParts on Page {
         buttonLink
       }
     }
+    keysHeadline
     keyImage1
     keyImage2
     keyImage3

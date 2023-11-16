@@ -41,6 +41,7 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
+keysHeadline: Unlocking Doors
 keyImage1: 'https://public-unlock.nyc3.digitaloceanspaces.com/key1.png'
 keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/key2.png'
 keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/key3.png'
@@ -51,7 +52,8 @@ quote: >-
   mattered.
 quoteAuthor: Kamilha Newton
 authorTitle: Unlock NYC user and Scholar-in-Residence
-authorImg: 'https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot.png'
+authorImg: >-
+  https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot.png
 linksList:
   - title: Apply for a voucher
     text: >-
@@ -72,8 +74,7 @@ linksList:
     text: >-
       Housing Court Answers can explain Housing Court and housing law, rent
       arrears assistance, and homeless prevention guidance.
-    image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/housingcourtanswers.png
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/housingcourtanswers.png'
     button: 'yes'
     buttonText: Learn more
   - title: Address a housing situation

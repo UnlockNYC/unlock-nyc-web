@@ -250,6 +250,7 @@ type PageVoucherholders implements Node & Document {
   bannerTitle: String
   bannerText: String
   blocksList: [PageVoucherholdersBlocksList]
+  keysHeadline: String
   keyImage1: String
   keyImage2: String
   keyImage3: String
@@ -535,6 +536,7 @@ input PageVoucherholdersFilter {
   bannerTitle: StringFilter
   bannerText: StringFilter
   blocksList: PageVoucherholdersBlocksListFilter
+  keysHeadline: StringFilter
   keyImage1: ImageFilter
   keyImage2: ImageFilter
   keyImage3: ImageFilter
@@ -1048,6 +1050,7 @@ input PageVoucherholdersMutation {
   bannerTitle: String
   bannerText: String
   blocksList: [PageVoucherholdersBlocksListMutation]
+  keysHeadline: String
   keyImage1: String
   keyImage2: String
   keyImage3: String
