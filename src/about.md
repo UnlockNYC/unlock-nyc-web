@@ -8,18 +8,18 @@ bannerTitle: About Us
 thanksList:
   - name: Kavya Arpitha Raman
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/about-logo-consultant-kavya-arpitha-raman.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-kavya-arpitha-raman.png
     link: 'https://www.kavyaraman.com/'
   - name: Harmonize
   - name: Fund for the City of New York
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/about-logo-consultant-fund-for-the-city-of-new-york.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-fund-for-the-city-of-new-york.png
     link: 'https://www.fcny.org/'
   - name: F.Y.Eye
     link: 'https://www.fyeye.org/'
   - name: Nonprofit Finance Fund
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/about-logo-consultant-nonprofit-finance-fund.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-nonprofit-finance-fund.png
     link: 'https://nff.org/'
 _template: about
 ---

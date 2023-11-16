@@ -27,7 +27,7 @@ iconBlocksList:
       questions you have. But that's not all! By signing up, you'll also get
       access to lots of resources, like community events, special content, and
       other tools to help with your housing search.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 1.png'
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 1.png'
     button: 'yes'
     buttonText: Sign Up
   - title: Collect evidence
@@ -40,7 +40,7 @@ iconBlocksList:
       sure to take clear screenshots that show any denials or ghosting from
       agents. We'll help you keep all your evidence organized and secure, so you
       can report what happened whenever you're ready.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 2.png'
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 2.png'
     button: 'yes'
     buttonText: Learn more
   - title: Submit your report
@@ -53,7 +53,7 @@ iconBlocksList:
       may ask you for more details if needed. We'll also conduct research on the
       broker and landlord involved. In just 1-2 business days, we'll send you a
       copy of your report for your records.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 3.png'
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 3.png'
     button: 'yes'
     buttonText: Learn more
   - title: Take action!
@@ -68,7 +68,7 @@ iconBlocksList:
       improve the voucher system for all New Yorkers. We add your report
       anonymously to our Discrimination Mapping Tool so researchers and
       policymakers can better understand the issue and create positive change.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/media/Image 4.png'
+    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 4.png'
     button: 'yes'
     buttonText: Learn more
 articlePageList: Rights Recorder

@@ -20,7 +20,7 @@ iconBlocksList:
       advocate) to access resources to help them stay confident, informed, and
       engaged in their housing search.
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-1.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-1.png
     button: 'yes'
     buttonText: Learn more
   - title: Help your clients report
@@ -30,7 +30,7 @@ iconBlocksList:
       of any reports made, and we keep each report file in an encrypted digital
       vault for added security.
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-2.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-2.png
     button: 'yes'
     buttonText: Learn more
   - title: See insights & impact
@@ -39,7 +39,7 @@ iconBlocksList:
       submitted, the impact they are having, and any areas that may need your
       attention.
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-3.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-3.png
     button: 'yes'
     buttonText: Learn more
   - title: Here to listen and problem solve with you
@@ -49,7 +49,7 @@ iconBlocksList:
       our tools work, and answer any questions you have about source of income
       discrimination or our programs.
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/advocate-Image-4.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-4.png
     button: 'yes'
     buttonText: Learn more
 yellowBannerTitle: Join a virtual workshop

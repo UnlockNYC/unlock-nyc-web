@@ -59,11 +59,11 @@ linksList:
 partnersList:
   - name: Asian Americans for Equality
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/housingspecialists-asian-americans-equality-logo.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-asian-americans-equality-logo.png
     link: 'https://www.aafe.org/'
   - name: Brooklyn Defenders
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/media/housingspecialists-brooklyn-defender-services-logo.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-brooklyn-defender-services-logo.png
     link: 'https://bds.org/home'
 _template: housingspecialists
 ---
