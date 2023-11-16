@@ -66,7 +66,7 @@ div.slider-wrap {
 
 div.slider-arrow {
     position: absolute;
-    margin-top: 17vh;
+    margin-top: 16vh;
     z-index: 100;
     background-color: white;
     opacity: 0.8;
@@ -78,11 +78,11 @@ div.slider-arrow {
 }
 
 div.slider-arrow.left {
-    left: 14%;
+    left: 5%;
 }
 
 div.slider-arrow.right {
-    right: 14%;
+    right: 5%;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
 }
@@ -145,6 +145,31 @@ div.slide.audio div.play {
     box-sizing: border-box;
     padding-top: 20%;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 1650px) {
+    div.slider-arrow.left {
+        left:14%;
+    }
+
+    div.slider-arrow.right {
+        right:14%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.slider-wrap {
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        overflow-y: scroll;
+        height: 600px;
+    }
+    div.slide {
+        width: 100%;
+    }
+    div.slider-arrow {
+        display: none;
+    }
 }
 
 
