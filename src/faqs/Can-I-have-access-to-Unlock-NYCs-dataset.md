@@ -12,5 +12,7 @@ answer: >
   the privacy, security, and integrity of our community’s data, so requests that
   involve data-sharing agreements are normally not suitable for projects with
   tight turnarounds.
+tags:
+  - FAQ Press
 ---
 
