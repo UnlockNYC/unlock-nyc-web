@@ -1,0 +1,75 @@
+<div class="content" style="background-color: #222;">
+  <h1 style="font-family: 'Intro Rust', sans-serif; text-align: center; color: White;">
+    WHAT PEOPLE ARE SAYING
+  </h1>
+  <div class="slider-arrow left">
+    <svg style="width: 25px; margin-top: 12px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="Black" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
+  </div>
+  <div class="slider-arrow right">
+    <svg style="width: 25px; margin-top: 12px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="Black" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
+  </div>
+  <div id="saying-slider" class="slider-wrap">
+      {% for slide in homeSlider %}
+        {% if slide.slideType == "quote" %}
+        <div class="slide quote">
+            <h4>"{{ slide.quoteText }}"</h4>
+            <div class="author">
+                <p>{{ slide.author }}</p>
+            </div>
+        </div>
+        {% endif %}
+        {% if slide.slideType == "audio" %}
+        <div class="slide audio">
+            <div class="play">
+                <!-- PLAY BTN Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+                <svg fill="#ffffff" width="100px" height="100px" viewBox="-0.8 -0.8 9.60 9.60" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.8">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(2.24,2.24), scale(0.44)">
+                <rect x="-0.8" y="-0.8" width="9.60" height="9.60" rx="4.8" fill="#090303" strokewidth="0"/>
+                </g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                <g id="SVGRepo_iconCarrier"> <path d="M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-1 2l3 2-3 2v-4z"/></g>
+                </svg>
+            </div>
+            <!-- WAV FORM Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg fill="#000000" height="auto" width="100%" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 32 32" xml:space="preserve" style="margin-top: -20px;">
+                <g>
+               	<path d="M4,13c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1s1-0.4,1-1v-4C5,13.4,4.6,13,4,13z"/>
+               	<path d="M8,11c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1s1-0.4,1-1v-8C9,11.4,8.6,11,8,11z"/>
+               	<path d="M12,6c-0.6,0-1,0.4-1,1v18c0,0.6,0.4,1,1,1s1-0.4,1-1V7C13,6.4,12.6,6,12,6z"/>
+               	<path d="M16,13c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1s1-0.4,1-1v-4C17,13.4,16.6,13,16,13z"/>
+               	<path d="M20,9c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1s1-0.4,1-1V10C21,9.4,20.6,9,20,9z"/>
+               	<path d="M24,6c-0.6,0-1,0.4-1,1v18c0,0.6,0.4,1,1,1s1-0.4,1-1V7C25,6.4,24.6,6,24,6z"/>
+               	<path d="M28,13c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1s1-0.4,1-1v-4C29,13.4,28.6,13,28,13z"/>
+                </g>
+            </svg>
+            <div class="label">
+                <p>{{ slide.audioLabel }}</p>
+            </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  /* slider text sizing */
+  $("div.slide.quote h4").each(function(){
+    var quote = $(this).html();
+    if(quote.length > 100) {
+      $(this).css("font-size", "26px");
+    }
+  });
+  /* slider scroll right */
+  $("div.slider-arrow.right").click(function() {
+    var currentScroll = $("#saying-slider").scrollLeft();
+    $('#saying-slider').animate({scrollLeft:currentScroll+300}, 400);
+  });
+  /* slider scroll left */
+  $("div.slider-arrow.left").click(function() {
+    var currentScroll = $("#saying-slider").scrollLeft();
+    $('#saying-slider').animate({scrollLeft:currentScroll-300}, 400);
+  });
+});
+</script>

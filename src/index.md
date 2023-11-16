@@ -42,6 +42,30 @@ blocksList:
     buttonList:
       - buttonText: Explore the map
         buttonLink: /soi-mapping
+homeSlider:
+  - slideType: quote
+    quoteText: 'With Unlock, I feel the most supported I have felt in years.'
+    author: Leadership Collective Member
+  - slideType: quote
+    quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
+    author: 'H. L. L., Tenant'
+  - slideType: audio
+    audioLabel: TEST AUDIO
+  - slideType: quote
+    quoteText: >-
+      The journey doesn’t stop here, I will always support UnlockNYC for
+      supporting me.
+    author: 'N.C., Tenant'
+  - slideType: quote
+    quoteText: >-
+      I never imagined having my own home in New York, being the owner of my own
+      keys – all thanks to UnlockNYC.
+    author: 'S.M., Tenant'
+  - slideType: quote
+    quoteText: >-
+      [UnlockNYC’s Rights Recorder] will support advocacy campaigns and
+      movement-wide efforts to fight back and fix this broken system.
+    author: 'Annie Carforo, Neighbors Together'
 latestBanner: 'Latest report: Serial Discriminators List'
 latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
 latestActionImage: >-

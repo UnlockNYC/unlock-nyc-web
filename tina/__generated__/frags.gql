@@ -17,6 +17,14 @@ fragment PageParts on Page {
         buttonLink
       }
     }
+    homeSlider {
+      __typename
+      slideType
+      quoteText
+      author
+      audioLabel
+      audioFile
+    }
     latestBanner
     latestActionText
     latestActionImage

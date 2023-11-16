@@ -118,11 +118,20 @@ type PageIndexBlocksList {
   buttonList: [PageIndexBlocksListButtonList]
 }
 
+type PageIndexHomeSlider {
+  slideType: String
+  quoteText: String
+  author: String
+  audioLabel: String
+  audioFile: String
+}
+
 type PageIndex implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
   blocksList: [PageIndexBlocksList]
+  homeSlider: [PageIndexHomeSlider]
   latestBanner: String
   latestActionText: String
   latestActionImage: String
@@ -396,11 +405,20 @@ input PageIndexBlocksListFilter {
   buttonList: PageIndexBlocksListButtonListFilter
 }
 
+input PageIndexHomeSliderFilter {
+  slideType: StringFilter
+  quoteText: StringFilter
+  author: StringFilter
+  audioLabel: StringFilter
+  audioFile: ImageFilter
+}
+
 input PageIndexFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
   blocksList: PageIndexBlocksListFilter
+  homeSlider: PageIndexHomeSliderFilter
   latestBanner: StringFilter
   latestActionText: StringFilter
   latestActionImage: ImageFilter
@@ -899,11 +917,20 @@ input PageIndexBlocksListMutation {
   buttonList: [PageIndexBlocksListButtonListMutation]
 }
 
+input PageIndexHomeSliderMutation {
+  slideType: String
+  quoteText: String
+  author: String
+  audioLabel: String
+  audioFile: String
+}
+
 input PageIndexMutation {
   title: String
   bannerTitle: String
   bannerText: String
   blocksList: [PageIndexBlocksListMutation]
+  homeSlider: [PageIndexHomeSliderMutation]
   latestBanner: String
   latestActionText: String
   latestActionImage: String

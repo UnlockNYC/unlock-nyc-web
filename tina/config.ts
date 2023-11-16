@@ -144,6 +144,56 @@ export default defineConfig({
                 ],
               },
               {
+                type: "object",
+                name: "homeSlider",
+                label: "What People Are Saying",
+                list: true,
+                itemProps: (slide) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: slide?.quoteText || slide?.audioLabel };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "slideType",
+                    label: "Slide Type",
+                    options: [
+                      {
+                        value: "quote",
+                        label: "Quote"
+                      },
+                      {
+                        value: "audio",
+                        label: "Audio"
+                      }
+                    ]
+                  },
+                  {
+                    type: "string",
+                    name: "quoteText",
+                    label: "Quote Text",
+                    ui: {
+                      component: "textarea"
+                    }
+                  },
+                  {
+                    type: "string",
+                    name: "author",
+                    label: "Quote Author"
+                  },
+                  {
+                    type: "string",
+                    name: "audioLabel",
+                    label: "Audio Label"
+                  },
+                  {
+                    type: "image",
+                    name: "audioFile",
+                    label: "Audio File"
+                  },
+                ],
+              },
+              {
                 type: "string",
                 name: "latestBanner",
                 label: "Latest Update: Banner",

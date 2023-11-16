@@ -14,11 +14,6 @@ nav#main.mobile-open div#nav-logo a {
   color: Black;
 }
 
-/*nav ul#top li.login-button {
-  background-color: White;
-  color: Black;
-}*/
-
 @media only screen and (min-width: 1100px) {
 
   nav#main ul#top > li > a {
@@ -54,6 +49,104 @@ video.video-banner {
     width: 100%;
     object-fit: cover;
 }
+
+/* WHAT PEOPLE ARE SAYING, SLIDER */
+
+div.slider-wrap {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+}
+
+div.slider-arrow {
+    position: absolute;
+    margin-top: 17vh;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.slider-arrow.left {
+    left: 14%;
+}
+
+div.slider-arrow.right {
+    right: 14%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+div.slide {
+    width: 20vw;
+    min-width: 300px;
+    height: 21vw;
+    min-height: 325px;
+    display: inline-block;
+    padding: 10%;
+    box-sizing: border-box;
+    background-color: var(--cream);
+    position: relative;
+}
+
+div.slide:nth-child(2n) {
+    background-color: var(--orange);
+}
+
+div.slide:nth-child(3n) {
+    background-color: var(--green);
+}
+
+div.slide:nth-child(4n) {
+    background-color: var(--purple);
+}
+
+div.slide.quote h4 {
+    font-size: 2rem;
+}
+
+div.slide.quote div.author, div.slide.audio div.label {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+}
+
+div.slide.quote div.author p {
+    font-family: var(--courier);
+    color: Black;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+div.slide.audio div.label p {
+    font-family: var(--courier);
+    color: Black;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+div.slide.audio div.play {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20%;
+    cursor: pointer;
+}
+
 
 /* LATEST ACTION SECTION */
 
