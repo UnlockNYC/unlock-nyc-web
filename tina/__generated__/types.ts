@@ -344,7 +344,11 @@ export type PageRightsrecorder = Node & Document & {
   title: Scalars['String']['output'];
   bannerTitle?: Maybe<Scalars['String']['output']>;
   bannerText?: Maybe<Scalars['String']['output']>;
+  introText?: Maybe<Scalars['JSON']['output']>;
   iconBlocksList?: Maybe<Array<Maybe<PageRightsrecorderIconBlocksList>>>;
+  yellowBannerTitle?: Maybe<Scalars['String']['output']>;
+  yellowBannerText?: Maybe<Scalars['String']['output']>;
+  yellowBannerLink?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -355,8 +359,6 @@ export type PageAdvocateportalIconBlocksList = {
   title?: Maybe<Scalars['String']['output']>;
   text?: Maybe<Scalars['String']['output']>;
   image?: Maybe<Scalars['String']['output']>;
-  button?: Maybe<Scalars['String']['output']>;
-  buttonText?: Maybe<Scalars['String']['output']>;
 };
 
 export type PageAdvocateportal = Node & Document & {
@@ -364,9 +366,12 @@ export type PageAdvocateportal = Node & Document & {
   title: Scalars['String']['output'];
   bannerTitle?: Maybe<Scalars['String']['output']>;
   bannerText?: Maybe<Scalars['String']['output']>;
+  scheduleLink?: Maybe<Scalars['String']['output']>;
+  demoLink?: Maybe<Scalars['String']['output']>;
   iconBlocksList?: Maybe<Array<Maybe<PageAdvocateportalIconBlocksList>>>;
   yellowBannerTitle?: Maybe<Scalars['String']['output']>;
   yellowBannerText?: Maybe<Scalars['String']['output']>;
+  yellowBannerLink?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -467,6 +472,8 @@ export type PageCommunityorganizers = Node & Document & {
   bannerText?: Maybe<Scalars['String']['output']>;
   blocksList?: Maybe<Array<Maybe<PageCommunityorganizersBlocksList>>>;
   orangeBannerTitle?: Maybe<Scalars['String']['output']>;
+  orangeBannerButton?: Maybe<Scalars['String']['output']>;
+  orangeBannerLink?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -637,6 +644,12 @@ export type PageAboutFilter = {
   thanksList?: InputMaybe<PageAboutThanksListFilter>;
 };
 
+export type RichTextFilter = {
+  startsWith?: InputMaybe<Scalars['String']['input']>;
+  eq?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 export type PageRightsrecorderIconBlocksListFilter = {
   title?: InputMaybe<StringFilter>;
   text?: InputMaybe<StringFilter>;
@@ -647,24 +660,29 @@ export type PageRightsrecorderFilter = {
   title?: InputMaybe<StringFilter>;
   bannerTitle?: InputMaybe<StringFilter>;
   bannerText?: InputMaybe<StringFilter>;
+  introText?: InputMaybe<RichTextFilter>;
   iconBlocksList?: InputMaybe<PageRightsrecorderIconBlocksListFilter>;
+  yellowBannerTitle?: InputMaybe<StringFilter>;
+  yellowBannerText?: InputMaybe<StringFilter>;
+  yellowBannerLink?: InputMaybe<StringFilter>;
 };
 
 export type PageAdvocateportalIconBlocksListFilter = {
   title?: InputMaybe<StringFilter>;
   text?: InputMaybe<StringFilter>;
   image?: InputMaybe<ImageFilter>;
-  button?: InputMaybe<StringFilter>;
-  buttonText?: InputMaybe<StringFilter>;
 };
 
 export type PageAdvocateportalFilter = {
   title?: InputMaybe<StringFilter>;
   bannerTitle?: InputMaybe<StringFilter>;
   bannerText?: InputMaybe<StringFilter>;
+  scheduleLink?: InputMaybe<StringFilter>;
+  demoLink?: InputMaybe<StringFilter>;
   iconBlocksList?: InputMaybe<PageAdvocateportalIconBlocksListFilter>;
   yellowBannerTitle?: InputMaybe<StringFilter>;
   yellowBannerText?: InputMaybe<StringFilter>;
+  yellowBannerLink?: InputMaybe<StringFilter>;
 };
 
 export type PageDatapageBlocksListButtonListFilter = {
@@ -746,12 +764,8 @@ export type PageCommunityorganizersFilter = {
   bannerText?: InputMaybe<StringFilter>;
   blocksList?: InputMaybe<PageCommunityorganizersBlocksListFilter>;
   orangeBannerTitle?: InputMaybe<StringFilter>;
-};
-
-export type RichTextFilter = {
-  startsWith?: InputMaybe<Scalars['String']['input']>;
-  eq?: InputMaybe<Scalars['String']['input']>;
-  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  orangeBannerButton?: InputMaybe<StringFilter>;
+  orangeBannerLink?: InputMaybe<StringFilter>;
 };
 
 export type PageHousingspecialistsLinksListButtonListFilter = {
@@ -1291,24 +1305,29 @@ export type PageRightsrecorderMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   bannerTitle?: InputMaybe<Scalars['String']['input']>;
   bannerText?: InputMaybe<Scalars['String']['input']>;
+  introText?: InputMaybe<Scalars['JSON']['input']>;
   iconBlocksList?: InputMaybe<Array<InputMaybe<PageRightsrecorderIconBlocksListMutation>>>;
+  yellowBannerTitle?: InputMaybe<Scalars['String']['input']>;
+  yellowBannerText?: InputMaybe<Scalars['String']['input']>;
+  yellowBannerLink?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type PageAdvocateportalIconBlocksListMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   text?: InputMaybe<Scalars['String']['input']>;
   image?: InputMaybe<Scalars['String']['input']>;
-  button?: InputMaybe<Scalars['String']['input']>;
-  buttonText?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type PageAdvocateportalMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   bannerTitle?: InputMaybe<Scalars['String']['input']>;
   bannerText?: InputMaybe<Scalars['String']['input']>;
+  scheduleLink?: InputMaybe<Scalars['String']['input']>;
+  demoLink?: InputMaybe<Scalars['String']['input']>;
   iconBlocksList?: InputMaybe<Array<InputMaybe<PageAdvocateportalIconBlocksListMutation>>>;
   yellowBannerTitle?: InputMaybe<Scalars['String']['input']>;
   yellowBannerText?: InputMaybe<Scalars['String']['input']>;
+  yellowBannerLink?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type PageDatapageBlocksListButtonListMutation = {
@@ -1390,6 +1409,8 @@ export type PageCommunityorganizersMutation = {
   bannerText?: InputMaybe<Scalars['String']['input']>;
   blocksList?: InputMaybe<Array<InputMaybe<PageCommunityorganizersBlocksListMutation>>>;
   orangeBannerTitle?: InputMaybe<Scalars['String']['input']>;
+  orangeBannerButton?: InputMaybe<Scalars['String']['input']>;
+  orangeBannerLink?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type PageHousingspecialistsLinksListButtonListMutation = {
@@ -1540,15 +1561,15 @@ type PageParts_PageIndex_Fragment = { __typename: 'PageIndex', title: string, ba
 
 type PageParts_PageAbout_Fragment = { __typename: 'PageAbout', title: string, bannerTitle?: string | null, thanksList?: Array<{ __typename: 'PageAboutThanksList', name: string, logo?: string | null, link?: string | null } | null> | null };
 
-type PageParts_PageRightsrecorder_Fragment = { __typename: 'PageRightsrecorder', title: string, bannerTitle?: string | null, bannerText?: string | null, iconBlocksList?: Array<{ __typename: 'PageRightsrecorderIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null };
+type PageParts_PageRightsrecorder_Fragment = { __typename: 'PageRightsrecorder', title: string, bannerTitle?: string | null, bannerText?: string | null, introText?: any | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, yellowBannerLink?: string | null, iconBlocksList?: Array<{ __typename: 'PageRightsrecorderIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null };
 
-type PageParts_PageAdvocateportal_Fragment = { __typename: 'PageAdvocateportal', title: string, bannerTitle?: string | null, bannerText?: string | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, iconBlocksList?: Array<{ __typename: 'PageAdvocateportalIconBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null } | null> | null };
+type PageParts_PageAdvocateportal_Fragment = { __typename: 'PageAdvocateportal', title: string, bannerTitle?: string | null, bannerText?: string | null, scheduleLink?: string | null, demoLink?: string | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, yellowBannerLink?: string | null, iconBlocksList?: Array<{ __typename: 'PageAdvocateportalIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null };
 
 type PageParts_PageDatapage_Fragment = { __typename: 'PageDatapage', title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, blocksList?: Array<{ __typename: 'PageDatapageBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageDatapageBlocksListButtonList', buttonText?: string | null } | null> | null } | null> | null };
 
 type PageParts_PageVoucherholders_Fragment = { __typename: 'PageVoucherholders', title: string, bannerTitle?: string | null, bannerText?: string | null, keyImage1?: string | null, keyImage2?: string | null, keyImage3?: string | null, keyImage4?: string | null, quote?: string | null, quoteAuthor?: string | null, authorTitle?: string | null, authorImg?: string | null, blocksList?: Array<{ __typename: 'PageVoucherholdersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageVoucherholdersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, linksList?: Array<{ __typename: 'PageVoucherholdersLinksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null, buttonLink?: string | null } | null> | null };
 
-type PageParts_PageCommunityorganizers_Fragment = { __typename: 'PageCommunityorganizers', title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, blocksList?: Array<{ __typename: 'PageCommunityorganizersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageCommunityorganizersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null };
+type PageParts_PageCommunityorganizers_Fragment = { __typename: 'PageCommunityorganizers', title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerButton?: string | null, orangeBannerLink?: string | null, blocksList?: Array<{ __typename: 'PageCommunityorganizersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageCommunityorganizersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null };
 
 type PageParts_PageHousingspecialists_Fragment = { __typename: 'PageHousingspecialists', title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, quote?: string | null, quoteAuthor?: string | null, quoteTitle?: string | null, quoteImg?: string | null, linksList?: Array<{ __typename: 'PageHousingspecialistsLinksList', title?: string | null, content?: any | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageHousingspecialistsLinksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, partnersList?: Array<{ __typename: 'PageHousingspecialistsPartnersList', name: string, logo?: string | null, link?: string | null } | null> | null };
 
@@ -1577,7 +1598,7 @@ export type PageQueryVariables = Exact<{
 }>;
 
 
-export type PageQuery = { __typename?: 'Query', page: { __typename: 'PageIndex', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, latestBanner?: string | null, latestActionText?: string | null, latestActionImage?: string | null, latestActionVideo?: string | null, latestActionButton?: string | null, latestActionLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageIndexBlocksList', title?: string | null, text?: string | null, image?: string | null, alt?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageIndexBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, homeSlider?: Array<{ __typename: 'PageIndexHomeSlider', slideType?: string | null, quoteText?: string | null, author?: string | null, audioLabel?: string | null, audioFile?: string | null } | null> | null } | { __typename: 'PageAbout', id: string, title: string, bannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, thanksList?: Array<{ __typename: 'PageAboutThanksList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageRightsrecorder', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageRightsrecorderIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null } | { __typename: 'PageAdvocateportal', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageAdvocateportalIconBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null } | null> | null } | { __typename: 'PageDatapage', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageDatapageBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageDatapageBlocksListButtonList', buttonText?: string | null } | null> | null } | null> | null } | { __typename: 'PageVoucherholders', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, keyImage1?: string | null, keyImage2?: string | null, keyImage3?: string | null, keyImage4?: string | null, quote?: string | null, quoteAuthor?: string | null, authorTitle?: string | null, authorImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageVoucherholdersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageVoucherholdersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, linksList?: Array<{ __typename: 'PageVoucherholdersLinksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PageCommunityorganizers', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageCommunityorganizersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageCommunityorganizersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null } | { __typename: 'PageHousingspecialists', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, quote?: string | null, quoteAuthor?: string | null, quoteTitle?: string | null, quoteImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, linksList?: Array<{ __typename: 'PageHousingspecialistsLinksList', title?: string | null, content?: any | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageHousingspecialistsLinksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, partnersList?: Array<{ __typename: 'PageHousingspecialistsPartnersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageFunding', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageFundingBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageFundingBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, fundersList?: Array<{ __typename: 'PageFundingFundersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PagePolicy', id: string, title: string, effective?: string | null, revised?: string | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | { __typename: 'PagePress', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, kit1?: string | null, kit1PDF?: string | null, kit2?: string | null, kit2Text?: string | null, kit2Link?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type PageQuery = { __typename?: 'Query', page: { __typename: 'PageIndex', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, latestBanner?: string | null, latestActionText?: string | null, latestActionImage?: string | null, latestActionVideo?: string | null, latestActionButton?: string | null, latestActionLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageIndexBlocksList', title?: string | null, text?: string | null, image?: string | null, alt?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageIndexBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, homeSlider?: Array<{ __typename: 'PageIndexHomeSlider', slideType?: string | null, quoteText?: string | null, author?: string | null, audioLabel?: string | null, audioFile?: string | null } | null> | null } | { __typename: 'PageAbout', id: string, title: string, bannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, thanksList?: Array<{ __typename: 'PageAboutThanksList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageRightsrecorder', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, introText?: any | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, yellowBannerLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageRightsrecorderIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null } | { __typename: 'PageAdvocateportal', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, scheduleLink?: string | null, demoLink?: string | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, yellowBannerLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageAdvocateportalIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null } | { __typename: 'PageDatapage', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageDatapageBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageDatapageBlocksListButtonList', buttonText?: string | null } | null> | null } | null> | null } | { __typename: 'PageVoucherholders', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, keyImage1?: string | null, keyImage2?: string | null, keyImage3?: string | null, keyImage4?: string | null, quote?: string | null, quoteAuthor?: string | null, authorTitle?: string | null, authorImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageVoucherholdersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageVoucherholdersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, linksList?: Array<{ __typename: 'PageVoucherholdersLinksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PageCommunityorganizers', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerButton?: string | null, orangeBannerLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageCommunityorganizersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageCommunityorganizersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null } | { __typename: 'PageHousingspecialists', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, quote?: string | null, quoteAuthor?: string | null, quoteTitle?: string | null, quoteImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, linksList?: Array<{ __typename: 'PageHousingspecialistsLinksList', title?: string | null, content?: any | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageHousingspecialistsLinksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, partnersList?: Array<{ __typename: 'PageHousingspecialistsPartnersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageFunding', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageFundingBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageFundingBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, fundersList?: Array<{ __typename: 'PageFundingFundersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PagePolicy', id: string, title: string, effective?: string | null, revised?: string | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | { __typename: 'PagePress', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, kit1?: string | null, kit1PDF?: string | null, kit2?: string | null, kit2Text?: string | null, kit2Link?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type PageConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -1589,7 +1610,7 @@ export type PageConnectionQueryVariables = Exact<{
 }>;
 
 
-export type PageConnectionQuery = { __typename?: 'Query', pageConnection: { __typename?: 'PageConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PageConnectionEdges', cursor: string, node?: { __typename: 'PageIndex', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, latestBanner?: string | null, latestActionText?: string | null, latestActionImage?: string | null, latestActionVideo?: string | null, latestActionButton?: string | null, latestActionLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageIndexBlocksList', title?: string | null, text?: string | null, image?: string | null, alt?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageIndexBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, homeSlider?: Array<{ __typename: 'PageIndexHomeSlider', slideType?: string | null, quoteText?: string | null, author?: string | null, audioLabel?: string | null, audioFile?: string | null } | null> | null } | { __typename: 'PageAbout', id: string, title: string, bannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, thanksList?: Array<{ __typename: 'PageAboutThanksList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageRightsrecorder', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageRightsrecorderIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null } | { __typename: 'PageAdvocateportal', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageAdvocateportalIconBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null } | null> | null } | { __typename: 'PageDatapage', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageDatapageBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageDatapageBlocksListButtonList', buttonText?: string | null } | null> | null } | null> | null } | { __typename: 'PageVoucherholders', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, keyImage1?: string | null, keyImage2?: string | null, keyImage3?: string | null, keyImage4?: string | null, quote?: string | null, quoteAuthor?: string | null, authorTitle?: string | null, authorImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageVoucherholdersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageVoucherholdersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, linksList?: Array<{ __typename: 'PageVoucherholdersLinksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PageCommunityorganizers', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageCommunityorganizersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageCommunityorganizersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null } | { __typename: 'PageHousingspecialists', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, quote?: string | null, quoteAuthor?: string | null, quoteTitle?: string | null, quoteImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, linksList?: Array<{ __typename: 'PageHousingspecialistsLinksList', title?: string | null, content?: any | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageHousingspecialistsLinksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, partnersList?: Array<{ __typename: 'PageHousingspecialistsPartnersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageFunding', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageFundingBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageFundingBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, fundersList?: Array<{ __typename: 'PageFundingFundersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PagePolicy', id: string, title: string, effective?: string | null, revised?: string | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | { __typename: 'PagePress', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, kit1?: string | null, kit1PDF?: string | null, kit2?: string | null, kit2Text?: string | null, kit2Link?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type PageConnectionQuery = { __typename?: 'Query', pageConnection: { __typename?: 'PageConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PageConnectionEdges', cursor: string, node?: { __typename: 'PageIndex', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, latestBanner?: string | null, latestActionText?: string | null, latestActionImage?: string | null, latestActionVideo?: string | null, latestActionButton?: string | null, latestActionLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageIndexBlocksList', title?: string | null, text?: string | null, image?: string | null, alt?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageIndexBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, homeSlider?: Array<{ __typename: 'PageIndexHomeSlider', slideType?: string | null, quoteText?: string | null, author?: string | null, audioLabel?: string | null, audioFile?: string | null } | null> | null } | { __typename: 'PageAbout', id: string, title: string, bannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, thanksList?: Array<{ __typename: 'PageAboutThanksList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageRightsrecorder', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, introText?: any | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, yellowBannerLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageRightsrecorderIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null } | { __typename: 'PageAdvocateportal', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, scheduleLink?: string | null, demoLink?: string | null, yellowBannerTitle?: string | null, yellowBannerText?: string | null, yellowBannerLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, iconBlocksList?: Array<{ __typename: 'PageAdvocateportalIconBlocksList', title?: string | null, text?: string | null, image?: string | null } | null> | null } | { __typename: 'PageDatapage', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageDatapageBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageDatapageBlocksListButtonList', buttonText?: string | null } | null> | null } | null> | null } | { __typename: 'PageVoucherholders', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, keyImage1?: string | null, keyImage2?: string | null, keyImage3?: string | null, keyImage4?: string | null, quote?: string | null, quoteAuthor?: string | null, authorTitle?: string | null, authorImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageVoucherholdersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageVoucherholdersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, linksList?: Array<{ __typename: 'PageVoucherholdersLinksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonText?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PageCommunityorganizers', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, orangeBannerButton?: string | null, orangeBannerLink?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageCommunityorganizersBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageCommunityorganizersBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null } | { __typename: 'PageHousingspecialists', id: string, title: string, bannerTitle?: string | null, bannerSubtitle?: string | null, quote?: string | null, quoteAuthor?: string | null, quoteTitle?: string | null, quoteImg?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, linksList?: Array<{ __typename: 'PageHousingspecialistsLinksList', title?: string | null, content?: any | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageHousingspecialistsLinksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, partnersList?: Array<{ __typename: 'PageHousingspecialistsPartnersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PageFunding', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, orangeBannerTitle?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, blocksList?: Array<{ __typename: 'PageFundingBlocksList', title?: string | null, text?: string | null, image?: string | null, button?: string | null, buttonList?: Array<{ __typename: 'PageFundingBlocksListButtonList', buttonText?: string | null, buttonLink?: string | null } | null> | null } | null> | null, fundersList?: Array<{ __typename: 'PageFundingFundersList', name: string, logo?: string | null, link?: string | null } | null> | null } | { __typename: 'PagePolicy', id: string, title: string, effective?: string | null, revised?: string | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | { __typename: 'PagePress', id: string, title: string, bannerTitle?: string | null, bannerText?: string | null, kit1?: string | null, kit1PDF?: string | null, kit2?: string | null, kit2Text?: string | null, kit2Link?: string | null, orangeBannerTitle?: string | null, orangeBannerText?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type BioQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -1754,27 +1775,32 @@ export const PagePartsFragmentDoc = gql`
     title
     bannerTitle
     bannerText
+    introText
     iconBlocksList {
       __typename
       title
       text
       image
     }
+    yellowBannerTitle
+    yellowBannerText
+    yellowBannerLink
   }
   ... on PageAdvocateportal {
     title
     bannerTitle
     bannerText
+    scheduleLink
+    demoLink
     iconBlocksList {
       __typename
       title
       text
       image
-      button
-      buttonText
     }
     yellowBannerTitle
     yellowBannerText
+    yellowBannerLink
   }
   ... on PageDatapage {
     title
@@ -1846,6 +1872,8 @@ export const PagePartsFragmentDoc = gql`
       }
     }
     orangeBannerTitle
+    orangeBannerButton
+    orangeBannerLink
   }
   ... on PageHousingspecialists {
     title

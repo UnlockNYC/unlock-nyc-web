@@ -46,27 +46,32 @@ fragment PageParts on Page {
     title
     bannerTitle
     bannerText
+    introText
     iconBlocksList {
       __typename
       title
       text
       image
     }
+    yellowBannerTitle
+    yellowBannerText
+    yellowBannerLink
   }
   ... on PageAdvocateportal {
     title
     bannerTitle
     bannerText
+    scheduleLink
+    demoLink
     iconBlocksList {
       __typename
       title
       text
       image
-      button
-      buttonText
     }
     yellowBannerTitle
     yellowBannerText
+    yellowBannerLink
   }
   ... on PageDatapage {
     title
@@ -138,6 +143,8 @@ fragment PageParts on Page {
       }
     }
     orangeBannerTitle
+    orangeBannerButton
+    orangeBannerLink
   }
   ... on PageHousingspecialists {
     title

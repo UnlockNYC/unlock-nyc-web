@@ -58,7 +58,7 @@ templateClass: tmpl-home
       WHY YOU SHOULD LISTEN TO US Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
     </p>
   </div>
-  {% include 'layouts/blocks50.njk' %}  
+  {% include 'layouts/blocks50.njk' %}
 </div>
 <div class="banner-full bg-orange last-banner">
   <h3>
@@ -67,7 +67,9 @@ templateClass: tmpl-home
   <h2>
     {{ orangeBannerText }}
   </h2>
-  <button class="black">
-    Get in touch
-  </button>
+  <a href="{{ orangeBannerLink }}">
+    <button class="black">
+        {{ orangeBannerButton }}
+    </button>
+  </a>
 </div>

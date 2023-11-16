@@ -43,13 +43,13 @@ templateClass: tmpl-home
   <h3 id="latest-news">
     Latest News Stories
   </h3>
-  <button class="white" style="float: right; margin-top: -70px;">
+  <button class="white view-all" style="float: right; margin-top: -70px;">
     View All
   </button>
   <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
-  <div class="press-collection">
+  <div class="press-collection view-list">
       {% for story in collections.press | reverse %}
-      <div class="press-item">
+      <div class="press-item" {% if loop.index > 3 %} style="display: none;"{% endif %}>
         <div class="bg-cream" style="height: 150px; padding: 20px;">
           {{ story.data.logo }}
         </div>
@@ -69,7 +69,7 @@ templateClass: tmpl-home
   <h3 id="press-releases">
     Press Releases
   </h3>
-  <button class="white" style="float: right; margin-top: -70px;">
+  <button class="white view-all" style="float: right; margin-top: -70px;">
     View All
   </button>
   <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
@@ -142,3 +142,12 @@ templateClass: tmpl-home
       </button>
   </a>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $("button.view-all").click(function(){
+          $(this).siblings("div.view-list").children("div").css("display", "grid");
+          $("html, body").animate({ scrollTop: "+=400px" }, "slow");
+        });
+    });
+</script>

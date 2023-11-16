@@ -56,7 +56,7 @@ templateClass: tmpl-home
         {{ bannerText }}
       </h2>
       <button class="black">
-        Sign up
+        Get started
       </button>
     </div>
     <div style="min-height: 200px; padding: 20px; position: relative;">
@@ -66,7 +66,7 @@ templateClass: tmpl-home
 </div>
 <div class="content">
   <p class="black" style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto;">
-    Stay one step ahead of landlords with our Rights Recorder app. Record your phone calls, capture evidence of shady behavior, and report brokers and landlords when they violate your rights!
+    {{ introText }}
   </p>
   <h3 class="center-title">
     How it Works
@@ -130,9 +130,11 @@ templateClass: tmpl-home
     <p class="black">
       {{ yellowBannerText }}
     </p>
-    <button class="black">
-      Sign Up
-    </button>
+    <a href="{{ yellowBannerLink }}">
+        <button class="black">
+        Sign Up
+        </button>
+    </a>
   </div>
   {% include 'layouts/article-list.njk' %}
 </div>

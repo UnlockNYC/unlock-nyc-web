@@ -310,6 +310,14 @@ export default defineConfig({
                 },
               },
               {
+                type: "rich-text",
+                name: "introText",
+                label: "Intro Paragraph",
+                parser: {
+                  type: 'markdown',
+                },
+              },
+              {
                 type: "object",
                 name: "iconBlocksList",
                 label: "Page Blocks",
@@ -338,7 +346,25 @@ export default defineConfig({
                   label: "Block Image",
                 },
               ],
-              }
+              },
+              {
+                type: "string",
+                name: "yellowBannerTitle",
+                label: "Yellow Banner Title"
+              },
+              {
+                type: "string",
+                name: "yellowBannerText",
+                label: "Yellow Banner Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "yellowBannerLink",
+                label: "Yellow Banner Link",
+              },
             ]
           },
           {
@@ -366,6 +392,16 @@ export default defineConfig({
                 }
               },
               {
+                type: "string",
+                name: "scheduleLink",
+                label: "Schedule Now Link"
+              },
+              {
+                type: "string",
+                name: "demoLink",
+                label: "Demo Link"
+              },
+              {
                 type: "object",
                 name: "iconBlocksList",
                 label: "Page Blocks",
@@ -393,26 +429,6 @@ export default defineConfig({
                   name: "image",
                   label: "Block Image",
                 },
-                {
-                  type: "string",
-                  name: "button",
-                  label: "Include Button?",
-                  options: [
-                    {
-                      value: "yes",
-                      label: "Yes"
-                    },
-                    {
-                      value: "no",
-                      label: "No"
-                    }
-                  ]
-                },
-                {
-                  type: "string",
-                  name: "buttonText",
-                  label: "Button Text",
-                },
               ],
               },
               {
@@ -427,7 +443,12 @@ export default defineConfig({
                 ui: {
                   component: "textarea"
                 }
-              }
+              },
+              {
+                type: "string",
+                name: "yellowBannerLink",
+                label: "Yellow Banner Link",
+              },
             ]
           },
           {
@@ -832,6 +853,16 @@ export default defineConfig({
                 type: "string",
                 name: "orangeBannerTitle",
                 label: "Orange Banner Title"
+              },
+              {
+                type: "string",
+                name: "orangeBannerButton",
+                label: "Orange Banner Button Text"
+              },
+              {
+                type: "string",
+                name: "orangeBannerLink",
+                label: "Orange Banner Button Link"
               }
             ]
           },

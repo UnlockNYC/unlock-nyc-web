@@ -17,12 +17,16 @@ templateClass: tmpl-home
       <h2>
         {{ bannerText }}
       </h2>
-      <button class="yellow">
-        Schedule now
-      </button>
-      <button class="black">
-        Watch the demo
-      </button>
+      <a href="{{ scheduleLink }}">
+        <button class="yellow">
+            Schedule now
+        </button>
+      </a>
+      <a href="{{ demoLink }}">
+        <button class="black">
+            Watch the demo
+        </button>
+      </a>
     </div>
     <div style="min-height: 200px; padding: 20px; position: relative;">
       <img src="https://public-unlock.nyc3.digitaloceanspaces.com/home-Image 2.png" class="baseline-banner">
@@ -45,9 +49,11 @@ templateClass: tmpl-home
     <p class="black">
       {{ yellowBannerText }}
     </p>
-    <button class="black">
-      Sign Up
-    </button>
+    <a href="{{ yellowBannerLink }}">
+        <button class="black">
+        Sign Up
+        </button>
+    </a>
   </div>
   {% include 'layouts/article-list.njk' %}
   </div>

@@ -168,7 +168,11 @@ type PageRightsrecorder implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
+  introText: JSON
   iconBlocksList: [PageRightsrecorderIconBlocksList]
+  yellowBannerTitle: String
+  yellowBannerText: String
+  yellowBannerLink: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -178,17 +182,18 @@ type PageAdvocateportalIconBlocksList {
   title: String
   text: String
   image: String
-  button: String
-  buttonText: String
 }
 
 type PageAdvocateportal implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
+  scheduleLink: String
+  demoLink: String
   iconBlocksList: [PageAdvocateportalIconBlocksList]
   yellowBannerTitle: String
   yellowBannerText: String
+  yellowBannerLink: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -279,6 +284,8 @@ type PageCommunityorganizers implements Node & Document {
   bannerText: String
   blocksList: [PageCommunityorganizersBlocksList]
   orangeBannerTitle: String
+  orangeBannerButton: String
+  orangeBannerLink: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -439,6 +446,12 @@ input PageAboutFilter {
   thanksList: PageAboutThanksListFilter
 }
 
+input RichTextFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+}
+
 input PageRightsrecorderIconBlocksListFilter {
   title: StringFilter
   text: StringFilter
@@ -449,24 +462,29 @@ input PageRightsrecorderFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
+  introText: RichTextFilter
   iconBlocksList: PageRightsrecorderIconBlocksListFilter
+  yellowBannerTitle: StringFilter
+  yellowBannerText: StringFilter
+  yellowBannerLink: StringFilter
 }
 
 input PageAdvocateportalIconBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
-  button: StringFilter
-  buttonText: StringFilter
 }
 
 input PageAdvocateportalFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
+  scheduleLink: StringFilter
+  demoLink: StringFilter
   iconBlocksList: PageAdvocateportalIconBlocksListFilter
   yellowBannerTitle: StringFilter
   yellowBannerText: StringFilter
+  yellowBannerLink: StringFilter
 }
 
 input PageDatapageBlocksListButtonListFilter {
@@ -548,12 +566,8 @@ input PageCommunityorganizersFilter {
   bannerText: StringFilter
   blocksList: PageCommunityorganizersBlocksListFilter
   orangeBannerTitle: StringFilter
-}
-
-input RichTextFilter {
-  startsWith: String
-  eq: String
-  exists: Boolean
+  orangeBannerButton: StringFilter
+  orangeBannerLink: StringFilter
 }
 
 input PageHousingspecialistsLinksListButtonListFilter {
@@ -961,24 +975,29 @@ input PageRightsrecorderMutation {
   title: String
   bannerTitle: String
   bannerText: String
+  introText: JSON
   iconBlocksList: [PageRightsrecorderIconBlocksListMutation]
+  yellowBannerTitle: String
+  yellowBannerText: String
+  yellowBannerLink: String
 }
 
 input PageAdvocateportalIconBlocksListMutation {
   title: String
   text: String
   image: String
-  button: String
-  buttonText: String
 }
 
 input PageAdvocateportalMutation {
   title: String
   bannerTitle: String
   bannerText: String
+  scheduleLink: String
+  demoLink: String
   iconBlocksList: [PageAdvocateportalIconBlocksListMutation]
   yellowBannerTitle: String
   yellowBannerText: String
+  yellowBannerLink: String
 }
 
 input PageDatapageBlocksListButtonListMutation {
@@ -1060,6 +1079,8 @@ input PageCommunityorganizersMutation {
   bannerText: String
   blocksList: [PageCommunityorganizersBlocksListMutation]
   orangeBannerTitle: String
+  orangeBannerButton: String
+  orangeBannerLink: String
 }
 
 input PageHousingspecialistsLinksListButtonListMutation {
