@@ -50,8 +50,8 @@ templateClass: tmpl-home
   <div class="press-collection view-list">
       {% for story in collections.press | reverse %}
       <div class="press-item" {% if loop.index > 3 %} style="display: none;"{% endif %}>
-        <div class="bg-cream" style="height: 150px; padding: 20px;">
-          {{ story.data.logo }}
+        <div class="bg-cream" style="height: 150px; padding: 20px; display: flex; align-items: center;">
+          <img src="{{ story.data.image }}" style="max-width: 100%;">
         </div>
         <div class="press-summary-wrap">
             <div class="press-summary">
