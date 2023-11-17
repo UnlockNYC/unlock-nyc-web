@@ -52,7 +52,7 @@ quote: >-
 quoteAuthor: Kamilah Newton
 authorTitle: Unlock NYC user and Activist-in-Residence
 authorImg: >-
-  https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot.png
+  https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot2.png
 linksList:
   - title: Apply for a voucher
     text: >-
