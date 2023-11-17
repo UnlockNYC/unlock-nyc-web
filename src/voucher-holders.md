@@ -41,7 +41,6 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
-keysHeadline: Unlocking Doors
 keyImage1: 'https://public-unlock.nyc3.digitaloceanspaces.com/key1.png'
 keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/key2.png'
 keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/key3.png'
@@ -50,8 +49,8 @@ quote: >-
   [My response from Unlock NYC] was SO different from every single agency I had
   to interact with. I was just like wow, you read the whole thing? And that
   mattered.
-quoteAuthor: Kamilha Newton
-authorTitle: Unlock NYC user and Scholar-in-Residence
+quoteAuthor: Kamilah Newton
+authorTitle: Unlock NYC user and Activist-in-Residence
 authorImg: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot.png
 linksList:
