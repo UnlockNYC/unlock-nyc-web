@@ -345,13 +345,21 @@ type PageFundingFundersList {
   link: String
 }
 
+type PageFundingAnnualReports {
+  year: String
+  pdf: String
+}
+
 type PageFunding implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
   blocksList: [PageFundingBlocksList]
+  statsTitle: String
+  statsText: JSON
   fundersList: [PageFundingFundersList]
   orangeBannerTitle: String
+  annualReports: [PageFundingAnnualReports]
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -622,13 +630,21 @@ input PageFundingFundersListFilter {
   link: StringFilter
 }
 
+input PageFundingAnnualReportsFilter {
+  year: StringFilter
+  pdf: ImageFilter
+}
+
 input PageFundingFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
   blocksList: PageFundingBlocksListFilter
+  statsTitle: StringFilter
+  statsText: RichTextFilter
   fundersList: PageFundingFundersListFilter
   orangeBannerTitle: StringFilter
+  annualReports: PageFundingAnnualReportsFilter
 }
 
 input PagePolicyFilter {
@@ -1136,13 +1152,21 @@ input PageFundingFundersListMutation {
   link: String
 }
 
+input PageFundingAnnualReportsMutation {
+  year: String
+  pdf: String
+}
+
 input PageFundingMutation {
   title: String
   bannerTitle: String
   bannerText: String
   blocksList: [PageFundingBlocksListMutation]
+  statsTitle: String
+  statsText: JSON
   fundersList: [PageFundingFundersListMutation]
   orangeBannerTitle: String
+  annualReports: [PageFundingAnnualReportsMutation]
 }
 
 input PagePolicyMutation {

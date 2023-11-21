@@ -190,6 +190,8 @@ fragment PageParts on Page {
         buttonLink
       }
     }
+    statsTitle
+    statsText
     fundersList {
       __typename
       name
@@ -197,6 +199,11 @@ fragment PageParts on Page {
       link
     }
     orangeBannerTitle
+    annualReports {
+      __typename
+      year
+      pdf
+    }
   }
   ... on PagePolicy {
     title

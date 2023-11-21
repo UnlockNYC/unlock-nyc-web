@@ -1085,6 +1085,19 @@ var config_default = defineConfig({
                 ]
               },
               {
+                type: "string",
+                name: "statsTitle",
+                label: "Stats Title"
+              },
+              {
+                type: "rich-text",
+                parser: {
+                  type: "markdown"
+                },
+                name: "statsText",
+                label: "Text Under Stats"
+              },
+              {
                 type: "object",
                 name: "fundersList",
                 label: "Current Funders",
@@ -1116,6 +1129,27 @@ var config_default = defineConfig({
                 type: "string",
                 name: "orangeBannerTitle",
                 label: "Orange Banner Title"
+              },
+              {
+                type: "object",
+                name: "annualReports",
+                label: "Annual Reports",
+                list: true,
+                itemProps: (item) => {
+                  return { label: item?.year };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "year",
+                    label: "Year"
+                  },
+                  {
+                    type: "image",
+                    name: "pdf",
+                    label: "Report PDF"
+                  }
+                ]
               }
             ]
           },
@@ -1386,7 +1420,7 @@ var config_default = defineConfig({
       },
       {
         name: "report",
-        label: "Reports",
+        label: "Data Reports",
         path: "src/reports",
         format: "md",
         fields: [

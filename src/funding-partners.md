@@ -29,9 +29,16 @@ blocksList:
     buttonList:
       - buttonText: Read more
       - buttonText: See the Data
+statsTitle: '"We''re a good investment"'
+statsText: |
+  #### "Lorem ipsum quote quote text."
 fundersList:
+  - name: Funder 2
   - name: Funder 1
 orangeBannerTitle: Have Questions? Get in Touch
+annualReports:
+  - year: '2022'
+  - year: '2021'
 _template: funding
 ---
 

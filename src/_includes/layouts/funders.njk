@@ -12,6 +12,34 @@ templateClass: tmpl-home
     grid-column-gap: 20px;
   }
 
+  div.reports-collection a {
+      text-decoration: none;
+  }
+
+  div.reports-collection div:nth-child(odd) div.report-card {
+      background-color: var(--purple);
+  }
+
+  div.reports-collection div:nth-child(even) div.report-card {
+      background-color: var(--yellow);
+  }
+
+  div.reports-collection span.tag {
+      background-color: Black;
+      color: White;
+  }
+
+  div.reports-collection h1 {
+      font-family: "Intro Rust", "Rubik", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      margin-bottom: 1rem;
+  }
+
+  div.reports-collection h3 {
+      margin-top: 0px;
+  }
+
   @media only screen and (max-width: 800px) {
     div.reports-collection {
       grid-template-columns: 1fr;
@@ -39,7 +67,7 @@ templateClass: tmpl-home
 <div class="content">
   {% include 'layouts/blocks50.njk' %}
   <h3 class="center-title">
-    "We're a good investment"
+    {{ statsTitle }}
   </h3>
   <div class="three-stats bg-yellow" style="margin-top: 0; margin-bottom: 0;">
     <div class="stat">
@@ -68,23 +96,34 @@ templateClass: tmpl-home
     </div>
   </div>
   <div class="half-wide" style="margin-top: 80px;">
-    <h4>
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.”
-    </h4>
+      {{ statsText | markdown | safe }}
     <h3 class="center-title" style="margin-bottom: 1rem;">
       Annual Reports
     </h3>
-    <button>
+    <button class="view-all">
       View All
     </button>
   </div>
   <div class="reports-collection">
-    <div class="bg-cream" style="height: 200px;">
-      collection
+      {%- for report in annualReports -%}
+    <div class="bg-cream" style="{% if loop.index > 2 %} display: none;{% else %}display: table;{% endif %}min-height: 400px;">
+            <div style="display: table-cell; vertical-align: bottom;">
+                <a href="{{ report.pdf }}" target="_blank">
+                <div class="report-card" style="max-width: 70%; margin: auto;">
+                    <div>
+                        <span class="tag">Report</span>
+                        <span class="tag">{{ report.year }}</span>
+                    </div>
+                    <div>
+                        <h1>Unlock NYC</h1>
+                        <h3>Impact Report<br>{{ report.year }}</h3>
+                    </div>
+                </div>
+                </a>
+            </div>
     </div>
-    <div class="bg-cream" style="height: 200px;">
-      collection
-    </div>
+    {% endfor %}
+
   </div>
   <h3 class="center-title">
       Current Funders
@@ -112,3 +151,19 @@ templateClass: tmpl-home
         </button>
     </a>
   </div>
+
+  <script>
+      $(document).ready(function() {
+          $("button.view-all").each(function(){
+            if ($("div.reports-collection div.bg-cream").length > 2) {
+              $(this).click(function() {
+                $("div.reports-collection div.bg-cream").css("display", "table");
+                $("html, body").animate({ scrollTop: "+=100px" }, "slow");
+              });
+            }
+            else {
+              $(this).hide();
+            }
+          });
+      });
+  </script>
