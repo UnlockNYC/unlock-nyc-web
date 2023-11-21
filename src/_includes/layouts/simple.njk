@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<!-- MAB include here?! or somewhere else?! -->
+<style>
+
+div.top-banner {
+    height: auto;
+    min-height: unset;
+    padding-top: 15vh;
+}
+
+</style>
+{# page template, extends the base template #}
+
+<div class="top-banner">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <h1>
+        {{ title }}
+      </h1>
+      <div class="content">
+          {{ content | safe }}
+      </div>
+    </div>
+  </div>
+</div>
