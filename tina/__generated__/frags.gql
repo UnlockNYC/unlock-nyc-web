@@ -32,6 +32,10 @@ fragment PageParts on Page {
     latestActionVideo
     latestActionButton
     latestActionLink
+    teamImage
+    teamAlt
+    teamTitle
+    teamText
   }
   ... on PageAbout {
     title

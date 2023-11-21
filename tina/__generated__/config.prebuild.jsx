@@ -230,6 +230,29 @@ var config_default = defineConfig({
                 type: "string",
                 name: "latestActionLink",
                 label: "Latest Action: Button Link"
+              },
+              {
+                type: "image",
+                name: "teamImage",
+                label: "Team Banner Image"
+              },
+              {
+                type: "string",
+                name: "teamAlt",
+                label: "Image Alt Text (accesibility!)"
+              },
+              {
+                type: "string",
+                name: "teamTitle",
+                label: "Team Banner Title"
+              },
+              {
+                type: "string",
+                name: "teamText",
+                label: "Team Banner Text",
+                ui: {
+                  component: "textarea"
+                }
               }
             ]
           },

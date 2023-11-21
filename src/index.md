@@ -82,6 +82,13 @@ latestAlt: >-
 latestActionVideo: null
 latestActionButton: 'yes'
 latestActionLink: /
+teamTitle: >-
+  Unlock NYC is a women-led tech nonprofit created with and by tenants who’ve
+  been in your shoes.
+teamText: >-
+  A majority of our team has had on-the-ground experience using vouchers to find
+  a home for our families. We’re different because we know firsthand what you’re
+  going through – that’s what inspired us to speak up in the first place. 
 _template: index
 ---
 

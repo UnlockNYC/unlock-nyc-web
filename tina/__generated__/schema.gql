@@ -139,6 +139,10 @@ type PageIndex implements Node & Document {
   latestActionVideo: String
   latestActionButton: String
   latestActionLink: String
+  teamImage: String
+  teamAlt: String
+  teamTitle: String
+  teamText: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -483,6 +487,10 @@ input PageIndexFilter {
   latestActionVideo: StringFilter
   latestActionButton: StringFilter
   latestActionLink: StringFilter
+  teamImage: ImageFilter
+  teamAlt: StringFilter
+  teamTitle: StringFilter
+  teamText: StringFilter
 }
 
 input PageAboutThanksListFilter {
@@ -1050,6 +1058,10 @@ input PageIndexMutation {
   latestActionVideo: String
   latestActionButton: String
   latestActionLink: String
+  teamImage: String
+  teamAlt: String
+  teamTitle: String
+  teamText: String
 }
 
 input PageAboutThanksListMutation {
