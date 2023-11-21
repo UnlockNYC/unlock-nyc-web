@@ -82,6 +82,8 @@ latestAlt: >-
 latestActionVideo: null
 latestActionButton: 'yes'
 latestActionLink: /
+teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/Team.png'
+teamAlt: 'two black women tabling at an event, showing rings that say "love" and "train"'
 teamTitle: >-
   Unlock NYC is a women-led tech nonprofit created with and by tenants who’ve
   been in your shoes.
