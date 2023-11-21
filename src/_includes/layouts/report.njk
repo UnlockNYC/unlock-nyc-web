@@ -96,8 +96,8 @@ bg: ""
     <div class="press-collection">
         {% for story in collections[reportTitle] %}
         <div class="press-item">
-            <div class="bg-cream" style="height: 150px; padding: 20px;">
-                <img src="{{ story.data.logo }}">
+            <div class="bg-cream" style="height: 150px; padding: 20px; display: flex; align-items: center;">
+                <img src="{{ story.data.image }}" alt="press outlet logo" style="width: 100%;">
             </div>
             <div class="press-summary">
                 <p class="date">{{ story.data.pubdate }}</p>
