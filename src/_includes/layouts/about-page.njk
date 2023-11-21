@@ -68,7 +68,7 @@ templateClass: tmpl-home
     {{ bannerTitle }}
   </h1>
   <div class="center-stage">
-    placeholder
+    <img src="{{ aboutImage }}" alt="{{ alt }}" style="width: 100%;">
   </div>
   <div class="half-wide">
     <h3 class="center-title">
@@ -146,7 +146,7 @@ templateClass: tmpl-home
       {%- for post in collections.Staff -%}
       <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
         <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center; overflow: hidden;">
-           <img src="{{ post.data.image }}">
+           <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
         </div>
         <div style="padding-top: 15px;">
           <h4>
@@ -166,7 +166,7 @@ templateClass: tmpl-home
         {%- for post in collections.Team -%}
         <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-                <img src="{{ post.data.image }}">
+                <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
             </div>
             <div style="padding-top: 15px;">
                 <h4>
@@ -189,7 +189,7 @@ templateClass: tmpl-home
         {%- for post in collections.LC -%}
         <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-                <img src="{{ post.data.image }}">
+                <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
             </div>
             <div style="padding-top: 15px;">
                 <h4>
@@ -209,7 +209,7 @@ templateClass: tmpl-home
         {%- for post in collections.Advisors -%}
         <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
-                <img src="{{ post.data.image }}">
+                <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
             </div>
             <div style="padding-top: 15px;">
                 <h4>
@@ -232,7 +232,7 @@ templateClass: tmpl-home
         {% for org in thanksList %}
         <a href="{{ org.link }}" target="_blank">
             <div class="bg-cream">
-                <img src="{{ org.logo }}">
+                <img src="{{ org.logo }}" alt="logo for {{ org.name }}">
             </div>
         </a>
         {% endfor %}

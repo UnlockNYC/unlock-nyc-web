@@ -35,9 +35,9 @@ templateClass: tmpl-home
 </div>
 <div class="content first">
   <div class="banner-wrapper split" style="height: auto;">
-    <div class="bg-green" style="border: 1px dotted gray; min-height: 200px; padding: 20px;">
-      image placeholder
-    </div>
+      <div class="bg-green"> <!--style="border: 1px dotted gray; min-height: 200px; padding: 20px;"-->
+          <img src="{{ topImage }}" style="width: 100%;">
+      </div>
     <div class="banner-split-text">
       <h4>
         {{ bannerSubtitle }}
@@ -45,9 +45,11 @@ templateClass: tmpl-home
       <p>
         {{ bannerText}}
       </p>
-      <button class="black">
-        Read more
-      </button>
+      <a href="{{ bannerLink }}">
+        <button class="black">
+            Read more
+        </button>
+      </a>
     </div>
   </div>
   <div class="half-wide" style="padding-top: 50px; padding-bottom: 80px;">

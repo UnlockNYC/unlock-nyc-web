@@ -99,7 +99,7 @@ export default defineConfig({
                   {
                     type: "string",
                     name: "alt",
-                    label: "Image Alt Text"
+                    label: "Image Alt Text (accessibility!)"
                   },
                   {
                     type: "string",
@@ -213,6 +213,11 @@ export default defineConfig({
               },
               {
                 type: "string",
+                name: "latestAlt",
+                label: "Latest Action Image Alt Text (accessibility!)",
+              },
+              {
+                type: "string",
                 name: "latestActionVideo",
                 label: "Latest Action: Video Link (leave blank if image!)",
               },
@@ -253,6 +258,16 @@ export default defineConfig({
                 type: "string",
                 name: "bannerTitle",
                 label: "Banner Title"
+              },
+              {
+                type: "image",
+                name: "aboutImage",
+                label: "Top Image"
+              },
+              {
+                type: "string",
+                name: "alt",
+                label: "Top Image Alt Text (accessibility!)"
               },
               {
                 type: "object",
@@ -505,6 +520,11 @@ export default defineConfig({
                   },
                   {
                     type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
+                  },
+                  {
+                    type: "string",
                     name: "button",
                     label: "Include Button?",
                     options: [
@@ -552,6 +572,16 @@ export default defineConfig({
                 ui: {
                   component: "textarea"
                 }
+              },
+              {
+                type: "string",
+                name: "orangeBannerButton",
+                label: "Orange Banner Button Text"
+              },
+              {
+                type: "string",
+                name: "orangeBannerLink",
+                label: "Orange Banner Button Link"
               }
             ]
           },
@@ -606,6 +636,11 @@ export default defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
                   },
                   {
                     type: "string",
@@ -785,6 +820,16 @@ export default defineConfig({
                 }
               },
               {
+                type: "string",
+                name: "bannerLink",
+                label: "Read More Link"
+              },
+              {
+                type: "image",
+                name: "topImage",
+                label: "Top Image"
+              },
+              {
                 type: "object",
                 name: "blocksList",
                 label: "Page Blocks",
@@ -811,6 +856,11 @@ export default defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
                   },
                   {
                     type: "string",
@@ -891,6 +941,21 @@ export default defineConfig({
                 type: "string",
                 name: "bannerSubtitle",
                 label: "Banner Subtitle"
+              },
+              {
+                type: "image",
+                name: "topImage",
+                label: "Top Image"
+              },
+              {
+                type: "string",
+                name: "demoLink",
+                label: "Demo Link"
+              },
+              {
+                type: "string",
+                name: "signUpLink",
+                label: "Sign Up Link"
               },
               {
                 type: "string",
@@ -1067,6 +1132,11 @@ export default defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
                   },
                   {
                     type: "string",
@@ -1274,6 +1344,125 @@ export default defineConfig({
                 ui:{
                   component: "textarea"
                 }
+              },
+            ]
+          },
+          {
+            name: "involved",
+            label: "Get Involved",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "string",
+                name: "bannerTitle",
+                label: "Banner Title"
+              },
+              {
+                type: "string",
+                name: "bannerText",
+                label: "Banner Text",
+                ui:{
+                  component: "textarea"
+                }
+              },
+              {
+                type: "object",
+                name: "blocksList",
+                label: "Page Blocks",
+                list: true,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.title };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Block Title"
+                  },
+                  {
+                    type: "string",
+                    name: "text",
+                    label: "Block Text",
+                    ui: {
+                      component: "textarea"
+                    }
+                  },
+                  {
+                    type: "image",
+                    name: "image",
+                    label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
+                  },
+                  {
+                    type: "string",
+                    name: "button",
+                    label: "Include Button?",
+                    options: [
+                      {
+                        value: "yes",
+                        label: "Yes"
+                      },
+                      {
+                        value: "no",
+                        label: "No"
+                      }
+                    ]
+                  },
+                  {
+                    type: "object",
+                    name: "buttonList",
+                    label: "Buttons",
+                    list: true,
+                    itemProps: (item) => {
+                      // Field values are accessed by item?.<Field name>
+                      return { label: item?.buttonText };
+                    },
+                    defaultItem: {
+                      buttonText: "Learn more",
+                    },
+                    fields: [
+                      {
+                        type: "string",
+                        name: "buttonText",
+                        label: "Button Text",
+                      },
+                      {
+                        type: "string",
+                        name: "buttonLink",
+                        label: "Button Link",
+                      }
+                    ]
+                  },
+                ],
+              },
+              {
+                type: "string",
+                name: "orangeBannerTitle",
+                label: "Orange Banner Title"
+              },
+              {
+                type: "string",
+                name: "orangeBannerText",
+                label: "Orange Banner Text",
+                ui:{
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "orangeBannerLink",
+                label: "Orange Banner Link"
               },
             ]
           },

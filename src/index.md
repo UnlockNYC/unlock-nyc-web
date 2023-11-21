@@ -28,6 +28,9 @@ blocksList:
       housing specialists and advocates for tips, tools, and ways to unlock more
       doors with your clients.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-Image 2.png'
+    alt: >-
+      two young people facing opposite directions, one using a phone against a
+      purple background and the other using a laptop against a blue background
     button: 'yes'
     buttonList:
       - buttonText: Learn more
@@ -38,6 +41,9 @@ blocksList:
       out our unique crowdsourced map to see where Unlock NYC’s users have
       reported suspected discrimination.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-Image 3.png'
+    alt: >-
+      photograph collage of nyc buildings, with emoji icons of a ghost, a key,
+      and a thumbs down in colorful bubbles
     button: 'yes'
     buttonList:
       - buttonText: Explore the map
@@ -70,6 +76,9 @@ latestBanner: 'Latest report: Serial Discriminators List'
 latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
 latestActionImage: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/home-nailah-megaphone-rally-protest.jpeg
+latestAlt: >-
+  a group of people holding protest banners with a woman leading in front with a
+  megaphone, in front of city hall in new york
 latestActionVideo: null
 latestActionButton: 'yes'
 latestActionLink: /

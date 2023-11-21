@@ -28,6 +28,7 @@ fragment PageParts on Page {
     latestBanner
     latestActionText
     latestActionImage
+    latestAlt
     latestActionVideo
     latestActionButton
     latestActionLink
@@ -35,6 +36,8 @@ fragment PageParts on Page {
   ... on PageAbout {
     title
     bannerTitle
+    aboutImage
+    alt
     thanksList {
       __typename
       name
@@ -82,6 +85,7 @@ fragment PageParts on Page {
       title
       text
       image
+      alt
       button
       buttonList {
         __typename
@@ -90,6 +94,8 @@ fragment PageParts on Page {
     }
     orangeBannerTitle
     orangeBannerText
+    orangeBannerButton
+    orangeBannerLink
   }
   ... on PageVoucherholders {
     title
@@ -100,6 +106,7 @@ fragment PageParts on Page {
       title
       text
       image
+      alt
       button
       buttonList {
         __typename
@@ -131,11 +138,14 @@ fragment PageParts on Page {
     bannerTitle
     bannerSubtitle
     bannerText
+    bannerLink
+    topImage
     blocksList {
       __typename
       title
       text
       image
+      alt
       button
       buttonList {
         __typename
@@ -151,6 +161,9 @@ fragment PageParts on Page {
     title
     bannerTitle
     bannerSubtitle
+    topImage
+    demoLink
+    signUpLink
     quote
     quoteAuthor
     quoteTitle
@@ -183,6 +196,7 @@ fragment PageParts on Page {
       title
       text
       image
+      alt
       button
       buttonList {
         __typename
@@ -222,6 +236,27 @@ fragment PageParts on Page {
     kit2Link
     orangeBannerTitle
     orangeBannerText
+  }
+  ... on PageInvolved {
+    title
+    bannerTitle
+    bannerText
+    blocksList {
+      __typename
+      title
+      text
+      image
+      alt
+      button
+      buttonList {
+        __typename
+        buttonText
+        buttonLink
+      }
+    }
+    orangeBannerTitle
+    orangeBannerText
+    orangeBannerLink
   }
 }
 

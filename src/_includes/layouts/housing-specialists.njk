@@ -25,11 +25,6 @@ templateClass: tmpl-home
     border-left: 1px solid Black;
     padding: 0 0 0 8%;
   }
-  div.slides.partners {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    grid-column-gap: 20px;
-  }
   @media only screen and (max-width: 800px) {
     div.content.first {
       margin-top: 0;
@@ -67,8 +62,8 @@ templateClass: tmpl-home
 </div>
 <div class="content first">
   <div class="banner-wrapper split" style="height: auto;">
-    <div class="bg-purple" style="border: 1px dotted gray; min-height: 200px; padding: 20px;">
-      image placeholder
+    <div class="bg-purple">  <!--style="border: 1px dotted gray; min-height: 200px; padding: 20px;">-->
+        <img src="{{ topImage }}" style="width: 100%;">
     </div>
     <div class="banner-split-text">
       <h4>
@@ -77,12 +72,16 @@ templateClass: tmpl-home
       <p>
         {{ bannerText}}
       </p>
-      <button class="black">
-        Request a demo
-      </button>
-      <button class="black">
-        Sign up
-      </button>
+      <a href="{{ demoLink }}">
+        <button class="black">
+            Request a demo
+        </button>
+      </a>
+      <a href="{{ signUpLink }}">
+        <button class="black">
+            Sign up
+        </button>
+      </a>
     </div>
   </div>
   <!-- MAB do I need to move this to larger CSS, and make a component? -->
@@ -155,9 +154,11 @@ templateClass: tmpl-home
       </p>
       {% if thing.button == 'yes' %}
         {% for button in thing.buttonList %}
-          <button class="white" onclick=window.location.href='{{ button.buttonLink }}'>
+        <a href="{{ button.buttonLink }}">
+          <button class="white">
             {{ button.buttonText }}
           </button>
+        </a>
         {% endfor %}
       {% endif %}
     </div>
@@ -181,21 +182,4 @@ templateClass: tmpl-home
     </a>
     {% endfor %}
   </div>
-  <!--<div class="slides partners" style="margin-top: 60px;">
-      <div style="text-align: center;">
-        <svg style="width: 25px; margin-top: 50%;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
-      </div>
-      <div class="bg-cream" style="height: 150px;">
-        partner logo
-      </div>
-      <div class="bg-cream" style="height: 150px;">
-        partner logo
-      </div>
-      <div class="bg-cream" style="height: 150px;">
-        partner logo
-      </div>
-      <div style="text-align: center;">
-        <svg style="width: 25px; margin-top: 50%; transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
-      </div>
-    </div>-->
 </div>

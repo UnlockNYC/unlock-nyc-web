@@ -9,14 +9,16 @@
     </p>
     {% if thing.button == 'yes' %}
     {% for button in thing.buttonList %}
-      <button {% if blocksButtonColor == 'yellow'%} class="yellow" {% else %} class="black" {% endif %} onclick=window.location.href='{{ button.buttonLink }}';>
+    <a href="{{ button.buttonLink }}">
+      <button {% if blocksButtonColor == 'yellow'%} class="yellow" {% else %} class="black" {% endif %}>
         {{ button.buttonText }}
       </button>
+    </a>
     {% endfor %}
     {% endif %}
   </div>
   <div class="block image">
-    <img src="{{ thing.image }}" style="object-fit: cover; width: 100%;" alt="{{ thing.alt }}">
+    <img src="{{ thing.image }}" alt="{{ thing.alt }}" style="object-fit: cover; width: 100%;" alt="{{ thing.alt }}">
   </div>
 </div>
 {% endfor %}

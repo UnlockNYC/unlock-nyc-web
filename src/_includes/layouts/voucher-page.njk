@@ -78,16 +78,16 @@ templateClass: tmpl-home
   </h3>
   <div id="keys-grid">
     <div>
-      <img src="{{ keyImage1 }}">
+      <img src="{{ keyImage1 }}" alt="photograph of hands holding set of keys">
     </div>
     <div>
-      <img src="{{ keyImage2 }}">
+      <img src="{{ keyImage2 }}" alt="photograph of hands holding set of keys">
     </div>
     <div>
-      <img src="{{ keyImage3 }}">
+      <img src="{{ keyImage3 }}" alt="photograph of hands holding set of keys">
     </div>
     <div>
-      <img src="{{ keyImage4 }}">
+      <img src="{{ keyImage4 }}" alt="photograph of hands holding set of keys">
     </div>
   </div>
   <!-- MAB NOTE: re-use below as component-->
@@ -145,7 +145,7 @@ templateClass: tmpl-home
     {% for thing in linksList %}
     <div class="blocks-icons-wrapper links">
       <div class="block image">
-        <img src="{{ thing.image }}">
+        <img src="{{ thing.image }}" alt="logo">
       </div>
       <div class="block">
         <h4>
@@ -155,9 +155,11 @@ templateClass: tmpl-home
           {{ thing.text }}
         </p>
         {% if thing.button == 'yes' %}
-        <button onclick=window.location.href='{{ button.buttonLink }}'>
-          {{ thing.buttonText }}
-        </button>
+        <a href="{{ button.buttonLink }}">
+            <button>
+            {{ thing.buttonText }}
+            </button>
+        </a>
         {% endif %}
       </div>
     </div>

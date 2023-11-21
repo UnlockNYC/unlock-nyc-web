@@ -19,9 +19,11 @@ templateClass: tmpl-home
       <h2>
         {{ bannerText }}
       </h2>
-      <button class="yellow" onclick=window.location.href='/start'>
-        Get started
-      </button>
+      <a href="/start">
+        <button class="yellow">
+            Get started
+        </button>
+      </a>
     </div>
   </div>
 </div>
@@ -46,7 +48,7 @@ templateClass: tmpl-home
     </p>
   </div>
   <div class="center-stage">
-    <img src="{{ latestActionImage }}" style="width: 100%;">
+    <img src="{{ latestActionImage }}" alt="{{ latestAlt}}" style="width: 100%;">
   </div>
 </div>
 <div class="banner-full bg-cream">

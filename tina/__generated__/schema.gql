@@ -102,7 +102,7 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | PagePress | Bio | Faq | Article | Report | Press | Release | Folder
+union DocumentNode = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | PagePress | PageInvolved | Bio | Faq | Article | Report | Press | Release | Folder
 
 type PageIndexBlocksListButtonList {
   buttonText: String
@@ -135,6 +135,7 @@ type PageIndex implements Node & Document {
   latestBanner: String
   latestActionText: String
   latestActionImage: String
+  latestAlt: String
   latestActionVideo: String
   latestActionButton: String
   latestActionLink: String
@@ -152,6 +153,8 @@ type PageAboutThanksList {
 type PageAbout implements Node & Document {
   title: String!
   bannerTitle: String
+  aboutImage: String
+  alt: String
   thanksList: [PageAboutThanksList]
   id: ID!
   _sys: SystemInfo!
@@ -207,6 +210,7 @@ type PageDatapageBlocksList {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageDatapageBlocksListButtonList]
 }
@@ -218,6 +222,8 @@ type PageDatapage implements Node & Document {
   blocksList: [PageDatapageBlocksList]
   orangeBannerTitle: String
   orangeBannerText: String
+  orangeBannerButton: String
+  orangeBannerLink: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -232,6 +238,7 @@ type PageVoucherholdersBlocksList {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageVoucherholdersBlocksListButtonList]
 }
@@ -274,6 +281,7 @@ type PageCommunityorganizersBlocksList {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageCommunityorganizersBlocksListButtonList]
 }
@@ -283,6 +291,8 @@ type PageCommunityorganizers implements Node & Document {
   bannerTitle: String
   bannerSubtitle: String
   bannerText: String
+  bannerLink: String
+  topImage: String
   blocksList: [PageCommunityorganizersBlocksList]
   orangeBannerTitle: String
   orangeBannerButton: String
@@ -315,6 +325,9 @@ type PageHousingspecialists implements Node & Document {
   title: String!
   bannerTitle: String
   bannerSubtitle: String
+  topImage: String
+  demoLink: String
+  signUpLink: String
   quote: String
   quoteAuthor: String
   quoteTitle: String
@@ -335,6 +348,7 @@ type PageFundingBlocksList {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageFundingBlocksListButtonList]
 }
@@ -391,7 +405,34 @@ type PagePress implements Node & Document {
   _values: JSON!
 }
 
-union Page = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | PagePress
+type PageInvolvedBlocksListButtonList {
+  buttonText: String
+  buttonLink: String
+}
+
+type PageInvolvedBlocksList {
+  title: String
+  text: String
+  image: String
+  alt: String
+  button: String
+  buttonList: [PageInvolvedBlocksListButtonList]
+}
+
+type PageInvolved implements Node & Document {
+  title: String!
+  bannerTitle: String
+  bannerText: String
+  blocksList: [PageInvolvedBlocksList]
+  orangeBannerTitle: String
+  orangeBannerText: String
+  orangeBannerLink: String
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+union Page = PageIndex | PageAbout | PageRightsrecorder | PageAdvocateportal | PageDatapage | PageVoucherholders | PageCommunityorganizers | PageHousingspecialists | PageFunding | PagePolicy | PagePress | PageInvolved
 
 input StringFilter {
   startsWith: String
@@ -438,6 +479,7 @@ input PageIndexFilter {
   latestBanner: StringFilter
   latestActionText: StringFilter
   latestActionImage: ImageFilter
+  latestAlt: StringFilter
   latestActionVideo: StringFilter
   latestActionButton: StringFilter
   latestActionLink: StringFilter
@@ -452,6 +494,8 @@ input PageAboutThanksListFilter {
 input PageAboutFilter {
   title: StringFilter
   bannerTitle: StringFilter
+  aboutImage: ImageFilter
+  alt: StringFilter
   thanksList: PageAboutThanksListFilter
 }
 
@@ -504,6 +548,7 @@ input PageDatapageBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  alt: StringFilter
   button: StringFilter
   buttonList: PageDatapageBlocksListButtonListFilter
 }
@@ -515,6 +560,8 @@ input PageDatapageFilter {
   blocksList: PageDatapageBlocksListFilter
   orangeBannerTitle: StringFilter
   orangeBannerText: StringFilter
+  orangeBannerButton: StringFilter
+  orangeBannerLink: StringFilter
 }
 
 input PageVoucherholdersBlocksListButtonListFilter {
@@ -526,6 +573,7 @@ input PageVoucherholdersBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  alt: StringFilter
   button: StringFilter
   buttonList: PageVoucherholdersBlocksListButtonListFilter
 }
@@ -565,6 +613,7 @@ input PageCommunityorganizersBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  alt: StringFilter
   button: StringFilter
   buttonList: PageCommunityorganizersBlocksListButtonListFilter
 }
@@ -574,6 +623,8 @@ input PageCommunityorganizersFilter {
   bannerTitle: StringFilter
   bannerSubtitle: StringFilter
   bannerText: StringFilter
+  bannerLink: StringFilter
+  topImage: ImageFilter
   blocksList: PageCommunityorganizersBlocksListFilter
   orangeBannerTitle: StringFilter
   orangeBannerButton: StringFilter
@@ -603,6 +654,9 @@ input PageHousingspecialistsFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerSubtitle: StringFilter
+  topImage: ImageFilter
+  demoLink: StringFilter
+  signUpLink: StringFilter
   quote: StringFilter
   quoteAuthor: StringFilter
   quoteTitle: StringFilter
@@ -620,6 +674,7 @@ input PageFundingBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  alt: StringFilter
   button: StringFilter
   buttonList: PageFundingBlocksListButtonListFilter
 }
@@ -667,6 +722,30 @@ input PagePressFilter {
   orangeBannerText: StringFilter
 }
 
+input PageInvolvedBlocksListButtonListFilter {
+  buttonText: StringFilter
+  buttonLink: StringFilter
+}
+
+input PageInvolvedBlocksListFilter {
+  title: StringFilter
+  text: StringFilter
+  image: ImageFilter
+  alt: StringFilter
+  button: StringFilter
+  buttonList: PageInvolvedBlocksListButtonListFilter
+}
+
+input PageInvolvedFilter {
+  title: StringFilter
+  bannerTitle: StringFilter
+  bannerText: StringFilter
+  blocksList: PageInvolvedBlocksListFilter
+  orangeBannerTitle: StringFilter
+  orangeBannerText: StringFilter
+  orangeBannerLink: StringFilter
+}
+
 input PageFilter {
   index: PageIndexFilter
   about: PageAboutFilter
@@ -679,6 +758,7 @@ input PageFilter {
   funding: PageFundingFilter
   policy: PagePolicyFilter
   press: PagePressFilter
+  involved: PageInvolvedFilter
 }
 
 type PageConnectionEdges {
@@ -966,6 +1046,7 @@ input PageIndexMutation {
   latestBanner: String
   latestActionText: String
   latestActionImage: String
+  latestAlt: String
   latestActionVideo: String
   latestActionButton: String
   latestActionLink: String
@@ -980,6 +1061,8 @@ input PageAboutThanksListMutation {
 input PageAboutMutation {
   title: String
   bannerTitle: String
+  aboutImage: String
+  alt: String
   thanksList: [PageAboutThanksListMutation]
 }
 
@@ -1026,6 +1109,7 @@ input PageDatapageBlocksListMutation {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageDatapageBlocksListButtonListMutation]
 }
@@ -1037,6 +1121,8 @@ input PageDatapageMutation {
   blocksList: [PageDatapageBlocksListMutation]
   orangeBannerTitle: String
   orangeBannerText: String
+  orangeBannerButton: String
+  orangeBannerLink: String
 }
 
 input PageVoucherholdersBlocksListButtonListMutation {
@@ -1048,6 +1134,7 @@ input PageVoucherholdersBlocksListMutation {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageVoucherholdersBlocksListButtonListMutation]
 }
@@ -1087,6 +1174,7 @@ input PageCommunityorganizersBlocksListMutation {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageCommunityorganizersBlocksListButtonListMutation]
 }
@@ -1096,6 +1184,8 @@ input PageCommunityorganizersMutation {
   bannerTitle: String
   bannerSubtitle: String
   bannerText: String
+  bannerLink: String
+  topImage: String
   blocksList: [PageCommunityorganizersBlocksListMutation]
   orangeBannerTitle: String
   orangeBannerButton: String
@@ -1125,6 +1215,9 @@ input PageHousingspecialistsMutation {
   title: String
   bannerTitle: String
   bannerSubtitle: String
+  topImage: String
+  demoLink: String
+  signUpLink: String
   quote: String
   quoteAuthor: String
   quoteTitle: String
@@ -1142,6 +1235,7 @@ input PageFundingBlocksListMutation {
   title: String
   text: String
   image: String
+  alt: String
   button: String
   buttonList: [PageFundingBlocksListButtonListMutation]
 }
@@ -1189,6 +1283,30 @@ input PagePressMutation {
   orangeBannerText: String
 }
 
+input PageInvolvedBlocksListButtonListMutation {
+  buttonText: String
+  buttonLink: String
+}
+
+input PageInvolvedBlocksListMutation {
+  title: String
+  text: String
+  image: String
+  alt: String
+  button: String
+  buttonList: [PageInvolvedBlocksListButtonListMutation]
+}
+
+input PageInvolvedMutation {
+  title: String
+  bannerTitle: String
+  bannerText: String
+  blocksList: [PageInvolvedBlocksListMutation]
+  orangeBannerTitle: String
+  orangeBannerText: String
+  orangeBannerLink: String
+}
+
 input PageMutation {
   index: PageIndexMutation
   about: PageAboutMutation
@@ -1201,6 +1319,7 @@ input PageMutation {
   funding: PageFundingMutation
   policy: PagePolicyMutation
   press: PagePressMutation
+  involved: PageInvolvedMutation
 }
 
 input BioMutation {

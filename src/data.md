@@ -1,6 +1,12 @@
 ---
 bg: '#F1F1E3'
 layout: layouts/data-page.njk
+eleventyNavigation:
+  key: Data
+  title: Data & Research
+  order: 2
+faqPageList: FAQ Data
+title: Data
 bannerTitle: Data & Research
 bannerText: >-
   Every time someone uses Unlock NYC’s Rights Recorder app to make a report of
@@ -31,14 +37,8 @@ orangeBannerTitle: Use our data
 orangeBannerText: >-
   All data requests are reviewed on a case-by-case basis. Fill out this form and
   we’ll get back to you shortly.
-eleventyNavigation:
-  key: Data
-  title: Data & Research
-  order: 2
-title: Data
-faqPageList: FAQ Data
+orangeBannerButton: Make a Request
+orangeBannerLink: 'https://airtable.com/appiQkR2Zrww4DQnz/shrV4VpcZcy5BnmBE'
 _template: datapage
 ---
-
-
 

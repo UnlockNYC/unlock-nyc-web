@@ -10,14 +10,14 @@ _template: policy
 
 Welcome to Unlock NYC! We build free and inclusive technology that makes the apartment search process transparent and fair. Our website and tools are free to use, but we ask that you read and agree to this User Agreement before using them. In this document, we describe your rights and our rights relating to the services we provide – and our responsibilities to each other as we build this community.
 
-Please read this User Agreement (including our [Privacy Policy](https://weunlock.nyc/privacy)) in full before using our website or our tools, and make sure you agree. If you have additional questions or feedback, you can email us at [hello@weunlock.nyc](mailto:hello@weunlock.nyc)
+Please read this User Agreement (including our [Privacy Policy](/privacy)) in full before using our website or our tools, and make sure you agree. If you have additional questions or feedback, you can email us at [hello@weunlock.nyc](mailto:hello@weunlock.nyc)
 
 Specifically, we want you to feel comfortable with the following terms before you decide to use our website, tools, or other services:
 
 1. You understand that Unlock NYC does not provide legal advice.
 2. You agree not to submit content that is abusive, defamatory, otherwise unlawful, or in a manner inconsistent with what our tools are designed to do.
 3. You understand that we cannot guarantee the accuracy of information shared by users.
-4. You have read our [Privacy Policy](https://weunlock.nyc/privacy) in full.
+4. You have read our [Privacy Policy](/privacy) in full.
 5. You understand that our links to third-party sites or services does not imply endorsement.
 6. You know that we may make changes to this user agreement as we learn and grow, so you’ll periodically review this document to make sure you still agree.
 
@@ -39,7 +39,7 @@ Unlock NYC reviews contributions, such as reports, made on the site and removes 
 
 # PRIVACY
 
-Unlock NYC makes your privacy a priority, and your use of Unlock NYC is subject to our [Privacy Policy](https://weunlock.nyc/privacy). Please read this [Privacy Policy](https://weunlock.nyc/privacy) in full, which governs our site, tools, and social media accounts and informs users about our data collection practices.
+Unlock NYC makes your privacy a priority, and your use of Unlock NYC is subject to our [Privacy Policy](/privacy). Please read this [Privacy Policy](/privacy) in full, which governs our site, tools, and social media accounts and informs users about our data collection practices.
 
 # LINKS TO THIRD-PARTY SITES/SERVICES
 
