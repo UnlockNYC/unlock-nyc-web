@@ -9,7 +9,7 @@
         {{ post.data.question }}
       </h4>
       <div class="faq-answer">
-        <p>{{ post.data.answer | markdown | safe }}</p>
+        {{ post.data.answer | markdown | safe }}
       </div>
     </div>
     {%- endfor -%}
