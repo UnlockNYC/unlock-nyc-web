@@ -52,7 +52,7 @@ templateClass: tmpl-home
       {% for story in collections.press | sortByPubDate %}
       <div class="press-item" {% if loop.index > 3 %} style="display: none;"{% endif %}>
         <div class="bg-cream" style="height: 150px; min-width: 200px;padding: 20px; display: flex; align-items: center; overflow: hidden;">
-          <img src="{{ story.data.image }}" style="width: 95%; max-width: 250px; margin: auto;">
+          <img src="{{ story.data.image }}" style="width: 95%; max-width: 250px; margin: auto;" alt="news outlet logo">
         </div>
         <div class="press-summary-wrap">
             <div class="press-summary">
