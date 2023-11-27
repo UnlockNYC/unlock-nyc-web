@@ -1,10 +1,5 @@
 ---
 layout: layouts/app-page.njk
-yellowBannerTitle: Join a virtual workshop
-yellowBannerText: >-
-  SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]
-  Most of our partners start out in the community via our welcoming, informative
-  workshops.
 eleventyNavigation:
   key: Rights Recorder App
   parent: Tools
@@ -34,6 +29,7 @@ iconBlocksList:
       access to lots of resources, like community events, special content, and
       other tools to help with your housing search.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 1.png'
+    alt: 'yellow illustration, cursor arrow pointing over a button that says sign up'
   - title: Collect evidence
     text: >-
       At Unlock NYC, we know how important it is to have proof when you face
@@ -45,6 +41,7 @@ iconBlocksList:
       agents. We'll help you keep all your evidence organized and secure, so you
       can report what happened whenever you're ready.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 2.png'
+    alt: 'yellow illustration, sound waves representing audio file evidence'
   - title: Submit your report
     text: >-
       Don't wait! Use our Rights Recorder app to make a report while the details
@@ -56,6 +53,7 @@ iconBlocksList:
       broker and landlord involved. In just 1-2 business days, we'll send you a
       copy of your report for your records.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 3.png'
+    alt: 'yellow illustration, icon of an open file full of documents'
   - title: Take action!
     text: >-
       When your report is ready, you get to decide where to send it. It's all
@@ -69,6 +67,12 @@ iconBlocksList:
       anonymously to our Discrimination Mapping Tool so researchers and
       policymakers can better understand the issue and create positive change.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 4.png'
+    alt: 'yellow illustration, one hand passing the baton to another hand'
+yellowBannerTitle: Join a virtual workshop
+yellowBannerText: >-
+  SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]
+  Most of our partners start out in the community via our welcoming, informative
+  workshops.
 _template: rightsrecorder
 ---
 

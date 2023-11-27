@@ -132,7 +132,7 @@ templateClass: tmpl-home
     {% for funder in fundersList %}
     <a href="{{ funder.link }}" target="_blank">
         <div class="bg-cream">
-            <img src="{{ funder.logo }}">
+            <img src="{{ funder.logo }}" alt="{{ funder.name }} logo">
         </div>
     </a>
     {% endfor %}

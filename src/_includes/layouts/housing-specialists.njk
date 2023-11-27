@@ -143,7 +143,7 @@ templateClass: tmpl-home
   {% for thing in linksList %}
   <div class="blocks-icons-wrapper links">
     <div class="block image">
-      <img src="{{ thing.image }}">
+      <img src="{{ thing.image }}" alt="{{ thing.alt }}">
     </div>
     <div class="block">
       <h4>
@@ -177,7 +177,7 @@ templateClass: tmpl-home
     {% for partner in partnersList %}
     <a href="{{ partner.link }}" target="_blank">
         <div class="bg-cream">
-            <img src="{{ partner.logo }}">
+            <img src="{{ partner.logo }}" alt="{{ partner.name }} logo">
         </div>
     </a>
     {% endfor %}

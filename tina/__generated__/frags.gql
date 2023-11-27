@@ -59,6 +59,7 @@ fragment PageParts on Page {
       title
       text
       image
+      alt
     }
     yellowBannerTitle
     yellowBannerText
@@ -75,6 +76,7 @@ fragment PageParts on Page {
       title
       text
       image
+      alt
     }
     yellowBannerTitle
     yellowBannerText
@@ -132,6 +134,7 @@ fragment PageParts on Page {
       title
       text
       image
+      org
       button
       buttonText
       buttonLink
@@ -177,6 +180,7 @@ fragment PageParts on Page {
       title
       content
       image
+      alt
       button
       buttonList {
         __typename
@@ -287,6 +291,7 @@ fragment ArticleParts on Article {
   author
   excerpt
   image
+  alt
   tags
   keywords
   body

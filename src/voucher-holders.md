@@ -59,6 +59,7 @@ linksList:
       If you need a voucher, make an appointment at your local Homebase location
       to see if you are eligible.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/homebase.png'
+    org: Homebase
     button: 'yes'
     buttonText: Make appointment
   - title: Get help with your housing search
@@ -67,6 +68,7 @@ linksList:
       where you can learn tricks for finding an apartment and search for
       housing.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/nt.png'
+    org: Neighbors Together
     button: 'yes'
     buttonText: See location
   - title: Prevent or delay an eviction
@@ -74,6 +76,7 @@ linksList:
       Housing Court Answers can explain Housing Court and housing law, rent
       arrears assistance, and homeless prevention guidance.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/housingcourtanswers.png'
+    org: Housing Court Answers
     button: 'yes'
     buttonText: Learn more
   - title: Address a housing situation
@@ -81,6 +84,7 @@ linksList:
       Call the Met Council on Housing Tenant’s Rights Hotline to get answers
       about your rights as a tenant; they may be able to refer you to a lawyer
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/metcouncil.png'
+    org: Met Council on Housing
     button: 'yes'
     buttonText: Call the Met Council
   - title: Request repairs in your apartment
@@ -88,6 +92,7 @@ linksList:
       JustFix’s Letter of Complaint tool can help you send a free customized
       letter to your landlord requesting repairs.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/justfix.png'
+    org: JustFix
     button: 'yes'
     buttonText: Request repairs
   - title: Document heating issues
@@ -95,6 +100,7 @@ linksList:
       If your landlord isn’t turning on the heat in winter, Heat Seek sensors
       let you quickly and easily document the temperature in your home.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/heatseek.png'
+    org: Heat Seek
     button: 'yes'
     buttonText: Learn more
 _template: voucherholders

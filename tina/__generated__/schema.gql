@@ -169,6 +169,7 @@ type PageRightsrecorderIconBlocksList {
   title: String
   text: String
   image: String
+  alt: String
 }
 
 type PageRightsrecorder implements Node & Document {
@@ -189,6 +190,7 @@ type PageAdvocateportalIconBlocksList {
   title: String
   text: String
   image: String
+  alt: String
 }
 
 type PageAdvocateportal implements Node & Document {
@@ -251,6 +253,7 @@ type PageVoucherholdersLinksList {
   title: String
   text: String
   image: String
+  org: String
   button: String
   buttonText: String
   buttonLink: String
@@ -315,6 +318,7 @@ type PageHousingspecialistsLinksList {
   title: String
   content: JSON
   image: String
+  alt: String
   button: String
   buttonList: [PageHousingspecialistsLinksListButtonList]
 }
@@ -517,6 +521,7 @@ input PageRightsrecorderIconBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  alt: StringFilter
 }
 
 input PageRightsrecorderFilter {
@@ -534,6 +539,7 @@ input PageAdvocateportalIconBlocksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  alt: StringFilter
 }
 
 input PageAdvocateportalFilter {
@@ -590,6 +596,7 @@ input PageVoucherholdersLinksListFilter {
   title: StringFilter
   text: StringFilter
   image: ImageFilter
+  org: StringFilter
   button: StringFilter
   buttonText: StringFilter
   buttonLink: StringFilter
@@ -648,6 +655,7 @@ input PageHousingspecialistsLinksListFilter {
   title: StringFilter
   content: RichTextFilter
   image: ImageFilter
+  alt: StringFilter
   button: StringFilter
   buttonList: PageHousingspecialistsLinksListButtonListFilter
 }
@@ -853,6 +861,7 @@ type Article implements Node & Document {
   author: String
   excerpt: String
   image: String
+  alt: String
   tags: [String]
   keywords: [String]
   body: JSON
@@ -866,6 +875,7 @@ input ArticleFilter {
   author: StringFilter
   excerpt: StringFilter
   image: ImageFilter
+  alt: StringFilter
   tags: StringFilter
   keywords: StringFilter
   body: RichTextFilter
@@ -1082,6 +1092,7 @@ input PageRightsrecorderIconBlocksListMutation {
   title: String
   text: String
   image: String
+  alt: String
 }
 
 input PageRightsrecorderMutation {
@@ -1099,6 +1110,7 @@ input PageAdvocateportalIconBlocksListMutation {
   title: String
   text: String
   image: String
+  alt: String
 }
 
 input PageAdvocateportalMutation {
@@ -1155,6 +1167,7 @@ input PageVoucherholdersLinksListMutation {
   title: String
   text: String
   image: String
+  org: String
   button: String
   buttonText: String
   buttonLink: String
@@ -1213,6 +1226,7 @@ input PageHousingspecialistsLinksListMutation {
   title: String
   content: JSON
   image: String
+  alt: String
   button: String
   buttonList: [PageHousingspecialistsLinksListButtonListMutation]
 }
@@ -1354,6 +1368,7 @@ input ArticleMutation {
   author: String
   excerpt: String
   image: String
+  alt: String
   tags: [String]
   keywords: [String]
   body: JSON

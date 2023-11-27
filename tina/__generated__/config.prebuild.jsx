@@ -370,6 +370,11 @@ var config_default = defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
                   }
                 ]
               },
@@ -453,6 +458,11 @@ var config_default = defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Image Alt Text (accessibility!)"
                   }
                 ]
               },
@@ -767,6 +777,11 @@ var config_default = defineConfig({
                   },
                   {
                     type: "string",
+                    name: "org",
+                    label: "Linked Organization Name"
+                  },
+                  {
+                    type: "string",
                     name: "button",
                     label: "Include Button?",
                     options: [
@@ -1008,6 +1023,11 @@ var config_default = defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Alt Text for Image (acceessibility!)"
                   },
                   {
                     type: "string",
@@ -1594,6 +1614,11 @@ var config_default = defineConfig({
             type: "image",
             name: "image",
             label: "Image"
+          },
+          {
+            type: "string",
+            name: "alt",
+            label: "Image Alt Text (accessibility!)"
           },
           {
             type: "string",

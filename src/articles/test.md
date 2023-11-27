@@ -5,6 +5,9 @@ excerpt: >-
   Hello world, hello proton. This is an article, with a summary that is
   excerpted here.
 image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Article-GoodReport.png'
+alt: >-
+  blue background, with an illustration of a document in the foreground, and a
+  brown thumbs up emoji on top
 tags:
   - Rights Recorder
   - Advocate Portal

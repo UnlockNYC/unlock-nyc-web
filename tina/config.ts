@@ -383,6 +383,11 @@ export default defineConfig({
                   name: "image",
                   label: "Block Image",
                 },
+                {
+                  type: "string",
+                  name: "alt",
+                  label: "Image Alt Text (accessibility!)",
+                },
               ],
               },
               {
@@ -466,6 +471,11 @@ export default defineConfig({
                   type: "image",
                   name: "image",
                   label: "Block Image",
+                },
+                {
+                  type: "string",
+                  name: "alt",
+                  label: "Image Alt Text (accessibility!)",
                 },
               ],
               },
@@ -785,6 +795,11 @@ export default defineConfig({
                 },
                 {
                   type: "string",
+                  name: "org",
+                  label: "Linked Organization Name"
+                },
+                {
+                  type: "string",
                   name: "button",
                   label: "Include Button?",
                   options: [
@@ -1030,6 +1045,11 @@ export default defineConfig({
                     type: "image",
                     name: "image",
                     label: "Block Image"
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Alt Text for Image (acceessibility!)"
                   },
                   {
                     type: "string",
@@ -1622,6 +1642,11 @@ export default defineConfig({
             type: "image",
             name: "image",
             label: "Image"
+          },
+          {
+            type: "string",
+            name: "alt",
+            label: "Image Alt Text (accessibility!)",
           },
           {
             type: "string",
