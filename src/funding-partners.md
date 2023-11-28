@@ -15,7 +15,7 @@ bannerText: >-
   magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
   amet, consectetur.
 blocksList:
-  - title: A targeted intervention rooted in community
+  - title: 'A targeted intervention, rooted in community'
     text: test test test
     image: image placeholder
     button: 'no'
