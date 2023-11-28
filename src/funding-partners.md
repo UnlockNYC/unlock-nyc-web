@@ -15,7 +15,7 @@ bannerText: >-
   magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
   amet, consectetur.
 blocksList:
-  - title: Our programs will impact your mission
+  - title: A targeted intervention
     text: test test test
     image: image placeholder
     button: 'yes'
