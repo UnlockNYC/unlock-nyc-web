@@ -15,14 +15,10 @@ bannerText: >-
   magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
   amet, consectetur.
 blocksList:
-  - title: Unique governance model
-  - title: A targeted intervention
+  - title: A targeted intervention rooted in community
     text: test test test
     image: image placeholder
-    button: 'yes'
-    buttonList:
-      - buttonText: Read more
-      - buttonText: See the Data
+    button: 'no'
   - title: Impacts on multiple communities
     text: lorem ipsum dolor simit
     image: image placeholder
@@ -30,6 +26,7 @@ blocksList:
     buttonList:
       - buttonText: Read more
       - buttonText: See the Data
+  - title: Unique governance model
 statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
