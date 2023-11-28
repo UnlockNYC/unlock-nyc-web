@@ -25,13 +25,12 @@ blocksList:
     button: 'no'
     buttonList:
       - buttonText: Learn more
-  - title: A unique governance model that walks the walk
+  - title: A unique governance model
     text: >-
-      Our team is multidisciplinary, intergenerational, 100% women-led, and
+      Our team is multidisciplinary, intergenerational, 100% women, and
       majority-led by tenants who have experienced housing discrimination
-      firsthand. By inviting our most engaged program participants to get
-      involved behind the scenes at Unlock NYC, potential leaders gain
-      experience and skills in nonprofit strategy and governance while
+      firsthand. By inviting our most engaged users to as leaders at Unlock NYC,
+      they gain experience and skills in nonprofit strategy and governance while
       contributing to our mission and building community with each other.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-governance.png
