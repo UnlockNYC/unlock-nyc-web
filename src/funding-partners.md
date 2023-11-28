@@ -33,6 +33,11 @@ statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
 fundersList:
+  - name: Wells Fargo Housing Affordability Philanthropies
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-wells-fargo-foundation-logo.png
+    link: >-
+      https://www.wellsfargo.com/about/corporate-responsibility/community-giving/
   - name: Trinity Church Wall Street
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-trinity-church-wall-street-philanthropies.png
