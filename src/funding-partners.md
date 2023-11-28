@@ -33,6 +33,12 @@ blocksList:
       involved behind the scenes at Unlock NYC, potential leaders gain
       experience and skills in nonprofit strategy and governance while
       contributing to our mission and building community with each other.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-governance.png
+    button: 'yes'
+    buttonList:
+      - buttonText: Meet the team
+        buttonLink: /about
 statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
