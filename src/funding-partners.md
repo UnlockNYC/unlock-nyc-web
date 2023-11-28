@@ -33,6 +33,10 @@ statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
 fundersList:
+  - name: Robin Hood Foundation
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-robin-hood-foundation-logo.png
+    link: 'https://www.robinhood.org/'
   - name: Oak Foundation
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
