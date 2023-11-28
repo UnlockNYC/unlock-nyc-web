@@ -35,6 +35,9 @@ blocksList:
       contributing to our mission and building community with each other.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-governance.png
+    alt: >-
+      Seven members of the Unlock NYC team smiling over a celebration lunch for
+      our Leadership Collective graduating cohort
     button: 'yes'
     buttonList:
       - buttonText: Meet the team
