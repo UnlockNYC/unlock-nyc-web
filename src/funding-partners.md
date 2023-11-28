@@ -56,11 +56,10 @@ fundersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
     link: 'https://oakfnd.org/'
-orangeBannerTitle: Have Questions? Get in Touch
+orangeBannerTitle: Have questions? Get in touch with our team.
 annualReports:
   - year: '2022'
-    pdf: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/funders-annual-report-22.pdf
+    pdf: ''
 _template: funding
 ---
 
