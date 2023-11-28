@@ -891,7 +891,7 @@ div.funder-grid {
   margin-bottom: 60px;
 }
 div.funder-grid div {
-  height: 100px;
+  height: 150px; /*MAB was 100px*/
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
@@ -900,7 +900,9 @@ div.funder-grid div {
 }
 
 div.funder-grid div img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
 }
 
 /* mobile components */
