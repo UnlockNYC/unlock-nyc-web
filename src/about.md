@@ -11,6 +11,9 @@ thanksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-kavya-arpitha-raman.png
     link: 'https://www.kavyaraman.com/'
   - name: Harmonize
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-consultant-logo-harmonize.png
+    link: 'https://harmonize.work/'
   - name: Fund for the City of New York
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-fund-for-the-city-of-new-york.png
