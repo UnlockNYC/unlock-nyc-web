@@ -19,13 +19,12 @@ blocksList:
     text: test test test
     image: image placeholder
     button: 'no'
-  - title: Impacts on multiple communities
+  - title: An issue that impacts all New Yorkers
     text: lorem ipsum dolor simit
     image: image placeholder
-    button: 'yes'
+    button: 'no'
     buttonList:
-      - buttonText: Read more
-      - buttonText: See the Data
+      - buttonText: Learn more
   - title: Unique governance model
 statsTitle: '"We''re a good investment"'
 statsText: |
