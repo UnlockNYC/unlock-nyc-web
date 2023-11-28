@@ -33,6 +33,10 @@ statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
 fundersList:
+  - name: Trinity Church Wall Street
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-trinity-church-wall-street-philanthropies.png
+    link: 'https://trinitywallstreet.org/grants-partners'
   - name: Robin Hood Foundation
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-robin-hood-foundation-logo.png
