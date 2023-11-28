@@ -22,7 +22,7 @@ blocksList:
     buttonList:
       - buttonText: Read more
       - buttonText: See the Data
-  - title: Wins we bring to partners
+  - title: Impacts on multiple communities
     text: lorem ipsum dolor simit
     image: image placeholder
     button: 'yes'
