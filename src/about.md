@@ -6,6 +6,10 @@ eleventyNavigation:
 title: About
 bannerTitle: About Us
 thanksList:
+  - name: Deloitte Service Corps
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-deloitte.png
+    link: 'https://www2.deloitte.com/us/en.html'
   - name: Kavya Arpitha Raman
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-kavya-arpitha-raman.png
