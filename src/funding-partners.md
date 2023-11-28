@@ -48,7 +48,6 @@ fundersList:
 orangeBannerTitle: Have Questions? Get in Touch
 annualReports:
   - year: '2022'
-  - year: '2021'
 _template: funding
 ---
 
