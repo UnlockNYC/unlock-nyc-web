@@ -48,6 +48,8 @@ fundersList:
 orangeBannerTitle: Have Questions? Get in Touch
 annualReports:
   - year: '2022'
+    pdf: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-wells-fargo-foundation-logo.png
 _template: funding
 ---
 
