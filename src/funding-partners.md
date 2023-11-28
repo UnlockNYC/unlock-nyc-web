@@ -27,14 +27,12 @@ blocksList:
       - buttonText: Learn more
   - title: A unique governance model that walks the walk
     text: >-
-      Unlock NYC’s team is multidisciplinary, intergenerational, and 100%
-      women-led. By design, half of our staff and 100% of our governing board
-      have directly experienced eviction, homelessness, and/or housing
-      discrimination. We achieve this through our Leadership Development
-      initiative, where we identify participants in our programs with leadership
-      potential and offer opportunities to get more involved in our work.
-      Leaders gain experience and skills in nonprofit strategy and governance
-      while contributing to our mission and building community with each other.
+      Our team is multidisciplinary, intergenerational, 100% women-led, and
+      majority-led by tenants who have experienced housing discrimination
+      firsthand. By inviting our most engaged program participants to get
+      involved behind the scenes at Unlock NYC, potential leaders gain
+      experience and skills in nonprofit strategy and governance while
+      contributing to our mission and building community with each other.
 statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
