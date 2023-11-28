@@ -59,7 +59,8 @@ fundersList:
 orangeBannerTitle: Have Questions? Get in Touch
 annualReports:
   - year: '2022'
-    pdf: ''
+    pdf: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/funders-annual-report-22.pdf
 _template: funding
 ---
 
