@@ -33,8 +33,10 @@ statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
 fundersList:
-  - name: Funder 2
-  - name: Funder 1
+  - name: Oak Foundation
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
+    link: 'https://oakfnd.org/'
 orangeBannerTitle: Have Questions? Get in Touch
 annualReports:
   - year: '2022'
