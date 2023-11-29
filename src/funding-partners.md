@@ -50,7 +50,7 @@ blocksList:
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-graduation.png
     alt: >-
-      Seven members of the Unlock NYC team smiling over a celebration lunch for
+      Seven members of the Unlock NYC team smiling at a celebration lunch for
       our Leadership Collective graduating cohort
     button: 'yes'
     buttonList:
