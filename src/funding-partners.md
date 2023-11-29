@@ -35,7 +35,7 @@ blocksList:
       they gain experience and skills in nonprofit strategy and governance while
       contributing to our mission and building community with each other.
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-governance.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-graduation.png
     alt: >-
       Seven members of the Unlock NYC team smiling over a celebration lunch for
       our Leadership Collective graduating cohort
