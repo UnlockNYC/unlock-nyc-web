@@ -41,7 +41,7 @@ thanksList:
     link: 'https://nff.org/'
   - name: 'Paul, Weiss, Rifkind, Wharton & Garrison LLP'
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-paul-weiss.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-paul-weiss.png
     link: 'https://www.paulweiss.com/'
 _template: about
 ---
