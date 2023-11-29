@@ -58,10 +58,12 @@ blocksList:
     buttonList:
       - buttonText: Meet the team
         buttonLink: /about
-statsTitle: Creating lasting impact and thriving futures
+statsTitle: Our dream? Build a world where Unlock NYC isn't needed anymore.
 statsText: >
-  Unlock NYC is building a financially healthy future for our organization so
-  that we can sustain and support our team's creativity, wellbeing, and energy.
+  Unlock NYC prioritizes building a financially healthy future for our
+  organization so that we can sustain and support our team's creativity,
+  wellbeing, and energy and ensure that everyone has the resources they need to
+  fully participate in our movement.
 fundersList:
   - name: Oak Foundation
     logo: >-
