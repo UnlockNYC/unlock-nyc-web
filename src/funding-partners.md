@@ -29,11 +29,10 @@ blocksList:
       - buttonText: Learn more
   - title: A unique governance model
     text: >-
-      Our team is multidisciplinary, intergenerational, 100% women, and
-      majority-led by tenants who have experienced housing discrimination
-      firsthand. By inviting our most engaged users to as leaders at Unlock NYC,
-      they gain experience and skills in nonprofit strategy and governance while
-      contributing to our mission and building community with each other.
+      Unlock NYC’s team is multidisciplinary, intergenerational, 100% women, and
+      majority-led by tenants who have firsthand experience with housing
+      discrimination. Engaged users join us as leaders, building skills in
+      nonprofit strategy and governance while contributing to our mission.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-leadership-collective-graduation.png
     alt: >-
