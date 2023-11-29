@@ -23,6 +23,7 @@ thanksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-fund-for-the-city-of-new-york.png
     link: 'https://www.fcny.org/'
   - name: F.Y.Eye
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/about-fyeye-logo.png'
     link: 'https://www.fyeye.org/'
   - name: Nonprofit Finance Fund
     logo: >-
