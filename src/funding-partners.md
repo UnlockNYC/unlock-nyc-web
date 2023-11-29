@@ -18,7 +18,7 @@ blocksList:
   - title: 'A targeted intervention, rooted in community'
     text: test test test
     image: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/funders-neighbors-together-art-build.jpg
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-campaign-art-build.png
     button: 'no'
   - title: An issue that impacts all New Yorkers
     text: lorem ipsum dolor simit
