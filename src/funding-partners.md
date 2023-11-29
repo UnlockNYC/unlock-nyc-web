@@ -58,7 +58,7 @@ blocksList:
     buttonList:
       - buttonText: Meet the team
         buttonLink: /about
-statsTitle: Our dream? Build a world where Unlock NYC isn't needed anymore.
+statsTitle: Creating lasting impact and thriving futures
 statsText: >
   Unlock NYC prioritizes building a financially healthy future for our
   organization so that we can sustain and support our team's creativity,
