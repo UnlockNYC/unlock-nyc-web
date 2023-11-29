@@ -23,8 +23,7 @@ blocksList:
       our accessible web app creates an outsized impact by working within the
       fair housing ecosystem – activating tenants, saving time for attorneys,
       and equipping advocates with data and insights. It's cost-effective,
-      impactful, and guided by the feedback we receive from our movement
-      partners.
+      impactful, and always guided by feedback from our movement partners.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-campaign-art-build.png
     alt: >-
