@@ -49,7 +49,7 @@ statsText: |
 fundersList:
   - name: Wells Fargo Housing Affordability Philanthropies
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/funders-wells-fargo-foundation-logo.png
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-wells-fargo-foundation-logo-vf.png
     link: >-
       https://www.wellsfargo.com/about/corporate-responsibility/community-giving/
   - name: Trinity Church Wall Street
