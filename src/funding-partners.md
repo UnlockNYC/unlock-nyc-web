@@ -36,7 +36,8 @@ blocksList:
       When vouchers work, they can be a game-changing tool for our city’s most
       vulnerable tenants. Domestic violence survivors can find safety. Patients
       facing health challenges can find a place to recover. Youth aging out of
-      foster care can find a home of their own.
+      foster care can find a home of their own. Let’s talk about how housing
+      discrimination impacts the communities you support.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-subway-PSA-new-yorkers.png
     alt: >-
