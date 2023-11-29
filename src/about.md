@@ -5,6 +5,11 @@ eleventyNavigation:
   order: 5
 title: About
 bannerTitle: About Us
+aboutImage: >-
+  https://public-unlock.nyc3.digitaloceanspaces.com/about-summerstage-PSA-top-image.png
+alt: >-
+  Colorful Unlock NYC PSA that reads "Do brokers and landlords keep saying no to
+  your voucher?" displayed in front of a concert crowd at Summerstage in NYC
 thanksList:
   - name: Deloitte Service Corps
     logo: >-
