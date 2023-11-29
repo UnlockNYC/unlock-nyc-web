@@ -6,6 +6,11 @@ eleventyNavigation:
 title: About
 bannerTitle: About Us
 thanksList:
+  - name: Littler Mendelson P.C.
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-littler-mendelson
+      (1).png
+    link: 'https://littler.com/'
   - name: Deloitte Service Corps
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-deloitte.png
