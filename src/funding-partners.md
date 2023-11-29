@@ -16,7 +16,11 @@ bannerText: >-
   programs while creating a workplace where every team member can thrive.
 blocksList:
   - title: 'A targeted intervention, rooted in community'
-    text: test test test
+    text: >-
+      We don’t see tech as “the” solution to housing discrimination. Instead,
+      our accessible web app creates an outsized impact by working within the
+      fair housing ecosystem – activating tenants, saving time for attorneys,
+      and equipping advocates with data and insights.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-campaign-art-build.png
     button: 'no'
