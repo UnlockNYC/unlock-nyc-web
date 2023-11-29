@@ -6,6 +6,10 @@ eleventyNavigation:
 title: About
 bannerTitle: About Us
 thanksList:
+  - name: 'Paul, Weiss, Rifkind, Wharton & Garrison LLP'
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-paul-weiss.png
+    link: 'https://www.paulweiss.com/'
   - name: Littler Mendelson P.C.
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/about-logo-consultant-littler-mendelson
