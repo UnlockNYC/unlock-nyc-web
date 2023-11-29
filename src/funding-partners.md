@@ -47,23 +47,23 @@ statsTitle: '"We''re a good investment"'
 statsText: |
   #### "Lorem ipsum quote quote text."
 fundersList:
+  - name: Oak Foundation
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
+    link: 'https://oakfnd.org/'
+  - name: Robin Hood Foundation
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-robin-hood-foundation-logo.png
+    link: 'https://www.robinhood.org/'
+  - name: Trinity Church Wall Street
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-trinity-church-wall-street-philanthropies.png
+    link: 'https://trinitywallstreet.org/grants-partners'
   - name: Wells Fargo Housing Affordability Philanthropies
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-wells-fargo-foundation-logo-vf.png
     link: >-
       https://www.wellsfargo.com/about/corporate-responsibility/community-giving/
-  - name: Trinity Church Wall Street
-    logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/funders-trinity-church-wall-street-philanthropies.png
-    link: 'https://trinitywallstreet.org/grants-partners'
-  - name: Robin Hood Foundation
-    logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/funders-robin-hood-foundation-logo.png
-    link: 'https://www.robinhood.org/'
-  - name: Oak Foundation
-    logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
-    link: 'https://oakfnd.org/'
 orangeBannerTitle: Have questions? Get in touch with our team.
 annualReports:
   - year: '2022'
