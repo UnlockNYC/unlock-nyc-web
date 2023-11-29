@@ -22,7 +22,8 @@ blocksList:
     button: 'no'
   - title: An issue that impacts all New Yorkers
     text: lorem ipsum dolor simit
-    image: image placeholder
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/funders-subway-PSA-new-yorkers.png
     button: 'no'
     buttonList:
       - buttonText: Learn more
