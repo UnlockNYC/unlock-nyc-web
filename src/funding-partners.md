@@ -15,7 +15,7 @@ bannerText: >-
   responsibility programs, and individual donors to deliver high-quality
   programs while creating a workplace where every team member can thrive. If
   you're a funder, feel free to contact our team below to learn more about our
-  current projects, goals, and fundraising priorities.
+  current projects, fundraising priorities, and sponsorship opportunities.
 blocksList:
   - title: 'A targeted intervention, rooted in community'
     text: >-
