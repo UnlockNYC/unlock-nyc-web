@@ -62,8 +62,13 @@ statsTitle: Our dream? Build a world where Unlock NYC isn't needed anymore.
 statsText: >
   Unlock NYC prioritizes building a financially healthy future for our
   organization so that we can sustain and support our team's creativity,
-  wellbeing, and energy and ensure that everyone has the resources they need to
-  fully participate in our movement.
+  wellbeing, and energy. Our compensation and team structure are carefully
+  designed to ensure that our staff can support their families, have housing
+  stability, and pursue passions outside of work. Initiatives like our unique
+  emergency fund and technology access lending library enable a more diverse
+  group of interns, volunteers, and contractors to work with us, regardless of
+  their economic situation. We seek funding partners who value the work and
+  financial investment needed to create a diverse and inclusive workplace.
 fundersList:
   - name: Oak Foundation
     logo: >-
