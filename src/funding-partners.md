@@ -23,6 +23,9 @@ blocksList:
       and equipping advocates with data and insights.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-campaign-art-build.png
+    alt: >-
+      5 people gather around a long table painting posters for an upcoming
+      rally, with slogans like "If you discriminate, we will litigate!"
     button: 'no'
   - title: An issue that impacts all New Yorkers
     text: >-
