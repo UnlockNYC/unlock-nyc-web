@@ -59,8 +59,9 @@ blocksList:
       - buttonText: Meet the team
         buttonLink: /about
 statsTitle: Creating lasting impact and thriving futures
-statsText: |
-  #### "Lorem ipsum quote quote text."
+statsText: >
+  Unlock NYC is building a financially healthy future for our organization so
+  that we can sustain and support our team's creativity, wellbeing, and energy.
 fundersList:
   - name: Oak Foundation
     logo: >-
