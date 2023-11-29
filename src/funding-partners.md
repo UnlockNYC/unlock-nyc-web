@@ -11,9 +11,9 @@ eleventyNavigation:
 title: For Funding Partners
 bannerTitle: Funding Partners
 bannerText: >-
-  If you have clients, sed do eiusmod tempor incididunt ut labore et dolore
-  magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
-  amet, consectetur.
+  Unlock NYC is proud to work with a wide range of foundations, corporate social
+  responsibility programs, and individual donors to deliver high-quality
+  programs while creating a workplace where every team member can thrive.
 blocksList:
   - title: 'A targeted intervention, rooted in community'
     text: test test test
@@ -43,7 +43,7 @@ blocksList:
     buttonList:
       - buttonText: Meet the team
         buttonLink: /about
-statsTitle: '"We''re a good investment"'
+statsTitle: Creating lasting impact and thriving futures
 statsText: |
   #### "Lorem ipsum quote quote text."
 fundersList:
