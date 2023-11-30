@@ -116,3 +116,44 @@ templateClass: tmpl-home
   </div>
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[11]='MMERGE11';ftypes[11]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
 </div>
+
+<!-- NETLIFY advocate login-->
+<!-- MAB move to file?! -->
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  function checkIdentity() {
+      let token = JSON.parse(localStorage.getItem("gotrue.user"));
+      if (token) {
+          if (token.app_metadata.roles[0] == "advocate") {
+              return true;
+          } else {
+              return false;
+          }
+      }
+  }
+  // netlify identity, advocate confirmation flow
+  let confirmation = window.location.hash;
+  let loginAttempt = false;
+  if (confirmation.indexOf("confirmation") > -1) {
+      loginAttempt = true;
+      console.log("advocate confirmation: " + loginAttempt);
+  }
+
+  // netlify widget
+  const user = netlifyIdentity.currentUser();
+  netlifyIdentity.on('init', user => console.log('init', user));
+  netlifyIdentity.on('login', function (user) {
+      console.log('login', user);
+  });
+
+  $(document).ready(function() {
+    // check netlify identity, add redirect link
+    setTimeout(function() {
+      let login = checkIdentity();
+      if (login == true) {
+          //$("li#donate").before("<li id='advocate-login'><a href='/start/secure/advocate'>👥 advocates</a></li>");
+          $("#advocate-login").show();
+      }
+    }, 3500);
+  });
+</script>
