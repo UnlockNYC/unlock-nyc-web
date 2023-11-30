@@ -18,18 +18,8 @@ quote: >-
   client here and it dramatically improves chances of rehousing every time.”
 quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
-titleAboveStats: Reporting gets you results
-textAboveStats: >-
-  KEY IMPACT METRICS and WHY YOU SHOULD LISTEN TO US Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore. 
-statistics:
-  - statNum: 50+
-    statText: years navigating the voucher system
-  - statNum: 70%
-    statText: of our team identify as women of color
-  - statNum: '5'
-    statText: boroughs represented
+quoteImg: >-
+  https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-takeroot-justice-vf.png
 linksList:
   - title: Distribute resources to your clients
     content: >
@@ -77,6 +67,10 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-brooklyn-defender-services-logo.png
     link: 'https://bds.org/home'
+  - name: CAMBA
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-CAMBA.png
+    link: 'https://camba.org/'
 _template: housingspecialists
 ---
 
