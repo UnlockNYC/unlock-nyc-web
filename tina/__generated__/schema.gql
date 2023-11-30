@@ -361,6 +361,11 @@ type PageFundingBlocksList {
   buttonList: [PageFundingBlocksListButtonList]
 }
 
+type PageFundingStatistics {
+  statNum: String
+  statText: String
+}
+
 type PageFundingFundersList {
   name: String!
   logo: String
@@ -375,9 +380,10 @@ type PageFundingAnnualReports {
 type PageFunding implements Node & Document {
   title: String!
   bannerTitle: String
-  bannerText: String
+  bannerTextRich: JSON
   blocksList: [PageFundingBlocksList]
   statsTitle: String
+  statistics: [PageFundingStatistics]
   statsText: JSON
   fundersList: [PageFundingFundersList]
   orangeBannerTitle: String
@@ -695,6 +701,11 @@ input PageFundingBlocksListFilter {
   buttonList: PageFundingBlocksListButtonListFilter
 }
 
+input PageFundingStatisticsFilter {
+  statNum: StringFilter
+  statText: StringFilter
+}
+
 input PageFundingFundersListFilter {
   name: StringFilter
   logo: ImageFilter
@@ -709,9 +720,10 @@ input PageFundingAnnualReportsFilter {
 input PageFundingFilter {
   title: StringFilter
   bannerTitle: StringFilter
-  bannerText: StringFilter
+  bannerTextRich: RichTextFilter
   blocksList: PageFundingBlocksListFilter
   statsTitle: StringFilter
+  statistics: PageFundingStatisticsFilter
   statsText: RichTextFilter
   fundersList: PageFundingFundersListFilter
   orangeBannerTitle: StringFilter
@@ -1266,6 +1278,11 @@ input PageFundingBlocksListMutation {
   buttonList: [PageFundingBlocksListButtonListMutation]
 }
 
+input PageFundingStatisticsMutation {
+  statNum: String
+  statText: String
+}
+
 input PageFundingFundersListMutation {
   name: String
   logo: String
@@ -1280,9 +1297,10 @@ input PageFundingAnnualReportsMutation {
 input PageFundingMutation {
   title: String
   bannerTitle: String
-  bannerText: String
+  bannerTextRich: JSON
   blocksList: [PageFundingBlocksListMutation]
   statsTitle: String
+  statistics: [PageFundingStatisticsMutation]
   statsText: JSON
   fundersList: [PageFundingFundersListMutation]
   orangeBannerTitle: String

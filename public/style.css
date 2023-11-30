@@ -467,7 +467,7 @@ p.subtitle {
   color: Black;
 }
 
-div.content a {
+div.content a, p a {
   text-decoration: underline;
   color: Black;
 }
@@ -572,6 +572,13 @@ img.baseline-banner {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* rich-text banners */
+div.banner-content h2.richtext-banner p {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
 }
 
 @media only screen and (max-width: 800px) {

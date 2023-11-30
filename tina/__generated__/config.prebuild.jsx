@@ -1117,12 +1117,12 @@ var config_default = defineConfig({
                 label: "Banner Title"
               },
               {
-                type: "string",
-                name: "bannerText",
-                label: "Banner Text",
-                ui: {
-                  component: "textarea"
-                }
+                type: "rich-text",
+                parser: {
+                  type: "markdown"
+                },
+                name: "bannerTextRich",
+                label: "Banner Text"
               },
               {
                 type: "object",
@@ -1201,6 +1201,28 @@ var config_default = defineConfig({
                 type: "string",
                 name: "statsTitle",
                 label: "Stats Title"
+              },
+              {
+                type: "object",
+                name: "statistics",
+                label: "Statistics",
+                list: true,
+                max: 3,
+                itemProps: (item) => {
+                  return { label: item?.statText };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "statNum",
+                    label: "Number Value"
+                  },
+                  {
+                    type: "string",
+                    name: "statText",
+                    label: "Descriptive Text"
+                  }
+                ]
               },
               {
                 type: "rich-text",

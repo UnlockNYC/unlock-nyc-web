@@ -58,8 +58,8 @@ templateClass: tmpl-home
       <h1>
         {{ bannerTitle }}
       </h1>
-      <h2>
-        {{ bannerText }}
+      <h2 class="richtext-banner">
+        {{ bannerTextRich | markdown | safe }}
       </h2>
     </div>
   </div>
@@ -70,30 +70,16 @@ templateClass: tmpl-home
     {{ statsTitle }}
   </h3>
   <div class="three-stats bg-yellow" style="margin-top: 0; margin-bottom: 0;">
+      {% for stat in statistics %}
     <div class="stat">
       <h1>
-        50+
+        {{ stat.statNum }}
       </h1>
       <p class="black">
-        Years navigating the housing voucher system
+        {{ stat.statText }}
       </p>
     </div>
-    <div class="stat">
-      <h1>
-        70%
-      </h1>
-      <p class="black">
-        of our team identify as women of color
-      </p>
-    </div>
-    <div class="stat">
-      <h1>
-        5
-      </h1>
-      <p class="black">
-        NYC boroughs represented
-      </p>
-    </div>
+    {% endfor %}
   </div>
   <div class="half-wide" style="margin-top: 80px;">
       {{ statsText | markdown | safe }}

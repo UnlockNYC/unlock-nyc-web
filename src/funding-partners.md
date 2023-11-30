@@ -8,14 +8,18 @@ eleventyNavigation:
   parent: Partners
   title: Funding Partners
   order: 3
+stats1:
+  stat1Num: 170+
+  stat1Text: New Yorkers housed
 title: For Funding Partners
 bannerTitle: Funding Partners
-bannerText: >-
+bannerTextRich: >
   Unlock NYC is proud to work with a wide range of foundations, corporate social
   responsibility programs, and individual donors to deliver high-quality
   programs while creating a workplace where every team member can thrive.
-  Contact us to learn more about our current projects, fundraising priorities,
-  and sponsorship opportunities.
+  [Contact us](https://airtable.com/appfOQvWUNipVmUdR/shrUjHME2Vw4JBLHV "Contact
+  us") to learn more about our current projects, fundraising priorities, and
+  sponsorship opportunities.
 blocksList:
   - title: 'A targeted intervention, rooted in community'
     text: >-
@@ -62,6 +66,13 @@ blocksList:
       - buttonText: Meet the team
         buttonLink: /about
 statsTitle: Creating lasting impact and thriving futures
+statistics:
+  - statNum: '170+ '
+    statText: New Yorkers housed
+  - statNum: 35+
+    statText: community organizations supported
+  - statNum: $3.2m+
+    statText: taxpayer dollars saved
 statsText: >
   Unlock NYC prioritizes building a financially healthy future for our
   organization so that we can sustain and support our team's creativity,

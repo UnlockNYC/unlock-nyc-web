@@ -1141,12 +1141,12 @@ export default defineConfig({
                 label: "Banner Title"
               },
               {
-                type: "string",
-                name: "bannerText",
+                type: "rich-text",
+                parser: {
+                  type: 'markdown',
+                },
+                name: "bannerTextRich",
                 label: "Banner Text",
-                ui: {
-                  component: "textarea"
-                }
               },
               {
                 type: "object",
@@ -1227,6 +1227,29 @@ export default defineConfig({
                 type: "string",
                 name: "statsTitle",
                 label: "Stats Title"
+              },
+              {
+                type: "object",
+                name: "statistics",
+                label: "Statistics",
+                list: true,
+                max: 3,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.statText };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "statNum",
+                    label: "Number Value",
+                  },
+                  {
+                    type: "string",
+                    name: "statText",
+                    label: "Descriptive Text",
+                  }
+                ],
               },
               {
                 type: "rich-text",

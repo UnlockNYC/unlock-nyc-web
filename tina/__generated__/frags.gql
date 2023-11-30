@@ -198,7 +198,7 @@ fragment PageParts on Page {
   ... on PageFunding {
     title
     bannerTitle
-    bannerText
+    bannerTextRich
     blocksList {
       __typename
       title
@@ -213,6 +213,11 @@ fragment PageParts on Page {
       }
     }
     statsTitle
+    statistics {
+      __typename
+      statNum
+      statText
+    }
     statsText
     fundersList {
       __typename
