@@ -32,7 +32,10 @@ statistics:
     statText: of our repeat users report getting a viewing after initially being denied
   - statNum: 9 of 10
     statText: tenants would recommend Unlock NYC to a friend
-featuredPartnerText: Lorem ipsum text text text.
+featuredPartnerText: >-
+  Unlock NYC's community of housing specialists includes staff from over 30
+  organizations across the five boroughs. Join a group of peers who care as
+  deeply as you do about giving their clients the best chance at finding a home.
 linksList:
   - title: Distribute resources to your clients
     content: >
