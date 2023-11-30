@@ -59,10 +59,10 @@ linksList:
     buttonList:
       - buttonText: Find a time
 partnersList:
-  - name: Home is a Human Right
+  - name: Neighbors Together
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-home-is-a-human-right.png
-    link: 'https://www.homeisahumanright.com/'
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-neighbors-together.png
+    link: 'https://neighborstogether.org/'
   - name: Asian Americans for Equality
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-asian-americans-equality-logo.png
@@ -75,6 +75,10 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-CAMBA.png
     link: 'https://camba.org/'
+  - name: Home is a Human Right
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-home-is-a-human-right.png
+    link: 'https://www.homeisahumanright.com/'
 _template: housingspecialists
 ---
 
