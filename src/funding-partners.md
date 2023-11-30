@@ -70,8 +70,9 @@ statsText: >
   stability, and pursue passions outside of work. Initiatives like our unique
   emergency fund and technology access lending library enable a more diverse
   group of interns, volunteers, and contractors to work with us, regardless of
-  their economic situation. We seek funding partners who value the work and
-  financial investment needed to create a diverse and inclusive workplace.
+  their economic situation. We seek funding partners who value the time and
+  financial investment required to create a truly diverse and inclusive
+  workplace.
 fundersList:
   - name: Oak Foundation
     logo: >-
