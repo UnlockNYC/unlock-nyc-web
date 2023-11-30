@@ -30,8 +30,8 @@ statistics:
     statText: 1-on-1 consultations with voucher holders
   - statNum: 70%
     statText: of our repeat users report getting a viewing after initially being denied
-  - statNum: '#'
-    statText: stat 3
+  - statNum: 9 of 10
+    statText: tenants would recommend Unlock NYC to a friend
 featuredPartnerText: Lorem ipsum text text text.
 linksList:
   - title: Distribute resources to your clients
