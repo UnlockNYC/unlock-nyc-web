@@ -62,32 +62,32 @@ templateClass: tmpl-home
 </div>
 <div class="content first">
   <div class="banner-wrapper split" style="height: auto;">
-    <div class="bg-purple">  <!--style="border: 1px dotted gray; min-height: 200px; padding: 20px;">-->
-        <img src="{{ topImage }}" style="width: 100%;">
-    </div>
-    <div class="banner-split-text">
-      <h4>
-        {{ bannerSubtitle }}
-      </h4>
-      <p>
-        {{ bannerText}}
-      </p>
-      <a href="{{ demoLink }}">
-        <button class="black">
-            Request a demo
-        </button>
-      </a>
-      <a href="{{ signUpLink }}">
-        <button class="black">
-            Sign up
-        </button>
-      </a>
+    <img src="{{ topImage }}" style="width: 100%;">
+    <div class="banner-split-text" style="display: flex; align-items: center;">
+        <div>
+        <h4>
+            {{ bannerSubtitle }}
+        </h4>
+        <p>
+            {{ bannerText}}
+        </p>
+        <a href="{{ demoLink }}">
+            <button class="black">
+                Request a demo
+            </button>
+        </a>
+        <a href="{{ signUpLink }}">
+            <button class="black">
+                Sign up
+            </button>
+        </a>
+        </div>
     </div>
   </div>
   <!-- MAB do I need to move this to larger CSS, and make a component? -->
   <div class="org-quote">
-    <div>
-      <img src="{{ quoteLogo }}">
+    <div style="padding: 35px;">
+      <img src="{{ quoteImg }}" style="width: 100%;">
     </div>
     <div>
       <h4 style="margin-bottom: 2rem">
