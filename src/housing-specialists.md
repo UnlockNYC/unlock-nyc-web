@@ -28,8 +28,8 @@ textAboveStats: >-
 statistics:
   - statNum: 500+
     statText: 1-on-1 consultations with voucher holders
-  - statNum: '#'
-    statText: stat 2
+  - statNum: 70%
+    statText: of our repeat users report getting a viewing after initially being denied
   - statNum: '#'
     statText: stat 3
 featuredPartnerText: Lorem ipsum text text text.
