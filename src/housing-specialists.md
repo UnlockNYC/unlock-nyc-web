@@ -59,6 +59,10 @@ linksList:
     buttonList:
       - buttonText: Find a time
 partnersList:
+  - name: Home is a Human Right
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-home-is-a-human-right.png
+    link: 'https://www.homeisahumanright.com/'
   - name: Asian Americans for Equality
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-asian-americans-equality-logo.png
