@@ -112,7 +112,7 @@ div.slide:nth-child(4n) {
 }
 
 div.slide.quote h4 {
-    font-size: 2rem;
+    font-size: 1.85rem;
 }
 
 div.slide.quote div.author, div.slide.audio div.label {
@@ -154,6 +154,9 @@ div.slide.audio div.play {
 
     div.slider-arrow.right {
         right:14%;
+    }
+    div.slide.quote h4 {
+        font-size: 2rem;
     }
 }
 
