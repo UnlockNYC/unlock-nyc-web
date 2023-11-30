@@ -18,6 +18,18 @@ quote: >-
   client here and it dramatically improves chances of rehousing every time.”
 quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
+titleAboveStats: Reporting gets you results
+textAboveStats: >-
+  KEY IMPACT METRICS and WHY YOU SHOULD LISTEN TO US Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  dolore. 
+statistics:
+  - statNum: 50+
+    statText: years navigating the voucher system
+  - statNum: 70%
+    statText: of our team identify as women of color
+  - statNum: '5'
+    statText: boroughs represented
 linksList:
   - title: Distribute resources to your clients
     content: >

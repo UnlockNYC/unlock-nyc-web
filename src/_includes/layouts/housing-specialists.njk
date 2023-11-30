@@ -104,36 +104,22 @@ templateClass: tmpl-home
 </div>
 <div class="content bg-cream" style="padding-left: 20%; padding-right: 20%;">
   <h3 style="text-align: center; margin-top: 0;">
-    Reporting gets you results
+   {{ titleAboveStats }}
   </h3>
   <p class="black" style="text-align: center;">
-    KEY IMPACT METRICS and WHY YOU SHOULD LISTEN TO US Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+    {{ textAboveStats }}
   </p>
   <div class="three-stats" style="margin-top: 0; margin-bottom: 0;">
+      {% for stat in statistics %}
     <div class="stat">
       <h1>
-        50+
+        {{ stat.statNum }}
       </h1>
       <p class="black">
-        Years navigating the housing voucher system
+        {{ stat.statText }}
       </p>
     </div>
-    <div class="stat">
-      <h1>
-        70%
-      </h1>
-      <p class="black">
-        of our team identify as women of color
-      </p>
-    </div>
-    <div class="stat">
-      <h1>
-        5
-      </h1>
-      <p class="black">
-        NYC boroughs represented
-      </p>
-    </div>
+    {% endfor %}
   </div>
 </div>
 <div class="content">

@@ -315,6 +315,11 @@ type PageCommunityorganizers implements Node & Document {
   _values: JSON!
 }
 
+type PageHousingspecialistsStatistics {
+  statNum: String
+  statText: String
+}
+
 type PageHousingspecialistsLinksListButtonList {
   buttonText: String
   buttonLink: String
@@ -346,6 +351,9 @@ type PageHousingspecialists implements Node & Document {
   quoteAuthor: String
   quoteTitle: String
   quoteImg: String
+  titleAboveStats: String
+  textAboveStats: String
+  statistics: [PageHousingspecialistsStatistics]
   linksList: [PageHousingspecialistsLinksList]
   partnersList: [PageHousingspecialistsPartnersList]
   id: ID!
@@ -664,6 +672,11 @@ input PageCommunityorganizersFilter {
   orangeBannerLink: StringFilter
 }
 
+input PageHousingspecialistsStatisticsFilter {
+  statNum: StringFilter
+  statText: StringFilter
+}
+
 input PageHousingspecialistsLinksListButtonListFilter {
   buttonText: StringFilter
   buttonLink: StringFilter
@@ -695,6 +708,9 @@ input PageHousingspecialistsFilter {
   quoteAuthor: StringFilter
   quoteTitle: StringFilter
   quoteImg: ImageFilter
+  titleAboveStats: StringFilter
+  textAboveStats: StringFilter
+  statistics: PageHousingspecialistsStatisticsFilter
   linksList: PageHousingspecialistsLinksListFilter
   partnersList: PageHousingspecialistsPartnersListFilter
 }
@@ -1247,6 +1263,11 @@ input PageCommunityorganizersMutation {
   orangeBannerLink: String
 }
 
+input PageHousingspecialistsStatisticsMutation {
+  statNum: String
+  statText: String
+}
+
 input PageHousingspecialistsLinksListButtonListMutation {
   buttonText: String
   buttonLink: String
@@ -1278,6 +1299,9 @@ input PageHousingspecialistsMutation {
   quoteAuthor: String
   quoteTitle: String
   quoteImg: String
+  titleAboveStats: String
+  textAboveStats: String
+  statistics: [PageHousingspecialistsStatisticsMutation]
   linksList: [PageHousingspecialistsLinksListMutation]
   partnersList: [PageHousingspecialistsPartnersListMutation]
 }

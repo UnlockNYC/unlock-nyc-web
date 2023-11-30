@@ -180,6 +180,13 @@ fragment PageParts on Page {
     quoteAuthor
     quoteTitle
     quoteImg
+    titleAboveStats
+    textAboveStats
+    statistics {
+      __typename
+      statNum
+      statText
+    }
     linksList {
       __typename
       title
