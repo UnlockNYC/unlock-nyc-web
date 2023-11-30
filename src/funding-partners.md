@@ -36,7 +36,8 @@ blocksList:
       vulnerable tenants. Domestic violence survivors can find safety. Patients
       facing health challenges can find a place to recover. Youth aging out of
       foster care can find a home of their own. Let’s talk about how housing
-      discrimination impacts the communities you support.
+      discrimination impacts the communities you support – and what we can do
+      together to end it.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-subway-PSA-new-yorkers.png
     alt: >-
