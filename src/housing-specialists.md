@@ -21,11 +21,13 @@ quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 quoteImg: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-takeroot-justice-vff.png
-titleAboveStats: Reporting gets results
-textAboveStats: Lorem ipsum text text text
+titleAboveStats: Help your clients find their superpowers
+textAboveStats: >-
+  Housing specialists and advocates love Unlock NYC because our tools are an
+  opportunity for their clients to boost their confidence and find their voice. 
 statistics:
-  - statNum: '#'
-    statText: stat 1
+  - statNum: 500+
+    statText: 1-on-1 consultations with voucher holders
   - statNum: '#'
     statText: stat 2
   - statNum: '#'
