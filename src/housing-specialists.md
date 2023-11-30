@@ -47,6 +47,9 @@ linksList:
       and/or Spanish.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-record-report-booklet-spanish.png
+    alt: >-
+      3 copies of the Spanish-language version of Unlock NYC's colorful Record
+      it. Report it! booklet
     button: 'yes'
     buttonList:
       - buttonText: Place an order
