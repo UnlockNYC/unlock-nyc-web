@@ -148,6 +148,11 @@ type PageIndex implements Node & Document {
   _values: JSON!
 }
 
+type PageAboutStatistics {
+  statNum: String
+  statText: String
+}
+
 type PageAboutThanksList {
   name: String!
   logo: String
@@ -159,6 +164,7 @@ type PageAbout implements Node & Document {
   bannerTitle: String
   aboutImage: String
   alt: String
+  statistics: [PageAboutStatistics]
   thanksList: [PageAboutThanksList]
   id: ID!
   _sys: SystemInfo!
@@ -517,6 +523,11 @@ input PageIndexFilter {
   teamText: StringFilter
 }
 
+input PageAboutStatisticsFilter {
+  statNum: StringFilter
+  statText: StringFilter
+}
+
 input PageAboutThanksListFilter {
   name: StringFilter
   logo: ImageFilter
@@ -528,6 +539,7 @@ input PageAboutFilter {
   bannerTitle: StringFilter
   aboutImage: ImageFilter
   alt: StringFilter
+  statistics: PageAboutStatisticsFilter
   thanksList: PageAboutThanksListFilter
 }
 
@@ -1114,6 +1126,11 @@ input PageIndexMutation {
   teamText: String
 }
 
+input PageAboutStatisticsMutation {
+  statNum: String
+  statText: String
+}
+
 input PageAboutThanksListMutation {
   name: String
   logo: String
@@ -1125,6 +1142,7 @@ input PageAboutMutation {
   bannerTitle: String
   aboutImage: String
   alt: String
+  statistics: [PageAboutStatisticsMutation]
   thanksList: [PageAboutThanksListMutation]
 }
 

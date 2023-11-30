@@ -294,6 +294,29 @@ export default defineConfig({
               },
               {
                 type: "object",
+                name: "statistics",
+                label: "Statistics",
+                list: true,
+                max: 3,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.statText };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "statNum",
+                    label: "Number Value",
+                  },
+                  {
+                    type: "string",
+                    name: "statText",
+                    label: "Descriptive Text",
+                  }
+                ],
+              },
+              {
+                type: "object",
                 name: "thanksList",
                 label: "Special Thanks",
                 list: true,

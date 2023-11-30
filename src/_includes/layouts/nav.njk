@@ -11,7 +11,7 @@
     {% macro renderNavListItem(entry) -%}
     <li {% if entry.url == page.url %} class="active-header"{% endif %}>
       <a {% if entry.url == 'blank' %} class="dropdown" {% endif %} href="{{ entry.url }}">{{ entry.title }}
-        {% if entry.url == 'blank' %} 
+        {% if entry.url == 'blank' %}
         <svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
        {% endif %}
       </a>
@@ -26,9 +26,9 @@
     <ul id="top">
     {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
     <li><a>Donate</a></li>
-    <li class="report-button">Report</li>
+    <li class="report-button"><a href="/start" style="color: White;">Report</a></li>
     <li class="login-button">Sign In</li>
     </ul>
   </div> <!-- end of nav wrapper-->
-  
+
 </nav>

@@ -284,6 +284,28 @@ var config_default = defineConfig({
               },
               {
                 type: "object",
+                name: "statistics",
+                label: "Statistics",
+                list: true,
+                max: 3,
+                itemProps: (item) => {
+                  return { label: item?.statText };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "statNum",
+                    label: "Number Value"
+                  },
+                  {
+                    type: "string",
+                    name: "statText",
+                    label: "Descriptive Text"
+                  }
+                ]
+              },
+              {
+                type: "object",
                 name: "thanksList",
                 label: "Special Thanks",
                 list: true,

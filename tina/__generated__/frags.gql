@@ -42,6 +42,11 @@ fragment PageParts on Page {
     bannerTitle
     aboutImage
     alt
+    statistics {
+      __typename
+      statNum
+      statText
+    }
     thanksList {
       __typename
       name

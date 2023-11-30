@@ -114,30 +114,16 @@ templateClass: tmpl-home
     <!-- MAB: re-use as component!-->
   </div>
   <div class="three-stats bg-yellow">
+      {% for stat in statistics %}
       <div class="stat">
         <h1>
-          50+
+          {{ stat.statNum }}
         </h1>
         <p class="black">
-          Years navigating the housing voucher system
+          {{ stat.statText }}
         </p>
       </div>
-      <div class="stat">
-        <h1>
-          70%
-        </h1>
-        <p class="black">
-          of our team identify as women of color
-        </p>
-      </div>
-      <div class="stat">
-        <h1>
-          5
-        </h1>
-        <p class="black">
-          NYC boroughs represented
-        </p>
-      </div>
+      {% endfor %}
     </div>
     <h4>
       Staff

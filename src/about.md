@@ -10,6 +10,13 @@ aboutImage: >-
 alt: >-
   Colorful Unlock NYC PSA that reads "Do brokers and landlords keep saying no to
   your voucher?" displayed in front of a concert crowd at Summerstage in NYC
+statistics:
+  - statNum: 50+
+    statText: years navigating the voucher system
+  - statNum: 70%
+    statText: of our team identify as women of color
+  - statNum: '5'
+    statText: boroughs represented
 thanksList:
   - name: Deloitte Service Corps
     logo: >-
