@@ -25,9 +25,11 @@ titleAboveStats: Reporting gets results
 textAboveStats: Lorem ipsum text text text
 statistics:
   - statNum: '#'
-    statText: stat 2
+    statText: stat 3
   - statNum: '#'
     statText: stat 1
+  - statNum: '#'
+    statText: stat 2
 linksList:
   - title: Distribute resources to your clients
     content: >
