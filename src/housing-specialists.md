@@ -30,6 +30,7 @@ statistics:
     statText: stat 2
   - statNum: '#'
     statText: stat 3
+featuredPartnerText: Lorem ipsum text text text.
 linksList:
   - title: Distribute resources to your clients
     content: >

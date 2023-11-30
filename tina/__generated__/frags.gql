@@ -179,6 +179,7 @@ fragment PageParts on Page {
     bannerTitle
     bannerSubtitle
     topImage
+    topImageAlt
     demoLink
     signUpLink
     quote
@@ -192,6 +193,7 @@ fragment PageParts on Page {
       statNum
       statText
     }
+    featuredPartnerText
     linksList {
       __typename
       title

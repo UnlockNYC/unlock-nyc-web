@@ -351,6 +351,7 @@ type PageHousingspecialists implements Node & Document {
   bannerTitle: String
   bannerSubtitle: String
   topImage: String
+  topImageAlt: String
   demoLink: String
   signUpLink: String
   quote: String
@@ -360,6 +361,7 @@ type PageHousingspecialists implements Node & Document {
   titleAboveStats: String
   textAboveStats: String
   statistics: [PageHousingspecialistsStatistics]
+  featuredPartnerText: String
   linksList: [PageHousingspecialistsLinksList]
   partnersList: [PageHousingspecialistsPartnersList]
   id: ID!
@@ -714,6 +716,7 @@ input PageHousingspecialistsFilter {
   bannerTitle: StringFilter
   bannerSubtitle: StringFilter
   topImage: ImageFilter
+  topImageAlt: StringFilter
   demoLink: StringFilter
   signUpLink: StringFilter
   quote: StringFilter
@@ -723,6 +726,7 @@ input PageHousingspecialistsFilter {
   titleAboveStats: StringFilter
   textAboveStats: StringFilter
   statistics: PageHousingspecialistsStatisticsFilter
+  featuredPartnerText: StringFilter
   linksList: PageHousingspecialistsLinksListFilter
   partnersList: PageHousingspecialistsPartnersListFilter
 }
@@ -1311,6 +1315,7 @@ input PageHousingspecialistsMutation {
   bannerTitle: String
   bannerSubtitle: String
   topImage: String
+  topImageAlt: String
   demoLink: String
   signUpLink: String
   quote: String
@@ -1320,6 +1325,7 @@ input PageHousingspecialistsMutation {
   titleAboveStats: String
   textAboveStats: String
   statistics: [PageHousingspecialistsStatisticsMutation]
+  featuredPartnerText: String
   linksList: [PageHousingspecialistsLinksListMutation]
   partnersList: [PageHousingspecialistsPartnersListMutation]
 }

@@ -1010,6 +1010,11 @@ var config_default = defineConfig({
               },
               {
                 type: "string",
+                name: "topImageAlt",
+                label: "Top Image Alt Text (accessibility!)"
+              },
+              {
+                type: "string",
                 name: "demoLink",
                 label: "Demo Link"
               },
@@ -1072,6 +1077,11 @@ var config_default = defineConfig({
                     label: "Descriptive Text"
                   }
                 ]
+              },
+              {
+                type: "string",
+                name: "featuredPartnerText",
+                label: "Featured Partners Text"
               },
               {
                 type: "object",

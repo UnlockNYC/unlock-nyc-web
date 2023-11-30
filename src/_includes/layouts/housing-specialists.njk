@@ -87,7 +87,7 @@ templateClass: tmpl-home
   <!-- MAB do I need to move this to larger CSS, and make a component? -->
   <div class="org-quote">
     <div style="padding: 35px;">
-      <img src="{{ quoteImg }}" style="width: 100%;">
+      <img src="{{ quoteImg }}" style="width: 100%;" alt="{{ quoteTitle }} logo">
     </div>
     <div>
       <h4 style="margin-bottom: 2rem">
@@ -156,7 +156,7 @@ templateClass: tmpl-home
       Featured Partners
     </h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      {{ featuredPartnerText }}
     </p>
   </div>
   <div class="funder-grid">
