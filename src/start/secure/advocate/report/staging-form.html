@@ -149,6 +149,7 @@
 
             // get Airtable schema
             // was in previous payload before: data.schema, from netlify function
+            // MAB REFACTOR: PROTECT SCHEMA!
             let getSchema = await fetch('staging-schema.json', {
                 method: 'GET',
                 //body: JSON.stringify(userToken),

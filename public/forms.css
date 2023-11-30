@@ -1,0 +1,124 @@
+/******************************************************************************
+UNLOCK NYC - advocate login system styles
+dev: MAB
+******************************************************************************/
+body {
+    background-color: var(--cream);
+}
+#form-page {
+    background-color: var(--cream);
+    padding: 5%;
+    width: 65%;
+    margin: auto;
+    min-width: 500px;
+    min-height: 100vh;
+    border: 1px dotted var(--light-grey-text);
+    box-sizing: border-box;
+}
+
+h1 {
+     font-family: "Intro Rust";
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+h2.complete {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10%;
+}
+
+form {
+    margin-top: 50px;
+}
+
+label {
+    font-size: 19px;
+}
+
+select#clients-choice, select#org-clients {
+    border: 1px solid black;
+    padding: 10px 18px 10px 18px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+label.form-field {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+p.explainer {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 0;
+    max-width: 600px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input.wide-text, textarea.wide-text {
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="checkbox"] {
+    display:inline;
+}
+
+button, input[type="submit"], input[type="file"], select {
+    margin-bottom: 20px;
+    border:none;
+    padding: 12px;
+    border: 1px solid Black;
+}
+
+input[type="submit"] {
+    background-color: var(--yellow);
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--purple);
+}
+
+a.file-button {
+    background-color: #efc02a;
+    padding: 8px 16px;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    width: 320px;
+    color: Black !important;
+    font-weight: 600;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+div#logout {
+    position: absolute;
+    right: 9%;
+    top: 0;
+    cursor: pointer;
+    padding: 12px;
+}
+
+div#logout:hover {
+    background-color: Black;
+    color: White;
+}
+
+@media only screen and (max-width: 800px) {
+    #form-page {
+        min-width: 100%;
+    }
+}

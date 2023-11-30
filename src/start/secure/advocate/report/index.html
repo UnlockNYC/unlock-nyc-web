@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/forms.css">
     <title>Advocate Login: Unlock NYC</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -27,7 +27,6 @@
         select#org-clients {
             display: none;
         }
-
     </style>
 </head>
 
@@ -150,13 +149,15 @@
             $("h2#org").html(userInfo.app_metadata.org)
 
             // getting airtable schema
-            let getSchema = await fetch('https://weunlock.nyc/start/secure/advocate/report/schema.json', {
+            // MAB REFACTOR: PROTECT SCHEMA!
+            let getSchema = await fetch('schema.json', {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
                 }
             });
             let schema = await getSchema.json();
+            console.log(schema);
             let reportSchema = [];
             let columns = {
                 listing: "fld2wcMYdBLqC8Qze",
@@ -171,7 +172,7 @@
              // this is a list of columns with dropdown options
              // to send schema to populate form
 
-            let fields = schema.tables[1].fields; // reports table
+            let fields = schema.tables[0].fields; // reports table
             for (let i = 0; i < fields.length; i++) {
                 let column;
                 let selectOptions;
