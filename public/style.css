@@ -398,6 +398,7 @@ p {
   font-size: 1rem;
   color: var(--light-grey-text); /*MAB: revisit? everywhere?*/
 }
+/* MAB: !important font weights because of every.org embed code, over-eager ...*/
 h1,
 h2,
 h3,
