@@ -61,7 +61,7 @@ linksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
     buttonList:
-      - buttonText: Book a time
+      - buttonText: Reserve your spot
   - title: Book "office hours" with our experts
     content: >
       We're only a phone call away! Whether you need a sounding board for your
