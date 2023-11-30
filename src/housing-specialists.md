@@ -59,10 +59,6 @@ linksList:
     buttonList:
       - buttonText: Find a time
 partnersList:
-  - name: Womankind
-    logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-womankind.png
-    link: 'https://www.iamwomankind.org/'
   - name: Asian Americans for Equality
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-asian-americans-equality-logo.png
@@ -91,6 +87,10 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-vocal-new-york.png
     link: 'https://www.vocal-ny.org/'
+  - name: Womankind
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-womankind.png
+    link: 'https://www.iamwomankind.org/'
 _template: housingspecialists
 ---
 
