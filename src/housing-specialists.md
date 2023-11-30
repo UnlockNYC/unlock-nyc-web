@@ -65,7 +65,7 @@ linksList:
     button: 'yes'
     buttonList:
       - buttonText: Reserve your spot
-  - title: Book "office hours" with our experts
+  - title: Book a 1-on-1 consultation with our experts
     content: >
       We're only a phone call away! Whether you need a sounding board for your
       housing research project, want to bring a program like Unlock NYC to your
