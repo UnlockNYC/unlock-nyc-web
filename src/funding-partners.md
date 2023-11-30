@@ -91,7 +91,7 @@ fundersList:
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-wells-fargo-foundation-logo-vf.png
     link: >-
       https://www.wellsfargo.com/about/corporate-responsibility/community-giving/
-orangeBannerTitle: Have questions? Get in touch with our team.
+orangeBannerTitle: Ready to learn more? Get in touch.
 annualReports:
   - year: '2022'
     pdf: >-
