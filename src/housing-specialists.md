@@ -50,7 +50,7 @@ linksList:
     buttonList:
       - buttonText: Place an order
         buttonLink: /about
-  - title: Schedule a workshop
+  - title: Build your skills at a virtual training
     content: >
       Featuring real examples, practical tips, and Q\&A with a directly-impacted
       facilitator, our 75-minute live virtual training for
@@ -61,7 +61,7 @@ linksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     button: 'yes'
     buttonList:
-      - buttonText: Request a workshop
+      - buttonText: Book a time
   - title: Book "office hours" with our experts
     content: >
       We're only a phone call away! Whether you need a sounding board for your
