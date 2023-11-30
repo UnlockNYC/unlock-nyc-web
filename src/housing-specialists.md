@@ -21,6 +21,11 @@ quoteAuthor: Jenny Akchin
 quoteTitle: 'Housing rights attorney, TakeRoot Justice'
 quoteImg: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-takeroot-justice-vff.png
+titleAboveStats: Reporting gets results
+textAboveStats: Lorem ipsum text text text
+statistics:
+  - statNum: '#'
+    statText: stat 1
 linksList:
   - title: Distribute resources to your clients
     content: >
