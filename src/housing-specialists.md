@@ -59,10 +59,10 @@ linksList:
     buttonList:
       - buttonText: Find a time
 partnersList:
-  - name: Neighbors Together
+  - name: New Destiny Housing
     logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-neighbors-together.png
-    link: 'https://neighborstogether.org/'
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-new-destiny-housing.png
+    link: 'https://newdestinyhousing.org/'
   - name: Asian Americans for Equality
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-asian-americans-equality-logo.png
@@ -79,6 +79,10 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-home-is-a-human-right.png
     link: 'https://www.homeisahumanright.com/'
+  - name: Neighbors Together
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-logo-neighbors-together.png
+    link: 'https://neighborstogether.org/'
 _template: housingspecialists
 ---
 
