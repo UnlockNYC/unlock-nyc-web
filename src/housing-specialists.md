@@ -50,7 +50,7 @@ linksList:
     button: 'yes'
     buttonList:
       - buttonText: Place an order
-        buttonLink: /about
+        buttonLink: 'https://airtable.com/app3RonGnLm3P4aVF/pagzUWBXHbPgSrfBj/form'
   - title: Build your skills at a virtual training
     content: >
       Featuring real examples, practical tips, and Q\&A with a directly-impacted
