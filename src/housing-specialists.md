@@ -59,6 +59,9 @@ linksList:
       discrimination and advocate effectively with their clients.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
+    alt: >-
+      Graphic of a laptop against a blue background. The laptop shows a slide
+      from an Unlock NYC training workshop.
     button: 'yes'
     buttonList:
       - buttonText: Reserve your spot
