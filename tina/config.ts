@@ -743,6 +743,29 @@ export default defineConfig({
                 label: "Key Image 4"
               },
               {
+                type: "object",
+                name: "statistics",
+                label: "Statistics",
+                list: true,
+                max: 2,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.statText };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "statNum",
+                    label: "Number Value",
+                  },
+                  {
+                    type: "string",
+                    name: "statText",
+                    label: "Descriptive Text",
+                  }
+                ],
+              },
+              {
                 type: "string",
                 name: "quote",
                 label: "Quote",

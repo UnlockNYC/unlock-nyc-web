@@ -249,6 +249,11 @@ type PageVoucherholdersBlocksList {
   buttonList: [PageVoucherholdersBlocksListButtonList]
 }
 
+type PageVoucherholdersStatistics {
+  statNum: String
+  statText: String
+}
+
 type PageVoucherholdersLinksList {
   title: String
   text: String
@@ -269,6 +274,7 @@ type PageVoucherholders implements Node & Document {
   keyImage2: String
   keyImage3: String
   keyImage4: String
+  statistics: [PageVoucherholdersStatistics]
   quote: String
   quoteAuthor: String
   authorTitle: String
@@ -598,6 +604,11 @@ input PageVoucherholdersBlocksListFilter {
   buttonList: PageVoucherholdersBlocksListButtonListFilter
 }
 
+input PageVoucherholdersStatisticsFilter {
+  statNum: StringFilter
+  statText: StringFilter
+}
+
 input PageVoucherholdersLinksListFilter {
   title: StringFilter
   text: StringFilter
@@ -618,6 +629,7 @@ input PageVoucherholdersFilter {
   keyImage2: ImageFilter
   keyImage3: ImageFilter
   keyImage4: ImageFilter
+  statistics: PageVoucherholdersStatisticsFilter
   quote: StringFilter
   quoteAuthor: StringFilter
   authorTitle: StringFilter
@@ -1175,6 +1187,11 @@ input PageVoucherholdersBlocksListMutation {
   buttonList: [PageVoucherholdersBlocksListButtonListMutation]
 }
 
+input PageVoucherholdersStatisticsMutation {
+  statNum: String
+  statText: String
+}
+
 input PageVoucherholdersLinksListMutation {
   title: String
   text: String
@@ -1195,6 +1212,7 @@ input PageVoucherholdersMutation {
   keyImage2: String
   keyImage3: String
   keyImage4: String
+  statistics: [PageVoucherholdersStatisticsMutation]
   quote: String
   quoteAuthor: String
   authorTitle: String

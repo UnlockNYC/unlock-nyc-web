@@ -20,8 +20,9 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: How it works
-      - buttonText: Get started
         buttonLink: /rights-recorder
+      - buttonText: Get started
+        buttonLink: /start
   - title: Tools for housing advocates
     text: >-
       Supporting voucher holders on their housing search? Join our community of

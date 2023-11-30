@@ -32,6 +32,7 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Get started
+        buttonLink: /start
   - title: Unlock housing opportunities
     text: >-
       Share your report with a lawyer, government official, or someone else who
@@ -41,10 +42,16 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
+keysHeadline: 'Text Here, Keys'
 keyImage1: 'https://public-unlock.nyc3.digitaloceanspaces.com/key1.png'
 keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/key2.png'
 keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/key3.png'
 keyImage4: 'https://public-unlock.nyc3.digitaloceanspaces.com/key4.png'
+statistics:
+  - statNum: '## '
+    statText: stat description
+  - statNum: '##'
+    statText: description
 quote: >-
   [My response from Unlock NYC] was SO different from every single agency I had
   to interact with. I was just like wow, you read the whole thing? And that

@@ -45,9 +45,11 @@ templateClass: tmpl-home
     </p>
     <p>
         {% if latestActionButton == 'yes' %}
-          <button class="black" onclick=window.location.href='{{ latestActionLink }}';>
+        <a href="{{ latestActionLink }}">
+          <button class="black">
             Learn More
           </button>
+        </a>
         {% endif %}
     </p>
   </div>

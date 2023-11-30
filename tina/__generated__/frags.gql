@@ -125,6 +125,11 @@ fragment PageParts on Page {
     keyImage2
     keyImage3
     keyImage4
+    statistics {
+      __typename
+      statNum
+      statText
+    }
     quote
     quoteAuthor
     authorTitle
