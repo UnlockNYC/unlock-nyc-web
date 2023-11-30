@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+    <title>Advocate Login: Unlock NYC</title>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="form-page">
+        <h1>
+            UNLOCK <br> NYC <br>
+        </h1>
+        <h2> ADVOCATE REPORT FORM</h2>
+        <h2 id="org"></h2>
+        <h2 id="email"></h2>
+        <h2 class="complete">THANK YOU - YOUR REPORT HAS BEEN SUBMITTED ✅ </h2>
+        <h2>You and the tenant will receive a confirmation e-mail about your report.</h2>
+        <h2 id="report-id">report #:<span></span></h2>
+        <a class="file-button" href="/start/secure/advocate/report">📂 FILE ANOTHER REPORT</a>
+    </div>
+    <script>
+        $(document).ready(async function () {
+            let userToken = JSON.parse(window.localStorage.getItem("gotrue.user")).token;
+            let userInfo = JSON.parse(window.localStorage.getItem("gotrue.user"));
+            // TEST for now, staging base
+
+            // get newly created report ID from URL parameters
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const report = urlParams.get('id');
+
+            // first load advocate info based on user login token
+            $("h2#email").html(userInfo.email);
+            $("h2#org").html(userInfo.app_metadata.org);
+            $("h2#report-id span").html(report)
+        });
+
+    </script>
+</body>
+
+</html>

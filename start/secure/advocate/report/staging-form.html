@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+    <title>Advocate Login: Unlock NYC</title>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSD4KtZNkPXvMFeuyKLVIV_FdQtfQD34&libraries=places&callback=initAutocomplete">
+        </script>
+    <!-- MAB, fix google api callback -->
+    <style>
+        a#full-org {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        span#new-user {
+            display: none;
+        }
+
+        select#org-clients {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="form-page">
+        <h1>
+            UNLOCK<br>NYC<br>
+        </h1>
+        <h2>ADVOCATE REPORT FORM</h2>
+        <h2>STAGING!! TEST</h2>
+        <h2 id="org"></h2>
+        <h2 id="email"></h2>
+        <div id="logout">
+            👋 LOGOUT
+        </div>
+
+        <form id="advocate-report" action="" method="post">
+            <input type="hidden" name="advocate" id="advocate" value="">
+            <label class="form-field" for="client">Who are you reporting on behalf of today?</label>
+            <p class="explainer">
+                Is the person that you are reporting on behalf missing from this list? <br>
+                <a id="full-org">👥 Check this list from your organization.</a><br>
+            </p>
+            <select name="client" id="clients-choice">
+            </select>
+            <select name="org-client" id="org-clients">
+            </select>
+            <p class="explainer">
+                <span id="new-user">
+                    If you still do not see the person, fill out a <a id="new-user-form" href="https://weunlock.nyc"
+                        target="blank">new user enrollment</a> form first, and then return to <strong>refresh</strong>
+                    this page.
+                </span>
+            </p>
+            <label class="form-field" for="discriminationType">What best describes the discriminatory tactic that you
+                are reporting today?</label>
+            <select name="discriminationType" id="discriminationType" data-id="fldp0Cdze4QBCRIQy">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+            <label class="form-field" for="story">Can you tell us more about what happened?</label>
+            <p class="explainer">
+                A few sentences is fine. Any details you have about the name, position, and/or contact information for
+                the broker, agent, and/or landlord that you communicated with can help expedite processing for this
+                report.
+            </p>
+            <textarea class="wide-text" rows="6" id="story" name="story"></textarea>
+            <label class="form-field" for="date">What date did the discrimination happen?</label>
+            <p class="explainer">
+                If the discriminatory treatment took place over more than one day, select the most recent date.
+            </p>
+            <input required type="date" id="incidentDate" name="incidentDate">
+            <label class="form-field" for="reportAddress">What is the building address?</label>
+            <input class="wide-text" type="text" id="reportAddress" name="reportAddress" required autocomplete="off">
+            <label class="form-field" for="unit">What is the apartment/unit number?</label>
+            <input type="text" id="unit" name="unit">
+            <label class="form-field" for="rent">What is the monthly rent listed for the unit?</label>
+            <input type="number" min="1" step="any" name="rent" id="rent" placeholder="$">
+            <label class="form-field" for="website">What website did you use to find this listing?</label>
+            <select name="website" id="website" data-id="fldhEdkPi8horzLD4">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+            <label class="form-field" for="url">What is the URL of the listing?</label>
+            <input class="wide-text" type="text" id="url" name="url">
+            <label class="form-field" for="denialType">Where did the discrimination happen?</label>
+            <p class="explainer">
+                Select all that apply.
+            </p>
+            <select name="denialType" id="denialType" data-id="fldZYKk8mQAJe05b5" class="multi">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+
+            <label class="form-field" for="available">Is the listing still available?</label>
+            <select name="available" id="available" data-id="fldLDDBMmULQ5gI1n">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+
+            <label class="form-field" for="intervention">Is your client interested in a pre-complaint
+                intervention?
+            </label>
+            <p class="explainer">
+                If you have questions about this, please see the FAQs <a href="https://weunlock.nyc" target="_blank">on
+                    our website</a>.
+            </p>
+            <select name="intervention" id="intervention" data-id="fldHfhNDDz7Vgviec">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+            <label class="form-field" for="contact">Who should be the primary point of contact for this report?</label>
+            <p class="explainer">
+                We will CC both you and your client on the report if we refer it to our partner organizations.
+            </p>
+            <select name="contact" id="contact" data-id="fld0KWctTTkkMxaRW">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+            <label class="form-field" for="evidence">Do you have evidence to upload and add to this report?</label>
+            <p class="explainer">
+                Evidence might include screenshots of emails or texts, audio or video recordings, and/or comparator
+                tests conducted by the tenant or an advocate.
+            </p>
+            <select required name="evidence" id="evidence" data-id="fld39iqRmYpy5M8j2">
+                <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
+            </select>
+
+            <input id="submit-report" type="submit" value="Continue"></input>
+        </form>
+    </div>
+    <script>
+        $(document).ready(async function () {
+
+            let userToken = JSON.parse(window.localStorage.getItem("gotrue.user")).token;
+            let userInfo = JSON.parse(window.localStorage.getItem("gotrue.user"));
+            let newUserForm = "https://airtable.com/shrjDxUcmjIdrVtTq?prefill_Organization%20choice=";
+            // TEST for now, staging base
+
+            let advocateAssign = false;
+
+            // first load advocate info based on user login token
+            $("h2#email").html(userInfo.email);
+            $("h2#org").html(userInfo.app_metadata.org)
+
+            // get Airtable schema
+            // was in previous payload before: data.schema, from netlify function
+            let getSchema = await fetch('staging-schema.json', {
+                method: 'GET',
+                //body: JSON.stringify(userToken),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+             });
+            let schema = await getSchema.json();
+            let schemaList = [];
+            let columns = {
+                listing: "fldhEdkPi8horzLD4",
+                discriminationType: "fldp0Cdze4QBCRIQy",
+                denialType: "fldZYKk8mQAJe05b5",
+                aptAvailable: "fldLDDBMmULQ5gI1n",
+                intervention: "fldHfhNDDz7Vgviec",
+                evidence: "fld39iqRmYpy5M8j2",
+                contact: "fld0KWctTTkkMxaRW"
+             }
+             /* NOTE: CHANGES based on env! staging base for now */
+             // this is a list of columns with dropdown options
+             // to send schema to populate form
+
+            let fields = schema.tables[1].fields; // reports table
+            for (let i = 0; i < fields.length; i++) {
+                let column;
+                let selectOptions;
+                // check if any of the field IDs match
+                // the columns object written @ top
+                // if so, add to array that we'll send to web form
+                for (const key in columns) {
+                  if (columns[key] == fields[i].id) {
+                    column = fields[i].id;
+                    selectOptions = fields[i].options.choices;
+                    schemaList.push({ [column]: JSON.stringify(selectOptions) });
+                  }
+                }
+            }
+
+            let reportSchema = schemaList;
+
+            $("select").each(function () {
+                if ($(this).attr("data-id")) {
+                    // data-id attribute on select dropdowns match the field IDs from airtable
+                    // to join with schema, for selection <options>
+                    for (i = 0; i < reportSchema.length; i++) {
+                        if ($(this).attr("data-id") == Object.keys(reportSchema[i])[0]) {
+                            let options = JSON.parse(reportSchema[i][Object.keys(reportSchema[i])[0]]);
+                            // this returns the multi or single select options strings from airtable
+                            for (j = 0; j < options.length; j++) {
+                                if ($(this).hasClass("multi")) {
+                                    // for multi select, create checkboxes
+                                    let name = $(this).attr("name");
+                                    $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
+                                } else {
+                                    // for single select, create dropdown options
+                                    $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // remove multiselect in favor of checkboxes
+            // after their options are written
+            $("select.multi").remove();
+            // clean up null options from airtable
+            $("option").each(function () {
+                let text = $(this).html();
+                if (text == "null") {
+                    $(this).remove();
+                }
+            });
+
+
+            // call function that queries Airtable for client list
+            let response = await fetch('/.netlify/functions/staging-read-advocate', {
+                method: 'POST',
+                body: JSON.stringify(userToken),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            let data = await response.json();
+            let clientList = data.clientList;
+            let orgList = data.orgList;
+            let advocate = data.advocate;
+            // console.log(orgList);
+            // console.log(advocate);
+            // prefill hidden advocate field & new user form
+            $("input#advocate").val(advocate);
+            $("a#new-user-form").attr("href", `${newUserForm}${userInfo.app_metadata.org}&prefill_Advocate=${advocate}`);
+            // consider hiding advocate? MAB
+            // populate client dropdown options
+            for (i = 0; i < clientList.length; i++) {
+                $('select#clients-choice').append($('<option>', {value: `${clientList[i].id}`, text: `${clientList[i].name}`}));
+            }
+            if (orgList) {
+                for (j = 0; j < orgList.length; j++) {
+                    $('select#org-clients').append($('<option>', {value: `${orgList[j].id}`, text: `${orgList[j].name}`}));
+                }
+            }
+
+            $("a#full-org").click(function () {
+                advocateAssign = true;
+                $("select#clients-choice").hide();
+                $("select#org-clients").show();
+                $("span#new-user").show();
+            })
+
+            // Google Maps Places Autcomplete
+            // for address input form, code from:
+            // https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+
+            let autocomplete;
+            let addressField;
+
+            function initAutocomplete() {
+                addressField = document.querySelector("#reportAddress");
+                // Create the autocomplete object, restricting the search predictions to
+                // addresses in New York City
+                autocomplete = new google.maps.places.Autocomplete(addressField, {
+                    componentRestrictions: {country: ["us"]},
+                    fields: ["address_components", "geometry"],
+                    types: ["address"],
+                });
+                const southwest = {lat: 40.4869, lng: -74.32030};
+                const northeast = {lat: 40.9365, lng: -73.0017};
+                const mapBounds = new google.maps.LatLngBounds(southwest, northeast);
+                autocomplete.setBounds(mapBounds);
+
+                //addressField.focus();
+                // When the user selects an address from the drop-down, populate the
+                // address fields in the form.
+                autocomplete.addListener("place_changed", fillInAddress);
+            }
+
+            function fillInAddress() {
+                // Get the place details from the autocomplete object.
+                const place = autocomplete.getPlace();
+                let address1 = "";
+                let postcode = "";
+
+                // Get each component of the address from the place details,
+                // and then fill-in the corresponding field on the form.
+                // place.address_components are google.maps.GeocoderAddressComponent objects
+                // which are documented at http://goo.gle/3l5i5Mr
+                for (const component of place.address_components) {
+                    // @ts-ignore remove once typings fixed
+                    const componentType = component.types[0];
+
+                    switch (componentType) {
+                        case "street_number": {
+                            address1 = `${component.long_name} ${address1}`;
+                            break;
+                        }
+
+                        case "route": {
+                            address1 += `${component.short_name}, `;
+                            break;
+                        }
+
+                        case "sublocality_level_1": { /*city*/
+                            address1 += `${component.long_name}, `;
+                            break;
+                        }
+
+                        case "administrative_area_level_1": { /*state*/
+                            address1 += `${component.short_name} `;
+                            break;
+                        }
+
+                        case "postal_code": {
+                            postcode = `${component.long_name}${postcode}`;
+                            break;
+                        }
+
+                        /*case "postal_code_suffix": {
+                            postcode = `${postcode}-${component.long_name}`;
+                            break;
+                        }*/
+                        /*case "locality":
+                            document.querySelector("#locality").value = component.long_name;
+                            break;
+                        case "administrative_area_level_1": {
+                            document.querySelector("#state").value = component.short_name;
+                            break;
+                        }
+                        case "country": {
+                            document.querySelector("#country").value = component.long_name;
+                            break;
+                            }*/
+                    }
+
+                    addressField.value = address1 + postcode;
+
+                    // After filling the form with address components from the Autocomplete
+                    // prediction, set cursor focus on the second address line to encourage
+                    // entry of subpremise information such as apartment, unit, or floor number.
+                    //address2Field.focus();
+                }
+            }
+
+            //window.initAutocomplete = initAutocomplete;
+            initAutocomplete();
+
+            // submit form data
+            $("form#advocate-report").submit(async function (e) {
+                e.preventDefault();
+                $("input#submit-report").css("background-color", "#f123c3");
+                $("input#submit-report").attr("value", " . . .");
+                let evidenceCheck = $("select#evidence option:selected").val();
+                let formBody = formToJSON($("form#advocate-report")[0]);
+                //console.log(formBody);
+                const response = await fetch('/.netlify/functions/staging-submit-advocate', {
+                    method: 'POST',
+                    body: formBody
+                });
+                const data = await response.json();
+                let redirect;
+                if (evidenceCheck == "Yes") {
+                    redirect = `/start/secure/advocate/report/evidence-submit/staging-evidence.html?id=${data.record}`;
+                } else {
+                    redirect = `/start/secure/advocate/report/evidence-submit/complete.html?id=${data.record}`;
+                }
+                console.log(redirect);
+                if (data.statusCode == 200) {
+                    window.location.href = redirect;
+                } else {
+                    alert("There has been an error submitting your report. Please reach out to Unlock NYC ASAP.");
+                }
+
+                // turn formData into JSON, stringify for fetch request
+                function formToJSON(form) {
+                    const formData = new FormData(form);
+                    const obj = {};
+                    formData.forEach((value, key) => {
+                        obj[key] = value;
+                    });
+
+                    // parse and add multiselect arrays
+                    let multiArrays = ["denialType"];
+                    // if more, name to array here
+                    for (let i = 0; i < multiArrays.length; i++) {
+                        let multiAll = formData.getAll(multiArrays[i]);
+                        // delete from JSON object the singular, only last chosen item
+                        delete obj[multiArrays[i]];
+                        // add new list of multiselect to JSON object
+                        obj[multiArrays[i]] = multiAll;
+                    }
+
+                    // choose which client list: advocate, or org (needs assigning)
+                    if (advocateAssign) {
+                        obj['client'] = obj['org-client'];
+                    }
+                    delete obj['org-client'];
+
+                    return JSON.stringify(obj);
+                }
+            });
+
+            $("div#logout").click(function () {
+                netlifyIdentity.logout();
+                alert("You are logged out of your advocate account @ Unlock NYC.");
+                setTimeout(function () {
+                    window.location.href = "/start/secure/advocate";
+                }, 2000);
+            });
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

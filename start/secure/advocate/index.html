@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/styles/site.css">
+    <title>Advocate Login: Unlock NYC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <div style="padding: 5%; padding-top: 0;">
+        <a href="/" style="color: Black; text-decoration: none;">
+            <h1>
+                UNLOCK<br>NYC<br>
+            </h1>
+        </a>
+        <br>
+        <h2>
+            <div data-netlify-identity-menu></div>
+        </h2>
+    </div>
+    <script>
+        $(document).ready(function () {
+            netlifyIdentity.open();
+
+            const user = netlifyIdentity.currentUser();
+            netlifyIdentity.on('init', user => console.log('init', user));
+
+            netlifyIdentity.on('login', function (user) {
+                console.log('login', user);
+                window.location.href = '/start/secure/advocate/report';
+            });
+
+            if ($("li.netlify-identity-user-details").html().indexOf("Logged in") > -1) {
+                $("<li><a href='/start/secure/advocate/report'>Make a report<a></li>").insertAfter($("li.netlify-identity-user-details"));
+            }
+
+            /*let token = JSON.parse(localStorage.getItem("gotrue.user"));
+            if (token.app_metadata.roles[0] == "advocate") {
+                window.location.href = '/start/secure/advocate/report';
+            }*/
+            // above is too hot - if token expires, infinite loop
+
+        });
+    </script>
+</body>
+
+</html>

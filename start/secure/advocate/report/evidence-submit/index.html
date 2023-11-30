@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+    <title>Advocate Login: Unlock NYC</title>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="form-page">
+        <h1>
+            UNLOCK<br>NYC<br>
+        </h1>
+        <h2>ADVOCATE REPORT FORM</h2>
+        <div id="logout">
+            👋 LOGOUT
+        </div>
+        <h2 id="org"></h2>
+        <h2 id="email"></h2>
+        <h2>UPLOAD EVIDENCE</h2>
+        <!--<button id="no-evidence">I don't need to upload evidence</button>-->
+        <form id="advocate-evidence" action="" method="post">
+            <label for="files">Select evidence to upload: (you may hold 'Shift' to upload multiple files)</label>
+            <input type="file" id="files" name="files[]" multiple style="margin-top: 20px;">
+            <input type="submit" id="submit-evidence" value="Add Evidence to Report">
+        </form>
+
+    </div>
+    <script>
+        $(document).ready(async function () {
+            let userToken = JSON.parse(window.localStorage.getItem("gotrue.user")).token;
+            let userInfo = JSON.parse(window.localStorage.getItem("gotrue.user"));
+            // TEST for now, staging base
+
+            // first load advocate info based on user login token
+            $("h2#email").html(userInfo.email);
+            $("h2#org").html(userInfo.app_metadata.org)
+
+            // get newly created report ID from URL parameters
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const report = urlParams.get('id');
+
+            // no evidence flow
+            $("button#no-evidence").click(function () {
+                window.location.href = `/start/secure/advocate/report/evidence-submit/complete.html?id=${report}`;
+            });
+            // submit form data
+            $("form#advocate-evidence").submit(async function (e) {
+                e.preventDefault();
+                let functionUrl = 'https://secure.weunlock.nyc/report/advocate-add-file';
+                // PROD!! function URL
+                $("input#submit-evidence").css("background-color", "#f123c3");
+                $("input#submit-evidence").attr("value", " . . .");
+                // alert("Submitting your evidence now!");
+                let formData = new FormData($("form#advocate-evidence")[0]);
+                formData.append('record', report);
+                formData.append('token', userToken.access_token);
+                console.log([...formData]);
+                const response = await fetch(functionUrl, {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                if (data.statusCode == 200) {
+                    window.location.href = `/start/secure/advocate/report/evidence-submit/complete.html?id=${report}`;
+                } else {
+                    alert("there is a problem with authorization. please contact unlock nyc.");
+                }
+
+            });
+
+            $("div#logout").click(function () {
+                netlifyIdentity.logout();
+                alert("You are logged out of your advocate account @ Unlock NYC.");
+                setTimeout(function () {
+                    window.location.href = "/start/secure/advocate";
+                }, 2000);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
