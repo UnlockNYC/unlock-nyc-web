@@ -215,14 +215,14 @@
 
             // remove multiselect in favor of checkboxes
             // after their options are written
-            $("select.multi").remove();
+            //$("select.multi").remove();
             // clean up null options from airtable
-            $("option").each(function () {
+            /*$("option").each(function () {
                 let text = $(this).html();
                 if (text == "null") {
                     $(this).remove();
                 }
-            });
+            });*/
 
 
             // call function that queries Airtable for client list
