@@ -237,10 +237,79 @@
             let clientList = data.clientList;
             let orgList = data.orgList;
             let advocate = data.advocate;
-            let schemaTest = data.schema;
-            console.log(schemaTest);
+            let schema = data.schema;
+            console.log(schema);
             // console.log(orgList);
             // console.log(advocate);
+            // SCHEMA IMPLEMENTATION IN FORM
+            //
+            //
+            //
+            let schemaList = [];
+            let columns = {
+                listing: "fldhEdkPi8horzLD4",
+                discriminationType: "fldp0Cdze4QBCRIQy",
+                denialType: "fldZYKk8mQAJe05b5",
+                aptAvailable: "fldLDDBMmULQ5gI1n",
+                intervention: "fldHfhNDDz7Vgviec",
+                evidence: "fld39iqRmYpy5M8j2",
+                contact: "fld0KWctTTkkMxaRW"
+             }
+             /* NOTE: CHANGES based on env! staging base for now */
+             // this is a list of columns with dropdown options
+             // to send schema to populate form
+
+            let fields = schema.tables[1].fields; // reports table
+            for (let i = 0; i < fields.length; i++) {
+                let column;
+                let selectOptions;
+                // check if any of the field IDs match
+                // the columns object written @ top
+                // if so, add to array that we'll send to web form
+                for (const key in columns) {
+                  if (columns[key] == fields[i].id) {
+                    column = fields[i].id;
+                    selectOptions = fields[i].options.choices;
+                    schemaList.push({ [column]: JSON.stringify(selectOptions) });
+                  }
+                }
+            }
+
+            let reportSchema = schemaList;
+
+            $("select").each(function () {
+                if ($(this).attr("data-id")) {
+                    // data-id attribute on select dropdowns match the field IDs from airtable
+                    // to join with schema, for selection <options>
+                    for (i = 0; i < reportSchema.length; i++) {
+                        if ($(this).attr("data-id") == Object.keys(reportSchema[i])[0]) {
+                            let options = JSON.parse(reportSchema[i][Object.keys(reportSchema[i])[0]]);
+                            // this returns the multi or single select options strings from airtable
+                            for (j = 0; j < options.length; j++) {
+                                if ($(this).hasClass("multi")) {
+                                    // for multi select, create checkboxes
+                                    let name = $(this).attr("name");
+                                    $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
+                                } else {
+                                    // for single select, create dropdown options
+                                    $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // remove multiselect in favor of checkboxes
+            // after their options are written
+            $("select.multi").remove();
+            // clean up null options from airtable
+            $("option").each(function () {
+                let text = $(this).html();
+                if (text == "null") {
+                    $(this).remove();
+                }
+            });
             // prefill hidden advocate field & new user form
             $("input#advocate").val(advocate);
             $("a#new-user-form").attr("href", `${newUserForm}${userInfo.app_metadata.org}&prefill_Advocate=${advocate}`);
