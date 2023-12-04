@@ -124,21 +124,33 @@ exports.handler = function(event, context, callback) {
 
   async function getSchema() {
     console.log("running schema");
-    const response = await fetch(`${process.env.SPACES_ENDPOINT}/unlock/advocate-system/staging-schema.json`, {
-          method: 'GET',
+    try {
+        const params = {
+          Bucket: 'unlock/advocate-system', // Replace with your Space name
+          Key: 'staging-schema.json', // Replace with your JSON schema's path
+        };
+
+        const data = await s3.getObject(params).promise();
+        const jsonSchema = JSON.parse(data.Body.toString('utf-8'));
+
+        console.log(jsonSchema);
+
+        return jsonSchema;
+
+      } catch (error) {
+        return {
+          statusCode: 500,
+          body: JSON.stringify({ error: error.message }),
           headers: {
-            'Authorization': `Bearer ${process.env.SPACES_KEY}:${process.env.SPACES_SECRET_KEY}`,
+            'Content-Type': 'application/json',
           },
-    });
+        };
+      }
     /*const response = await fetch('https://api.airtable.com/v0/meta/bases/appiZpVxsiS1Ev5Zv/tables', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${process.env.AIRTABLE_ACCESS_STAGING}`
       }
       });*/
-    console.log(response);
-    const data = await response.json();
-    console.log(data);
-    return data;
   }
 };
