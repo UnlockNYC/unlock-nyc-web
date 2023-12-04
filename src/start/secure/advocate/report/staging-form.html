@@ -261,23 +261,9 @@
 
             let fields = schema; // reports table, filter in read-advocate function
             console.log(fields);
-            console.log(fields.length);
-            for (let i = 0; i < fields.length; i++) {
-                let column;
-                let selectOptions;
-                // check if any of the field IDs match
-                // the columns object written @ top
-                // if so, add to array that we'll send to web form
-                for (const key in columns) {
-                  if (columns[key] == fields[i].id) {
-                    column = fields[i].id;
-                    selectOptions = fields[i].options.choices;
-                    schemaList.push({ [column]: JSON.stringify(selectOptions) });
-                  }
-                }
-            }
 
-            let reportSchema = schemaList;
+
+            let reportSchema = fields;
             console.log(reportSchema);
             console.log(reportSchema.length);
 
