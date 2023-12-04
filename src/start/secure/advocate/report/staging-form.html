@@ -280,7 +280,7 @@
                                     // for multi select, create checkboxes
                                     let name = $(this).attr("name");
                                     $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
-                                    $(this).remove();
+                                    // $(this).remove();
                                 } else {
                                     // for single select, create dropdown options
                                     $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
