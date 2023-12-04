@@ -124,7 +124,7 @@ exports.handler = function(event, context, callback) {
 
   async function getSchema() {
     console.log("running schema");
-    const response = await fetch(`${process.ENV.SPACES_ENDPOINT}/advocate-system/staging-schema.json`, {
+    const response = await fetch(`${process.env.SPACES_ENDPOINT}/advocate-system/staging-schema.json`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${process.env.SPACES_KEY}:${process.env.SPACES_SECRET_KEY}`,
