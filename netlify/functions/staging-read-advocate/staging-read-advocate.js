@@ -136,7 +136,9 @@ exports.handler = function(event, context, callback) {
         'Authorization': `Bearer ${process.env.AIRTABLE_ACCESS_STAGING}`
       }
       });*/
+    console.log(response);
     const data = await response.json();
+    console.log(data);
     return data;
   }
 };
