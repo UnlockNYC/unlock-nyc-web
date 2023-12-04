@@ -1,11 +1,21 @@
 const Airtable = require('airtable');
 const jwt_decode = require('jwt-decode');
 const fetch = require('node-fetch');
+const aws = require('aws-sdk');
 
 exports.handler = function(event, context, callback) {
   const data = JSON.parse(event.body);
   const token = data.access_token;
   let decoded = jwt_decode(token);
+
+  aws.config.update({
+    accessKeyId: process.env.SPACES_KEY,
+    secretAccessKey: process.env.SPACES_SECRET_KEY
+  });
+  const spacesEndpoint = new aws.Endpoint("nyc3.digitaloceanspaces.com");
+  const s3 = new aws.S3({
+    endpoint: spacesEndpoint
+  });
 
   let columns = {
     listing: "fldhEdkPi8horzLD4",
@@ -72,7 +82,7 @@ exports.handler = function(event, context, callback) {
     }, async function done(err) {
       if (err) { console.error(err); return; }
       console.log(`${clientList.length} user records found.`);
-      /*let schemaList = [];
+      let schemaList = [];
       let schema = await getSchema();
       let fields = schema.tables[1].fields; // reports table
       for (let i = 0; i < fields.length; i++) {
@@ -89,7 +99,7 @@ exports.handler = function(event, context, callback) {
           }
         }
       }
-      console.log(schemaList);*/
+      console.log(schemaList);
       console.log(clientList);
       console.log(orgList);
       callback(null, {
@@ -97,8 +107,8 @@ exports.handler = function(event, context, callback) {
         body: JSON.stringify({
           advocate: advocateId,
           clientList: clientList,
-          orgList: orgList
-          //schema: schemaList
+          orgList: orgList,
+          schema: schemaList
         })
       });
     });
@@ -112,15 +122,21 @@ exports.handler = function(event, context, callback) {
     });
   }
 
-  /*async function getSchema() {
+  async function getSchema() {
     console.log("running schema");
-    const response = await fetch('https://api.airtable.com/v0/meta/bases/appiZpVxsiS1Ev5Zv/tables', {
+    const response = await fetch(`${process.ENV.SPACES_ENDPOINT}/advocate-system/staging-schema.json`, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${process.env.SPACES_KEY}:${process.env.SPACES_SECRET_KEY}`,
+          },
+    });
+    /*const response = await fetch('https://api.airtable.com/v0/meta/bases/appiZpVxsiS1Ev5Zv/tables', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${process.env.AIRTABLE_ACCESS_STAGING}`
       }
-    });
+      });*/
     const data = await response.json();
     return data;
-  }*/
+  }
 };
