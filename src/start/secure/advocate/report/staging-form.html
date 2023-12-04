@@ -259,11 +259,7 @@
              // this is a list of columns with dropdown options
              // to send schema to populate form
 
-            let fields = schema; // reports table, filter in read-advocate function
-            console.log(fields);
-
-
-            let reportSchema = fields;
+            let reportSchema = schema;
             console.log(reportSchema);
             console.log(reportSchema.length);
 
@@ -280,7 +276,7 @@
                                     // for multi select, create checkboxes
                                     let name = $(this).attr("name");
                                     $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
-                                    // $(this).remove();
+                                    $(this).remove();
                                 } else {
                                     // for single select, create dropdown options
                                     $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
