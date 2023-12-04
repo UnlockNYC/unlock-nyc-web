@@ -132,7 +132,7 @@ nav ul#top > li a.dropdown:active {
   pointer-events: none;
 }
 
-nav ul#top > li a:hover {
+nav ul#top > li:not(.login-button):not(.report-button) a:hover {
   border-bottom: 2px solid Black;
   padding-bottom: 7px;
 }
