@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/forms.css">
     <title>Advocate Login: Unlock NYC</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -150,7 +150,7 @@
             // get Airtable schema
             // was in previous payload before: data.schema, from netlify function
             // MAB REFACTOR: PROTECT SCHEMA!
-            let getSchema = await fetch('staging-schema.json', {
+            /*let getSchema = await fetch('staging-schema.json', {
                 method: 'GET',
                 //body: JSON.stringify(userToken),
                 headers: {
@@ -167,12 +167,12 @@
                 intervention: "fldHfhNDDz7Vgviec",
                 evidence: "fld39iqRmYpy5M8j2",
                 contact: "fld0KWctTTkkMxaRW"
-             }
+             }*/
              /* NOTE: CHANGES based on env! staging base for now */
              // this is a list of columns with dropdown options
              // to send schema to populate form
 
-            let fields = schema.tables[1].fields; // reports table
+            /*let fields = schema.tables[1].fields; // reports table
             for (let i = 0; i < fields.length; i++) {
                 let column;
                 let selectOptions;
@@ -211,7 +211,7 @@
                         }
                     }
                 }
-            });
+            });*/
 
             // remove multiselect in favor of checkboxes
             // after their options are written
