@@ -118,15 +118,12 @@ exports.handler = function(event, context, callback) {
     try {
         const params = {
           Bucket: 'unlock/advocate-system',
-          Key: 'staging-schema.json',
+          Key: 'schema.json',
         };
 
         const data = await s3.getObject(params).promise();
         const jsonSchema = JSON.parse(data.Body.toString('utf-8'));
-
-        console.log(jsonSchema);
         return jsonSchema;
-
       } catch (error) {
         return {
           statusCode: 500,
