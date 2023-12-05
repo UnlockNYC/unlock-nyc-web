@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/public/site.css">
+    <link rel="stylesheet" href="/public/forms.css">
     <title>Advocate Login: Unlock NYC</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -55,8 +55,8 @@
             $("form#advocate-evidence").submit(async function (e) {
                 e.preventDefault();
                 let functionUrl = 'https://unlock-staging.glitch.me/report/advocate-add-file';
-                // PROD!! function URL
-                $("input#submit-evidence").css("background-color", "#f123c3");
+                // STAGING!! function URL
+                $("input#submit-evidence").css("background-color", "#94e0a4");
                 $("input#submit-evidence").attr("value", " . . .");
                 //alert("Submitting your evidence now!");
                 let formData = new FormData($("form#advocate-evidence")[0]);

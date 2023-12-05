@@ -1,6 +1,5 @@
 const Airtable = require('airtable');
 const jwt_decode = require('jwt-decode');
-const fetch = require('node-fetch');
 const aws = require('aws-sdk');
 
 exports.handler = function(event, context, callback) {
@@ -126,8 +125,8 @@ exports.handler = function(event, context, callback) {
     console.log("running schema");
     try {
         const params = {
-          Bucket: 'unlock/advocate-system', // Replace with your Space name
-          Key: 'staging-schema.json', // Replace with your JSON schema's path
+          Bucket: 'unlock/advocate-system',
+          Key: 'staging-schema.json',
         };
 
         const data = await s3.getObject(params).promise();

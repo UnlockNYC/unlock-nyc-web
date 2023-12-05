@@ -147,85 +147,7 @@
             $("h2#email").html(userInfo.email);
             $("h2#org").html(userInfo.app_metadata.org)
 
-            // get Airtable schema
-            // was in previous payload before: data.schema, from netlify function
-            // MAB REFACTOR: PROTECT SCHEMA!
-            /*let getSchema = await fetch('staging-schema.json', {
-                method: 'GET',
-                //body: JSON.stringify(userToken),
-                headers: {
-                    "Content-Type": "application/json"
-                }
-             });
-            let schema = await getSchema.json();
-            let schemaList = [];
-            let columns = {
-                listing: "fldhEdkPi8horzLD4",
-                discriminationType: "fldp0Cdze4QBCRIQy",
-                denialType: "fldZYKk8mQAJe05b5",
-                aptAvailable: "fldLDDBMmULQ5gI1n",
-                intervention: "fldHfhNDDz7Vgviec",
-                evidence: "fld39iqRmYpy5M8j2",
-                contact: "fld0KWctTTkkMxaRW"
-             }*/
-             /* NOTE: CHANGES based on env! staging base for now */
-             // this is a list of columns with dropdown options
-             // to send schema to populate form
-
-            /*let fields = schema.tables[1].fields; // reports table
-            for (let i = 0; i < fields.length; i++) {
-                let column;
-                let selectOptions;
-                // check if any of the field IDs match
-                // the columns object written @ top
-                // if so, add to array that we'll send to web form
-                for (const key in columns) {
-                  if (columns[key] == fields[i].id) {
-                    column = fields[i].id;
-                    selectOptions = fields[i].options.choices;
-                    schemaList.push({ [column]: JSON.stringify(selectOptions) });
-                  }
-                }
-            }
-
-            let reportSchema = schemaList;
-
-            $("select").each(function () {
-                if ($(this).attr("data-id")) {
-                    // data-id attribute on select dropdowns match the field IDs from airtable
-                    // to join with schema, for selection <options>
-                    for (i = 0; i < reportSchema.length; i++) {
-                        if ($(this).attr("data-id") == Object.keys(reportSchema[i])[0]) {
-                            let options = JSON.parse(reportSchema[i][Object.keys(reportSchema[i])[0]]);
-                            // this returns the multi or single select options strings from airtable
-                            for (j = 0; j < options.length; j++) {
-                                if ($(this).hasClass("multi")) {
-                                    // for multi select, create checkboxes
-                                    let name = $(this).attr("name");
-                                    $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
-                                } else {
-                                    // for single select, create dropdown options
-                                    $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
-                                }
-                            }
-                        }
-                    }
-                }
-            });*/
-
-            // remove multiselect in favor of checkboxes
-            // after their options are written
-            //$("select.multi").remove();
-            // clean up null options from airtable
-            /*$("option").each(function () {
-                let text = $(this).html();
-                if (text == "null") {
-                    $(this).remove();
-                }
-            });*/
-
-
-            // call function that queries Airtable for client list
+            // call function that queries Airtable for client list + schema
             let response = await fetch('/.netlify/functions/staging-read-advocate', {
                 method: 'POST',
                 body: JSON.stringify(userToken),
@@ -238,14 +160,12 @@
             let orgList = data.orgList;
             let advocate = data.advocate;
             let schema = data.schema;
-            console.log(schema);
+
+            //console.log(schema);
             // console.log(orgList);
             // console.log(advocate);
+
             // SCHEMA IMPLEMENTATION IN FORM
-            //
-            //
-            //
-            let schemaList = [];
             let columns = {
                 listing: "fldhEdkPi8horzLD4",
                 discriminationType: "fldp0Cdze4QBCRIQy",
@@ -261,7 +181,6 @@
 
             let reportSchema = schema;
             console.log(reportSchema);
-            console.log(reportSchema.length);
 
             $("select").each(function () {
                 if ($(this).attr("data-id")) {
@@ -416,7 +335,7 @@
             // submit form data
             $("form#advocate-report").submit(async function (e) {
                 e.preventDefault();
-                $("input#submit-report").css("background-color", "#f123c3");
+                $("input#submit-report").css("background-color", "#94e0a4");
                 $("input#submit-report").attr("value", " . . .");
                 let evidenceCheck = $("select#evidence option:selected").val();
                 let formBody = formToJSON($("form#advocate-report")[0]);
