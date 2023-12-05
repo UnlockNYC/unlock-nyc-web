@@ -59,6 +59,19 @@ p.explainer {
     max-width: 600px;
 }
 
+a#full-org {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span#new-user {
+    display: none;
+}
+
+select#org-clients {
+    display: none;
+}
+
 input {
     display: block;
     margin-bottom: 20px;
@@ -114,6 +127,45 @@ div#logout {
 
 div#logout:hover {
     background-color: Black;
+    color: White;
+}
+
+/* netlify login page /start/secure/advocate */
+
+ul.netlify-identity-menu {
+    list-style-type: none;
+    max-width: 90%;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.netlify-identity-menu li {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid Black;
+}
+
+ul.netlify-identity-menu li:nth-child(1) {
+    border: 1px dotted var(--light-grey-text);
+}
+
+ul.netlify-identity-menu li:nth-child(2) {
+    background-color: var(--yellow);
+}
+
+ul.netlify-identity-menu li:last-child {
+    background-color: var(--dark-grey-text);
+    color: White;
+}
+
+ul.netlify-identity-menu li a {
+    color: Black;
+    text-decoration: none;
+}
+
+ul.netlify-identity-menu li:last-child a {
     color: White;
 }
 

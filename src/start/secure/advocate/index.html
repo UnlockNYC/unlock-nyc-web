@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/forms.css">
     <title>Advocate Login: Unlock NYC</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
-    <div style="padding: 5%; padding-top: 0;">
+    <div style="padding: 5%;">
         <a href="/" style="color: Black; text-decoration: none;">
             <h1>
                 UNLOCK<br>NYC<br>
@@ -36,7 +36,14 @@
             });
 
             if ($("li.netlify-identity-user-details").html().indexOf("Logged in") > -1) {
-                $("<li><a href='/start/secure/advocate/report'>Make a report<a></li>").insertAfter($("li.netlify-identity-user-details"));
+                $("<li style='cursor: pointer;'><a href='/start/secure/advocate/report'>📣 Make a report<a></li>").insertAfter($("li.netlify-identity-user-details"));
+                $("a.netlify-identity-logout").html("❌ Log out");
+                $("ul.netlify-identity-menu li").click(function() {
+                  var $link = $(this).find("a");
+                  if ($link.length > 0) {
+                    window.location.href = $link.attr("href");
+                  }
+                });
             }
 
             /*let token = JSON.parse(localStorage.getItem("gotrue.user"));
