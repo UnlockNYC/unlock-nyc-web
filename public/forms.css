@@ -75,6 +75,7 @@ select#org-clients {
 input {
     display: block;
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 input.wide-text, textarea.wide-text {
@@ -91,6 +92,10 @@ button, input[type="submit"], input[type="file"], select {
     border:none;
     padding: 12px;
     border: 1px solid Black;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--page-font);
 }
 
 input[type="submit"] {
@@ -114,7 +119,7 @@ a.file-button {
     color: Black !important;
     font-weight: 600;
     margin-top: 50px;
-    font-family: monospace;
+    font-family: var(--courier);
 }
 
 div#logout {
