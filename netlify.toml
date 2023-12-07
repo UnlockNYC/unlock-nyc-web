@@ -29,6 +29,18 @@
   status = 301
   force = true
 
+[[redirects]]
+   from = "/serial-discriminators"
+   to = "/reports/serial-discriminators/"
+   status = 301
+   force = true
+
+[[redirects]]
+   from = "/soi-report"
+   to = "/reports/illusion-of-choice/"
+   status = 301
+   force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
