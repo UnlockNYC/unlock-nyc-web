@@ -11,5 +11,7 @@ reportSummary: >-
   nature of the data, we do not plan on releasing the row-by-row data publicly.
 reportPDF: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/AnIllusionofChoice_FinalDigital_CORRECT.pdf
+eventTrack: true
+ackeeTracker: e557204f-d595-4660-8554-2ca2475b4342
 ---
 
