@@ -7,5 +7,7 @@ reportSummaryTop: >-
   – and take action!
 reportPDF: >-
   https://public-unlock.nyc3.cdn.digitaloceanspaces.com/pdfs/SerialDiscrimination-Report-2023.pdf
+eventTrack: true
+ackeeTracker: af36868f-02bd-458e-b192-d8bcc8ee7e22
 ---
 
