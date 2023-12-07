@@ -122,7 +122,8 @@ bg: ""
   data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
 ></script>
 <script>
-  // ackee analytics events
+$(document).ready(function(){
+  // ackee analytics events, load after initial ackee script
   // initialize ackeeTracker
   const instance = ackeeTracker.create(
     "https://unlocknyc-analytics.netlify.app"
@@ -136,5 +137,6 @@ bg: ""
       value: 1,
     });
   });
+});
 </script>
 {% endif %}
