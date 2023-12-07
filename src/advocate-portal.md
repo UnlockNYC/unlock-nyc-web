@@ -7,12 +7,14 @@ eleventyNavigation:
   order: 2
 articlePageList: Advocate Portal
 faqPageList: FAQ Advocate Portal
-title: Advocate Portal
-bannerTitle: Unlock NYC Advocate Portal
+title: Advocate Community
+bannerTitle: Unlock NYC Advocate Community
 bannerText: >-
-  Schedule a 30-minute intro call with our partnerships team to to learn more
-  about how Unlock NYC can help your clients fight back against discrimination
-  and find housing faster.
+  Do you work 1-on-1 with New Yorkers who are looking for an apartment with
+  their voucher? Unlock NYC is building a community of housing specialists,
+  social workers, and other advocates to ask questions, share advice, and end
+  housing discrimination.
+scheduleLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
 iconBlocksList:
   - title: Schedule a demo
     text: >-
