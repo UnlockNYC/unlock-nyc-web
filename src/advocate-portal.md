@@ -39,11 +39,14 @@ iconBlocksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-3.png'
   - title: Here to listen and problem solve with you
     text: >-
-      If you ever have questions or need help, we're here for you during our
-      Office Hours. We’re standing by to listen to your challenges, show you how
-      our tools work, and answer any questions you have about source of income
-      discrimination or our programs.
+      We offer regular opportunities for advocates to join virtual "office
+      hours," where a member of our team is standing by to listen to your
+      challenges, show you how our tools work, and answer any questions you have
+      about source of income discrimination or our programs.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-4.png'
+    alt: >-
+      A purple speech bubble graphic with a single question mark against a
+      mustard yellow background
 yellowBannerTitle: Join our community of advocates
 yellowBannerText: >-
   Housing specialists, case managers, member advocates, and housing navigators
