@@ -31,12 +31,15 @@ iconBlocksList:
       of any reports made, and we keep each report file in an encrypted digital
       vault for added security.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-2.png'
-  - title: See insights & impact
+  - title: Get savvy about SOI discrimination
     text: >-
-      Our dashboard helps you easily see how many reports your organization has
-      submitted, the impact they are having, and any areas that may need your
-      attention.
+      Get exclusive access to our latest intel about discrimination tactics on
+      our radar, new resources for your clients, and important updates about
+      voucher programs.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-3.png'
+    alt: >-
+      A yellow speech bubble with a single exclamation point highlights one line
+      in a bar chart graphic, all on a purple background
   - title: Here to listen and problem solve with you
     text: >-
       We offer regular opportunities for advocates to join virtual "office
