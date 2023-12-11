@@ -4,7 +4,8 @@ answer: >
   Take a look at the resources we share on the [Data & Research
   page](weunlock.nyc/data "Unlock NYC Research & Data"), which includes a review
   of resources at the local, state, and national level in addition to Unlock
-  NYC’s own research.
+  NYC’s own research. We have also included select external resources in the
+  Unlock NYC Media Kit .zip folder above.
 tags:
   - FAQ Press
 ---
