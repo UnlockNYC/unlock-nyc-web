@@ -18,7 +18,7 @@ blocksList:
   - title: Changing the narrative
     text: test test test
     image: image placeholder
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: See more
   - title: Launching investigations
