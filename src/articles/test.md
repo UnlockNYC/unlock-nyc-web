@@ -8,9 +8,7 @@ image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Article-GoodReport.png
 alt: >-
   blue background, with an illustration of a document in the foreground, and a
   brown thumbs up emoji on top
-tags:
-  - Rights Recorder
-  - Advocate Portal
+tags: []
 keywords:
   - how to
   - etc.
