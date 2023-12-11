@@ -5,6 +5,6 @@ tags:
   - Staff
 image: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/about-manon-vergerio-headshot.png
-order: 1
+order: 4
 ---
 
