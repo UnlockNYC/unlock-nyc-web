@@ -24,7 +24,7 @@ blocksList:
   - title: Launching investigations
     text: lorem ipsum dolor simit
     image: image placeholder
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: See more
   - title: Taking direct action
