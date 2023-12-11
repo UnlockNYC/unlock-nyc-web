@@ -5,6 +5,6 @@ tags:
   - Staff
 image: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/about-ashley-eberhart-headshot.png
-order: 2
+order: 1
 ---
 
