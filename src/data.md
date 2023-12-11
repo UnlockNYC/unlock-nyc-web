@@ -30,7 +30,7 @@ blocksList:
   - title: Taking direct action
     text: mab text text proton lorem ipsum
     image: image placeholder
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: See more
 orangeBannerTitle: Use our data
