@@ -10,10 +10,10 @@ title: Data
 bannerTitle: Data & Research
 bannerText: >-
   Every time someone uses Unlock NYC’s Rights Recorder app to make a report of
-  source of income discrimination, our entire community benefits. from more
-  intel about who’s discriminating, where, and how. By raising our voices
-  together, we are building a vivid and detailed picture of what needs to change
-  to make housing fair for all New Yorkers.
+  source of income discrimination, our entire community benefits from more intel
+  about who’s discriminating, where, and how. By raising our voices together, we
+  are building a vivid and detailed picture of what needs to change to make
+  housing fair for all New Yorkers.
 blocksList:
   - title: Changing the narrative
     text: test test test
