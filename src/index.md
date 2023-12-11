@@ -48,7 +48,7 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Explore the map
-        buttonLink: /soi-mapping
+        buttonLink: data/soi-map
 homeSlider:
   - slideType: quote
     quoteText: 'With Unlock, I feel the most supported I have felt in years.'
