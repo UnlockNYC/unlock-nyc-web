@@ -6,8 +6,7 @@ excerpt: >-
   for all New Yorkers. We add your report anonymously to our Discrimination
   Mapping Tool so researchers and policymakers can better understand the issue
   and create positive change.
-tags:
-  - Rights Recorder
+tags: []
 keywords:
   - housing
   - testing
