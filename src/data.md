@@ -24,8 +24,12 @@ blocksList:
     button: 'no'
     buttonList:
       - buttonText: See more
-  - title: Launching investigations
-    text: lorem ipsum dolor simit
+  - title: Identifying emerging tactics
+    text: >-
+      Our research shows that landlords and real estate agents continuously
+      adapt the tactics they use to mask discriminatory behavior. We stay one
+      step ahead by tracking over 30 specific tactics (and counting!) and
+      alerting enforcement agencies as we identify new trends.
     image: image placeholder
     button: 'no'
     buttonList:
