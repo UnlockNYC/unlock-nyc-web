@@ -16,13 +16,13 @@ bannerText: >-
   housing discrimination.
 scheduleLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
 iconBlocksList:
-  - title: Schedule a demo
+  - title: Spread the word about housing discrimination
     text: >-
-      When you sign up, you’ll receive our Partner Welcome Kit with digital
-      resources to help you spread the word about Unlock NYC. Your clients can
-      also create their own account with us (and designate you as their
-      advocate) to access resources to help them stay confident, informed, and
-      engaged in their housing search.
+      After you sign up, you’ll receive our Partner Welcome Kit with digital
+      resources to help you spread the word about Unlock NYC and source of
+      income discrimination. Your clients can create their own account with us
+      (and even designate you as their advocate) to access resources to help
+      them stay confident, informed, and engaged in their housing search.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-1.png'
   - title: Help your clients report
     text: >-
