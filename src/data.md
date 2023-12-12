@@ -15,8 +15,11 @@ bannerText: >-
   are building a vivid and detailed picture of what needs to change to make
   housing fair for all New Yorkers.
 blocksList:
-  - title: Changing the narrative
-    text: test test test
+  - title: A unique source of data
+    text: >-
+      Think of us as citizen science for fair housing. We crowdsource our data
+      directly from tenants, then rigorously review, aggregate, and integrate
+      with other housing datasets. 
     image: image placeholder
     button: 'no'
     buttonList:
