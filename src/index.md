@@ -62,9 +62,9 @@ homeSlider:
     mediaLabel: 'TEST VIDEO #2'
   - slideType: quote
     quoteText: >-
-      The journey doesn’t stop here, I will always support UnlockNYC for
+      The journey doesn’t stop here. I will always support Unlock NYC for
       supporting me.
-    author: 'N.C., Tenant'
+    author: 'N.C., Rights Recorder app user'
   - slideType: quote
     quoteText: >-
       I never imagined having my own home in New York, being the owner of my own
