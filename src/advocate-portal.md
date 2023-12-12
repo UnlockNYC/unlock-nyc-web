@@ -31,7 +31,7 @@ iconBlocksList:
       of any reports made, and we keep each report file in an encrypted digital
       vault for added security.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/advocate-Image-2.png'
-  - title: Get savvy about SOI discrimination
+  - title: Stay in the loop
     text: >-
       Get exclusive access to our latest intel about discrimination tactics on
       our radar, new resources for your clients, and important updates about
