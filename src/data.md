@@ -43,9 +43,16 @@ blocksList:
     button: 'no'
     buttonList:
       - buttonText: See more
-  - title: Taking direct action
-    text: mab text text proton lorem ipsum
-    image: image placeholder
+  - title: Changing the narrative
+    text: >-
+      Voucher holders do not share a single identity. Through our disparate
+      impact research, we are learning more about the ways that discrimination
+      against vouchers impacts specific groups differently.
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/data-research-megaphones-map.png
+    alt: >-
+      Collage of three different sets of hands holding megaphones, with a map of
+      New York City and a graph paper spiral notebook faded in the background
     button: 'no'
     buttonList:
       - buttonText: See more
