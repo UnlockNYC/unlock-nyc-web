@@ -82,12 +82,14 @@ latestActionImage: >-
 latestAlt: >-
   a group of people holding protest banners with a woman leading in front with a
   megaphone, in front of city hall in new york
-actionCaption: Caption image image text text lorem ipsum - latest action description!
+actionCaption: >-
+  Leadership Collective alum Nailah leads the launch of our Serial
+  Discriminators list at City Hall in October 2023
 latestActionVideo: null
 latestActionButton: 'yes'
-latestActionLink: /
+latestActionLink: /reports/serial-discriminators
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/Team.png'
-teamAlt: 'two black women tabling at an event, showing rings that say "love" and "train"'
+teamAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 teamTitle: >-
   Unlock NYC is a women-led tech nonprofit created with and by tenants who’ve
   been in your shoes.
