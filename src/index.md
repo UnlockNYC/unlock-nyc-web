@@ -72,9 +72,9 @@ homeSlider:
     author: 'S.M., Tenant'
   - slideType: quote
     quoteText: >-
-      [UnlockNYC’s Rights Recorder] will support advocacy campaigns and
+      [Unlock NYC’s Rights Recorder] will support advocacy campaigns and
       movement-wide efforts to fight back and fix this broken system.
-    author: 'Annie Carforo, Neighbors Together'
+    author: 'Annie Carforo, housing advocate'
 latestBanner: 'Latest report: Serial Discriminators List'
 latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
 latestActionImage: >-
