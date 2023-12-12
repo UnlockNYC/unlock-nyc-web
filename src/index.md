@@ -68,7 +68,7 @@ homeSlider:
   - slideType: quote
     quoteText: >-
       I never imagined having my own home in New York, being the owner of my own
-      keys – all thanks to UnlockNYC.
+      keys – all thanks to Unlock NYC.
     author: 'S.M., Tenant'
   - slideType: quote
     quoteText: >-
