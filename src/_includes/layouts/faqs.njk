@@ -19,17 +19,17 @@
 <!-- MAB - where to put this?! -->
 <script>
   $(document).ready(function() {
-    $("div.faq-container div.question").click(function() {
-      $(this).children("div.faq-answer").toggle();
-      if ($(this).children("svg").hasClass("plus")) {
-        $(this).children("svg").removeClass("plus");
-        $(this).children("svg").addClass("minus");
-        $(this).children("svg").html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>');
+    $("div.faq-container div.question h4, div.faq-container div.question svg").click(function() {
+      $(this).parent("div.question").children("div.faq-answer").toggle();
+      if ($(this).parent("div.question").children("svg").hasClass("plus")) {
+        $(this).parent("div.question").children("svg").removeClass("plus");
+        $(this).parent("div.question").children("svg").addClass("minus");
+        $(this).parent("div.question").children("svg").html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>');
       }
       else {
-        $(this).children("svg").removeClass("minus");
-        $(this).children("svg").addClass("plus");
-        $(this).children("svg").html('<svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>');
+        $(this).parent("div.question").children("svg").removeClass("minus");
+        $(this).parent("div.question").children("svg").addClass("plus");
+        $(this).parent("div.question").children("svg").html('<svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>');
       }
     });
   });
