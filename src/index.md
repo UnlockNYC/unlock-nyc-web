@@ -85,7 +85,7 @@ latestAlt: >-
 actionCaption: >-
   Leadership Collective alum Nailah leads the launch of our Serial
   Discriminators list at City Hall in October 2023
-latestActionVideo: null
+latestActionVideo: ''
 latestActionButton: 'yes'
 latestActionLink: /reports/serial-discriminators
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/Team.png'
