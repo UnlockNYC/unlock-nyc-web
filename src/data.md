@@ -6,7 +6,7 @@ eleventyNavigation:
   title: Data & Research
   order: 2
 faqPageList: FAQ Data
-title: Data
+title: Data & Research
 bannerTitle: Data & Research
 bannerText: >-
   Every time someone uses Unlock NYC’s Rights Recorder app to make a report of
