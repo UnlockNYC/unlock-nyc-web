@@ -52,7 +52,7 @@ blocksList:
 homeSlider:
   - slideType: quote
     quoteText: 'With Unlock, I feel the most supported I have felt in years.'
-    author: Leadership Collective Member
+    author: 'K.N., Rights Recorder app user'
   - slideType: video
     mediaLabel: TEST VIDEO
   - slideType: quote
