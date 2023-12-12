@@ -139,14 +139,14 @@ templateClass: tmpl-home
   let loginAttempt = false;
   if (confirmation.indexOf("confirmation") > -1) {
       loginAttempt = true;
-      console.log("advocate confirmation: " + loginAttempt);
+      // console.log("advocate confirmation: " + loginAttempt);
   }
 
   // netlify widget
   const user = netlifyIdentity.currentUser();
   netlifyIdentity.on('init', user => console.log('init', user));
   netlifyIdentity.on('login', function (user) {
-      console.log('login', user);
+      // console.log('login', user);
   });
 
   $(document).ready(function() {

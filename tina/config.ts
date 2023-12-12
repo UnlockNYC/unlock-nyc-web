@@ -195,6 +195,11 @@ export default defineConfig({
                     name: "mediaFile",
                     label: "Media File"
                   },
+                  {
+                    type: "image",
+                    name: "mediaFile2",
+                    label: "Media File 2"
+                  },
                 ],
               },
               {

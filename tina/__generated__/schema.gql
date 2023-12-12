@@ -124,6 +124,7 @@ type PageIndexHomeSlider {
   author: String
   mediaLabel: String
   mediaFile: String
+  mediaFile2: String
 }
 
 type PageIndex implements Node & Document {
@@ -507,6 +508,7 @@ input PageIndexHomeSliderFilter {
   author: StringFilter
   mediaLabel: StringFilter
   mediaFile: ImageFilter
+  mediaFile2: ImageFilter
 }
 
 input PageIndexFilter {
@@ -1115,6 +1117,7 @@ input PageIndexHomeSliderMutation {
   author: String
   mediaLabel: String
   mediaFile: String
+  mediaFile2: String
 }
 
 input PageIndexMutation {

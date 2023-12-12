@@ -24,6 +24,7 @@ fragment PageParts on Page {
       author
       mediaLabel
       mediaFile
+      mediaFile2
     }
     latestBanner
     latestActionText

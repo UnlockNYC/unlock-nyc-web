@@ -55,6 +55,7 @@ homeSlider:
     author: 'K.N., Rights Recorder app user'
   - slideType: video
     mediaLabel: TEST VIDEO
+    mediaFile: 'https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.webm'
   - slideType: quote
     quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
     author: 'H. L., Rights Recorder app user'
@@ -96,7 +97,7 @@ teamTitle: >-
 teamText: >-
   A majority of our team has had on-the-ground experience using vouchers to find
   a home for our families. We’re different because we know firsthand what you’re
-  going through – that’s what inspired us to speak up in the first place. 
+  going through – that’s what inspired us to speak up in the first place.
 _template: index
 ---
 

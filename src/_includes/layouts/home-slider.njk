@@ -50,8 +50,9 @@
         {% endif %}
         {% if slide.slideType == "video" %}
          <div class="slide video">
-             <video controls>
-                 <source="{{ slide.mediaFile }}">
+             <video preload="metadata" controls>
+                 <source src="{{ slide.mediaFile }}">
+                 <source src="{{ slide.mediaFile2 }}">
              </video>
          </div>
         {% endif %}
@@ -65,10 +66,10 @@ $(document).ready(function(){
   $("div.slide.quote h4").each(function(){
     var quote = $(this).html();
     if(quote.length > 82) {
-      $(this).css("font-size", "1.7rem");
+      $(this).css("font-size", "1.6rem");
     }
     if(quote.length > 105) {
-      $(this).css("font-size", "1.3rem");
+      $(this).css("font-size", "1.35rem");
     }
   });
   /* slider scroll right */

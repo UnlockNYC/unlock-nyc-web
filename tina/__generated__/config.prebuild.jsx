@@ -184,6 +184,11 @@ var config_default = defineConfig({
                     type: "image",
                     name: "mediaFile",
                     label: "Media File"
+                  },
+                  {
+                    type: "image",
+                    name: "mediaFile2",
+                    label: "Media File 2"
                   }
                 ]
               },
