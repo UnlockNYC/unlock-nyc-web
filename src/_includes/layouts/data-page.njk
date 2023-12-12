@@ -16,10 +16,34 @@ templateClass: tmpl-home
       padding-top: 30px;
   }
 
+  div#data-grid-text h4 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+  }
+
+  div#inner-data-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+  }
+
   div#map-grid {
       display: grid;
       grid-template-columns: 58% auto;
       grid-column-gap: 0;
+      width: 100%;
+      margin-top: 20px;
+      overflow: hidden;
+  }
+
+  div#data-grid div.report-card {
+      min-height: 390px;
+  }
+
+  div#data-grid div.report-card div.report-summary {
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
   }
 
   div#data-grid div.report-card-wrapper:nth-child(odd) div.report-card {
@@ -30,21 +54,54 @@ templateClass: tmpl-home
       background-color: var(--green);
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (min-width: 851px) and (max-width: 1200px) {
+      div#data-grid {
+          grid-template-columns: 25% auto;
+          grid-column-gap: 40px;
+      }
+      div#data-grid div.report-card div.report-summary p {
+          font-size: 0.95rem;
+          line-height: 1rem !important;
+      }
+      div#data-grid-text {
+          padding-top: 0;
+      }
+      div#data-grid-text h4 {
+          margin-top: 10px;
+          line-height: 1.6rem;
+      }
+      div#data-grid-text p {
+          font-size: 0.98rem;
+          line-height: 1rem !important;
+      }
+  }
+
+  @media only screen and (max-width: 850px) {
+    div.top-banner {
+        padding-bottom: 0 !important;
+    }
     div#data-grid {
         grid-template-columns: 1fr;
         margin-top: -30px;
     }
     div#data-grid-text {
         text-align: center;
-        max-width: 80%;
+        max-width: 90%;
         margin: auto;
         margin-bottom: 30px;
+        padding-top: 0;
     }
     div#map-grid {
         grid-template-columns: 1fr;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+      div#inner-data-grid {
+          grid-template-columns: 1fr;
+          grid-row-gap: 20px;
+      }
+}
 </style>
 {# page template, extends the base template #}
 
@@ -63,14 +120,14 @@ templateClass: tmpl-home
 <div class="content">
   <div id="data-grid">
     <div id="data-grid-text">
-      <h4 style="font-size: 1.5rem; margin-top: 2.5rem;">
-        People-Powered Data for Fair Housing
+      <h4>
+        {{ gridTitle }}
       </h4>
       <p class="black">
-        We partner with researchers, community members, and grassroots organizations to interpret our growing dataset and use it to spark movement-wide change. We publish reports, make policy recommendations, and produce other creative research to share our findings.
+        {{ gridText }}
       </p>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
+    <div id="inner-data-grid">
       {%- for report in collections.report -%}
       {% if report.data.featured %}
       <div class="report-card-wrapper">
@@ -79,18 +136,17 @@ templateClass: tmpl-home
             <span class="tag">{{ report.data.keywords }}</span>
             <span class="tag">{{ report.data.year }}</span>
           </div>
-          <div>
+          <div class="report-summary">
             <p class="black" style="text-decoration: underline;">
               <strong>Featured Report</strong>
             </p>
             <h4 style="font-size: 1.5rem;">
               {{ report.data.reportTitle }}
             </h4>
-            <p class="black">
+            <p class="summary-text black">
               {{ report.data.reportSummaryTop }}
             </p>
-            <br><br><br>
-            <a href="{{ report.url }}">
+            <a href="{{ report.url }}" style="position: absolute; bottom: 20px;">
                 <button class="black">
                     Read report
                 </button>
@@ -102,7 +158,7 @@ templateClass: tmpl-home
       {%- endfor -%}
     </div>
   </div>
-  <div id="map-grid" class="bg-purple" style="width: 100%; margin-top: 30px; overflow: hidden;">
+  <div id="map-grid" class="bg-purple">
     <div style="background: url('https://public-unlock.nyc3.digitaloceanspaces.com/Community-Map_Purple.png'); background-size: cover; background-position: center center; min-height: 300px;"></div>
     <div class="report-card-wrapper">
         <div class="bg-purple report-card">
@@ -133,11 +189,6 @@ templateClass: tmpl-home
     Our Data in Action
   </h3>
   {% include 'layouts/blocks50.njk' %}
-  <div style="text-align: center; width: 100%;">
-    <button class="black">
-      Read more
-    </button>
-  </div>
 </div>
 <div class="content" style="padding-top: 3%; background-color: White;">
   {% include 'layouts/faqs.njk' %}

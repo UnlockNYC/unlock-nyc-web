@@ -44,9 +44,16 @@
                 </g>
             </svg>
             <div class="label">
-                <p>{{ slide.audioLabel }}</p>
+                <p>{{ slide.mediaLabel }}</p>
             </div>
         </div>
+        {% endif %}
+        {% if slide.slideType == "video" %}
+         <div class="slide video">
+             <video controls>
+                 <source="{{ slide.mediaFile }}">
+             </video>
+         </div>
         {% endif %}
       {% endfor %}
   </div>

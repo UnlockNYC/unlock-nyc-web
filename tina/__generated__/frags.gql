@@ -22,13 +22,14 @@ fragment PageParts on Page {
       slideType
       quoteText
       author
-      audioLabel
-      audioFile
+      mediaLabel
+      mediaFile
     }
     latestBanner
     latestActionText
     latestActionImage
     latestAlt
+    actionCaption
     latestActionVideo
     latestActionButton
     latestActionLink
@@ -91,6 +92,8 @@ fragment PageParts on Page {
     title
     bannerTitle
     bannerText
+    gridTitle
+    gridText
     blocksList {
       __typename
       title

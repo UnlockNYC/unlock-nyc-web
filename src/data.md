@@ -14,6 +14,12 @@ bannerText: >-
   about who’s discriminating, where, and how. By raising our voices together, we
   are building a vivid and detailed picture of what needs to change to make
   housing fair for all New Yorkers.
+gridTitle: People-powered data for fair housing
+gridText: >-
+  We partner with researchers, community members, and grassroots organizations
+  to interpret our growing dataset and use it to spark movement-wide change. We
+  publish reports, make policy recommendations, and produce other creative
+  research to share our findings.
 blocksList:
   - title: A unique source of data
     text: >-

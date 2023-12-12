@@ -150,7 +150,7 @@ export default defineConfig({
                 list: true,
                 itemProps: (slide) => {
                   // Field values are accessed by item?.<Field name>
-                  return { label: slide?.quoteText || slide?.audioLabel };
+                  return { label: slide?.quoteText || slide?.mediaLabel };
                 },
                 fields: [
                   {
@@ -165,6 +165,10 @@ export default defineConfig({
                       {
                         value: "audio",
                         label: "Audio"
+                      },
+                      {
+                        value: "video",
+                        label: "Video"
                       }
                     ]
                   },
@@ -183,13 +187,13 @@ export default defineConfig({
                   },
                   {
                     type: "string",
-                    name: "audioLabel",
-                    label: "Audio Label"
+                    name: "mediaLabel",
+                    label: "Media Label"
                   },
                   {
                     type: "image",
-                    name: "audioFile",
-                    label: "Audio File"
+                    name: "mediaFile",
+                    label: "Media File"
                   },
                 ],
               },
@@ -215,6 +219,11 @@ export default defineConfig({
                 type: "string",
                 name: "latestAlt",
                 label: "Latest Action Image Alt Text (accessibility!)",
+              },
+              {
+                type: "string",
+                name: "actionCaption",
+                label: "Latest Action Image Caption",
               },
               {
                 type: "string",
@@ -542,6 +551,19 @@ export default defineConfig({
                 type: "string",
                 name: "bannerText",
                 label: "Banner Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "gridTitle",
+                label: "Grid Title"
+              },
+              {
+                type: "string",
+                name: "gridText",
+                label: "Grid Intro Text",
                 ui: {
                   component: "textarea"
                 }

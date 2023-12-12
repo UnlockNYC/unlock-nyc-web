@@ -10,16 +10,16 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@tinacms/auth": "^1.0.3",
     "@tinacms/cli": "^1.5.29",
+    "airtable": "0.11.6",
+    "aws-sdk": "2.1275.0",
     "eleventy-plugin-seo": "0.5.2",
     "express": "^4.18.2",
+    "jwt-decode": "3.1.2",
     "markdown-it-anchor": "^8.6.7",
     "next-tinacms-dos": "^1.3.7",
-    "serverless-http": "^3.2.0",
-    "tinacms": "^1.5.22",
-    "airtable": "0.11.6",
-    "jwt-decode": "3.1.2",
     "node-fetch": "2.x.x",
-    "aws-sdk": "2.1275.0"
+    "serverless-http": "^3.2.0",
+    "tinacms": "^1.5.22"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0"

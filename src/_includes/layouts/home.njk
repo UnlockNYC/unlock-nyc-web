@@ -54,12 +54,13 @@ templateClass: tmpl-home
     </p>
   </div>
   <div class="center-stage">
-    <img src="{{ latestActionImage }}" alt="{{ latestAlt}}" style="width: 100%;">
+    <img src="{{ latestActionImage }}" alt="{{ latestAlt }}" style="width: 100%;">
   </div>
+  <p style="text-align: center; margin-top: 20px; margin-bottom: 0;">{{ actionCaption }}</p>
 </div>
 <div class="banner-full bg-cream">
   <div class="page-content-50-50">
-    <div style="width: 100%; height: 380px; overflow: hidden;">
+    <div id="team-wrap">
       <img src="{{ teamImage }}" alt="{{ teamAlt }}" style="object-fit: cover; max-width: 100%; margin-top: -15px;">
     </div>
     <div style="padding: 5%; text-align: left;">
@@ -73,11 +74,11 @@ templateClass: tmpl-home
         <button>
             Learn more
         </button></a>
-      <a href="/get-involved">
+      <!--<a href="/get-involved">
         <button>
             Get involved
         </button>
-      </a>
+      </a>-->
     </div>
   </div>
 </div>

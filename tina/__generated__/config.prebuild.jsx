@@ -140,7 +140,7 @@ var config_default = defineConfig({
                 label: "What People Are Saying",
                 list: true,
                 itemProps: (slide) => {
-                  return { label: slide?.quoteText || slide?.audioLabel };
+                  return { label: slide?.quoteText || slide?.mediaLabel };
                 },
                 fields: [
                   {
@@ -155,6 +155,10 @@ var config_default = defineConfig({
                       {
                         value: "audio",
                         label: "Audio"
+                      },
+                      {
+                        value: "video",
+                        label: "Video"
                       }
                     ]
                   },
@@ -173,13 +177,13 @@ var config_default = defineConfig({
                   },
                   {
                     type: "string",
-                    name: "audioLabel",
-                    label: "Audio Label"
+                    name: "mediaLabel",
+                    label: "Media Label"
                   },
                   {
                     type: "image",
-                    name: "audioFile",
-                    label: "Audio File"
+                    name: "mediaFile",
+                    label: "Media File"
                   }
                 ]
               },
@@ -205,6 +209,11 @@ var config_default = defineConfig({
                 type: "string",
                 name: "latestAlt",
                 label: "Latest Action Image Alt Text (accessibility!)"
+              },
+              {
+                type: "string",
+                name: "actionCaption",
+                label: "Latest Action Image Caption"
               },
               {
                 type: "string",
@@ -528,6 +537,19 @@ var config_default = defineConfig({
                 type: "string",
                 name: "bannerText",
                 label: "Banner Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "gridTitle",
+                label: "Grid Title"
+              },
+              {
+                type: "string",
+                name: "gridText",
+                label: "Grid Intro Text",
                 ui: {
                   component: "textarea"
                 }

@@ -53,11 +53,13 @@ homeSlider:
   - slideType: quote
     quoteText: 'With Unlock, I feel the most supported I have felt in years.'
     author: Leadership Collective Member
+  - slideType: video
+    mediaLabel: TEST VIDEO
   - slideType: quote
     quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
     author: 'H. L. L., Tenant'
-  - slideType: audio
-    audioLabel: TEST AUDIO
+  - slideType: video
+    mediaLabel: 'TEST VIDEO #2'
   - slideType: quote
     quoteText: >-
       The journey doesn’t stop here, I will always support UnlockNYC for
@@ -80,6 +82,7 @@ latestActionImage: >-
 latestAlt: >-
   a group of people holding protest banners with a woman leading in front with a
   megaphone, in front of city hall in new york
+actionCaption: Caption image image text text lorem ipsum - latest action description!
 latestActionVideo: null
 latestActionButton: 'yes'
 latestActionLink: /

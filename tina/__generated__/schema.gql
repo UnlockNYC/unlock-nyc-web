@@ -122,8 +122,8 @@ type PageIndexHomeSlider {
   slideType: String
   quoteText: String
   author: String
-  audioLabel: String
-  audioFile: String
+  mediaLabel: String
+  mediaFile: String
 }
 
 type PageIndex implements Node & Document {
@@ -136,6 +136,7 @@ type PageIndex implements Node & Document {
   latestActionText: String
   latestActionImage: String
   latestAlt: String
+  actionCaption: String
   latestActionVideo: String
   latestActionButton: String
   latestActionLink: String
@@ -231,6 +232,8 @@ type PageDatapage implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
+  gridTitle: String
+  gridText: String
   blocksList: [PageDatapageBlocksList]
   orangeBannerTitle: String
   orangeBannerText: String
@@ -502,8 +505,8 @@ input PageIndexHomeSliderFilter {
   slideType: StringFilter
   quoteText: StringFilter
   author: StringFilter
-  audioLabel: StringFilter
-  audioFile: ImageFilter
+  mediaLabel: StringFilter
+  mediaFile: ImageFilter
 }
 
 input PageIndexFilter {
@@ -516,6 +519,7 @@ input PageIndexFilter {
   latestActionText: StringFilter
   latestActionImage: ImageFilter
   latestAlt: StringFilter
+  actionCaption: StringFilter
   latestActionVideo: StringFilter
   latestActionButton: StringFilter
   latestActionLink: StringFilter
@@ -605,6 +609,8 @@ input PageDatapageFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
+  gridTitle: StringFilter
+  gridText: StringFilter
   blocksList: PageDatapageBlocksListFilter
   orangeBannerTitle: StringFilter
   orangeBannerText: StringFilter
@@ -1107,8 +1113,8 @@ input PageIndexHomeSliderMutation {
   slideType: String
   quoteText: String
   author: String
-  audioLabel: String
-  audioFile: String
+  mediaLabel: String
+  mediaFile: String
 }
 
 input PageIndexMutation {
@@ -1121,6 +1127,7 @@ input PageIndexMutation {
   latestActionText: String
   latestActionImage: String
   latestAlt: String
+  actionCaption: String
   latestActionVideo: String
   latestActionButton: String
   latestActionLink: String
@@ -1204,6 +1211,8 @@ input PageDatapageMutation {
   title: String
   bannerTitle: String
   bannerText: String
+  gridTitle: String
+  gridText: String
   blocksList: [PageDatapageBlocksListMutation]
   orangeBannerTitle: String
   orangeBannerText: String

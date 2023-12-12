@@ -25,7 +25,6 @@
       {# Page or post content will appear here #}
       {{ content | safe }}
 
-
       {% include 'layouts/footer.njk' %}
 
   </main>
@@ -50,7 +49,7 @@
       $(this).attr("href", "");
     });
     /* MOBILE MENU BEHAVIOR */
-    $("#nav-logo").click(function(e) {
+    $("svg#hamburger").click(function(e) {
       if ($(window).width() <= 1100) {
           e.preventDefault();
           $("nav ul#top").toggleClass("mobile-open");

@@ -1,7 +1,6 @@
 const pluginSEO = require("eleventy-plugin-seo");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
-//const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -34,6 +33,7 @@ module.exports = function(eleventyConfig) {
     return markdownLib.render(content);
   });
 
+  // filter for press listings, by publication date
   eleventyConfig.addFilter("sortByPubDate", function(array) {
     return array.slice().sort((a, b) => {
         // Convert 'DD.MM.YYYY' to 'YYYY-MM-DD'
