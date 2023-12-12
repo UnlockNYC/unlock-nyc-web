@@ -587,7 +587,7 @@ div.banner-content h2.richtext-banner p {
     height: auto;
     min-height: unset;
     padding-top: 120px;
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;*/
   }
   div.banner-wrapper.split {
     grid-template-columns: 1fr;
