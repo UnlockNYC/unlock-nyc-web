@@ -54,10 +54,15 @@ templateClass: tmpl-home
       background-color: var(--green);
   }
 
+  div.banner-full.bg-orange h2 {
+      max-width: 60%;
+      margin: auto;
+      margin-bottom: 30px;
+  }
+
   @media only screen and (max-width: 1150px) {
       div.content {
           padding-top: 0;
-          margin-top: -60px;
       }
       div#data-grid {
           grid-template-columns: 1fr;
@@ -111,12 +116,18 @@ templateClass: tmpl-home
     div#map-grid {
         grid-template-columns: 1fr;
     }
+    div.banner-full.bg-orange h2 {
+        max-width: 80%;
+    }
   }
 
   @media only screen and (max-width: 600px) {
       div#inner-data-grid {
           grid-template-columns: 1fr;
           grid-row-gap: 20px;
+      }
+      div.banner-full.bg-orange h2 {
+          max-width: 100%;
       }
 }
 </style>
@@ -214,7 +225,7 @@ templateClass: tmpl-home
   <h3>
     {{ orangeBannerTitle }}
   </h3>
-  <h2 style="max-width: 60%; margin: auto; margin-bottom: 30px;">
+  <h2>
     {{ orangeBannerText }}
   </h2>
   <a href="{{ orangeBannerLink }}" target="_blank">
