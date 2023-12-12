@@ -30,7 +30,12 @@ blocksList:
       adapt the tactics they use to mask discriminatory behavior. We stay one
       step ahead by tracking over 30 specific tactics (and counting!) and
       alerting enforcement agencies as we identify new trends.
-    image: image placeholder
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/data-research-denial-tactic-tenant.png
+    alt: >-
+      A collage featuring a woman on the phone turning toward an apartment
+      building; the background is a speech bubble that says "it's the landlord's
+      decision whether you qualify."
     button: 'no'
     buttonList:
       - buttonText: See more
