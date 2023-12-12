@@ -1,3 +1,4 @@
+# only allow authenticated "advocates" to report endpoints
 [[redirects]]
   from = "/start/secure/advocate/report/*"
   to = "/start/secure/advocate/report/:splat"
@@ -5,8 +6,16 @@
   status = 200
   conditions = {Role = ["advocate"]}
 
+# redirect anyone not logged in to login page
 [[redirects]]
   from = "/start/secure/advocate/report/*"
+  to = "/start/secure/advocate/"
+  status = 302
+  force = true
+
+# quick link for advocate login
+[[redirects]]
+  from = "/advocate-login"
   to = "/start/secure/advocate/"
   status = 302
   force = true
@@ -29,12 +38,14 @@
   status = 301
   force = true
 
+# URL mapping from pre-2023 site, reports
 [[redirects]]
    from = "/serial-discriminators"
    to = "/reports/serial-discriminators/"
    status = 301
    force = true
 
+# URL mapping from pre-2023 site, reports
 [[redirects]]
    from = "/soi-report"
    to = "/reports/illusion-of-choice/"
