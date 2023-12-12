@@ -57,7 +57,7 @@ homeSlider:
     mediaLabel: TEST VIDEO
   - slideType: quote
     quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
-    author: 'H. L. L., Tenant'
+    author: 'H. L., Rights Recorder app user'
   - slideType: video
     mediaLabel: 'TEST VIDEO #2'
   - slideType: quote
