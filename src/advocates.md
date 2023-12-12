@@ -1,9 +1,9 @@
 ---
 layout: layouts/advocate-page.njk
 eleventyNavigation:
-  key: Advocate Portal
+  key: Advocate Community
   parent: Tools
-  title: Advocate Portal
+  title: Advocate Community
   order: 2
 articlePageList: Advocate Portal
 faqPageList: FAQ Advocate Portal
