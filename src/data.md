@@ -58,8 +58,10 @@ blocksList:
       - buttonText: See more
 orangeBannerTitle: Use our data
 orangeBannerText: >-
-  All data requests are reviewed on a case-by-case basis. Fill out this form and
-  we’ll get back to you shortly.
+  Interested in partnering with Unlock NYC on a research or data-related
+  project? All requests are reviewed on a case-by-case basis by our Data &
+  Advocacy team and may require consensus from our Leadership Collective. Fill
+  out this form and we’ll get back to you shortly.
 orangeBannerButton: Make a Request
 orangeBannerLink: 'https://airtable.com/appiQkR2Zrww4DQnz/shrV4VpcZcy5BnmBE'
 _template: datapage
