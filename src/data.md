@@ -20,7 +20,11 @@ blocksList:
       Think of us as citizen science for fair housing. We crowdsource our data
       directly from tenants, then rigorously review, aggregate, and integrate
       with other housing datasets. 
-    image: image placeholder
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/data-research-graphs-notebook-calculator.png
+    alt: >-
+      A blue calculator, a piece of paper with a pie chart and bar graph, and a
+      spiral notebook sit on an orange surface
     button: 'no'
     buttonList:
       - buttonText: See more
