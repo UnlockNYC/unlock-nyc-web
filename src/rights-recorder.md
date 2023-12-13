@@ -28,7 +28,8 @@ iconBlocksList:
       questions you have. But that's not all! By signing up, you'll also get
       access to lots of resources, like community events, special content, and
       other tools to help with your housing search.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 1.png'
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image1.png
     alt: 'yellow illustration, cursor arrow pointing over a button that says sign up'
   - title: Collect evidence
     text: >-
