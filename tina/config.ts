@@ -1992,5 +1992,5 @@ export default defineConfig({
         ]
       },
     ],
-  },
+  }
 });

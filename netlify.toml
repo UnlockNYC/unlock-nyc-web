@@ -52,6 +52,20 @@
    status = 301
    force = true
 
+# URL mapping from menu tabs
+[[redirects]]
+    from = "/tools"
+    to = "/rights-recorder/"
+    status = 301
+    force = true
+
+# URL mapping from menu tabs
+[[redirects]]
+    from = "/partners"
+    to = "/community-organizers/"
+    status = 301
+    force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
