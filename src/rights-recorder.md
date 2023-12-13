@@ -44,10 +44,10 @@ iconBlocksList:
     alt: 'yellow illustration, icon of an open file full of documents'
   - title: Take action!
     text: >-
-      Unlock NYC reviews your report, conducts research on the broker and
-      landlord involved, and will reach out if we need any other details. We add
-      reports anonymously to our community-powered map, and we can also share
-      your report with a legal service provider who can help.
+      Unlock NYC reviews your report and conducts research on the broker and
+      landlord. We add all reports anonymously to our community-powered map, and
+      we can also share your report with a legal service provider for
+      personalized advice.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image4.png
     alt: 'yellow illustration, one hand passing the baton to another hand'
