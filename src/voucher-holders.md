@@ -88,14 +88,16 @@ linksList:
     button: 'yes'
     buttonText: Check it out
     buttonLink: 'https://www.stopsidnyc.com/resources-for-voucher-holders'
-  - title: Prevent or delay an eviction
+  - title: I am facing an eviction
     text: >-
-      Housing Court Answers can explain Housing Court and housing law, rent
-      arrears assistance, and homeless prevention guidance.
+      Try Housing Court Answers as a starting point to learn more about Housing
+      Court and housing law, rent arrears assistance, and homeless prevention
+      guidance, and connect to resources.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/housingcourtanswers.png'
     org: Housing Court Answers
     button: 'yes'
     buttonText: Learn more
+    buttonLink: 'https://housingcourtanswers.org/'
   - title: Address a housing situation
     text: >-
       Call the Met Council on Housing Tenant’s Rights Hotline to get answers
