@@ -29,7 +29,7 @@ blocksList:
       committee of the Human Rights Law Working Group and a member of the Homes
       Can't Wait Coalition and Housing Justice for All.
     image: image placeholder
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Read our press
       - buttonText: See the Data
