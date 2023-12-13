@@ -33,6 +33,9 @@ blocksList:
       and prepared when you use our free Rights Recorder app to record phone
       calls, collect evidence, and report unfair treatment.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/voucher-2.png'
+    alt: >-
+      flexed arm emoji in brown, justice scales emoji, against a mint green
+      background
     button: 'yes'
     buttonList:
       - buttonText: Make a report
