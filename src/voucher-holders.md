@@ -35,7 +35,7 @@ blocksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/voucher-2.png'
     button: 'yes'
     buttonList:
-      - buttonText: Get started
+      - buttonText: Make a report
         buttonLink: /start
   - title: Unlock housing opportunities
     text: >-
