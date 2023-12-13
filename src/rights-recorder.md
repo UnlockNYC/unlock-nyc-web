@@ -18,7 +18,7 @@ introText: >
   violate your rights! It's 100% free and you don't need to download anything.
 iconBlocksList:
   - title: Sign up
-    text: >-
+    content: >
       The first time you use Rights Recorder, we'll ask you a few questions
       about yourself, your housing search, and your voucher, so we can
       understand what you need.
@@ -26,7 +26,7 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image1.png
     alt: 'yellow illustration, cursor arrow pointing over a button that says sign up'
   - title: Collect evidence
-    text: >-
+    content: >
       Rights Recorder helps you collect evidence and stay organized. Build your
       paper trail by recording phone calls with brokers and landlords, and make
       sure to take clear screenshots of emails and text messages.
@@ -34,7 +34,7 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image2.png
     alt: 'yellow illustration, sound waves representing audio file evidence'
   - title: Submit your report
-    text: >-
+    content: >
       Don't wait! Use Rights Recorder to make a report while the details are
       fresh in your mind. The sooner you report, the more options you may have.
       Our app asks questions about what happened and helps you upload your
@@ -43,11 +43,12 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image3.png
     alt: 'yellow illustration, icon of an open file full of documents'
   - title: Take action!
-    text: >-
+    content: >
       Unlock NYC reviews your report and conducts research on the broker and
-      landlord. We add all reports anonymously to our community-powered map, and
-      we can also share your report with a legal service provider for
-      personalized advice.
+      landlord. We add all reports anonymously to our [community-powered
+      map](/data/soi-map), and we can also share your report with a legal
+      service provider for personalized advice.
+          
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image4.png
     alt: 'yellow illustration, one hand passing the baton to another hand'
@@ -81,12 +82,17 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-communities-resist.png
     link: 'https://communitiesresist.org/'
+quote: >-
+  Here I am with my keys in hand. Every time I step into my home, I'm reminded
+  of how Unlock turned my dream into a reality.
+quoteAuthor: Soelys Marrero
+authorTitle: Unlock NYC 2023-2024 Leadership Collective
 yellowBannerTitle: Join our community of voucher holders
 yellowBannerText: >-
   Unlock NYC is a special community of voucher holders teaming up against unfair
   treatment. If you have a voucher, sign up here for special access to Unlock
   NYC's virtual and in-person events, latest resource guides, and other tools to
-  help with your housing search. 
+  help with your housing search.
 yellowBannerLink: 'http://eepurl.com/hnC4Bn'
 _template: rightsrecorder
 ---

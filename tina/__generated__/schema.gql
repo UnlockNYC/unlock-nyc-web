@@ -176,7 +176,7 @@ type PageAbout implements Node & Document {
 
 type PageRightsrecorderIconBlocksList {
   title: String
-  text: String
+  content: JSON
   image: String
   alt: String
 }
@@ -195,6 +195,10 @@ type PageRightsrecorder implements Node & Document {
   iconBlocksList: [PageRightsrecorderIconBlocksList]
   partnersText: String
   partnersList: [PageRightsrecorderPartnersList]
+  quote: String
+  quoteAuthor: String
+  authorTitle: String
+  authorImg: String
   yellowBannerTitle: String
   yellowBannerText: String
   yellowBannerLink: String
@@ -205,7 +209,7 @@ type PageRightsrecorder implements Node & Document {
 
 type PageAdvocateportalIconBlocksList {
   title: String
-  text: String
+  content: JSON
   image: String
   alt: String
 }
@@ -569,7 +573,7 @@ input RichTextFilter {
 
 input PageRightsrecorderIconBlocksListFilter {
   title: StringFilter
-  text: StringFilter
+  content: RichTextFilter
   image: ImageFilter
   alt: StringFilter
 }
@@ -588,6 +592,10 @@ input PageRightsrecorderFilter {
   iconBlocksList: PageRightsrecorderIconBlocksListFilter
   partnersText: StringFilter
   partnersList: PageRightsrecorderPartnersListFilter
+  quote: StringFilter
+  quoteAuthor: StringFilter
+  authorTitle: StringFilter
+  authorImg: ImageFilter
   yellowBannerTitle: StringFilter
   yellowBannerText: StringFilter
   yellowBannerLink: StringFilter
@@ -595,7 +603,7 @@ input PageRightsrecorderFilter {
 
 input PageAdvocateportalIconBlocksListFilter {
   title: StringFilter
-  text: StringFilter
+  content: RichTextFilter
   image: ImageFilter
   alt: StringFilter
 }
@@ -1181,7 +1189,7 @@ input PageAboutMutation {
 
 input PageRightsrecorderIconBlocksListMutation {
   title: String
-  text: String
+  content: JSON
   image: String
   alt: String
 }
@@ -1200,6 +1208,10 @@ input PageRightsrecorderMutation {
   iconBlocksList: [PageRightsrecorderIconBlocksListMutation]
   partnersText: String
   partnersList: [PageRightsrecorderPartnersListMutation]
+  quote: String
+  quoteAuthor: String
+  authorTitle: String
+  authorImg: String
   yellowBannerTitle: String
   yellowBannerText: String
   yellowBannerLink: String
@@ -1207,7 +1219,7 @@ input PageRightsrecorderMutation {
 
 input PageAdvocateportalIconBlocksListMutation {
   title: String
-  text: String
+  content: JSON
   image: String
   alt: String
 }

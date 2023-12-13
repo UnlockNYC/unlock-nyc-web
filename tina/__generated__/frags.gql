@@ -65,7 +65,7 @@ fragment PageParts on Page {
     iconBlocksList {
       __typename
       title
-      text
+      content
       image
       alt
     }
@@ -76,6 +76,10 @@ fragment PageParts on Page {
       logo
       link
     }
+    quote
+    quoteAuthor
+    authorTitle
+    authorImg
     yellowBannerTitle
     yellowBannerText
     yellowBannerLink
@@ -89,7 +93,7 @@ fragment PageParts on Page {
     iconBlocksList {
       __typename
       title
-      text
+      content
       image
       alt
     }

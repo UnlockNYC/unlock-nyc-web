@@ -123,20 +123,7 @@ templateClass: tmpl-home
     {% endfor %}
   </div>
   <!-- MAB NOTE: re-use as component? -->
-  <h3 class="quote">
-    "{{ quote }}"
-  </h3>
-  <div style="text-align: center; margin-top: 60px;">
-    <div class="bg-purple" style="width: 100px; height: 100px; border-radius: 50%; display: inline-block;">
-      <img src="{{ authorImg }}" style="max-width: 100%;">
-    </div>
-    <p class="black" style="font-weight: 500; font-size: 1.2em; margin-top: 15px;">
-      {{ quoteAuthor }}
-    </p>
-    <p class="black" style="margin-top: -10px;">
-      {{ authorTitle }}
-    </p>
-  </div>
+  {% include 'layouts/quote-block.njk' %}
 </div>
 <div class="content bg-cream">
   <div>
@@ -171,6 +158,3 @@ templateClass: tmpl-home
   {% endfor %}
     </div>
   </div>
-
-
-

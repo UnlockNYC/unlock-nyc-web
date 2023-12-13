@@ -7,7 +7,7 @@ templateClass: tmpl-home
 <style>
 
   div.blocks-icons-wrapper .block.image img {
-        max-width: 95%;
+    max-width: 95%;
   }
   div.content.first {
     padding-top: 0;
@@ -25,6 +25,9 @@ templateClass: tmpl-home
   div.org-quote div:nth-child(2) {
     border-left: 1px solid Black;
     padding: 0 0 0 8%;
+  }
+  div.three-stats div.stat:nth-child(2) {
+      min-width: 180px;
   }
   @media only screen and (max-width: 800px) {
     div.content.first {
@@ -63,7 +66,7 @@ templateClass: tmpl-home
 </div>
 <div class="content first">
   <div class="banner-wrapper split" style="height: auto;">
-    <img src="{{ topImage }}" style="width: 100%;">
+    <img src="{{ topImage }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
     <div class="banner-split-text" style="display: flex; align-items: center;">
         <div>
         <h4>

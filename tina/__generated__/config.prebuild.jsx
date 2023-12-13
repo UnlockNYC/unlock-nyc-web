@@ -400,11 +400,11 @@ var config_default = defineConfig({
                     label: "Block Title"
                   },
                   {
-                    type: "string",
-                    name: "text",
+                    type: "rich-text",
+                    name: "content",
                     label: "Block Text",
-                    ui: {
-                      component: "textarea"
+                    parser: {
+                      type: "markdown"
                     }
                   },
                   {
@@ -454,6 +454,29 @@ var config_default = defineConfig({
                     label: "Partner URL"
                   }
                 ]
+              },
+              {
+                type: "string",
+                name: "quote",
+                label: "Quote",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "quoteAuthor",
+                label: "Quote Author"
+              },
+              {
+                type: "string",
+                name: "authorTitle",
+                label: "Author Title"
+              },
+              {
+                type: "image",
+                name: "authorImg",
+                label: "Author Image"
               },
               {
                 type: "string",
@@ -524,11 +547,11 @@ var config_default = defineConfig({
                     label: "Block Title"
                   },
                   {
-                    type: "string",
-                    name: "text",
+                    type: "rich-text",
+                    name: "content",
                     label: "Block Text",
-                    ui: {
-                      component: "textarea"
+                    parser: {
+                      type: "markdown"
                     }
                   },
                   {

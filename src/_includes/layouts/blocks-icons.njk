@@ -8,7 +8,7 @@
     {{ thing.title }}
     </h4>
     <p>
-      {{ thing.text }}
+      {{ thing.content | markdown | safe }}
     </p>
   </div>
 </div>
