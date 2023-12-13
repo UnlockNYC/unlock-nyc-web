@@ -33,10 +33,10 @@ blocksList:
       - buttonText: See more
   - title: Identifying emerging tactics
     text: >-
-      Our research shows that landlords and real estate agents continuously
-      adapt the tactics they use to mask discriminatory behavior. We stay one
-      step ahead by tracking over 30 specific tactics (and counting!) and
-      alerting enforcement agencies as we identify new trends.
+      Landlords and real estate agents continuously adapt the tactics they use
+      to mask discriminatory behavior. We stay one step ahead by tracking over
+      30 specific tactics (and counting!) and alerting enforcement agencies as
+      we identify new trends.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-denial-tactic-tenant.png
     alt: >-
