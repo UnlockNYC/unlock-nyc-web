@@ -48,9 +48,10 @@ blocksList:
       - buttonText: See more
   - title: Changing the narrative
     text: >-
-      Voucher holders do not share a single identity. Through our disparate
-      impact research, we are learning more about the ways that discrimination
-      against vouchers impacts specific groups differently.
+      Voucher holders hold a diverse array of identities, backgrounds, and
+      experiences. Through our disparate impact research, we are learning more
+      about the ways that discrimination against vouchers impacts specific
+      groups differently.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-megaphones-map.png
     alt: >-
