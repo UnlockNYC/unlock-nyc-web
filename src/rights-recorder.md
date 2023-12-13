@@ -37,8 +37,6 @@ iconBlocksList:
     content: >
       Don't wait! Use Rights Recorder to make a report while the details are
       fresh in your mind. The sooner you report, the more options you may have.
-      Our app asks questions about what happened and helps you upload your
-      evidence.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image3.png
     alt: 'yellow illustration, icon of an open file full of documents'
