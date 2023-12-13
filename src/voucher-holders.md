@@ -78,15 +78,16 @@ linksList:
     button: 'yes'
     buttonText: Find your Homebase
     buttonLink: 'https://www.nyc.gov/site/hra/help/homebase.page'
-  - title: Get help with your housing search
+  - title: I need help with my housing search
     text: >-
-      Neighbors Together hosts regular workshops at their office in Bed-Stuy
-      where you can learn tricks for finding an apartment and search for
-      housing.
+      Check out these housing search resources, including a guide to searching
+      for housing, talking tips for voucher holders, and a recorded "know your
+      rights" workshop, from our friends at Neighbors Together.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/nt.png'
     org: Neighbors Together
     button: 'yes'
-    buttonText: See location
+    buttonText: Check it out
+    buttonLink: 'https://www.stopsidnyc.com/resources-for-voucher-holders'
   - title: Prevent or delay an eviction
     text: >-
       Housing Court Answers can explain Housing Court and housing law, rent
