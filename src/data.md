@@ -22,12 +22,12 @@ gridText: >-
   research to share our findings.
 blocksList:
   - title: A unique source of data
-    text: "Think of us like a citizen science lab –\_for fair housing. We crowdsource our data directly from tenants, then rigorously review, aggregate, and integrate with other housing datasets. "
+    text: "Think of us like a citizen science lab –\_for fair housing. We crowdsource our data directly from tenants, then rigorously review, aggregate, and integrate with other housing datasets. Throughout, we go above and beyond best practices to protect the privacy of user-generated data and follow the guiding principles of 'consentful' tech."
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-poster-map.png
     alt: >-
-      A blue calculator, a piece of paper with a pie chart and bar graph, and a
-      spiral notebook sit on an orange surface
+      Two women stand behind a handwritten poster that says "my voucher is good
+      as cash" against a yellow background with a semi-transparent map of NYC
     button: 'no'
     buttonList:
       - buttonText: See more
