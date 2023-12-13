@@ -92,8 +92,7 @@ partnersList:
   - name: Mobilization for Justice
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-mobilization-for-justice.png
-    link: >-
-      https://mobilizationforjustice.org/projects/neighborhood-preservation-project/
+    link: 'https://mobilizationforjustice.org/'
 yellowBannerTitle: Join a virtual workshop
 yellowBannerText: >-
   SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]
