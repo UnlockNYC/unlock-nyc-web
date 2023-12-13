@@ -58,8 +58,8 @@ keyImage4: 'https://public-unlock.nyc3.digitaloceanspaces.com/key4.png'
 statistics:
   - statNum: '2,000+'
     statText: reports collected
-  - statNum: '##'
-    statText: description
+  - statNum: '600'
+    statText: New Yorkers with vouchers in our community
 quote: >-
   [My response from Unlock NYC] was SO different from every single agency I had
   to interact with. I was just like wow, you read the whole thing? And that
