@@ -96,7 +96,7 @@ linksList:
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/housingcourtanswers.png'
     org: Housing Court Answers
     button: 'yes'
-    buttonText: Learn more
+    buttonText: Get answers
     buttonLink: 'https://housingcourtanswers.org/'
   - title: I'm having issues with my current landlord
     text: >-
