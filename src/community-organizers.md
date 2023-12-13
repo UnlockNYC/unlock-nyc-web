@@ -10,11 +10,15 @@ eleventyNavigation:
   order: 1
 title: For Community Organizers
 bannerTitle: Community Organizers
-bannerSubtitle: Secured funding for CCHR
+bannerSubtitle: $1.3 million for fair housing enforcement
 bannerText: >-
-  If you have clients, sed do eiusmod tempor incididunt ut labore et dolore
-  magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
-  amet, consectetur.
+  Our movement fought hard to increase the size of the SOI Unit at the NYC
+  Commission on Human Rights – and we won an unprecedented $1.3 million dollars
+  in the most recent budget. These resources are now threatened by the Mayor’s
+  latest round of budget cuts and PEGs (Program to Eliminate the Gap). Unlock
+  NYC continues to work closely with our organizing partners to stress that the
+  NYC Commission on Human Rights must be exempt from these PEGs so that they can
+  continue to enforce the Human Rights Law.
 blocksList:
   - title: Make SOI a visible/public issue
     text: test test test
