@@ -16,7 +16,7 @@
 # quick link for advocate login
 [[redirects]]
   from = "/advocate-login"
-  to = "/start/secure/advocate/"
+  to = "/start/secure/advocate/check"
   status = 302
   force = true
 
