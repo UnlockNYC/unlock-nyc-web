@@ -9,7 +9,8 @@ dev: MAB
 @font-face {
   font-family: "Intro Rust";
   src: url("https://public-unlock.nyc3.cdn.digitaloceanspaces.com/font-b185c63a-8d27-412b-b4cb-047ca0c8de79_IntroRust-Base.otf")
-    format("truetype");
+        format("truetype");
+  font-display: swap;
 }
 
 :root {
@@ -347,7 +348,7 @@ div#footer p {
 }
 
 div#footer p.small {
-  color: var(--light-grey-text);
+  color: White;
 }
 
 div#footer p a, div#footer a {
