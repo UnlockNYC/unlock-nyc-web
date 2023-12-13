@@ -14,7 +14,8 @@ templateClass: tmpl-home
     margin-top: -10vh;
   }
   div.org-quote{
-    padding: 5% 8%;
+    margin-top: 50px;
+    padding: 2% 5%;
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
@@ -86,7 +87,7 @@ templateClass: tmpl-home
   </div>
   <!-- MAB do I need to move this to larger CSS, and make a component? -->
   <div class="org-quote">
-    <div style="padding: 35px;">
+    <div style="padding: 35px; min-width: 160px; max-width: 300px; margin: auto;">
       <img src="{{ quoteImg }}" style="width: 100%;" alt="{{ quoteTitle }} logo">
     </div>
     <div>
@@ -102,7 +103,7 @@ templateClass: tmpl-home
     </div>
   </div>
 </div>
-<div class="content bg-cream" style="padding-left: 20%; padding-right: 20%;">
+<div class="content bg-cream">
   <h3 style="text-align: center; margin-top: 0;">
    {{ titleAboveStats }}
   </h3>
