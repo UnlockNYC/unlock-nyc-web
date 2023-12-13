@@ -819,9 +819,6 @@ div.two-stats {
 div.two-stats div.stat {
   border-right: 1px solid Black;
   padding: 30px;
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-column-gap: 15px;
   box-sizing: border-box;
 }
 

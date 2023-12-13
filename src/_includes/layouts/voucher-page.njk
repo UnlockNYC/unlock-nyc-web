@@ -105,24 +105,22 @@ templateClass: tmpl-home
       <img src="{{ keyImage4 }}" alt="photograph of hands holding set of keys">
     </div>
   </div>
-  <!-- MAB NOTE: re-use below as component-->
   <div class="bg-purple two-stats">
       {% for stat in statistics %}
     <div class="stat">
       <div>
-        <h1 style="margin: 0;padding: 0;font-size: 6rem;">
+        <h1 style="margin: 0;padding: 0;font-size: 4rem;">
           {{ stat.statNum }}
         </h1>
       </div>
       <div>
-        <h4 style="margin: 0;">
+        <h4 style="margin: auto; padding-top: 5px; max-width: 90%;">
           {{ stat.statText }}
         </h4>
       </div>
     </div>
     {% endfor %}
   </div>
-  <!-- MAB NOTE: re-use as component? -->
   {% include 'layouts/quote-block.njk' %}
 </div>
 <div class="content bg-cream">
@@ -133,7 +131,6 @@ templateClass: tmpl-home
     <p id="looking-for">
       Unlock NYC helps you record and report discrimination on your housing search. If you’re having a different issue, try one of these organizations!
     </p>
-    <!-- MAB, maybe make this a partial? Also used in housing specialist page-->
     {% for thing in linksList %}
     <div class="blocks-icons-wrapper links">
       <div class="block image">
