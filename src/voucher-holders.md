@@ -46,7 +46,8 @@ blocksList:
       can help you resolve the issue you are facing. When you speak up about
       housing discrimination, you can unlock housing for yourself – and others.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/vouhcer-3.png'
-    button: 'yes'
+    alt: 'unlocked padlock emoji, house emoji, against an orange background'
+    button: 'no'
     buttonList:
       - buttonText: Learn more
 keysHeadline: 'Text Here, Keys'
