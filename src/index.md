@@ -59,7 +59,7 @@ homeSlider:
       https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.webm
     mediaFile2: >-
       https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.mp4
-    mediaPoster: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-susan-poster.png'
+    mediaPoster: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-susan-poster.webp'
   - slideType: quote
     quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
     author: 'H. L., Rights Recorder app user'
