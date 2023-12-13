@@ -80,7 +80,10 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-nyc-commission-on-human-rights.png
     link: 'https://www.nyc.gov/site/cchr/media/source-of-income.page'
-  - name: Partner 2
+  - name: Fair Housing Justice Center
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-fair-housing-justice-center.png
+    link: 'https://fairhousingjustice.org/'
   - name: Partner 3
   - name: Partner 4
 yellowBannerTitle: Join a virtual workshop
