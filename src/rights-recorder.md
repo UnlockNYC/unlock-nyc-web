@@ -41,7 +41,8 @@ iconBlocksList:
       sure to take clear screenshots that show any denials or ghosting from
       agents. We'll help you keep all your evidence organized and secure, so you
       can report what happened whenever you're ready.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 2.png'
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image2.png
     alt: 'yellow illustration, sound waves representing audio file evidence'
   - title: Submit your report
     text: >-
