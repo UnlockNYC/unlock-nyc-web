@@ -10,24 +10,18 @@ faqPageList: FAQ Rights Recorder
 title: Rights Recorder App
 bannerTitle: Rights Recorder App
 bannerText: >-
-  You don’t need to download anything, just enter your phone number to get
-  started.
+  Do landlords keep saying "no" to your voucher? Use our free app to record it
+  and report it – right from your phone.
 introText: >
-  Stay one step ahead of landlords with our Rights Recorder app. Record your
-  phone calls, capture evidence of shady behavior, and report brokers and
-  landlords when they violate your rights!
+  Stay one step ahead of landlords with our Rights Recorder app. Capture
+  evidence of shady behavior so you can report brokers and landlords when they
+  violate your rights! It's 100% free and you don't need to download anything.
 iconBlocksList:
   - title: Sign up
     text: >-
-      Unlock NYC is the go-to resource for your housing search! Signing up is a
-      breeze – just enter your phone number below and we'll send you a
-      registration link via text. Once you're registered, our team will be there
-      to help you every step of the way. We'll ask you a few questions about
-      yourself, your housing search, and your voucher, so we can understand what
-      you need. You can also schedule a 1-on-1 call with our team to ask any
-      questions you have. But that's not all! By signing up, you'll also get
-      access to lots of resources, like community events, special content, and
-      other tools to help with your housing search.
+      The first time you use Rights Recorder, we'll ask you a few questions
+      about yourself, your housing search, and your voucher, so we can
+      understand what you need. 
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image1.png
     alt: 'yellow illustration, cursor arrow pointing over a button that says sign up'
