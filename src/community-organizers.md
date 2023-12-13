@@ -45,8 +45,14 @@ blocksList:
     buttonList:
       - buttonText: Contact us
         buttonLink: 'https://airtable.com/appfOQvWUNipVmUdR/shrUjHME2Vw4JBLHV'
-  - title: Participatory Research
-    text: mab text text proton lorem ipsum
+  - title: Something about data requests?
+    text: >-
+      - our map has data from every city council district
+
+      - you can use it!
+
+      - if you want additional data for your campaign, fill out our data request
+      form
     image: image placeholder
     button: 'yes'
     buttonList:
