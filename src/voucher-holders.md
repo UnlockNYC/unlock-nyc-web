@@ -98,30 +98,16 @@ linksList:
     button: 'yes'
     buttonText: Learn more
     buttonLink: 'https://housingcourtanswers.org/'
-  - title: Address a housing situation
+  - title: I'm having issues with my current landlord
     text: >-
-      Call the Met Council on Housing Tenant’s Rights Hotline to get answers
-      about your rights as a tenant; they may be able to refer you to a lawyer
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/metcouncil.png'
-    org: Met Council on Housing
-    button: 'yes'
-    buttonText: Call the Met Council
-  - title: Request repairs in your apartment
-    text: >-
-      JustFix’s Letter of Complaint tool can help you send a free customized
-      letter to your landlord requesting repairs.
+      JustFix's free tools can help you request repairs in your apartment,
+      research your landlord and building, order your apartment's rent history,
+      and more.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/justfix.png'
     org: JustFix
     button: 'yes'
-    buttonText: Request repairs
-  - title: Document heating issues
-    text: >-
-      If your landlord isn’t turning on the heat in winter, Heat Seek sensors
-      let you quickly and easily document the temperature in your home.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/heatseek.png'
-    org: Heat Seek
-    button: 'yes'
     buttonText: Learn more
+    buttonLink: 'https://www.justfix.org/en/'
 _template: voucherholders
 ---
 
