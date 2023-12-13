@@ -76,6 +76,10 @@ partnersText: >-
   Unlock NYC partners with organizations around the city so that we can connect
   you to someone who can help. For instance, you can send your report to:
 partnersList:
+  - name: NYS Division of Human Rights
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-NY-state-division-human-rights.png
+    link: 'https://dhr.ny.gov/'
   - name: NYC Commission on Human Rights
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-nyc-commission-on-human-rights.png
