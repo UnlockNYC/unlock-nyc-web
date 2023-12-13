@@ -22,7 +22,7 @@ gridText: >-
   research to share our findings.
 blocksList:
   - title: A unique source of data
-    text: "Think of us like a citizen science lab –\_for fair housing. We crowdsource our data directly from tenants, then rigorously review, aggregate, and integrate with other housing datasets. Throughout, we go above and beyond best practices to protect the privacy of user-generated data and follow the guiding principles of 'consentful' tech."
+    text: "Think of us like a citizen science lab –\_for fair housing. We crowdsource our data directly from tenants, then rigorously review, aggregate, and integrate with other housing datasets. At every step, we follow best practices to protect the privacy of user-generated data and embody the guiding principles of 'consentful' tech."
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-poster-map.png
     alt: >-
