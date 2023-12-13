@@ -20,9 +20,13 @@ blocksList:
       ghosted over and over again, our team and our tools are here. We can
       connect you to resources, amplify your voice, and help you unlock housing.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/voucher-1.png'
+    alt: >-
+      eyes looking left emoji, raised fist emoji in medium brown, against a
+      purple background
     button: 'yes'
     buttonList:
-      - buttonText: Attend a workshop
+      - buttonText: Sign up
+        buttonLink: 'http://eepurl.com/hnC4Bn'
   - title: Flex your rights
     text: >-
       Keep a paper trail of your search. You’ll be more confident, organized,
