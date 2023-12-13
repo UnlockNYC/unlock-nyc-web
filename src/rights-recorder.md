@@ -54,7 +54,8 @@ iconBlocksList:
       may ask you for more details if needed. We'll also conduct research on the
       broker and landlord involved. In just 1-2 business days, we'll send you a
       copy of your report for your records.
-    image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 3.png'
+    image: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image3.png
     alt: 'yellow illustration, icon of an open file full of documents'
   - title: Take action!
     text: >-
