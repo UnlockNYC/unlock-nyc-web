@@ -8,7 +8,7 @@ dev: MAB
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "Intro Rust";
-  src: url("https://cdn.glitch.global/53a51cf9-3776-4b8a-a2d4-b91bd1be3da1/b185c63a-8d27-412b-b4cb-047ca0c8de79_IntroRust-Base.otf?v=1695070197850")
+  src: url("https://public-unlock.nyc3.cdn.digitaloceanspaces.com/font-b185c63a-8d27-412b-b4cb-047ca0c8de79_IntroRust-Base.otf")
     format("truetype");
 }
 
