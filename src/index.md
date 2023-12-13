@@ -55,13 +55,19 @@ homeSlider:
     author: 'K.N., Rights Recorder app user'
   - slideType: video
     mediaLabel: TEST VIDEO
-    mediaFile: 'https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.webm'
-    mediaFile2: 'https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.mp4'
+    mediaFile: >-
+      https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.webm
+    mediaFile2: >-
+      https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-susan-n-leadership-collective.mp4
   - slideType: quote
     quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
     author: 'H. L., Rights Recorder app user'
   - slideType: video
     mediaLabel: 'TEST VIDEO #2'
+    mediaFile: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/home-leslie-meadows-dear-voucher-holders.webm
+    mediaFile2: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/home-leslie-meadows-dear-voucher-holders.mp4
   - slideType: quote
     quoteText: >-
       The journey doesn’t stop here. I will always support Unlock NYC for
