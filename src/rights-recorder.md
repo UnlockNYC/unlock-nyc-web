@@ -84,7 +84,11 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-fair-housing-justice-center.png
     link: 'https://fairhousingjustice.org/'
-  - name: Partner 3
+  - name: Fordham Law
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-fordham-law.png
+    link: >-
+      https://www.fordham.edu/school-of-law/experiential-education/clinics/right-to-housing-and-litigation/
   - name: Partner 4
 yellowBannerTitle: Join a virtual workshop
 yellowBannerText: >-
