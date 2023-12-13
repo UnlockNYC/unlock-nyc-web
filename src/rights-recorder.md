@@ -42,8 +42,7 @@ iconBlocksList:
     alt: 'yellow illustration, icon of an open file full of documents'
   - title: Take action!
     content: >
-      Unlock NYC reviews your report and conducts research on the broker and
-      landlord. We add all reports anonymously to our [community-powered
+      Unlock NYC adds all reports anonymously to our [community
       map](/data/soi-map), and we can also share your report with a legal
       service provider for personalized advice.
     image: >-
