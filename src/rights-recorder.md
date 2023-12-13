@@ -28,8 +28,8 @@ iconBlocksList:
   - title: Collect evidence
     content: >
       Rights Recorder helps you collect evidence and stay organized. Build your
-      paper trail by recording phone calls with brokers and landlords, and make
-      sure to take clear screenshots of emails and text messages.
+      paper trail by recording phone calls with brokers and landlords and taking
+      clear screenshots of emails and text messages.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image2.png
     alt: 'yellow illustration, sound waves representing audio file evidence'
