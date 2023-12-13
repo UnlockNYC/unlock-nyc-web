@@ -1763,6 +1763,11 @@ export default defineConfig({
             label: "Headshot"
           },
           {
+            type: "string",
+            name: "bioLink",
+            label: "LinkedIn, etc. (optional)"
+          },
+          {
             type: "number",
             name: "order",
             label: "Order"

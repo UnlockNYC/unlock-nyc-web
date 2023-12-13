@@ -130,19 +130,25 @@ templateClass: tmpl-home
     </h4>
     <div class="bio-container">
       {%- for post in collections.Staff -%}
-      <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
-        <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center; overflow: hidden;">
-           <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
+      {% if post.data.bioLink %}
+      <a href="{{ post.data.bioLink }}" style="text-decoration: none;" target="_blank">
+      {% endif %}
+        <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
+            <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center; overflow: hidden;">
+            <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
+            </div>
+            <div style="padding-top: 15px;">
+            <h4>
+                {{ post.data.name }}
+            </h4>
+            <p style="margin-top: -10px;">
+                {{ post.data.title }}
+            </p>
+            </div>
         </div>
-        <div style="padding-top: 15px;">
-          <h4>
-            {{ post.data.name }}
-          </h4>
-          <p style="margin-top: -10px;">
-            {{ post.data.title }}
-          </p>
-        </div>
-      </div>
+      {% if post.data.bioLink %}
+      </a>
+      {% endif %}
       {%- endfor -%}
     </div>
     <h4>
@@ -150,6 +156,9 @@ templateClass: tmpl-home
     </h4>
     <div class="bio-container">
         {%- for post in collections.Team -%}
+        {% if post.data.bioLink %}
+        <a href="{{ post.data.bioLink }}" style="text-decoration: none;" target="_blank">
+        {% endif %}
         <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
                 <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
@@ -163,6 +172,9 @@ templateClass: tmpl-home
                 </p>
             </div>
         </div>
+        {% if post.data.bioLink %}
+        </a>
+        {% endif %}
         {%- endfor -%}
     </div>
     <h4>
@@ -173,6 +185,9 @@ templateClass: tmpl-home
     </p>
     <div class="bio-container">
         {%- for post in collections.LC -%}
+        {% if post.data.bioLink %}
+        <a href="{{ post.data.bioLink }}" style="text-decoration: none;" target="_blank">
+        {% endif %}
         <div class="bio" style="order: {%- if post.data.order -%}{{ post.data.order }}{%- else -%} 50{%- endif -%}">
             <div class="bg-purple" style="border-radius: 50%; width: 100px; height: 100px; display: block; text-align: center">
                 <img src="{{ post.data.image }}" alt="headshot of {{ post.data.name }}">
@@ -186,6 +201,9 @@ templateClass: tmpl-home
                 </p>
             </div>
         </div>
+        {% if post.data.bioLink %}
+        </a>
+        {% endif %}
         {%- endfor -%}
     </div>
     <h4>

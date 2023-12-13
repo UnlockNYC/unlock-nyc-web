@@ -883,6 +883,7 @@ type Bio implements Node & Document {
   title: String
   tags: [String]
   image: String
+  bioLink: String
   order: Float
   id: ID!
   _sys: SystemInfo!
@@ -904,6 +905,7 @@ input BioFilter {
   title: StringFilter
   tags: StringFilter
   image: ImageFilter
+  bioLink: StringFilter
   order: NumberFilter
 }
 
@@ -1488,6 +1490,7 @@ input BioMutation {
   title: String
   tags: [String]
   image: String
+  bioLink: String
   order: Float
 }
 

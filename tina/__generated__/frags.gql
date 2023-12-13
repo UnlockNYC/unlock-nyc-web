@@ -314,6 +314,7 @@ fragment BioParts on Bio {
   title
   tags
   image
+  bioLink
   order
 }
 

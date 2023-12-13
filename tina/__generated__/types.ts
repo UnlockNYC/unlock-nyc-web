@@ -1093,6 +1093,7 @@ export type Bio = Node & Document & {
   title?: Maybe<Scalars['String']['output']>;
   tags?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   image?: Maybe<Scalars['String']['output']>;
+  bioLink?: Maybe<Scalars['String']['output']>;
   order?: Maybe<Scalars['Float']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
@@ -1114,6 +1115,7 @@ export type BioFilter = {
   title?: InputMaybe<StringFilter>;
   tags?: InputMaybe<StringFilter>;
   image?: InputMaybe<ImageFilter>;
+  bioLink?: InputMaybe<StringFilter>;
   order?: InputMaybe<NumberFilter>;
 };
 
@@ -1827,6 +1829,7 @@ export type BioMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   tags?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   image?: InputMaybe<Scalars['String']['input']>;
+  bioLink?: InputMaybe<Scalars['String']['input']>;
   order?: InputMaybe<Scalars['Float']['input']>;
 };
 
@@ -1900,7 +1903,7 @@ type PageParts_PageInvolved_Fragment = { __typename: 'PageInvolved', title: stri
 
 export type PagePartsFragment = PageParts_PageIndex_Fragment | PageParts_PageAbout_Fragment | PageParts_PageRightsrecorder_Fragment | PageParts_PageAdvocateportal_Fragment | PageParts_PageDatapage_Fragment | PageParts_PageVoucherholders_Fragment | PageParts_PageCommunityorganizers_Fragment | PageParts_PageHousingspecialists_Fragment | PageParts_PageFunding_Fragment | PageParts_PagePolicy_Fragment | PageParts_PagePress_Fragment | PageParts_PageInvolved_Fragment;
 
-export type BioPartsFragment = { __typename: 'Bio', name: string, title?: string | null, tags?: Array<string | null> | null, image?: string | null, order?: number | null };
+export type BioPartsFragment = { __typename: 'Bio', name: string, title?: string | null, tags?: Array<string | null> | null, image?: string | null, bioLink?: string | null, order?: number | null };
 
 export type FaqPartsFragment = { __typename: 'Faq', question: string, answer?: any | null, tags?: Array<string | null> | null, order?: number | null };
 
@@ -1936,7 +1939,7 @@ export type BioQueryVariables = Exact<{
 }>;
 
 
-export type BioQuery = { __typename?: 'Query', bio: { __typename: 'Bio', id: string, name: string, title?: string | null, tags?: Array<string | null> | null, image?: string | null, order?: number | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type BioQuery = { __typename?: 'Query', bio: { __typename: 'Bio', id: string, name: string, title?: string | null, tags?: Array<string | null> | null, image?: string | null, bioLink?: string | null, order?: number | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type BioConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -1948,7 +1951,7 @@ export type BioConnectionQueryVariables = Exact<{
 }>;
 
 
-export type BioConnectionQuery = { __typename?: 'Query', bioConnection: { __typename?: 'BioConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'BioConnectionEdges', cursor: string, node?: { __typename: 'Bio', id: string, name: string, title?: string | null, tags?: Array<string | null> | null, image?: string | null, order?: number | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type BioConnectionQuery = { __typename?: 'Query', bioConnection: { __typename?: 'BioConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'BioConnectionEdges', cursor: string, node?: { __typename: 'Bio', id: string, name: string, title?: string | null, tags?: Array<string | null> | null, image?: string | null, bioLink?: string | null, order?: number | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type FaqQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -2363,6 +2366,7 @@ export const BioPartsFragmentDoc = gql`
   title
   tags
   image
+  bioLink
   order
 }
     `;
