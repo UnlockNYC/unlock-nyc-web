@@ -76,7 +76,10 @@ partnersText: >-
   Unlock NYC partners with organizations around the city so that we can connect
   you to someone who can help. For instance, you can send your report to:
 partnersList:
-  - name: Partner 1
+  - name: NYC Commission on Human Rights
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-nyc-commission-on-human-rights.png
+    link: 'https://www.nyc.gov/site/cchr/media/source-of-income.page'
   - name: Partner 2
   - name: Partner 3
   - name: Partner 4
