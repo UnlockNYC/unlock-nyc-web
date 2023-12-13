@@ -39,6 +39,17 @@ bg: ""
 </style>
 {# page template, extends the base template #}
 
+
+{# get index, odd reports are yellow, evens are green #}
+{% set targetItem = reportTitle %}
+{% set itemIndex = -1 %}
+
+{% for item in collections.report %}
+  {% if item.data.reportTitle == reportTitle %}
+    {% set itemIndex = loop.index %}
+  {% endif %}
+{% endfor %}
+
 <div class="top-banner">
   <div class="content" style="padding-bottom: 0; padding-top: 0;">
   <div class="banner-wrapper split">
@@ -60,7 +71,7 @@ bg: ""
     </div>
     <div style="display: table">
       <div class="report-card-wrapper">
-        <div class="bg-yellow report-card">
+        <div class="{% if itemIndex == 1 or itemIndex == 3 or itemIndex == 5 %}bg-yellow{% else %}bg-green{% endif %} report-card">
           <div>
             <span class="tag">Report</span>
             <span class="tag">2022</span>
@@ -97,7 +108,7 @@ bg: ""
         {% for story in collections[reportTitle] %}
         <div class="press-item">
             <div class="bg-cream" style="height: 150px; padding: 20px; display: flex; align-items: center;">
-                <img src="{{ story.data.image }}" alt="press outlet logo" style="width: 100%;">
+                <img src="{{ story.data.image }}" alt="press outlet logo">
             </div>
             <div class="press-summary">
                 <p class="date">{{ story.data.pubdate }}</p>
