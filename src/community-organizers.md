@@ -37,7 +37,7 @@ blocksList:
     buttonList:
       - buttonText: Read more
 orangeBannerTitle: Interested in working with us?
-orangeBannerButton: Get In Touch
+orangeBannerButton: Get in touch
 orangeBannerLink: 'https://airtable.com/appfOQvWUNipVmUdR/shrUjHME2Vw4JBLHV'
 _template: communityorganizers
 ---
