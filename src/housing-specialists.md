@@ -13,7 +13,7 @@ eleventyNavigation:
 title: For Housing Specialists
 bannerTitle: Housing Specialists
 bannerSubtitle: Help your clients report discrimination
-topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/Team.png'
+topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 signUpLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
 quote: >-
   “I cannot recommend [Unlock NYC] enough. I have referred every voucher-holding
