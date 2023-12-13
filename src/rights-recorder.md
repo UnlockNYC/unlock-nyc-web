@@ -74,8 +74,8 @@ iconBlocksList:
     alt: 'yellow illustration, one hand passing the baton to another hand'
 partnersText: >-
   Unlock NYC works with legal service providers who may be able to review your
-  evidence, conduct additional investigation, and help you take action. We have
-  helped over 600 New Yorkers share their reports with organizations like:
+  evidence, conduct additional investigation, and help you take legal action. We
+  have helped over 600 New Yorkers share their reports with organizations like:
 partnersList:
   - name: NYS Division of Human Rights
     logo: >-
