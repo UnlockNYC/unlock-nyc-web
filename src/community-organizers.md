@@ -20,8 +20,14 @@ bannerText: >-
   NYC Commission on Human Rights must be exempt from these PEGs so that they can
   continue to enforce the Human Rights Law.
 blocksList:
-  - title: Make SOI a visible/public issue
-    text: test test test
+  - title: Mobilizing for power and policy change
+    text: >-
+      Fair housing for all New Yorkers will take a mass, people-powered movement
+      to win transformative change. Since 2020, when we joined the
+      #HomelessCantStayHome and VALUE in Housing campaigns, we have taken our
+      cues from allies in the housing movement. We are also on the steering
+      committee of the Human Rights Law Working Group and a member of the Homes
+      Can't Wait Coalition and Housing Justice for All.
     image: image placeholder
     button: 'yes'
     buttonList:
