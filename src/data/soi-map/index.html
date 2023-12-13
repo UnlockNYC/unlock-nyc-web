@@ -96,7 +96,7 @@
       #data-window #action button {
         border: none;
         padding: 6px 13px;
-        background-color: #23296a;
+        background-color: var(--purple);
         color: White;
         font-size: 16px;
         font-family: var(--page-font), sans-serif;
@@ -104,7 +104,7 @@
       }
       #data-window #action button:hover {
         background-color: #efc02a;
-        color: #23296a;
+        color: var(--purple);
       }
       #data-window #cd-wrap {
         display: none;
@@ -191,7 +191,7 @@
         color: Black;
       }
       div.pop-address {
-        background-color: #23296a;
+        background-color: var(--purple);
         width: calc(100% + 20px);
         margin-left: -10px;
         color: White;
@@ -228,7 +228,7 @@
         height: 60px;
         left: 0;
         bottom: 0;
-        background-color: #23296a;
+        background-color: var(--purple);
         text-align: center;
         box-sizing: border-box;
         padding: 10px;
@@ -237,7 +237,7 @@
       }
       #about h2 {
         font-family: "Intro Rust", monospace;
-        color: White;
+        color: Black;
         font-size: 20px;
         margin: 0;
         padding-top: 8px;
@@ -272,8 +272,8 @@
         cursor: pointer;
         display: inline-block;
         margin-right: 6px;
-        background-color: #23296a;
-        color: White;
+        background-color: var(--purple);
+        color: Black;
         font-family: "Intro Rust", monospace;
         font-size: 17px;
         z-index: 10;
@@ -281,8 +281,7 @@
         padding: 6px 10px;
       }
       div.report-button:hover {
-        background-color: #efc02a;
-        color: #23296a;
+        background-color: var(--yellow);
       }
       div#logo-grid {
         padding-top: 50px;
@@ -945,23 +944,23 @@
         <div style="width: 20px;text-align: right;display: inline-block;vertical-align: middle;">40</div>
       </div>
       <div class="key-wrap">
-        <div class="key" style="background-color: #caf0f8"></div>
+        <div class="key" style="background-color: #CCBAFF"></div>
         <!--0-10%-->
       </div>
       <div class="key-wrap">
-        <div class="key" style="background-color: #48cae4"></div>
+        <div class="key" style="background-color: #B5A5E6"></div>
         <!--11-20%-->
       </div>
       <div class="key-wrap">
-        <div class="key" style="background-color: #0096c7"></div>
+        <div class="key" style="background-color: #9D90CD"></div>
         <!--21-30%-->
       </div>
       <div class="key-wrap">
-        <div class="key" style="background-color: #023e8a"></div>
+        <div class="key" style="background-color: #867AB4"></div>
         <!--31-39%-->
       </div>
       <div class="key-wrap">
-        <div class="key" style="background-color: #03045e"></div>
+        <div class="key" style="background-color: #575082"></div>
         <!--40+%-->
       </div>`;
 
@@ -1048,13 +1047,13 @@
                 ["linear"],
                 ["get", "soi_rate"],
                 0,
-                "#CAF0F8",
+                "#CCBAFF",
                 10,
-                "#48CAE4",
+                "#B5A5E6",
                 20,
-                "#0096C7",
+                "#9D90CD",
                 30,
-                "#023E8A",
+                "#867AB4",
                 40,
                 "#03045E",
               ],
