@@ -3,11 +3,6 @@ bg: White
 layout: layouts/organizers.njk
 blocksFirst: image
 blocksButtonColor: black
-eleventyNavigation:
-  key: Community Organizers
-  parent: Partners
-  title: Community Organizers
-  order: 1
 title: For Community Organizers
 bannerTitle: Community Organizers
 bannerSubtitle: Secured funding for CCHR

@@ -62,7 +62,7 @@
 # URL mapping from menu tabs
 [[redirects]]
     from = "/partners"
-    to = "/community-organizers/"
+    to = "/housing-specialists/"
     status = 301
     force = true
 
