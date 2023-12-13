@@ -9,9 +9,9 @@ eleventyNavigation:
 title: For Voucher Holders
 bannerTitle: For Voucher Holders
 bannerText: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco.
+  Got a voucher? Being treated unfairly? It's not your fault and you are not
+  alone. At Unlock NYC, New Yorkers with vouchers keep a paper trail, report
+  housing discrimination, and demand accountability.
 blocksList:
   - title: Uncover your power
     text: >-
@@ -50,14 +50,14 @@ blocksList:
     button: 'no'
     buttonList:
       - buttonText: Learn more
-keysHeadline: 'Text Here, Keys'
+keysHeadline: Unlocking doors since 2021
 keyImage1: 'https://public-unlock.nyc3.digitaloceanspaces.com/key1.png'
 keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/key2.png'
 keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/key3.png'
 keyImage4: 'https://public-unlock.nyc3.digitaloceanspaces.com/key4.png'
 statistics:
-  - statNum: '## '
-    statText: stat description
+  - statNum: '2,000+'
+    statText: reports collected
   - statNum: '##'
     statText: description
 quote: >-
