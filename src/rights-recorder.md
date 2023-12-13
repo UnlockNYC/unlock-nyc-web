@@ -89,7 +89,11 @@ partnersList:
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-fordham-law.png
     link: >-
       https://www.fordham.edu/school-of-law/experiential-education/clinics/right-to-housing-and-litigation/
-  - name: Partner 4
+  - name: Mobilization for Justice
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-mobilization-for-justice.png
+    link: >-
+      https://mobilizationforjustice.org/projects/neighborhood-preservation-project/
 yellowBannerTitle: Join a virtual workshop
 yellowBannerText: >-
   SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]
