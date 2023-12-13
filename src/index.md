@@ -64,13 +64,12 @@ homeSlider:
     quoteText: '[Unlock NYC] made me feel like my own words actually matter.'
     author: 'H. L., Rights Recorder app user'
   - slideType: video
-    mediaLabel: 'TEST VIDEO #2'
+    mediaLabel: 'Video #2'
     mediaFile: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/home-leslie-meadows-dear-voucher-holders.webm
     mediaFile2: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/home-leslie-meadows-dear-voucher-holders.mp4
-    mediaPoster: >-
-      https://public-unlock.nyc3.cdn.digitaloceanspaces.com/home-leslie-poster.png
+    mediaPoster: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-leslie-poster.webp'
   - slideType: quote
     quoteText: >-
       The journey doesn’t stop here. I will always support Unlock NYC for
