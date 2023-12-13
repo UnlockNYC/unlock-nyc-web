@@ -14,6 +14,7 @@ bannerText: >-
   NYC continues to work closely with our organizing partners to stress that the
   NYC Commission on Human Rights must be exempt from these PEGs so that they can
   continue to enforce the Human Rights Law.
+topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 blocksList:
   - title: Mobilizing for power and policy change
     text: >-
