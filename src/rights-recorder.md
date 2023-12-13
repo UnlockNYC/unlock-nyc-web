@@ -83,12 +83,11 @@ partnersList:
     link: 'https://communitiesresist.org/'
 yellowBannerTitle: Join our community of voucher holders
 yellowBannerText: >-
-  Unlock NYC is a special community of voucher holders past and present teaming
-  up against unfair treatment.
-
-
-  special access to Unlock NYC's virtual and in-person events, latest resource
-  guides, and other tools to help with your housing search. 
+  Unlock NYC is a special community of voucher holders teaming up against unfair
+  treatment. If you have a voucher, sign up here for special access to Unlock
+  NYC's virtual and in-person events, latest resource guides, and other tools to
+  help with your housing search. 
+yellowBannerLink: 'http://eepurl.com/hnC4Bn'
 _template: rightsrecorder
 ---
 
