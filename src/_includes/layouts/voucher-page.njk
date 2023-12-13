@@ -128,7 +128,7 @@ templateClass: tmpl-home
     <h3 style="text-align: center; margin-top: 0;">
       Not quite what you're looking for?
     </h3>
-    <p id="looking-for">
+    <p id="looking-for" class="black">
       Unlock NYC helps you record and report discrimination on your housing search. If you’re having a different issue, try one of these organizations!
     </p>
     {% for thing in linksList %}
@@ -140,7 +140,7 @@ templateClass: tmpl-home
         <h4>
         {{ thing.title }}
         </h4>
-        <p>
+        <p class="black">
           {{ thing.text }}
         </p>
         {% if thing.button == 'yes' %}
