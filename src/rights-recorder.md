@@ -38,8 +38,8 @@ iconBlocksList:
     text: >-
       Don't wait! Use Rights Recorder to make a report while the details are
       fresh in your mind. The sooner you report, the more options you may have
-      to seek justice. Our app will guide you through answering some questions
-      about what happened and allow you to upload any evidence you have.
+      to seek justice. Our app will ask you questions about what happened and
+      help you upload any evidence you have.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image3.png
     alt: 'yellow illustration, icon of an open file full of documents'
