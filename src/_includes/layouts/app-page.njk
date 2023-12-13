@@ -77,10 +77,10 @@ templateClass: tmpl-home
   <h3 class="center-title">
     Where can you send a report?
   </h3>
-  <p class="black" style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto;">
-    Unlock NYC partners with organizations around the city so that we can connect you to someone who can help. For instance, you can send your report to:
+  <p class="black" style="font-size: 1.15em; font-weight: 500; max-width: 70%; text-align: center; margin: auto; padding-bottom: 60px;">
+    {{ partnersText }}
   </p>
-  <div class="four-infos">
+  <!--<div class="four-infos">
     <div class="infograph-container">
       <div class="bg-green" style="width: 100px; height: 100px; border-radius: 50%; margin: auto;"></div>
       <p class="black">
@@ -105,8 +105,16 @@ templateClass: tmpl-home
         The NYC Commission on Human Rights for a fair chance at applying for an apartment they were turned away from
       </p>
     </div>
+  </div>-->
+  <div class="funder-grid">
+    {% for partner in partnersList %}
+    <a href="{{ partner.link }}" target="_blank">
+        <div class="bg-cream">
+            <img src="{{ partner.logo }}" alt="{{ partner.name }} logo">
+        </div>
+    </a>
+    {% endfor %}
   </div>
-  <!-- MAB: make this a partial? story bit -->
   <div class="story">
     <div style="background-color: Black; min-height: 250px;"></div>
     <div style="background-color: #F1F1E3; padding: 10%;">

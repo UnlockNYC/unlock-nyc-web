@@ -68,6 +68,14 @@ iconBlocksList:
       policymakers can better understand the issue and create positive change.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/Image 4.png'
     alt: 'yellow illustration, one hand passing the baton to another hand'
+partnersText: >-
+  Unlock NYC partners with organizations around the city so that we can connect
+  you to someone who can help. For instance, you can send your report to:
+partnersList:
+  - name: Partner 1
+  - name: Partner 2
+  - name: Partner 3
+  - name: Partner 4
 yellowBannerTitle: Join a virtual workshop
 yellowBannerText: >-
   SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]

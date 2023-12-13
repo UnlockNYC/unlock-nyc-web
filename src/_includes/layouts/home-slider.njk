@@ -50,7 +50,7 @@
         {% endif %}
         {% if slide.slideType == "video" %}
          <div class="slide video">
-             <video preload="metadata" controls>
+             <video preload="metadata" controls poster="{{ slide.mediaPoster }}">
                  <source src="{{ slide.mediaFile }}">
                  <source src="{{ slide.mediaFile2 }}">
              </video>

@@ -125,6 +125,7 @@ type PageIndexHomeSlider {
   mediaLabel: String
   mediaFile: String
   mediaFile2: String
+  mediaPoster: String
 }
 
 type PageIndex implements Node & Document {
@@ -180,12 +181,20 @@ type PageRightsrecorderIconBlocksList {
   alt: String
 }
 
+type PageRightsrecorderPartnersList {
+  name: String!
+  logo: String
+  link: String
+}
+
 type PageRightsrecorder implements Node & Document {
   title: String!
   bannerTitle: String
   bannerText: String
   introText: JSON
   iconBlocksList: [PageRightsrecorderIconBlocksList]
+  partnersText: String
+  partnersList: [PageRightsrecorderPartnersList]
   yellowBannerTitle: String
   yellowBannerText: String
   yellowBannerLink: String
@@ -509,6 +518,7 @@ input PageIndexHomeSliderFilter {
   mediaLabel: StringFilter
   mediaFile: ImageFilter
   mediaFile2: ImageFilter
+  mediaPoster: ImageFilter
 }
 
 input PageIndexFilter {
@@ -564,12 +574,20 @@ input PageRightsrecorderIconBlocksListFilter {
   alt: StringFilter
 }
 
+input PageRightsrecorderPartnersListFilter {
+  name: StringFilter
+  logo: ImageFilter
+  link: StringFilter
+}
+
 input PageRightsrecorderFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerText: StringFilter
   introText: RichTextFilter
   iconBlocksList: PageRightsrecorderIconBlocksListFilter
+  partnersText: StringFilter
+  partnersList: PageRightsrecorderPartnersListFilter
   yellowBannerTitle: StringFilter
   yellowBannerText: StringFilter
   yellowBannerLink: StringFilter
@@ -1118,6 +1136,7 @@ input PageIndexHomeSliderMutation {
   mediaLabel: String
   mediaFile: String
   mediaFile2: String
+  mediaPoster: String
 }
 
 input PageIndexMutation {
@@ -1167,12 +1186,20 @@ input PageRightsrecorderIconBlocksListMutation {
   alt: String
 }
 
+input PageRightsrecorderPartnersListMutation {
+  name: String
+  logo: String
+  link: String
+}
+
 input PageRightsrecorderMutation {
   title: String
   bannerTitle: String
   bannerText: String
   introText: JSON
   iconBlocksList: [PageRightsrecorderIconBlocksListMutation]
+  partnersText: String
+  partnersList: [PageRightsrecorderPartnersListMutation]
   yellowBannerTitle: String
   yellowBannerText: String
   yellowBannerLink: String

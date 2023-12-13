@@ -25,6 +25,7 @@ fragment PageParts on Page {
       mediaLabel
       mediaFile
       mediaFile2
+      mediaPoster
     }
     latestBanner
     latestActionText
@@ -67,6 +68,13 @@ fragment PageParts on Page {
       text
       image
       alt
+    }
+    partnersText
+    partnersList {
+      __typename
+      name
+      logo
+      link
     }
     yellowBannerTitle
     yellowBannerText

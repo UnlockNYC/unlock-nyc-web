@@ -189,6 +189,11 @@ var config_default = defineConfig({
                     type: "image",
                     name: "mediaFile2",
                     label: "Media File 2"
+                  },
+                  {
+                    type: "image",
+                    name: "mediaPoster",
+                    label: "Video Poster"
                   }
                 ]
               },
@@ -411,6 +416,42 @@ var config_default = defineConfig({
                     type: "string",
                     name: "alt",
                     label: "Image Alt Text (accessibility!)"
+                  }
+                ]
+              },
+              {
+                type: "string",
+                name: "partnersText",
+                label: "Partners Intro Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "object",
+                name: "partnersList",
+                label: "Current Partners",
+                list: true,
+                itemProps: (item) => {
+                  return { label: item?.name };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Partner Name",
+                    isTitle: true,
+                    required: true
+                  },
+                  {
+                    type: "image",
+                    name: "logo",
+                    label: "Partner Logo"
+                  },
+                  {
+                    type: "string",
+                    name: "link",
+                    label: "Partner URL"
                   }
                 ]
               },

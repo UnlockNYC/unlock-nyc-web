@@ -103,7 +103,7 @@ div.slide.video {
     padding: 0;
     overflow: hidden;
     display: flex;
-    flex-align: cemter;
+    align-items: center;
 }
 
 div.slide:nth-child(2n) {

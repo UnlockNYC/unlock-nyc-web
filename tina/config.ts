@@ -200,6 +200,11 @@ export default defineConfig({
                     name: "mediaFile2",
                     label: "Media File 2"
                   },
+                  {
+                    type: "image",
+                    name: "mediaPoster",
+                    label: "Video Poster"
+                  },
                 ],
               },
               {
@@ -425,7 +430,44 @@ export default defineConfig({
                   name: "alt",
                   label: "Image Alt Text (accessibility!)",
                 },
-              ],
+                ],
+              },
+              {
+                type: "string",
+                name: "partnersText",
+                label: "Partners Intro Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "object",
+                name: "partnersList",
+                label: "Current Partners",
+                list: true,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.name };
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Partner Name",
+                    isTitle: true,
+                    required: true
+                  },
+                  {
+                    type: "image",
+                    name: "logo",
+                    label: "Partner Logo",
+                  },
+                  {
+                    type: "string",
+                    name: "link",
+                    label: "Partner URL",
+                  },
+                ]
               },
               {
                 type: "string",

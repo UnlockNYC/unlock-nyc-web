@@ -736,14 +736,18 @@ div.question {
   border-top: 2px solid #d9d9d9;
   padding: 30px 0 20px 0;
   width: 100%;
-  cursor: pointer;
+}
+div.question h4 {
+    cursor: pointer;
 }
 
 div.question svg {
   float: right;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
+
 div.faq-answer {
   display: none;
   column-count: 2;
