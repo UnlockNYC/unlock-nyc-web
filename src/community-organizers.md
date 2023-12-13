@@ -5,28 +5,49 @@ blocksFirst: image
 blocksButtonColor: black
 title: For Community Organizers
 bannerTitle: Community Organizers
-bannerSubtitle: Secured funding for CCHR
+bannerSubtitle: $1.3 million for fair housing enforcement
 bannerText: >-
-  If you have clients, sed do eiusmod tempor incididunt ut labore et dolore
-  magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
-  amet, consectetur.
+  Our movement fought hard to increase the size of the SOI Unit at the NYC
+  Commission on Human Rights – and we won an unprecedented $1.3 million dollars
+  in the most recent budget. These resources are now threatened by the Mayor’s
+  latest round of budget cuts and PEGs (Program to Eliminate the Gap). Unlock
+  NYC continues to work closely with our organizing partners to stress that the
+  NYC Commission on Human Rights must be exempt from these PEGs so that they can
+  continue to enforce the Human Rights Law.
 blocksList:
-  - title: Make SOI a visible/public issue
-    text: test test test
+  - title: Mobilizing for power and policy change
+    text: >-
+      Fair housing for all New Yorkers will take a mass, people-powered movement
+      to win transformative change. Since 2020, when we joined the
+      #HomelessCantStayHome and VALUE in Housing campaigns, we have taken our
+      cues from allies in the housing movement. We are also on the steering
+      committee of the Human Rights Law Working Group and a member of the Homes
+      Can't Wait Coalition and Housing Justice for All.
     image: image placeholder
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Read our press
       - buttonText: See the Data
-  - title: Hold discriminators accountable
-    text: lorem ipsum dolor simit
+  - title: Participatory action research
+    text: >-
+      We couldn’t do this work without the hundreds of New Yorkers who’ve shared
+      their stories and insights with us through interviews, surveys, community
+      design sessions, and more. Our research reports always include data
+      interpretation and feedback from directly-impacted tenants – get in touch
+      if you'd like to get your members involved.
     image: image placeholder
     button: 'yes'
     buttonList:
-      - buttonText: Read article
-      - buttonText: Read article
-  - title: Participatory Research
-    text: mab text text proton lorem ipsum
+      - buttonText: Contact us
+        buttonLink: 'https://airtable.com/appfOQvWUNipVmUdR/shrUjHME2Vw4JBLHV'
+  - title: Something about data requests?
+    text: >-
+      - our map has data from every city council district
+
+      - you can use it!
+
+      - if you want additional data for your campaign, fill out our data request
+      form
     image: image placeholder
     button: 'yes'
     buttonList:
