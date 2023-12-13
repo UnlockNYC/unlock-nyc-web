@@ -27,14 +27,11 @@ iconBlocksList:
     alt: 'yellow illustration, cursor arrow pointing over a button that says sign up'
   - title: Collect evidence
     text: >-
-      At Unlock NYC, we know how important it is to have proof when you face
-      unfair treatment in your housing search. We're here to help you collect
-      evidence in a safe and secure way. With our Rights Recorder app, you can
+      Rights Recorder helps you collect evidence and keep it organized and
+      secure, so you can report what happened whenever you're ready. You can
       record phone calls with brokers and landlords to have a record of what was
-      said. For emails, text messages, and other written communication, make
-      sure to take clear screenshots that show any denials or ghosting from
-      agents. We'll help you keep all your evidence organized and secure, so you
-      can report what happened whenever you're ready.
+      said. For emails and text messages, make sure to take clear screenshots
+      that show any denials or ghosting from agents. 
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image2.png
     alt: 'yellow illustration, sound waves representing audio file evidence'
