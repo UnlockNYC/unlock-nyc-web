@@ -73,8 +73,9 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image4.png
     alt: 'yellow illustration, one hand passing the baton to another hand'
 partnersText: >-
-  Unlock NYC partners with organizations around the city so that we can connect
-  you to someone who can help. For instance, you can send your report to:
+  Unlock NYC works with legal service providers who may be able to review your
+  evidence, conduct additional investigation, and help you take action. We have
+  helped over 600 New Yorkers share their reports with organizations like:
 partnersList:
   - name: NYS Division of Human Rights
     logo: >-
