@@ -47,11 +47,7 @@ blocksList:
     buttonList:
       - buttonText: See more
   - title: Changing the narrative
-    text: >-
-      Voucher holders hold a diverse array of identities, backgrounds, and
-      experiences. Through our disparate impact research, we are learning more
-      about the ways that discrimination against vouchers impacts specific
-      groups differently.
+    text: "Voucher holders hold a diverse array of identities, backgrounds, and experiences. Through our disparate impact research, we are learning more about the ways that discrimination against vouchers impacts specific groups differently. We hope to expand this research area in 2024 –\_stay tuned!"
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-megaphones-map.png
     alt: >-
