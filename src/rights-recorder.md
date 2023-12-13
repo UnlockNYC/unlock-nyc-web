@@ -21,7 +21,7 @@ iconBlocksList:
     text: >-
       The first time you use Rights Recorder, we'll ask you a few questions
       about yourself, your housing search, and your voucher, so we can
-      understand what you need. 
+      understand what you need.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image1.png
     alt: 'yellow illustration, cursor arrow pointing over a button that says sign up'
@@ -82,11 +82,14 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-communities-resist.png
     link: 'https://communitiesresist.org/'
-yellowBannerTitle: Join a virtual workshop
+yellowBannerTitle: Join our community of voucher holders
 yellowBannerText: >-
-  SOI Discrimination is Illegal in NY State – join the workshop to [value prop.]
-  Most of our partners start out in the community via our welcoming, informative
-  workshops.
+  Unlock NYC is a special community of voucher holders past and present teaming
+  up against unfair treatment.
+
+
+  special access to Unlock NYC's virtual and in-person events, latest resource
+  guides, and other tools to help with your housing search. 
 _template: rightsrecorder
 ---
 
