@@ -69,14 +69,15 @@ authorTitle: Unlock NYC user and Activist-in-Residence
 authorImg: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/about-kamilah-newton-headshot2.png
 linksList:
-  - title: Apply for a voucher
+  - title: I need a voucher
     text: >-
       If you need a voucher, make an appointment at your local Homebase location
       to see if you are eligible.
     image: 'https://public-unlock.nyc3.digitaloceanspaces.com/homebase.png'
     org: Homebase
     button: 'yes'
-    buttonText: Make appointment
+    buttonText: Find your Homebase
+    buttonLink: 'https://www.nyc.gov/site/hra/help/homebase.page'
   - title: Get help with your housing search
     text: >-
       Neighbors Together hosts regular workshops at their office in Bed-Stuy
