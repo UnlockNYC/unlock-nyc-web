@@ -48,7 +48,6 @@ iconBlocksList:
       landlord. We add all reports anonymously to our [community-powered
       map](/data/soi-map), and we can also share your report with a legal
       service provider for personalized advice.
-          
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image4.png
     alt: 'yellow illustration, one hand passing the baton to another hand'
@@ -87,6 +86,8 @@ quote: >-
   of how Unlock turned my dream into a reality.
 quoteAuthor: Soelys Marrero
 authorTitle: Unlock NYC 2023-2024 Leadership Collective
+authorImg: >-
+  https://public-unlock.nyc3.digitaloceanspaces.com/about-soelys-marrero-headshot.png
 yellowBannerTitle: Join our community of voucher holders
 yellowBannerText: >-
   Unlock NYC is a special community of voucher holders teaming up against unfair
