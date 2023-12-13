@@ -28,10 +28,9 @@ iconBlocksList:
   - title: Collect evidence
     text: >-
       Rights Recorder helps you collect evidence and keep it organized and
-      secure, so you can report what happened whenever you're ready. You can
-      record phone calls with brokers and landlords to have a record of what was
-      said. For emails and text messages, make sure to take clear screenshots
-      that show any denials or ghosting from agents. 
+      secure.You can record phone calls with brokers and landlords to have a
+      record of what was said. For emails and text messages, make sure to take
+      clear screenshots that show any denials or ghosting.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image2.png
     alt: 'yellow illustration, sound waves representing audio file evidence'
