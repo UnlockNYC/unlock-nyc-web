@@ -22,10 +22,7 @@ gridText: >-
   research to share our findings.
 blocksList:
   - title: A unique source of data
-    text: >-
-      Think of us as citizen science for fair housing. We crowdsource our data
-      directly from tenants, then rigorously review, aggregate, and integrate
-      with other housing datasets. 
+    text: "Think of us like a citizen science lab –\_for fair housing. We crowdsource our data directly from tenants, then rigorously review, aggregate, and integrate with other housing datasets. "
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-graphs-notebook-calculator.png
     alt: >-
