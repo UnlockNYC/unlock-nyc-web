@@ -8,11 +8,11 @@ eleventyNavigation:
   order: 2
 title: For Housing Specialists
 bannerTitle: Housing Specialists
-bannerSubtitle: Help your clients report discrimination
 bannerText: >-
   As a housing specialist, case manager, or social worker, chances are you’ve
   seen the toll that housing discrimination takes. Join our Advocate Community
   for tools, events, and dialogue with peers.
+bannerSubtitle: Report housing discrimination alongside your clients
 topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 topImageAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 signUpLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
@@ -26,7 +26,7 @@ quoteImg: >-
 titleAboveStats: Help your clients find their superpowers
 textAboveStats: >-
   Housing specialists and advocates love Unlock NYC because our tools are an
-  opportunity for their clients to boost their confidence and find their voice. 
+  opportunity for their clients to boost their confidence and find their voice.
 statistics:
   - statNum: 500+
     statText: 1-on-1 consultations with voucher holders
@@ -44,8 +44,8 @@ linksList:
       Nearly 20,000 New Yorkers have received a copy of *[Record It. Report
       It!](https://welcometocup.org/projects/record-it-report-it)*, our
       pocket-sized guide to your rights as a voucher holder and how to report
-      discrimination. Have yours? Purchase copies for your clients in English
-      and/or Spanish.
+      discrimination. Purchase copies for your clients in English and/or
+      Spanish.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-record-report-booklet-spanish.png
     alt: >-
@@ -57,29 +57,28 @@ linksList:
         buttonLink: 'https://airtable.com/app3RonGnLm3P4aVF/pagzUWBXHbPgSrfBj/form'
   - title: Build your skills at a virtual training
     content: >
-      Featuring real examples, practical tips, and Q\&A with a directly-impacted
-      facilitator, our 75-minute live virtual training for
-
-      housing specialists helps your staff recognize warning signs of voucher
-      discrimination and advocate effectively with their clients.
+      **2024 training schedule coming soon!** Featuring real examples, practical
+      tips, and Q\&A with a directly-impacted facilitator, our 75-minute live
+      virtual training for housing specialists helps your staff recognize
+      warning signs of voucher discrimination and advocate effectively with
+      their clients.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     alt: >-
       Graphic of a laptop against a blue background. The laptop shows a slide
       from an Unlock NYC training workshop.
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Reserve your spot
-  - title: Book a 1-on-1 consultation with our experts
+  - title: Join "office hours" for housing advocates
     content: >
-      We're only a phone call away! Whether you need a sounding board for your
-      housing research project, want to bring a program like Unlock NYC to your
-      city, or want to improve inclusive governance at your organization, Unlock
-      NYC has the expertise you need to get unstuck and dream up new
-      possibilities.
+      **2024 schedule coming soon!** Our team hosts virtual office hours on a
+      regular basis, where you can informally join Unlock NYC staff and other
+      housing specialists to ask questions, share ideas, or give us feedback on
+      how we can improve our tools.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc-2.png
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Find a time
 partnersList:

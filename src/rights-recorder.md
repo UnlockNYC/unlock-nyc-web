@@ -28,8 +28,8 @@ iconBlocksList:
   - title: Collect evidence
     content: >
       Rights Recorder helps you collect evidence and stay organized. Build your
-      paper trail by recording phone calls with brokers and landlords, and make
-      sure to take clear screenshots of emails and text messages.
+      paper trail by recording phone calls with brokers and landlords and taking
+      clear screenshots of emails and text messages.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image2.png
     alt: 'yellow illustration, sound waves representing audio file evidence'
@@ -37,15 +37,12 @@ iconBlocksList:
     content: >
       Don't wait! Use Rights Recorder to make a report while the details are
       fresh in your mind. The sooner you report, the more options you may have.
-      Our app asks questions about what happened and helps you upload your
-      evidence.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image3.png
     alt: 'yellow illustration, icon of an open file full of documents'
   - title: Take action!
     content: >
-      Unlock NYC reviews your report and conducts research on the broker and
-      landlord. We add all reports anonymously to our [community-powered
+      Unlock NYC adds all reports anonymously to our [community
       map](/data/soi-map), and we can also share your report with a legal
       service provider for personalized advice.
     image: >-
