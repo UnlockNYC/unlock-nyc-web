@@ -13,11 +13,28 @@ templateClass: tmpl-home
   div.press-release div.tags {
     margin-bottom: 1.2rem;
   }
+  button.view-all {
+      float: right;
+      margin-top: -70px;
+  }
+  #press-kits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+  }
 
   @media only screen and (max-width: 800px) {
     #press-release-collection {
       grid-template-columns: 1fr;
       grid-row-gap: 1.25rem;
+    }
+    button.view-all {
+        margin-top: -50px;
+        font-size: 1rem;
+        height: auto;
+    }
+    #press-kits {
+        grid-template-columns: 1fr;
     }
   }
 </style>
@@ -44,7 +61,7 @@ templateClass: tmpl-home
   <h3 id="latest-news">
     Latest News Stories
   </h3>
-  <button class="white view-all" style="float: right; margin-top: -70px;">
+  <button class="white view-all">
     View All
   </button>
   <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
@@ -102,7 +119,7 @@ templateClass: tmpl-home
   <h3 class="center-title" id="press-kits">
     Press Kits
   </h3>
-  <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
+  <div id="press-kits">
     <div class="bg-purple" style="position: relative; height: 32vh; padding: 6%;">
       <h4 style="font-size: 1.5rem;">
         {{ kit1 }}
