@@ -70,16 +70,15 @@ linksList:
     button: 'no'
     buttonList:
       - buttonText: Reserve your spot
-  - title: Book a 1-on-1 consultation with our experts
+  - title: Join "office hours" for housing advocates
     content: >
-      We're only a phone call away! Whether you need a sounding board for your
-      housing research project, want to bring a program like Unlock NYC to your
-      city, or want to improve inclusive governance at your organization, Unlock
-      NYC has the expertise you need to get unstuck and dream up new
-      possibilities.
+      **2024 schedule coming soon!** Our team hosts virtual office hours on a
+      regular basis, where you can informally join Unlock NYC staff and other
+      housing specialists to ask questions, share ideas, or give us feedback on
+      how we can improve our tools.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc-2.png
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Find a time
 partnersList:
