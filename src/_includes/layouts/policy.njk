@@ -12,6 +12,7 @@ templateClass: tmpl-home
         height: auto;
         min-height: unset;
         padding-top: 20vh;
+        padding-bottom: 0;
     }
     div.top-banner h5 {
         font-family: var(--courier);
@@ -39,6 +40,15 @@ templateClass: tmpl-home
     }
     div.content p {
         text-align: justify;
+    }
+
+    @media only screen and (max-width: 800px) {
+        div.content {
+            padding: 30px;
+        }
+        div.banner-content {
+            width: 100%;
+        }
     }
 
 </style>
