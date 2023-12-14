@@ -474,6 +474,10 @@ div.content a, p a {
   color: Black;
 }
 
+a {
+    color: Black;
+}
+
 @media only screen and (max-width: 800px) {
   h3 {
     line-height: 1.2;
@@ -984,11 +988,12 @@ div.funder-grid div img {
   }
   div.two-stats {
     grid-template-columns: 1fr;
+    padding: 30px 10px 30px 10px;
   }
   div.two-stats div.stat {
     border-right: 0;
     border-bottom: 1px solid Black;
-    padding: 40px;
+    padding: 30px 10px 30px 10px;
     grid-template-columns: 1fr;
   }
   div.two-stats div.stat:last-child {
