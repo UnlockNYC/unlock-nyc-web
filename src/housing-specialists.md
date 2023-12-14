@@ -67,7 +67,7 @@ linksList:
     alt: >-
       Graphic of a laptop against a blue background. The laptop shows a slide
       from an Unlock NYC training workshop.
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Reserve your spot
   - title: Book a 1-on-1 consultation with our experts
