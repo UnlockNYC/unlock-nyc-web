@@ -367,6 +367,7 @@ type PageHousingspecialists implements Node & Document {
   title: String!
   bannerTitle: String
   bannerSubtitle: String
+  bannerText: String
   topImage: String
   topImageAlt: String
   demoLink: String
@@ -749,6 +750,7 @@ input PageHousingspecialistsFilter {
   title: StringFilter
   bannerTitle: StringFilter
   bannerSubtitle: StringFilter
+  bannerText: StringFilter
   topImage: ImageFilter
   topImageAlt: StringFilter
   demoLink: StringFilter
@@ -1367,6 +1369,7 @@ input PageHousingspecialistsMutation {
   title: String
   bannerTitle: String
   bannerSubtitle: String
+  bannerText: String
   topImage: String
   topImageAlt: String
   demoLink: String

@@ -194,6 +194,7 @@ fragment PageParts on Page {
     title
     bannerTitle
     bannerSubtitle
+    bannerText
     topImage
     topImageAlt
     demoLink

@@ -1119,6 +1119,14 @@ export default defineConfig({
                 label: "Banner Subtitle"
               },
               {
+                type: "string",
+                name: "bannerText",
+                label: "Banner Text",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
                 type: "image",
                 name: "topImage",
                 label: "Top Image"

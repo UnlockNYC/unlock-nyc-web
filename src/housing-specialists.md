@@ -1,10 +1,6 @@
 ---
 bg: White
 layout: layouts/housing-specialists.njk
-bannerText: >-
-  If you have clients, sed do eiusmod tempor incididunt ut labore et dolore
-  magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit
-  amet, consectetur.
 eleventyNavigation:
   key: Housing Specialists
   parent: Partners
@@ -13,6 +9,10 @@ eleventyNavigation:
 title: For Housing Specialists
 bannerTitle: Housing Specialists
 bannerSubtitle: Help your clients report discrimination
+bannerText: >-
+  As a housing specialist, case manager, or social worker, chances are you’ve
+  seen the toll that housing discrimination takes. Join our Advocate Community
+  for tools, events, and dialogue with peers.
 topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 topImageAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 signUpLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
