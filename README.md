@@ -1,55 +1,55 @@
-# Hello Eleventy!
+<img src="https://cdn.glitch.me/dee07edd-bb63-4ffa-a606-d074a910b9c4%2FunlockSmall.png?v=1633719693017" alt="unlock nyc logo">
 
-This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator. That means you get all the power of a server-side framework but it builds plain HTML files for fast loading by your visitors. This project includes some default posts and layouts you can use as a foundation, and you can customize how your site builds in the JavaScript code. 📚
+**welcome!** Unlock NYC builds digital tools to make the apartment search process transparent, fair, and free from discrimination for all New Yorkers. 
 
-_While you're working on the content in the editor your changes will happen ✨ immediately in the preview window. As you code the site is serving files from a local build directory. When you close the editor your site will run a `build` script then serve the output as a fast and always-on static site._
+🤖🏡 This project hosts our main website.
 
-_Last updated: 27 June 2023_
+---
 
-## Prerequisites
+### platforms
 
-You'll get best use out of this project if you're familiar with basic HTML and JavaScript. This is a static site, which means the server builds it using the content of the `src` folder, then is able to serve it to your users quickly. The posts are in Markdown, which is similar to HTML (markup) but with a lot less syntax!
+- **front-end/CMS:** we use [Tina](https://tina.io/) to edit content in Markdown files. Any changes in Tina are automatically committed to this repo.
 
-## What's in this project?
+- **deployment/hosting:** we use [Netlify](https://netlify.com) to serve the website over the net - it's automatically set up to trigger a build whenever anything in this repo changes.
 
-← `README.md`: That’s this file, where you can tell people what your cool website does and how you built it.
+- **static site generator:** this site is built with [11ty](https://www.11ty.dev/)!
 
-← `public/style.css`: The styling rules for your pages and posts.
+- **images/content CDN:** we use [Digital Ocean Spaces](https://www.digitalocean.com/products/spaces) as object storage.
 
-← `.eleventy.js`: Here you can configure how Eleventy builds your content into the site. Read through the initial blog posts in the site for steps on extending this code.
+- **functions:** we use Netlify functions to authenticate advocates who have logins and are reporting on behalf of others, and to connect the Tina CMS Media Manager to Digital Ocean. 
 
-← `package.json`: Your project's dependencies, where you will also find the start command to run eleventy. 
+### project structure
 
-← `src/`: This folder contains all the files Eleventy will use to build your site.
+- in the`_includes` folder, you'll find all the site's template files, written in [Nunjucks](https://mozilla.github.io/nunjucks/).  When 11ty runs, it uses these files to generate HTML pages and stores them in a folder called `build.` You won't see the `build` folder in this repo! It's generated every time 11ty runs, and hidden via the `.gitignore` file.
 
-### Working in the `src/` folder 📁
+- the rest of the `.md` files hold the content and metadata, either pulled from various places (for example, the `bios` collection holds content that gets displayed on the About page, via the `about.njk` template) or simply from the root folder. 11ty takes any Markdown file and turns it into a folder with a corresponding `index.html`. For example, `press.md` turns into a folder (`/press`) with an index (`/press/index.html`) inside it, so that the URL `https://weunlock.nyc/press` works.
 
-← `index.md`, `posts.md`, `about.md`: These Markdown files include the content for your Home, Posts, and About pages.
+- the `public/styles` folder holds `site.css` - other css files are inside the `_includes` folder, so that they can be pulled onto specific pages via Nunjuck templates.
 
-← `posts/`: These are the Markdown files for the posts that make up your blog–you can add new posts here and remove any you don't want. Each one includes front matter that Eleventy uses to build the content into the site, passing the data into the template referenced as `layout` at the top of the file.
+- `.eleventy.js` is the 11ty configuration file - it sets the output folder to `build`, and allows for the `styles` and `scripts` folders to be bundled into the output folder too so we can use them.
 
-← `_includes/layouts/`: This is where all of your page level layouts go. The **\_** tells you that this is an _eleventy only_ folder. Each layout uses [Nunjucks](https://mozilla.github.io/nunjucks/templating.html) to build the page or post data into an HTML page. There is one base layout that all others extend.
+- `tina/config.ts` is the Tina configuration file, for building out the schema of the CMS.
+ 
+### installation & contributing
 
-← `seo.json`: When you're ready to share your new site or add a custom domain, change SEO/meta settings in here.
+- to work on the site locally, download the code and in the root folder run:
+  ```
+  npx tinacms dev -c "npx @11ty/eleventy --serve"
+  ```
+  This should give you both Tina CMS and the 11ty site on a `localhost`.
 
-___Want a basic template version of this project to build your own Eleventy app? Check out [Minimal Eleventy](https://glitch.com/edit/#!/remix/11ty)!___
+- **remember**  to run `git pull` before trying to push code to a new branch on the github!
 
-## Try this next 🏗️
+- also remember, any `push` to the `main` branch on the github will trigger a Netlify deploy and change the site. to preview first, upload to another branch and make a pull request.
 
-With the site preview open on the right and the Glitch editor open on the left, navigate through the initial blog posts to learn more and carry out some development on your Eleventy site!
+### documentation you might want to read
 
-Your site can use incremental builds, so if for example you only change a markdown file, Glitch would just rewrite the relevant page instead of rebuilding the whole site–to enable this, change your `package.json` `start` command to `eleventy --incremental --serve`. 
+- [Tina documentation](https://tina.io/docs/) - for configuring the CMS
 
-_When you add or delete a file and your preview does not update straight away on refresh, you can enter `eleventy --serve` in your project terminal to force a rewrite._
+- [11ty documentation](https://www.11ty.dev/docs/config/) - there's so much here, if you go digging! 
 
-Check out `TODO.md` for some more optional next steps.
+### fun tools you might need
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+🛠 feel free to add to this list!
 
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Want more details about Eleventy on Glitch? We've got a [Help Center article](https://help.glitch.com/hc/en-us/articles/16287563161229-Eleventy-Projects) just for that.
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+### 🤖✊thanks!
