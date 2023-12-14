@@ -3,7 +3,6 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-<!--<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">-->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="preload" as="style">
 <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 <style>
@@ -154,14 +153,4 @@ templateClass: tmpl-home
       // console.log('login', user);
   });
 
-  $(document).ready(function() {
-    // check netlify identity, add redirect link
-    setTimeout(function() {
-      let login = checkIdentity();
-      if (login == true) {
-          //$("li#donate").before("<li id='advocate-login'><a href='/start/secure/advocate'>👥 advocates</a></li>");
-          $("#advocate-login").show();
-      }
-    }, 3500);
-  });
 </script>
