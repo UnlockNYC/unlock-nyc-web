@@ -44,6 +44,10 @@ templateClass: tmpl-home
   }
 
   @media only screen and (max-width: 800px) {
+    div.info-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
     div.content:nth-of-type(1) {
       margin-top: 100px;
     }
