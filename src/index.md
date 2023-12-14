@@ -35,7 +35,7 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Learn more
-        buttonLink: /advocate-portal
+        buttonLink: /advocates
   - title: Community-powered mapping
     text: >-
       Curious to see how widespread this issue is in your neighborhood? Check
