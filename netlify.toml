@@ -66,6 +66,13 @@
     status = 301
     force = true
 
+# URL mapping from old page name, link
+[[redirects]]
+    from = "/advocate-portal"
+    to = "/advocates/"
+    status = 301
+    force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
