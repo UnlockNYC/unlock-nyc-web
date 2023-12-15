@@ -8,7 +8,7 @@ dev: MAB
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Rubik:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "Intro Rust";
-  src: url("https://public-unlock.nyc3.cdn.digitaloceanspaces.com/font-b185c63a-8d27-412b-b4cb-047ca0c8de79_IntroRust-Base.otf")
+  src: url("fonts/font-b185c63a-8d27-412b-b4cb-047ca0c8de79_IntroRust-Base.otf")
         format("truetype");
   font-display: swap;
 }
@@ -399,7 +399,6 @@ p {
   font-size: 1rem;
   color: var(--light-grey-text); /*MAB: revisit? everywhere?*/
 }
-/* MAB: !important font weights because of every.org embed code, over-eager ...*/
 h1,
 h2,
 h3,
@@ -412,17 +411,17 @@ h1 {
   font-size: 2.25rem;
   margin-top: 1rem;
   margin-bottom: 1.75rem;
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 h2 {
   font-family: var(--courier);
   font-size: 1rem;
-  font-weight: 400 !important;
+  font-weight: 400;
   line-height: 1.5;
 }
 h3 {
   font-size: 2rem;
-  font-weight: 500 !important;
+  font-weight: 500;
   line-height: 1.5;
 }
 h3.center-title {
