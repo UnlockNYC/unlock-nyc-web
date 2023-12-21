@@ -1,6 +1,6 @@
 ---
 name: Velvet A. Johnson-Ross
-title: 'Activist and Founding member, Unlock NYC Leadership Collective'
+title: 'Historian, Activist, Writer and 2022 David Prize Finalist'
 tags:
   - Advisors
 image: >-
