@@ -1,6 +1,6 @@
 ---
 name: Velvet A. Johnson-Ross
-title: 'Historian, Activist, Writer and 2022 David Prize Finalist'
+title: 'Historian, Activist, Writer, and 2022 David Prize Finalist'
 tags:
   - Advisors
 image: >-
