@@ -49,14 +49,11 @@ iconBlocksList:
       https://public-unlock.nyc3.digitaloceanspaces.com/rightsrecorder-Image4.png
     alt: 'yellow illustration, one hand passing the baton to another hand'
 partnersText: >-
-  Unlock NYC works with legal service providers who may be able to review your
-  evidence, conduct additional investigation, and help you take legal action. We
-  have helped over 600 New Yorkers share their reports with organizations like:
+  Unlock NYC identifies and connects you to legal service providers who may be
+  able to review your evidence, conduct additional investigation, and help you
+  take action. We have helped over 600 New Yorkers share their reports with
+  organizations like:
 partnersList:
-  - name: Office of the New York State Attorney General
-    logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-attorney-general-oag.png
-    link: 'https://ag.ny.gov/'
   - name: NYC Commission on Human Rights
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-nyc-commission-on-human-rights.png
@@ -74,14 +71,18 @@ partnersList:
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-mobilization-for-justice.png
     link: 'https://mobilizationforjustice.org/'
-  - name: NYS Division of Human Rights
-    logo: >-
-      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-NY-state-division-human-rights.png
-    link: 'https://dhr.ny.gov/'
   - name: Communities Resist
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-communities-resist.png
     link: 'https://communitiesresist.org/'
+  - name: NYS Division of Human Rights
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-NY-state-division-human-rights.png
+    link: 'https://dhr.ny.gov/'
+  - name: Office of the New York State Attorney General
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-attorney-general-oag.png
+    link: 'https://ag.ny.gov/'
 quote: >-
   Here I am with my keys in hand. Every time I step into my home, I'm reminded
   of how Unlock turned my dream into a reality.
