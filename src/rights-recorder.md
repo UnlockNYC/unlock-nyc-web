@@ -53,6 +53,10 @@ partnersText: >-
   evidence, conduct additional investigation, and help you take legal action. We
   have helped over 600 New Yorkers share their reports with organizations like:
 partnersList:
+  - name: Office of the New York State Attorney General
+    logo: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-attorney-general-oag.png
+    link: 'https://ag.ny.gov/'
   - name: NYC Commission on Human Rights
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/rights-recorder-logo-nyc-commission-on-human-rights.png
