@@ -8,11 +8,11 @@ eleventyNavigation:
   order: 2
 title: For Housing Specialists
 bannerTitle: Housing Specialists
+bannerSubtitle: Report housing discrimination alongside your clients
 bannerText: >-
   As a housing specialist, case manager, or social worker, chances are you’ve
   seen the toll that housing discrimination takes. Join our Advocate Community
   for tools, events, and dialogue with peers.
-bannerSubtitle: Report housing discrimination alongside your clients
 topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 topImageAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 signUpLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
@@ -72,15 +72,16 @@ linksList:
       - buttonText: Reserve your spot
   - title: Join "office hours" for housing advocates
     content: >
-      **2024 schedule coming soon!** Our team hosts virtual office hours on a
-      regular basis, where you can informally join Unlock NYC staff and other
-      housing specialists to ask questions, share ideas, or give us feedback on
-      how we can improve our tools.
+      Our team hosts virtual office hours on a regular basis, where you can
+      informally join Unlock NYC staff and other housing specialists to ask
+      questions, share ideas, or give us feedback on how we can improve our
+      tools.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc-2.png
-    button: 'no'
+    button: 'yes'
     buttonList:
       - buttonText: Find a time
+        buttonLink: 'https://calendly.com/ashley-eberhart/advocate-office-hours'
 partnersList:
   - name: Asian Americans for Equality
     logo: >-
