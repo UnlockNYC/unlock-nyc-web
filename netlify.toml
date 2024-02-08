@@ -26,15 +26,24 @@
   status = 301
   force = true
 
+# bot start page
 [[redirects]]
   from = "/report"
   to = "/start"
   status = 301
   force = true
 
+# bot start page
 [[redirects]]
   from = "/record"
   to = "/start"
+  status = 301
+  force = true
+
+# donate
+[[redirects]]
+  from = "/donate"
+  to = "https://www.every.org/unlock-nyc?donateTo=unlock-nyc#/donate/card"
   status = 301
   force = true
 
