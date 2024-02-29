@@ -181,7 +181,7 @@
                                     let name = $(this).attr("name");
                                     $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
                                 } 
-                                else if ($(this).prop('required') {
+                                else if ($(this).prop('required')) {
                                     // for required single select, create dropdown options
                                     $(this).append($('<option>', {selected: true, disabled: true, value: "", text: "Choose most relevant"}));
                                     $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
