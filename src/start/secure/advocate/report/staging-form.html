@@ -175,17 +175,14 @@
                         if ($(this).attr("data-id") == Object.keys(reportSchema[i])[0]) {
                             let options = JSON.parse(reportSchema[i][Object.keys(reportSchema[i])[0]]);
                             // this returns the multi or single select options strings from airtable
+                            if ($(this).prop('required')) {
+                                $(this).append($('<option>', {hidden: true, readonly: true, selected: true, value: "", text: "Choose most relevant"}));
                             for (j = 0; j < options.length; j++) {
                                 if ($(this).hasClass("multi")) {
                                     // for multi select, create checkboxes
                                     let name = $(this).attr("name");
                                     $(this).after($(`<input type='checkbox' name='${name}' value='${options[j].name}' id='${options[j].name}'><label for='${options[j].name}'>${options[j].name}</label><br>`));
                                 } 
-                                else if ($(this).prop('required')) {
-                                    // for required single select, create dropdown options
-                                    $(this).append($('<option>', {selected: true, disabled: true, value: "", text: "Choose most relevant"}));
-                                    $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
-                                }
                                 else {
                                     // for single select, create dropdown options
                                     $(this).append($('<option>', {value: `${options[j].name}`, text: `${options[j].name}`}));
