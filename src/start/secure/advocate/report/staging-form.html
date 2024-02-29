@@ -37,8 +37,10 @@
                 <a id="full-org">👥 Check this list from your organization.</a><br>
             </p>
             <select name="client" id="clients-choice">
+                <option hidden readonly value="">Choose one</option>
             </select>
             <select name="org-client" id="org-clients">
+                <option hidden readonly value="">Choose one</option>
             </select>
             <p class="explainer">
                 <span id="new-user">
@@ -48,7 +50,7 @@
                 </span>
             </p>
             <label class="form-field" for="discriminationType">What best describes the discriminatory tactic that you
-                are reporting today?</label>
+                are reporting today? *</label>
             <select name="discriminationType" id="discriminationType" data-id="fldp0Cdze4QBCRIQy" required>
                 <!--OPTIONS FILLED BY AIRTABLE METADATA API CALL -->
             </select>
@@ -176,7 +178,7 @@
                             let options = JSON.parse(reportSchema[i][Object.keys(reportSchema[i])[0]]);
                             // this returns the multi or single select options strings from airtable
                             if ($(this).prop('required')) {
-                                $(this).append($('<option>', {hidden: true, readonly: true, selected: true, value: "", text: "Choose most relevant"}));
+                                $(this).append($('<option>', {hidden: true, readonly: true, selected: true, value: "", text: "Choose one"}));
                             }
                             for (j = 0; j < options.length; j++) {
                                 if ($(this).hasClass("multi")) {
