@@ -1,6 +1,6 @@
 ---
 name: Dianne Thomas
-title: Individual Justice Program Intern
+title: Individual Justice Senior Consultant
 tags:
   - Team
 image: >-
