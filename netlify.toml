@@ -47,6 +47,13 @@
   status = 301
   force = true
 
+# enroll
+[[redirects]]
+  from = "/enroll"
+  to = "https://airtable.com/app3RonGnLm3P4aVF/pagKHCNzdYrczadZk/form"
+  status = 301
+  force = true
+
 # URL mapping from pre-2023 site, reports
 [[redirects]]
    from = "/serial-discriminators"
