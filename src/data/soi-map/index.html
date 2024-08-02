@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Mapping SOI Discrimination in  NYC</title>
+    <title>Mapping SOI Discrimination in NYC</title>
     <meta
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <link rel="shortcut icon" href="https://public-unlock.nyc3.digitaloceanspaces.com/favicon.png">
-    <link rel="stylesheet" href="/public/style.css">
+    <link
+      rel="shortcut icon"
+      href="https://public-unlock.nyc3.digitaloceanspaces.com/favicon.png"
+    />
+    <link rel="stylesheet" href="https://weunlock.nyc/public/style.css" />
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
       rel="stylesheet"
@@ -31,7 +34,8 @@
         margin: 0;
         padding: 0;
       }
-      a, a:visited {
+      a,
+      a:visited {
         color: Black;
       }
       #data-window {
@@ -114,7 +118,7 @@
         text-align: right;
         height: 16px;
         margin-bottom: 3px;
-        background-color: #D6D0F7; /* light purple */
+        background-color: #d6d0f7; /* light purple */
       }
 
       div#cd-chart div.chart-label {
@@ -220,7 +224,7 @@
         display: none;
       }
       .mapboxgl-ctrl-group button {
-          margin: 0;
+        margin: 0;
       }
       #about {
         position: absolute;
@@ -339,10 +343,7 @@
           bottom: 45px;
         }
       }
-      @media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1366px)
-        and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
         .mapboxgl-ctrl-geocoder {
           display: block !important;
         }
@@ -377,8 +378,7 @@
           height: 40px !important;
         }
         .mapboxgl-ctrl-geocoder--icon-search {
-           top: 8px !important;
-
+          top: 8px !important;
         }
         .mapboxgl-ctrl-bottom-right {
           opacity: 0;
@@ -388,8 +388,7 @@
           background-color: White;
           right: initial;
           left: 3px;
-          zoom: 0.70;
-
+          zoom: 0.7;
         }
         #report {
           top: 0;
@@ -409,7 +408,6 @@
           grid-template-rows: none !important;
           grid-column-gap: 0 !important;
         }
-
       }
     </style>
   </head>
@@ -457,7 +455,7 @@
               ><span class="ranking">X</span> highest rate of SOI
               discrimination</strong
             >
-            in New York City, based on cumulative data (2018 - 2023) from Unlock
+            in New York City, based on cumulative data (2018 - 2024) from Unlock
             NYC and Neighbors Together.
           </p>
           <p>
@@ -492,15 +490,27 @@
               ><span class="tactic-rate"></span>
             </div>
           </div>
-          <div id="disc_ad" class="bar-chart">
+          <!--<div id="disc_ad" class="bar-chart">
             <div class="chart-label">
               <span class="tactic">Discriminatory ad: </span
               ><span class="tactic-rate"></span>
             </div>
-          </div>
-          <div id="scam" class="bar-chart">
+          </div>-->
+          <div id="availability" class="bar-chart">
             <div class="chart-label">
-              <span class="tactic">Scam: </span
+              <span class="tactic">Unit availability: </span
+              ><span class="tactic-rate"></span>
+            </div>
+          </div>
+          <div id="intersectionality" class="bar-chart">
+            <div class="chart-label">
+              <span class="tactic">Other forms of discrimination: </span
+              ><span class="tactic-rate"></span>
+            </div>
+          </div>
+          <div id="fees" class="bar-chart">
+            <div class="chart-label">
+              <span class="tactic">Fees and Scams: </span
               ><span class="tactic-rate"></span>
             </div>
           </div>
@@ -510,15 +520,27 @@
               ><span class="tactic-rate"></span>
             </div>
           </div>
-          <div id="bait" class="bar-chart">
+          <!--<div id="bait" class="bar-chart">
             <div class="chart-label">
               <span class="tactic">Bait and switch: </span
               ><span class="tactic-rate"></span>
             </div>
-          </div>
-          <div id="delays" class="bar-chart">
+          </div>-->
+          <div id="pricing" class="bar-chart">
             <div class="chart-label">
-              <span class="tactic">Delays: </span
+              <span class="tactic">Pricing: </span
+              ><span class="tactic-rate"></span>
+            </div>
+          </div>
+          <div id="admin" class="bar-chart">
+            <div class="chart-label">
+              <span class="tactic">Administrative issue: </span
+              ><span class="tactic-rate"></span>
+            </div>
+          </div>
+          <div id="ai" class="bar-chart">
+            <div class="chart-label">
+              <span class="tactic">Automation and AI: </span
               ><span class="tactic-rate"></span>
             </div>
           </div>
@@ -533,7 +555,7 @@
           <p>
             Do you live in District <span class="cd-number">XX</span>? If so,
             contact your City Council Member to let them know that you want them
-            to advocate for increased funding for CCHR in the Fiscal Year 2024
+            to advocate for increased funding for CCHR in the Fiscal Year 2025
             budget.
           </p>
           <a id="email" href="https://www.weunlock.nyc" target="_blank">
@@ -576,12 +598,13 @@
               >
             </li>
             <li>
-              Population data via American Community Survey (2019) and
+              Population data via 2020 Decennial Census, aggregated at the City
+              Council District level, via
               <a
-                href="https://esri-nyc-office.hub.arcgis.com/datasets/907764c06da0404d9c29c054010cd67b_0/explore?location=40.705384%2C-73.978189%2C10.89&showTable=true"
+                href="https://www.nyc.gov/site/planning/planning-level/nyc-population/2020-census.page"
                 target="_blank"
-                >ESRI New York City</a
-              >.
+                >Department of City Planning (DCP)</a
+              >
             </li>
             <li>
               Standardized addresses via NYC Department of City Planning’s
@@ -610,12 +633,12 @@
           <p>Here is how we define the denial tactics included on the map:</p>
           <ul>
             <li>
-              <strong>Ghosting</strong>: Not responding after a prospective
-              tenant mentions their voucher is mentioned
+              <strong>No vouchers</strong>: Explicit denials, such as “the
+              landlord doesn’t take vouchers” or “no programs.”
             </li>
             <li>
-              <strong>No vouchers</strong>: Explicit denials, such as “the
-              landlord doesn’t take vouchers” or “no programs”
+              <strong>Ghosting</strong>: Not responding after a prospective
+              tenant mentions their voucher; or giving them the “run around.”
             </li>
             <li>
               <strong>Income requirements</strong>: Setting minimum income
@@ -625,26 +648,53 @@
               required to provide a guarantor.
             </li>
             <li>
-              <strong>Credit requirements</strong>: Setting a minimum credit
-              score, such as “must have credit above 750.” Tenants whose
+              <strong>Credit requirements</strong>: Turning a prospective tenant
+              down because their credit score is insufficient. Tenants whose
               vouchers cover 100% of the rent cannot be rejected based on their
               credit score.
             </li>
             <li>
-              <strong>Discriminatory ad</strong>: Listing advertisements that
-              contain discriminatory language in the ad, such as “No Section 8”
+              <strong>Fees &amp; Scams</strong>: Tacking on arbitrary holding
+              fees, application fees overcharges, or attempting to scam voucher
+              holder.
+            </li>
+            <li>
+              <strong>Pricing</strong>: Manipulating the price of the apartment
+              to put it out of the reach of voucher holder.
+            </li>
+            <li>
+              <strong>Administrative issue</strong>: Rejection caused by
+              administrative red tape, application delays, processing issues, or
+              apartment inspections.
+            </li>
+            <li>
+              <strong>Unit availability</strong>: Temporarily taking the unit
+              off the market, pretending it has been rented already, or telling
+              the voucher holder there is already an application on it.
             </li>
             <li>
               <strong>Steering</strong>: Attempting to influence a tenant's
               neighborhood or community choice based on their status as a
               voucher holder (example: "there aren't a lot of voucher holders in
               that neighborhood. Have you tried East New York? You might be more
-              comfortable there")
+              comfortable there").
             </li>
             <li>
-              <strong>Bait and switch</strong>: Advertising photos for one
+              <strong>Bait &amp; Switch</strong>: Advertising photos for one
               apartment, but upon contacting or coming to the viewing, showing
-              them a totally different (usually worse) unit
+              them a totally different (usually worse) unit.
+            </li>
+            <li>
+              <strong>Other forms of discrimination and/or disrespect</strong>:
+              Being discriminated against based on race, sexual orientation,
+              disability, family size, or another identity the tenant holds in
+              addition to being a voucher holder. We also track “lawful but
+              awful” comments made to degrade the applicant.
+            </li>
+            <li>
+              <strong>Automation, tenant screening, and AI</strong>: Using an
+              automated system, a tenant screening software, or a form of AI
+              technology to reject the tenant.
             </li>
             <li>
               <strong>Other</strong>: Anything not captured in the above
@@ -659,7 +709,8 @@
               </div></a
             ><br /><br />
             <a
-              href="https://airtable.com/apphhLpaGOzffAyCW/shrl4dCWVD8qewvpw" target="_blank"
+              href="https://airtable.com/apphhLpaGOzffAyCW/shrl4dCWVD8qewvpw"
+              target="_blank"
               ><div id="press-button" class="report-button">
                 Press Inquiry
               </div></a
@@ -670,7 +721,7 @@
         <div class="about-column">
           <h2>Methodology</h2>
           <p>
-            The dataset analyzed on this map consists of over 1,500 crowdsourced
+            The dataset analyzed on this map consists of over 2,200 crowdsourced
             reports of source of income discrimination collected since January
             2018. About 500 were collected by Neighbors Together at
             <a
@@ -678,12 +729,12 @@
               target="_blank"
               >housing search clinics</a
             >, where staff members pair up with voucher holders to assist them
-            in applying for housing with a voucher. An additional 1,000+ were
+            in applying for housing with a voucher. An additional 1,700+ were
             collected through Unlock NYC’s
             <a href="https://weunlock.nyc/start/" target="_blank">chatbot</a>,
             launched in January 2021 to provide a user-friendly, mobile-based
             tool for New Yorkers to record phone calls with brokers and report
-            discrimination on the go. Of the ~1,500 reports received, 1,266
+            discrimination on the go. Of the 2,200+ reports received, 1,954
             include an address, and were therefore mapped. The data on the map
             is updated regularly as we receive more reports from New Yorkers
             facing discrimination.
@@ -702,8 +753,8 @@
             borough-block-lot number (BBL) for each report, and to join our
             dataset with existing information about City Council districts. We
             normalized our data to generate a rate of SOI discrimination per
-            100,000 people in each district, using population data from the
-            American Community Survey (2019).
+            100,000 people in each district, using population data from the U.S.
+            Decennial Census (2020).
           </p>
           <p>
             Given its crowdsourced nature, the data is not exhaustive - it does
@@ -748,9 +799,9 @@
                 >several hot spots where vouchers have reported numerous
                 instances of discrimination</strong
               >, primarily in Central Brooklyn, Northern Manhattan, and the East
-              Bronx. As of March 6, 2023, the districts with the highest rates
-              of SOI discrimination were Districts 45, 41, 40 in Brooklyn,
-              District 10 in Manhattan, and District 18 in the Bronx.
+              Bronx. As of March 2024, the districts with the highest rates of
+              SOI discrimination were Districts 45, 41, 40 in Brooklyn, District
+              10 in Manhattan, and District 8 in the Bronx.
             </li>
             <li>
               It is worth noting that districts with high rates of reported SOI
@@ -795,10 +846,10 @@
           <ul>
             <li>
               Increase funding and staffing at the City Commission on Human
-              Rights, bringing the Commission staffing as a whole back up to its
-              pre-2019 staffing levels. The mayor’s fiscal year 2024 preliminary
-              budget cuts 20 full-time employees from the Commission when what
-              is needed is more staffing and resources
+              Rights by at least $4 million in the FY2025 budget. This would
+              include $3 million to bring the Commission’s Law Enforcement
+              Bureau’s staffing back to pre-pandemic levels, plus $1 million to
+              implement the Fair Chance Act.
             </li>
             <li>
               Provide resources for public education on source of income
@@ -917,7 +968,7 @@
       let closeUp = 12.55;
 
       if ($(window).width() < 900) {
-        startCenter = [-73.89000000000000, 40.64973724220384];
+        startCenter = [-73.89, 40.64973724220384];
         startZoom = 9.55;
       }
 
@@ -943,7 +994,7 @@
       <p>SOI Rate<br />per 100k people</p>
       <div>
         <div style="width: 20px;text-align: left;float: left;display: inline-block;">0</div>
-        <div style="width: 20px;text-align: right;display: inline-block;vertical-align: middle;">40</div>
+        <div style="width: 20px;text-align: right;display: inline-block;vertical-align: middle;">75</div>
       </div>
       <div class="key-wrap">
         <div class="key" style="background-color: #DAD4FA"></div>
@@ -951,19 +1002,19 @@
       </div>
       <div class="key-wrap">
         <div class="key" style="background-color: #C1ADFF"></div>
-        <!--11-20%-->
+        <!--10-40%-->
       </div>
       <div class="key-wrap">
         <div class="key" style="background-color: #958AD4"></div>
-        <!--21-30%-->
+        <!--40-60%-->
       </div>
       <div class="key-wrap">
         <div class="key" style="background-color: #7368B3"></div>
-        <!--31-39%-->
+        <!--60-70%-->
       </div>
       <div class="key-wrap">
         <div class="key" style="background-color: #4F477A"></div>
-        <!--40+%-->
+        <!--70+%-->
       </div>`;
 
       let pointLegend = `<p>SOI Reports</p>
@@ -972,7 +1023,7 @@
       = 1 report
       `;
 
-      let actionEmail = `%0D%0AHomelessness in New York City is at a record high, with over 70,000 men, women, and children sleeping in shelters each night. Despite this fact, the City is cutting resources that could help people move out of homelessness! New Yorkers need increased investments in housing our neighbors, not more short-sighted cuts.%0D%0A%0D%0AAs your constituent, I am asking you to take action to ensure increased funding for the City Commission on Human Rights, the only city agency that enforces against source of income discrimination (SOI). The practice of SOI is illegal, but it is one of the most common barriers that keeps people stuck in homelessness. When well resourced, the City Commission on Human Rights (CCHR) is able to intervene in discrimination cases, and help people gain access to apartments, viewings, applications, and permanent housing. I am asking that you fight for CCHR to be funded at pre-2019 levels in the upcoming Fiscal Year 2024 city budget. Talk to your colleagues and ask them to do the same, reach out to the budget negotiating team members, and raise the issue with Speaker Adams.  We must not ignore a crisis that is solvable- it is time to restore funding to CCHR so that our city can begin to move people out of homelessness and #MakeVouchersWork.%0D%0A%0D%0ASincerely,%0D%0A[Your name here]%0D%0A[Your email here]%0D%0A[Your address here]`;
+      let actionEmail = `%0D%0AHomelessness in New York City is at a record high, with over 85,000 men, women, and children sleeping in DHS shelters each night.  Despite this fact, the City is cutting resources that could help people move out of homelessness! New Yorkers need increased investments in housing our neighbors, not more short-sighted cuts.%0D%0A%0D%0AAs your constituent, I am asking you to take action to ensure increased funding for the City Commission on Human Rights, the only city agency that enforces against source of income discrimination (SOI). The practice of SOI is illegal, but it is one of the most common barriers that keeps people stuck in homelessness. When well resourced, the City Commission on Human Rights (CCHR) is able to intervene in discrimination cases, and help people gain access to apartments, viewings, applications, and permanent housing. The Commission also protects New Yorkers on the basis of race, gender, disability, criminal background, immigration status, and many more protected classes that the City Council has fought hard to add to the NYC Human Rights Law over the years.%0D%0A%0D%0AI am asking that you fight for CCHR to secure $4 million in new funding in the upcoming Fiscal Year 2025 city budget. CCHR needs at least $3 million to staff back up to pre-pandemic levels, and an additional $1 million to implement the Fair Chance Act.  CCHR went from having nearly 50 staff attorneys before COVID to only 17 staff attorneys today protecting the rights of 8 million New Yorkers. Even doubled, the Commission’s budget would still be less than 0.01% of the City’s budget.%0D%0A%0D%0ATalk to your colleagues and ask them to do the same, reach out to the budget negotiating team members, and raise the issue with Mayor Adams.  We must not ignore a crisis that is solvable- it is time to restore funding to CCHR so that our city can begin to move people out of homelessness and make vouchers work. This funding is especially critical in light of the expansion of CityFHEPS. I hope we can count on your support.%0D%0A%0D%0ASincerely,%0D%0A[Your name here]%0D%0A[Your email here]%0D%0A[Your address here]`;
 
       // Add the control to the map.
       map.addControl(
@@ -991,10 +1042,10 @@
 
         /// low bandwidth check ///
 
-        setTimeout(function() {
-          if (map.isSourceLoaded('cityCouncilDistricts') == false) {
+        setTimeout(function () {
+          if (map.isSourceLoaded("cityCouncilDistricts") == false) {
             map.flyTo({
-              center: [-73.956903,40.712014],
+              center: [-73.956903, 40.712014],
               zoom: startZoom + 2,
               duration: 1200, // Animate over x seconds
               essential: true,
@@ -1006,7 +1057,7 @@
 
         map.addSource("cityCouncilDistricts", {
           type: "geojson",
-          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/cd.geojson"
+          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/cd.geojson",
         });
 
         // cd data modified from here:
@@ -1014,7 +1065,7 @@
 
         map.addSource("reports", {
           type: "geojson",
-          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/anonReports.geojson"
+          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/anonReports-0824.geojson",
         });
 
         /// adding layers ///
@@ -1050,13 +1101,13 @@
                 ["get", "soi_rate"],
                 0,
                 "#E5E1FA",
-                10,
-                "#C1ADFF",
                 20,
+                "#C1ADFF",
+                25,
                 "#9485ED",
                 30,
                 "#7368B3",
-                40,
+                65,
                 "#28204F",
               ],
               "fill-opacity": 0.95,
@@ -1183,27 +1234,35 @@
           map.getCanvas().style.cursor = "pointer";
 
           let cdData = e.features[0].properties;
+          console.log(cdData);
 
           // OBJECT EXAMPLE:
-          /*"properties": {
-            "OBJECTID":2,
-            "CounDist":2,
-            "Shape__Area":57059302.015274,
-            "Shape__Length":43085.9506670172,
-            "ranking": 1,
-            "soi_rate":1.7276030659195745,
-            "num_reports": 3,
-            "ghosting":0.3333333333333333,
-            "no_vouchers":0.3333333333333333,
-            "income_requirements":0,"
-            credit":0,
-            "disc_ad":0,
-            "scam":0,
-            "steering":0,
-            "bait":0,
-            "delays":0,
-            "other":0.3333333333333333
-            } */
+          // MAB UPDATE 24
+          /*properties":{
+            "OBJECTID":51,
+            "CounDist":51,
+            "Shape__Area":657995108.721115,
+            "Shape__Length":208073.922238304,
+            "cd":"51",
+            "member":["Joseph Borelli"],
+            "email":["borelli@council.nyc.gov"],
+            "neighborhoods":["string"],
+            "soi_rate":4.388962386592347,
+            "num_reports":7,
+            "ghosting":0.42857142857142855,
+            "no_vouchers":0.14285714285714285,
+            "income_requirements":0.14285714285714285,
+            "credit":0,
+            "availability":0,
+            "intersectionality":0,
+            "fees":0,"
+            steering":0,
+            "pricing":0.14285714285714285,
+            "admin":0,
+            "ai":0,
+            "other":0.14285714285714285,
+            "ranking":50
+          }*/
 
           // show highlighted cd on map
           map.setFilter("selected-cd", ["==", "CounDist", cdData.CounDist]);
@@ -1248,7 +1307,12 @@
           $("div#data-window span.cd-number").html(`${cdData.CounDist}`);
 
           let suffix;
-          if (cdData.ranking % 10 == 1) {
+          if (
+            cdData.ranking % 10 >= 4 ||
+            (cdData.ranking % 100 <= 13 && cdData.ranking % 100 >= 11)
+          ) {
+            suffix = "th";
+          } else if (cdData.ranking % 10 == 1) {
             suffix = "st";
           } else if (cdData.ranking % 10 == 2) {
             suffix = "nd";
@@ -1268,6 +1332,7 @@
               if (key == tactic) {
                 // match div id to data property, which is % of tactic
                 let tacticRate = +(cdData[key] * 100).toFixed(2);
+                console.log(tactic);
                 // making sure that tacticRate is a number here, not string
                 let numReports = Math.round(
                   (tacticRate / 100) * cdData.num_reports
@@ -1291,9 +1356,11 @@
             $("div#data-window #cd-chart div.bar-chart").show();
             const tempDiv = $("<div></div>"); // create temporary div to hold sorted divs
 
+            console.log($("div#data-window #cd-chart div.bar-chart").length);
             $("div#data-window #cd-chart div.bar-chart").each(function () {
               let tacticRate = parseFloat($(this).attr("data-rate"));
-              if (tacticRate == 0) {
+              /* MAB CHANGE 2024*/
+              if (tacticRate < 5) {
                 $(this).hide();
               }
               if ($(this).attr("id") == "other") {
@@ -1313,6 +1380,13 @@
                 );
               })
               .appendTo($("#cd-chart")); // sort temporary div and add sorted divs to #cd-chart
+            /* MAB CHANGE 2024*/
+            // check newly sorted divs, don't show more than 6
+            $("div#data-window #cd-chart div.bar-chart").each(function () {
+              if ($(this).index() > 5) {
+                $(this).hide();
+              }
+            });
           }
 
           sortChart();
@@ -1406,8 +1480,8 @@
               <p>${address}</p>
             </div>
             <p>This address was reported for SOI discrimination in ${time}.</p>
-            <p>Denial Tactic: ${denial}</p>
-            `;
+            <p>Denial Tactic(s):<br>${denial}</p>
+            `; /*MAB CHANGE 24*/
 
           new mapboxgl.Popup()
             .setLngLat(coordinates)
