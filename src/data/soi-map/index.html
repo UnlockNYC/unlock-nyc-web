@@ -1234,7 +1234,6 @@
           map.getCanvas().style.cursor = "pointer";
 
           let cdData = e.features[0].properties;
-          console.log(cdData);
 
           // OBJECT EXAMPLE:
           // MAB UPDATE 24
@@ -1332,7 +1331,6 @@
               if (key == tactic) {
                 // match div id to data property, which is % of tactic
                 let tacticRate = +(cdData[key] * 100).toFixed(2);
-                console.log(tactic);
                 // making sure that tacticRate is a number here, not string
                 let numReports = Math.round(
                   (tacticRate / 100) * cdData.num_reports
@@ -1356,7 +1354,6 @@
             $("div#data-window #cd-chart div.bar-chart").show();
             const tempDiv = $("<div></div>"); // create temporary div to hold sorted divs
 
-            console.log($("div#data-window #cd-chart div.bar-chart").length);
             $("div#data-window #cd-chart div.bar-chart").each(function () {
               let tacticRate = parseFloat($(this).attr("data-rate"));
               /* MAB CHANGE 2024*/
