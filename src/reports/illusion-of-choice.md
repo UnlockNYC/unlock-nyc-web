@@ -2,7 +2,7 @@
 eventTrack: true
 ackeeTracker: e557204f-d595-4660-8554-2ca2475b4342
 reportTitle: An Illusion of Choice
-featured: false
+featured: true
 year: '2022'
 reportSummaryTop: >-
   How Source of Income Discrimination and Voucher Policies Perpetuate Housing
