@@ -1,6 +1,6 @@
 ---
 reportTitle: Denial Tactics
-featured: true
+featured: false
 year: '2024'
 reportSummaryTop: description
 reportSummary: summary
