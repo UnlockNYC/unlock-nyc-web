@@ -28,6 +28,10 @@ templateClass: tmpl-home
       grid-row-gap: 20px;
   }
 
+  div#inner-data-grid div:nth-child(n + 3) {
+      display: none;
+  } /* hide featured after 2 */
+
   div#map-grid {
       display: grid;
       grid-template-columns: 58% auto;
