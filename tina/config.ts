@@ -1985,6 +1985,9 @@ export default defineConfig({
               }, {
                 value: "Serial Discriminators",
                 label: "Serial Discriminators"
+              }, {
+                value: "Denial Tactics",
+                label: "Denial Tactics"
               }
             ]
           },
