@@ -3,7 +3,6 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-<!-- MAB include here?! or somewhere else?! -->
 <style>
 
   div#data-grid {
@@ -81,28 +80,6 @@ templateClass: tmpl-home
       }
   }
 
-  /*@media only screen and (min-width: 851px) and (max-width: 1200px) {
-      div#data-grid {
-          grid-template-columns: 25% auto;
-          grid-column-gap: 40px;
-      }
-      div#data-grid div.report-card div.report-summary p {
-          font-size: 0.95rem;
-          line-height: 1rem !important;
-      }
-      div#data-grid-text {
-          padding-top: 0;
-      }
-      div#data-grid-text h4 {
-          margin-top: 10px;
-          line-height: 1.6rem;
-      }
-      div#data-grid-text p {
-          font-size: 0.98rem;
-          line-height: 1rem !important;
-      }
-      }*/
-
   @media only screen and (max-width: 850px) {
     div.top-banner {
         padding-bottom: 0 !important;
@@ -159,9 +136,14 @@ templateClass: tmpl-home
       <p class="black">
         {{ gridText }}
       </p>
+      <!--<a href="/data/all-reports">
+        <button class="black">
+            See all reports
+        </button>
+        </a>-->
     </div>
     <div id="inner-data-grid">
-      {%- for report in collections.report -%}
+      {%- for report in collections.report | reverse -%}
       {% if report.data.featured %}
       <div class="report-card-wrapper">
         <div class="report-card">
