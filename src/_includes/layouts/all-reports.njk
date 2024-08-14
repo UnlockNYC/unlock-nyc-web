@@ -1,0 +1,113 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<style>
+
+  div.content {
+      padding-top:0;
+  }
+
+div.top-banner {
+    height: 35vh;
+    min-height: 350px;
+}
+
+  div#inner-data-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+  }
+
+  div.report-card {
+      min-height: 390px;
+  }
+
+  div.report-card div.report-summary {
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
+  }
+
+  div.report-card-wrapper:nth-child(odd) div.report-card {
+      background-color: var(--yellow);
+  }
+
+  div.report-card-wrapper:nth-child(even) div.report-card {
+      background-color: var(--green);
+  }
+
+  div.banner-full.bg-orange h2 {
+      max-width: 60%;
+      margin: auto;
+      margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 1150px) {
+      div.content {
+          padding-top: 0;
+      }
+  }
+
+  @media only screen and (max-width: 850px) {
+    div.top-banner {
+        padding-bottom: 0 !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+      div#inner-data-grid {
+          grid-template-columns: 1fr;
+          grid-row-gap: 20px;
+      }
+      div.banner-full.bg-orange h2 {
+          max-width: 100%;
+      }
+}
+</style>
+{# page template, extends the base template #}
+
+<div class="top-banner">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <h1>
+        {{ bannerTitle }}
+      </h1>
+      <!--<h2>
+        {{ bannerText }}
+        </h2>-->
+    </div>
+  </div>
+</div>
+<div class="content">
+    <div id="inner-data-grid">
+      {%- for report in collections.report | reverse -%}
+      <div class="report-card-wrapper">
+        <div class="report-card">
+          <div>
+            <span class="tag">{{ report.data.keywords }}</span>
+            <span class="tag">{{ report.data.year }}</span>
+          </div>
+          <div class="report-summary">
+            <!--<p class="black" style="text-decoration: underline;">
+              <strong>{{ report.date }}</strong>
+              </p>-->
+            <h4 style="font-size: 1.5rem;">
+              {{ report.data.reportTitle }}
+            </h4>
+            <p class="summary-text black">
+              {{ report.data.reportSummaryTop }}
+            </p>
+            <a href="{{ report.url }}" style="position: absolute; bottom: 20px;">
+                <button class="black">
+                    Read report
+                </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+</div>
