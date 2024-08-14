@@ -1940,7 +1940,18 @@ export default defineConfig({
             type: "image",
             name: "reportPDF",
             label: "Report PDF"
-          }
+          },
+          {
+            type: "boolean",
+            name: "eventTrack",
+            label: "Track Analytics"
+          },
+          {
+            type: "string",
+            name: "ackeeTracker",
+            label: "Ackee Tracker"
+          },
+
 
         ]
       },

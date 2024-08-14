@@ -92,7 +92,7 @@ templateClass: tmpl-home
   </button>
   <div style="border-top: 2px solid #D9D9D9; padding-top: 20px; height: 1px;"></div>
   <div id="press-release-collection" class="view-list">
-    {% for release in collections.release %}
+    {% for release in collections.release | reverse %}
     <div class="press-release" {% if loop.index > 4 %} style="display: none;"{% endif %}>
       <div class="tags">
         {% for item in release.data.keywords %}
