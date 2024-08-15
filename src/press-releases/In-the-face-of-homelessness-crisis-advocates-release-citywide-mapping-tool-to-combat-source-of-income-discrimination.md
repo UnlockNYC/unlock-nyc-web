@@ -12,6 +12,6 @@ keywords:
 year: '2023'
 pdf: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/press-release-soi-map-2023.pdf
-date: 2023-6-12
+date: '2023-12-10'
 ---
 
