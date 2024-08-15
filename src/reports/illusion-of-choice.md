@@ -1,6 +1,4 @@
 ---
-eventTrack: true
-ackeeTracker: e557204f-d595-4660-8554-2ca2475b4342
 reportTitle: An Illusion of Choice
 featured: true
 year: '2022'
@@ -24,5 +22,7 @@ reportSummary: >-
   of SOI discrimination.
 reportPDF: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/AnIllusionofChoice_FinalDigital_CORRECT.pdf
+eventTrack: true
+ackeeTracker: e557204f-d595-4660-8554-2ca2475b4342
 ---
 
