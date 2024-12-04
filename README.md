@@ -36,7 +36,7 @@
   ```
   npx tinacms dev -c "npx @11ty/eleventy --serve"
   ```
-  This should give you both Tina CMS and the 11ty site on a `localhost`.
+  This should give you both Tina CMS and the 11ty site on a `localhost`. NOTE: if this fails, you may need to run `npm install` locally first!
 
 - **remember**  to run `git pull` before trying to push code to a new branch on the github!
 
