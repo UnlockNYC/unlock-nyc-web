@@ -34,13 +34,18 @@
 
 - to work on the site locally, download the code and in the root folder run:
   ```
+  npm install
   npx tinacms dev -c "npx @11ty/eleventy --serve"
   ```
-  This should give you both Tina CMS and the 11ty site on a `localhost`. NOTE: if this fails, you may need to run `npm install` locally first!
+  This should give you both Tina CMS and the 11ty site on a `localhost`.
 
 - **remember**  to run `git pull` before trying to push code to a new branch on the github!
 
 - also remember, any `push` to the `main` branch on the github will trigger a Netlify deploy and change the site. to preview first, upload to another branch and make a pull request.
+
+- note: the deploy previews & checks in Github rarely pass, even when the project builds locally and in Netlify
+
+- having issues with TinaCMS build? check out their [Discord](https://discord.com/invite/tina-835168149439643678), it can be helpful!
 
 ### documentation you might want to read
 
