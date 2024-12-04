@@ -9,17 +9,17 @@
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
     "@tinacms/auth": "1.0.6",
-    "@tinacms/cli": "1.5.53",
+    "@tinacms/cli": "1.6.12",
     "airtable": "0.11.6",
     "aws-sdk": "2.1275.0",
     "eleventy-plugin-seo": "0.5.2",
     "express": "^4.18.2",
     "jwt-decode": "3.1.2",
     "markdown-it-anchor": "^8.6.7",
-    "next-tinacms-dos": "4.0.1",
+    "next-tinacms-dos": "8.0.0",
     "node-fetch": "2.x.x",
     "serverless-http": "^3.2.0",
-    "tinacms": "2.1.1"
+    "tinacms": "2.5.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0"
