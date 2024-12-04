@@ -101,6 +101,9 @@ bg: ""
     <p style="margin-bottom: 2rem;">
       {{ reportSummary }}
     </p>
+    {% if reportGraphic %}
+    <img src="{{ reportGraphic }}" style="width: 100%;">
+    {% endif %}
     <p class="black" style="font-size: 1.15em; font-weight: 500; margin-bottom: 2rem;">
       Press Features
     </p>

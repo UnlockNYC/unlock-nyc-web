@@ -1942,6 +1942,11 @@ export default defineConfig({
             label: "Report PDF"
           },
           {
+            type: "image",
+            name: "reportGraphic",
+            label: "Report Graphic"
+          },
+          {
             type: "boolean",
             name: "eventTrack",
             label: "Track Analytics"
