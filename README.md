@@ -47,6 +47,8 @@
 
 - having issues with TinaCMS build? check out their [Discord](https://discord.com/invite/tina-835168149439643678), it can be helpful!
 
+- another troubleshooting tip: if all else fails, try "reindexing" `main` from within TinaCloud (🦙) 
+
 ### documentation you might want to read
 
 - [Tina documentation](https://tina.io/docs/) - for configuring the CMS
