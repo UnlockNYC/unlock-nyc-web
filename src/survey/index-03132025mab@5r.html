@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User Survey 2025</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://public-unlock.nyc3.digitaloceanspaces.com/favicon.png"
+    />
+    <link rel="stylesheet" href="https://weunlock.nyc/public/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://unlocknyc-analytics.netlify.app/tracker.js"
+      data-ackee-server="https://unlocknyc-analytics.netlify.app"
+      data-ackee-domain-id="d2255a40-e04e-4d2d-aa3a-b1b5da9cf52c"
+      data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      div#survey-container {
+          max-width: 900px;
+          padding: 2% 5%;
+          margin: auto;
+          background-color: var(--cream);
+      }
+      p {
+          color: Black;
+      }
+      label.form-field {
+          margin-bottom: 18px;
+          display: inline-block;
+          max-width: 80%;
+          vertical-align: top;
+      }
+      div.question {
+          border-top: 1px solid #d9d9d9;
+      }
+      div.question.reveal {
+          display: none;
+      }
+      input[type="text"] {
+          font-size: 16px;
+          margin-left: 10px;
+          margin-top: -1px;
+          border: 1px solid darkgrey;
+          min-width:210px;
+          max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="survey-container">
+          <div style="text-align: center;">
+            <h1 style="font-family: 'Intro Rust', 'Rubik', sans-serif;">Unlock NYC</h1>
+            <h1 style="font-family: var(--page-font);">Survey 2025</h1>
+          </div>
+          <p>Intro paragraph, intro paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel finibus massa. Donec est ipsum, efficitur eu tincidunt tincidunt, tincidunt sed ipsum. Aenean eu eros est. Duis fringilla in velit vitae sagittis. Donec sollicitudin aliquet elit id porttitor.</p>
+          <p>Second intro paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel finibus massa. Donec est ipsum, efficitur eu tincidunt tincidunt, tincidunt sed ipsum. Aenean eu eros est. Duis fringilla in velit vitae sagittis. Donec sollicitudin aliquet elit id porttitor.</p>
+          <br>
+
+          <form id="demo-survey" action="" method="post">
+            <h3>Part I. Demographic Questions</h3>
+            <div class="question conditional" condition-data="No">
+                <p>1. Do you currently have a voucher?</p>
+                <input type="radio" name="voucher1" value="Yes">
+                <label class="form-field">Yes, I currently have a voucher</label>
+                <br>
+                <input type="radio" name="voucher1" value="No">
+                <label class="form-field">No, I had a voucher in the past</label>
+            </div>
+            <div class="question reveal">
+                <p>How long ago did you have a voucher?</p>
+                <input type="radio" name="voucher-long" value="past 1-2 years">
+                <label class="form-field">In the past 1-2 years</label>
+                <br>
+                <input type="radio" name="voucher-long" value="past 3-4 years">
+                <label class="form-field">In the past 3-4 years</label>
+                <br>
+                <input type="radio" name="voucher-long" value="5+ years ago">
+                <label class="form-field">More than 5+ years ago</label>
+            </div>
+            <div class="question">
+                <p>2. What kind of voucher do you have or did you have?</p>
+                <input type="radio" name="voucher-type" value="CityFHEPS">
+                <label class="form-field">CityFHEPS</label>
+                <br>
+                <input type="radio" name="voucher-type" value="FHEPS">
+                <label class="form-field">FHEPS</label>
+                <br>
+                <input type="radio" name="voucher-type" value="HASA">
+                <label class="form-field">HASA</label>
+                <br>
+                <input type="radio" name="voucher-type" value="HUD-VASH">
+                <label class="form-field">HUD-VASH</label>
+                <br>
+                <input type="radio" name="voucher-type" value="Section 8">
+                <label class="form-field">Section 8</label>
+                <br>
+                <input type="radio" name="voucher-type" value="SOTA">
+                <label class="form-field">SOTA</label>
+                <br>
+                <input type="radio" name="voucher-type" value="other">
+                <label class="form-field">Other (fill-in)</label>
+                <input type="text" name="voucher-other">
+            </div>
+            <div class="question">
+                <p>3. How many people live in your home, including yourself?</p>
+                <input type="radio" name="household-size" value="1">
+                <label class="form-field">Just me (1 person)</label>
+                <br>
+                <input type="radio" name="household-size" value="2">
+                <label class="form-field">2 people</label>
+                <br>
+                <input type="radio" name="household-size" value="3">
+                <label class="form-field">3 people</label>
+                <br>
+                <input type="radio" name="household-size" value="4">
+                <label class="form-field">4 people</label>
+                <br>
+                <input type="radio" name="household-size" value="5+">
+                <label class="form-field">More than 5</label>
+            </div>
+            <div class="question">
+                <p>4. Do you live with children under 18?</p>
+                <input type="radio" name="live-with-children" value="Yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="live-with-children" value="No">
+                <label class="form-field">No</label>
+            </div>
+
+            <div class="question">
+                <p>5. How old are you?</p>
+                <input type="radio" name="age" value="under 18">
+                <label class="form-field">Under 18</label>
+                <br>
+                <input type="radio" name="age" value="18-25">
+                <label class="form-field">18 - 25</label>
+                <br>
+                <input type="radio" name="age" value="26-35">
+                <label class="form-field">26 - 35</label>
+                <br>
+                <input type="radio" name="age" value="36-45">
+                <label class="form-field">36 - 45</label>
+                <br>
+                <input type="radio" name="age" value="46-55">
+                <label class="form-field">46 - 55</label>
+                <br>
+                <input type="radio" name="age" value="56-65">
+                <label class="form-field">56 - 65</label>
+                <br>
+                <input type="radio" name="age" value="over 65">
+                <label class="form-field">Over 65</label>
+                <br>
+                <input type="radio" name="age" value="prefer not to answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>6. Do you identify as a person with a disability?</p>
+                <input type="radio" name="disability" value="no">
+                <label class="form-field">No</label>
+                <br>
+                <input type="radio" name="disability" value="mental">
+                <label class="form-field">Yes, a mental disability</label>
+                <br>
+                <input type="radio" name="disability" value="physical">
+                <label class="form-field">Yes, a physical disability</label>
+                <br>
+                <input type="radio" name="disability" value="both">
+                <label class="form-field">Yes, a mental and a physical disability</label>
+                <br>
+                <input type="radio" name="disability" value="prefer not to answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>7. What is your gender? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="gender" value="female">
+                <label class="form-field">Female</label>
+                <br>
+                <input type="checkbox" name="gender" value="gender-nonconforming">
+                <label class="form-field">Gender non-conforming/non-binary</label>
+                <br>
+                <input type="checkbox" name="gender" value="male">
+                <label class="form-field">Male</label>
+                <br>
+                <input type="checkbox" name="gender" value="third-gender">
+                <label class="form-field">Third Gender (Indigenous / 1st Nations)</label>
+                <br>
+                <input type="checkbox" name="gender" value="trans">
+                <label class="form-field">Trans</label>
+                <br>
+                <input type="checkbox" name="gender" value="other">
+                <label class="form-field">Prefer to identify as</label>
+                <input type="text" name="gender-other">
+                <br>
+                <input type="checkbox" name="gender" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>8. Are you queer/LGBTQIA+?</p>
+                <input type="radio" name="queer" value="yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="queer" value="no">
+                <label class="form-field">No</label>
+                <br>
+                <input type="radio" name="queer" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>9. Do you identify as a person of color?</p>
+                <input type="radio" name="poc" value="yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="poc" value="no">
+                <label class="form-field">No</label>
+                <br>
+                <input type="radio" name="poc" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>10. Race/ethnicity - how do you identify? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="race" value="asian">
+                <label class="form-field">Asian</label>
+                <br>
+                <input type="checkbox" name="race" value="black">
+                <label class="form-field">Black</label>
+                <br>
+                <input type="checkbox" name="race" value="hispanic-latinx">
+                <label class="form-field">Hispanic / Latinx</label>
+                <br>
+                <input type="checkbox" name="race" value="indigenous">
+                <label class="form-field">Indigenous / 1st Nations</label>
+                <br>
+                <input type="checkbox" name="race" value="mena">
+                <label class="form-field">Middle Eastern or North African (MENA)</label>
+                <br>
+                <input type="checkbox" name="race" value="multiracial">
+                <label class="form-field">Multiracial</label>
+                <br>
+                <input type="checkbox" name="race" value="pacific-islander">
+                <label class="form-field">Pacific Islander or Native Hawaiian</label>
+                <br>
+                <input type="checkbox" name="race" value="white">
+                <label class="form-field">White</label>
+                <br>
+                <input type="checkbox" name="race" value="other">
+                <label class="form-field">Prefer to identify as</label>
+                <input type="text" name="race-ethnicity-other">
+                <br>
+                <input type="checkbox" name="race-ethnicity" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>11. What is your first language?</p>
+                <input type="radio" name="first-language" value="arabic">
+                <label class="form-field">Arabic</label>
+                <br>
+                <input type="radio" name="first-language" value="bengali">
+                <label class="form-field">Bengali</label>
+                <br>
+                <input type="radio" name="first-language" value="chinese">
+                <label class="form-field">Chinese (including Cantonese and Mandarin)</label>
+                <br>
+                <input type="radio" name="first-language" value="english">
+                <label class="form-field">English</label>
+                <br>
+                <input type="radio" name="first-language" value="haitian-creole">
+                <label class="form-field">Haitian Creole</label>
+                <br>
+                <input type="radio" name="first-language" value="italian">
+                <label class="form-field">Italian</label>
+                <br>
+                <input type="radio" name="first-language" value="korean">
+                <label class="form-field">Korean</label>
+                <br>
+                <input type="radio" name="first-language" value="polish">
+                <label class="form-field">Polish</label>
+                <br>
+                <input type="radio" name="first-language" value="russian">
+                <label class="form-field">Russian</label>
+                <br>
+                <input type="radio" name="first-language" value="spanish">
+                <label class="form-field">Spanish</label>
+                <br>
+                <input type="radio" name="first-language" value="urdu">
+                <label class="form-field">Urdu</label>
+                <br>
+                <input type="radio" name="first-language" value="yiddish">
+                <label class="form-field">Yiddish</label>
+                <br>
+                <input type="radio" name="first-language" value="other">
+                <label class="form-field">Other (fill-in)</label>
+                <input type="text" name="first-language-other">
+                <br>
+                <input type="radio" name="first-language" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question conditional" condition-data="own-apartment">
+                <p>12. What is your current housing situation?</p>
+                <input type="radio" name="housing-situation" value="shelter">
+                <label class="form-field">Staying in a shelter</label>
+                <br>
+                <input type="radio" name="housing-situation" value="doubled-up">
+                <label class="form-field">Living doubled up with friends/family</label>
+                <br>
+                <input type="radio" name="housing-situation" value="street-homelessness">
+                <label class="form-field">Experiencing street homelessness</label>
+                <br>
+                <input type="radio" name="housing-situation" value="car">
+                <label class="form-field">Living in my car</label>
+                <br>
+                <input type="radio" name="housing-situation" value="own-apartment" id="own-apartment">
+                <label class="form-field">I have my own apartment</label>
+                <br>
+                <input type="radio" name="housing-situation" value="other">
+                <label class="form-field">Other (fill-in)</label>
+                <input type="text" name="housing-situation-other">
+                <br>
+                <input type="radio" name="housing-situation" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question reveal" id="apartment-type">
+                <p>What kind of housing do you live in?</p>
+                <input type="radio" name="apt-type" value="private-house">
+                <label class="form-field">Private house</label>
+                <br>
+                <input type="radio" name="apt-type" value="multifamily-building">
+                <label class="form-field">Multifamily building</label>
+            </div>
+            <div class="question">
+                <p>13. What is your ZIP code?</p>
+                <input type="text" name="zip-code" placeholder="Enter NYC ZIP code">
+            </div>
+
+            <div class="question">
+                <p>14. How many times have you been homeless in the past?</p>
+                <input type="radio" name="homeless-past" value="never">
+                <label class="form-field">Never</label>
+                <br>
+                <input type="radio" name="homeless-past" value="once">
+                <label class="form-field">Once</label>
+                <br>
+                <input type="radio" name="homeless-past" value="twice">
+                <label class="form-field">Twice</label>
+                <br>
+                <input type="radio" name="homeless-past" value="three-times">
+                <label class="form-field">Three times</label>
+                <br>
+                <input type="radio" name="homeless-past" value="more-than-three">
+                <label class="form-field">More than three times</label>
+                <br>
+                <input type="radio" name="homeless-past" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+            <div class="question">
+                <p>15. Were you ever homeless in childhood?</p>
+                <input type="radio" name="homeless-childhood" value="yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="homeless-childhood" value="no">
+                <label class="form-field">No</label>
+                <br>
+                <input type="radio" name="homeless-childhood" value="prefer-not-to-answer">
+                <label class="form-field">Prefer not to answer</label>
+            </div>
+
+            <h3>Part II. Interactions with HRA (Human Resources Administration)</h3>
+            <div class="question">
+                <p>1. How long did it take you to secure a housing voucher, from the moment you applied to getting the voucher or shopping letter in hand?</p>
+                <input type="radio" name="voucher-timeline" value="3-6 months">
+                <label class="form-field">3 - 6 months</label>
+                <br>
+                <input type="radio" name="voucher-timeline" value="6-12 months">
+                <label class="form-field">6 - 12 months</label>
+                <br>
+                <input type="radio" name="voucher-timeline" value="over-a-year">
+                <label class="form-field">Over a year</label>
+                <br>
+                <input type="radio" name="voucher-timeline" value="still-working">
+                <label class="form-field">Still working on it</label>
+            </div>
+
+            <div class="question">
+                <p>2. How often do you interact with HRA regarding your voucher?</p>
+                <input type="radio" name="hra-interaction" value="weekly">
+                <label class="form-field">Weekly</label>
+                <br>
+                <input type="radio" name="hra-interaction" value="monthly">
+                <label class="form-field">Monthly</label>
+                <br>
+                <input type="radio" name="hra-interaction" value="3-6 months">
+                <label class="form-field">Every 3 - 6 months</label>
+                <br>
+                <input type="radio" name="hra-interaction" value="6-12 months">
+                <label class="form-field">Every 6 - 12 months</label>
+                <br>
+                <input type="radio" name="hra-interaction" value="rarely">
+                <label class="form-field">Rarely</label>
+            </div>
+
+            <div class="question">
+                <p>3. Which methods have you used to contact HRA about your voucher? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="hra-contact" value="in-person">
+                <label class="form-field">In-person office visits</label>
+                <br>
+                <input type="checkbox" name="hra-contact" value="phone">
+                <label class="form-field">Phone calls</label>
+                <br>
+                <input type="checkbox" name="hra-contact" value="email">
+                <label class="form-field">Email</label>
+                <br>
+                <input type="checkbox" name="hra-contact" value="access-hra">
+                <label class="form-field">Access HRA portal</label>
+                <br>
+                <input type="checkbox" name="hra-contact" value="case-worker">
+                <label class="form-field">Through my case worker or housing advocate</label>
+            </div>
+
+            <div class="question">
+                <p>4. How long does it typically take for HRA to get back to you?</p>
+                <input type="radio" name="hra-response-time" value="same-day">
+                <label class="form-field">Same day via call back option</label>
+                <br>
+                <input type="radio" name="hra-response-time" value="next-day">
+                <label class="form-field">Next day</label>
+                <br>
+                <input type="radio" name="hra-response-time" value="one-week">
+                <label class="form-field">One week</label>
+                <br>
+                <input type="radio" name="hra-response-time" value="two-weeks">
+                <label class="form-field">Two weeks or more</label>
+            </div>
+
+            <div class="question">
+                <p>5. What, if anything, has made it difficult for you to obtain assistance from HRA? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="hra-difficulty" value="long-wait">
+                <label class="form-field">Long wait time responses</label>
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="lack-of-info">
+                <label class="form-field">Lack of clear information about my case</label>
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="conflicting-info">
+                <label class="form-field">Receiving conflicting or incorrect information</label>
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="lost-documents">
+                <label class="form-field">Lost or misplaced documents</label>
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="repeated-requests">
+                <label class="form-field">Repeated requests for the same documents</label>
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="denied-assistance">
+                <label class="form-field">Denied assistance without clear explanation</label>
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="other">
+                <label class="form-field">Other (Fill-in)</label>
+                <input type="text" name="hra-difficulty-other">
+                <br>
+                <input type="checkbox" name="hra-difficulty" value="not-applicable">
+                <label class="form-field">Not applicable</label>
+            </div>
+            <div class="question">
+                <p>6. Do you feel like HRA workers gave you information about your rights as a voucher holder?</p>
+                <input type="radio" name="hra-rights-info" value="yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="hra-rights-info" value="no">
+                <label class="form-field">No</label>
+            </div>
+
+            <div class="question">
+                <p>7. Have you ever been denied a housing opportunity for the following reasons? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="housing-denial" value="application-delays">
+                <label class="form-field">Application delays (landlord pulls out of process because HRA is taking too long to process paperwork)</label>
+                <br>
+                <input type="checkbox" name="housing-denial" value="late-payment-move-in">
+                <label class="form-field">Unable to move-in due to HRA late payment (example: Landlord not giving tenant the keys after they sign a lease because HRA has not paid them)</label>
+                <br>
+                <input type="checkbox" name="housing-denial" value="at-risk-eviction">
+                <label class="form-field">At-risk of eviction due to HRA late payment (example: Landlord won’t renew lease because they have not been receiving rent checks)</label>
+                <br>
+                <input type="checkbox" name="housing-denial" value="renewal-issue">
+                <label class="form-field">Renewal or shopping letter issue (example: Tenant unable to obtain updated shopping letter to move to new apartment)</label>
+                <br>
+                <input type="checkbox" name="housing-denial" value="other">
+                <label class="form-field">Other (Fill-in)</label>
+                <input type="text" name="housing-denial-other">
+                <br>
+                <input type="checkbox" name="housing-denial" value="not-applicable">
+                <label class="form-field">No, not applicable</label>
+            </div>
+            <div class="question">
+                <p>8. How often do you wish HRA had intervened when you experienced a housing issue? In what capacity?</p>
+                <input type="radio" name="hra-intervention" value="always">
+                <label class="form-field">Always – HRA should have acted faster on my case and enforced landlord compliance.</label>
+                <br>
+                <input type="radio" name="hra-intervention" value="often">
+                <label class="form-field">Often – I needed more support in negotiations, legal assistance, or emergency housing.</label>
+                <br>
+                <input type="radio" name="hra-intervention" value="sometimes">
+                <label class="form-field">Sometimes – Some issues could have been resolved with better communication or transparency.</label>
+                <br>
+                <input type="radio" name="hra-intervention" value="rarely">
+                <label class="form-field">Rarely – HRA’s involvement wasn’t necessary in most cases.</label>
+                <br>
+                <input type="radio" name="hra-intervention" value="never">
+                <label class="form-field">Never – I did not experience housing issues that required HRA’s intervention.</label>
+            </div>
+
+            <h3>Part III. Interactions with Landlords/Brokers</h3>
+            <div class="question">
+                <p>1. How often have you been denied housing due to your voucher?</p>
+                <input type="radio" name="voucher-denial-frequency" value="multiple-times-a-day">
+                <label class="form-field">Multiple times a day</label>
+                <br>
+                <input type="radio" name="voucher-denial-frequency" value="daily">
+                <label class="form-field">Daily</label>
+                <br>
+                <input type="radio" name="voucher-denial-frequency" value="weekly">
+                <label class="form-field">Weekly</label>
+                <br>
+                <input type="radio" name="voucher-denial-frequency" value="monthly">
+                <label class="form-field">Monthly</label>
+                <br>
+                <input type="radio" name="voucher-denial-frequency" value="every-few-months">
+                <label class="form-field">Every few months</label>
+            </div>
+            <div class="question">
+                <p>2. What motivates you to report SOI discrimination? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="soi-report-motivation" value="illegal">
+                <label class="form-field">It’s illegal and bad actors should be held accountable</label>
+                <br>
+                <input type="checkbox" name="soi-report-motivation" value="stand-up">
+                <label class="form-field">I want to stand up for myself and/or my family</label>
+                <br>
+                <input type="checkbox" name="soi-report-motivation" value="prevent-others">
+                <label class="form-field">I don’t want others to go through what I went through</label>
+                <br>
+                <input type="checkbox" name="soi-report-motivation" value="fair-shot">
+                <label class="form-field">I want a fair shot at getting an apartment</label>
+                <br>
+                <input type="checkbox" name="soi-report-motivation" value="other">
+                <label class="form-field">Other (fill-in)</label>
+                <input type="text" name="soi-report-motivation-other">
+            </div>
+            <div class="question">
+                <p>3. Have you ever been turned down from an apartment viewing as a voucher holder due to your <span class="note">(Check all that apply)</span>?</p>
+                <input type="checkbox" name="voucher-discrimination" value="gender">
+                <label class="form-field">Gender</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="sexual-orientation">
+                <label class="form-field">Sexual orientation</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="race-ethnicity">
+                <label class="form-field">Race/ethnicity</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="disability">
+                <label class="form-field">Disability status</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="language">
+                <label class="form-field">English language ability</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="family-size">
+                <label class="form-field">Family size</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="other">
+                <label class="form-field">Something else (fill-in)</label>
+                <input type="text" name="voucher-discrimination-other">
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="not-sure">
+                <label class="form-field">Not sure</label>
+                <br>
+                <input type="checkbox" name="voucher-discrimination" value="no">
+                <label class="form-field">No</label>
+            </div>
+            <div class="question">
+                <p>4. What borough are / were you looking for housing in? <span class="note">(Check all that apply)</span></p>
+                <input type="checkbox" name="borough" value="brooklyn">
+                <label class="form-field">Brooklyn</label>
+                <br>
+                <input type="checkbox" name="borough" value="bronx">
+                <label class="form-field">Bronx</label>
+                <br>
+                <input type="checkbox" name="borough" value="manhattan">
+                <label class="form-field">Manhattan</label>
+                <br>
+                <input type="checkbox" name="borough" value="queens">
+                <label class="form-field">Queens</label>
+                <br>
+                <input type="checkbox" name="borough" value="staten-island">
+                <label class="form-field">Staten Island</label>
+                <br>
+                <input type="checkbox" name="borough" value="outside-nyc">
+                <label class="form-field">Outside NYC</label>
+            </div>
+
+            <div class="question">
+                <p>5. Have you ever hired a real estate broker to help you find housing?</p>
+                <input type="radio" name="hired-broker" value="yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="hired-broker" value="no">
+                <label class="form-field">No</label>
+            </div>
+
+            <div class="question conditional">
+                <p>6. Did you ever experience a landlord or broker requesting additional fees beyond the allowable $20 application fee?</p>
+                <input type="radio" name="extra-fees" value="yes" id="extra-fees-yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="extra-fees" value="no">
+                <label class="form-field">No</label>
+            </div>
+
+            <div class="question reveal" id="extra-fees-details">
+                <p>If yes, what did they request?</p>
+                <input type="checkbox" name="extra-fees-type" value="under-table">
+                <label class="form-field">Under the table deal (for example: asking you to pay a monthly cash fee in addition to your voucher)</label>
+                <br>
+                <input type="checkbox" name="extra-fees-type" value="cash-hold-view">
+                <label class="form-field">Asking you for cash to hold or view the unit</label>
+                <br>
+                <input type="checkbox" name="extra-fees-type" value="over-20">
+                <label class="form-field">Charging more than $20 for the application (example: getting charged $50)</label>
+                <br>
+                <input type="checkbox" name="extra-fees-type" value="other">
+                <label class="form-field">Other (fill-in)</label>
+                <input type="text" name="extra-fees-other">
+            </div>
+
+            <h3>Part IV. Next Steps</h3>
+            <div class="question">
+                <p>1. Anything else you’d like to share with us today about your experience as a voucher holder?</p>
+                <textarea name="additional-comments" rows="4" placeholder="Type your response here..."></textarea>
+            </div>
+
+            <div class="question">
+                <p>2. Would you be interested in participating in a follow-up focus group interview?</p>
+                <input type="radio" name="follow-up-interest" value="yes">
+                <label class="form-field">Yes</label>
+                <br>
+                <input type="radio" name="follow-up-interest" value="no">
+                <label class="form-field">No</label>
+            </div>
+
+            <input id="submit-report" type="submit" value="Submit"></input>
+          </form>
+      </div>
+
+      <script>
+      $(document).ready(function() {
+        // reveal conditional questions
+        $("div.conditional input[type='radio']").change(function(){
+          if($(this).val() == $(this).parent("div.conditional").attr("condition-data")) {
+            $(this).closest("div").next("div.reveal").show();
+          }
+          else {
+            $(this).closest("div").next("div.reveal").hide();
+          }
+        });
+        // allow for fill-in "other" inputs
+        $("div.question input").change(function(){
+          if ($(this).val() == "other") {
+            let textInput = $(this).closest('div.question').find('input[type="text"]');
+            textInput.prop('disabled', false).focus();
+
+            textInput.on("input", function () {
+              $(this).val(textInput.val());
+            });
+          }
+        });
+        $(document).on("input", 'input[type="text"]', function () {
+          let otherOption = $(this).closest('.question').find('input[value="other"]');
+          if (otherOption.length) {
+            otherOption.prop("checked", true).val($this.val()); // Update value dynamically
+          }
+        });
+        $("form#demo-survey").submit(async function (e) {
+            e.preventDefault();
+            let formValid = true;
+
+            // validation, required for radio
+            $('input[type="radio"]').each(function () {
+              let name = $(this).attr("name");
+              if ($('input[name="' + name + '"]:checked').length == 0) {
+                  formValid = false;
+              } else {
+                  $(this).closest(".question").removeClass("error");
+              }
+            });
+            // validation, required for checkboxes
+            $('input[type="checkbox"][required]').each(function () {
+                let name = $(this).attr("name");
+                if ($('input[name="' + name + '"]:checked').length == 0) {
+                    isValid = false;
+                    $(this).closest(".question").addClass("error");
+                } else {
+                    $(this).closest(".question").removeClass("error");
+                }
+            });
+            // MAB: NEED TO ADD ERROR CSS AND ALERT IF NOT ALL FILLED OUT
+
+            alert("SUBMIT TEST!");
+            let formBody = formToJSON($("form#demo-survey")[0]);
+            console.log(formBody);
+        });
+
+      });
+
+      // turn formData into JSON, stringify for fetch request
+      function formToJSON(form) {
+          const formData = new FormData(form);
+          const obj = {};
+          formData.forEach((value, key) => {
+              obj[key] = value;
+          });
+
+          return JSON.stringify(obj);
+      }
+      </script>
+  </body>
+</html>
