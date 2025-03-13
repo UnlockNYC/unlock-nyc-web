@@ -715,6 +715,19 @@
             alert("SUBMIT TEST!");
             let formBody = formToJSON($("form#demo-survey")[0]);
             console.log(formBody);
+
+            const response = await fetch('/.netlify/functions/submit-survey25', {
+                method: 'POST',
+                body: formBody
+            });
+            const data = await response.json();
+            let redirect;
+            if (data.statusCode == 200) {
+                alert("success");
+                window.location.href = "https://weunlock.nyc";
+            } else {
+                alert("There has been an error submitting your survey data. Please reach out to Unlock NYC ASAP.");
+            }
         });
 
       });

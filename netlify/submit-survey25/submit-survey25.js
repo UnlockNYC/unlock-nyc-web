@@ -40,7 +40,7 @@ exports.handler = function(event, context, callback) {
       statusCode: 200,
       body: JSON.stringify({
         statusCode: 200,
-        message: 'report submitted',
+        message: 'survey submitted',
         record: record.getId()
       })
     });
