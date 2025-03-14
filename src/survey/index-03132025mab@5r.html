@@ -711,6 +711,9 @@
                 }
             });
             // MAB: NEED TO ADD ERROR CSS AND ALERT IF NOT ALL FILLED OUT
+            // COULD JUST TRY REQUIRED ATTRIBUTE
+            // STOP SUBMIT IF NOT ALL FILLED OUT
+            // DISABLE BUTTON IF VALID, ONLY SUBMIT ONE TIME
 
             alert("SUBMIT TEST!");
             let formBody = formToJSON($("form#demo-survey")[0]);
@@ -736,9 +739,28 @@
       function formToJSON(form) {
           const formData = new FormData(form);
           const obj = {};
+
           formData.forEach((value, key) => {
-              obj[key] = value;
+              if (obj[key]) {
+                  if (!Array.isArray(obj[key])) {
+                      obj[key] = [obj[key]]; // Convert single value to array
+                  }
+                  obj[key].push(value); // Add new value to array
+              } else {
+                  obj[key] = value;
+              }
           });
+
+          // Convert arrays (checkbox groups) to comma-separated strings
+          Object.keys(obj).forEach((key) => {
+              if (Array.isArray(obj[key])) {
+                  obj[key] = obj[key].join(", ");
+              }
+          });
+
+          /*formData.forEach((value, key) => {
+              obj[key] = value;
+              });*/
 
           return JSON.stringify(obj);
       }
