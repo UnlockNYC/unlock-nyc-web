@@ -2,7 +2,7 @@ const Airtable = require('airtable');
 const fetch = require('node-fetch');
 
 exports.handler = function (event, context, callback) {
-  var base = new Airtable({ apiKey: process.env.AIRTABLE_ACCESS_TOKEN }).base('appiQkR2Zrww4DQnz');
+  var base = new Airtable({ apiKey: process.env.AIRTABLE_DATADVOCACY_TOKEN }).base('appiQkR2Zrww4DQnz');
   // PROD DATA/ADVOCACY BASE
 
 
