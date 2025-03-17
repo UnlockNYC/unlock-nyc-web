@@ -669,7 +669,7 @@
       </div>
 
       <script>
-      $(document).ready(function() {
+      $(document).ready(async function() {
         // token validation
         let params = new URLSearchParams(document.location.search);
         let token = params.get("v");
@@ -679,12 +679,14 @@
             body: { "token": token}
         });
         const data = await response.json();
+        console.log(data);
         if (data == true) {
             $("form").hide();
             window.location.href = "/expired-survey";
         }
         else {
           $("form").show();
+          console.log("TEST PASSED");
         }
 
         // reveal conditional questions
