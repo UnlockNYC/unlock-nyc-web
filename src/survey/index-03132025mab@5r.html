@@ -58,6 +58,15 @@
           min-width:210px;
           max-width: 100%;
       }
+      input[type="submit"] {
+          background-color: var(--yellow);
+          border: 1px solid Black;
+          border-radius: 8px;
+          padding: 12px 40px;
+          font-size: 1.5em;
+          font-weight: bolder;
+          cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -74,7 +83,7 @@
             <h3>Part I. Demographic Questions</h3>
             <div class="question conditional" condition-data="No">
                 <p>1. Do you currently have a voucher?</p>
-                <input type="radio" name="voucher1" value="Yes">
+                <input type="radio" name="voucher1" value="Yes" required>
                 <label class="form-field">Yes, I currently have a voucher</label>
                 <br>
                 <input type="radio" name="voucher1" value="No">
@@ -93,7 +102,7 @@
             </div>
             <div class="question">
                 <p>2. What kind of voucher do you have or did you have?</p>
-                <input type="radio" name="voucher-type" value="CityFHEPS">
+                <input type="radio" name="voucher-type" value="CityFHEPS" required>
                 <label class="form-field">CityFHEPS</label>
                 <br>
                 <input type="radio" name="voucher-type" value="FHEPS">
@@ -117,7 +126,7 @@
             </div>
             <div class="question">
                 <p>3. How many people live in your home, including yourself?</p>
-                <input type="radio" name="household-size" value="1">
+                <input type="radio" name="household-size" value="1" required>
                 <label class="form-field">Just me (1 person)</label>
                 <br>
                 <input type="radio" name="household-size" value="2">
@@ -134,7 +143,7 @@
             </div>
             <div class="question">
                 <p>4. Do you live with children under 18?</p>
-                <input type="radio" name="live-with-children" value="Yes">
+                <input type="radio" name="live-with-children" value="Yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="live-with-children" value="No">
@@ -143,7 +152,7 @@
 
             <div class="question">
                 <p>5. How old are you?</p>
-                <input type="radio" name="age" value="under 18">
+                <input type="radio" name="age" value="under 18" required>
                 <label class="form-field">Under 18</label>
                 <br>
                 <input type="radio" name="age" value="18-25">
@@ -169,7 +178,7 @@
             </div>
             <div class="question">
                 <p>6. Do you identify as a person with a disability?</p>
-                <input type="radio" name="disability" value="no">
+                <input type="radio" name="disability" value="no" required>
                 <label class="form-field">No</label>
                 <br>
                 <input type="radio" name="disability" value="mental">
@@ -184,7 +193,7 @@
                 <input type="radio" name="disability" value="prefer not to answer">
                 <label class="form-field">Prefer not to answer</label>
             </div>
-            <div class="question">
+            <div class="question multi">
                 <p>7. What is your gender? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="gender" value="female">
                 <label class="form-field">Female</label>
@@ -210,7 +219,7 @@
             </div>
             <div class="question">
                 <p>8. Are you queer/LGBTQIA+?</p>
-                <input type="radio" name="lgbtq" value="yes">
+                <input type="radio" name="lgbtq" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="lgbtq" value="no">
@@ -221,7 +230,7 @@
             </div>
             <div class="question">
                 <p>9. Do you identify as a person of color?</p>
-                <input type="radio" name="poc" value="yes">
+                <input type="radio" name="poc" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="poc" value="no">
@@ -230,7 +239,7 @@
                 <input type="radio" name="poc" value="prefer-not-to-answer">
                 <label class="form-field">Prefer not to answer</label>
             </div>
-            <div class="question">
+            <div class="question multi">
                 <p>10. Race/ethnicity - how do you identify? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="race-ethnicity" value="asian">
                 <label class="form-field">Asian</label>
@@ -265,7 +274,7 @@
             </div>
             <div class="question">
                 <p>11. What is your first language?</p>
-                <input type="radio" name="first-language" value="arabic">
+                <input type="radio" name="first-language" value="arabic" required>
                 <label class="form-field">Arabic</label>
                 <br>
                 <input type="radio" name="first-language" value="bengali">
@@ -308,7 +317,7 @@
                 <input type="radio" name="first-language" value="prefer-not-to-answer">
                 <label class="form-field">Prefer not to answer</label>
             </div>
-            <div class="question conditional" condition-data="own-apartment">
+            <div class="question conditional" condition-data="own-apartment" required>
                 <p>12. What is your current housing situation?</p>
                 <input type="radio" name="housing-situation" value="shelter">
                 <label class="form-field">Staying in a shelter</label>
@@ -347,7 +356,7 @@
 
             <div class="question">
                 <p>14. How many times have you been homeless in the past?</p>
-                <input type="radio" name="homeless-past" value="never">
+                <input type="radio" name="homeless-past" value="never" required>
                 <label class="form-field">Never</label>
                 <br>
                 <input type="radio" name="homeless-past" value="once">
@@ -367,7 +376,7 @@
             </div>
             <div class="question">
                 <p>15. Were you ever homeless in childhood?</p>
-                <input type="radio" name="homeless-childhood" value="yes">
+                <input type="radio" name="homeless-childhood" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="homeless-childhood" value="no">
@@ -380,7 +389,7 @@
             <h3>Part II. Interactions with HRA (Human Resources Administration)</h3>
             <div class="question">
                 <p>1. How long did it take you to secure a housing voucher, from the moment you applied to getting the voucher or shopping letter in hand?</p>
-                <input type="radio" name="voucher-timeline" value="3-6 months">
+                <input type="radio" name="voucher-timeline" value="3-6 months" required>
                 <label class="form-field">3 - 6 months</label>
                 <br>
                 <input type="radio" name="voucher-timeline" value="6-12 months">
@@ -395,7 +404,7 @@
 
             <div class="question">
                 <p>2. How often do you interact with HRA regarding your voucher?</p>
-                <input type="radio" name="hra-interaction" value="weekly">
+                <input type="radio" name="hra-interaction" value="weekly" required>
                 <label class="form-field">Weekly</label>
                 <br>
                 <input type="radio" name="hra-interaction" value="monthly">
@@ -411,7 +420,7 @@
                 <label class="form-field">Rarely</label>
             </div>
 
-            <div class="question">
+            <div class="question multi">
                 <p>3. Which methods have you used to contact HRA about your voucher? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="hra-contact" value="in-person">
                 <label class="form-field">In-person office visits</label>
@@ -431,7 +440,7 @@
 
             <div class="question">
                 <p>4. How long does it typically take for HRA to get back to you?</p>
-                <input type="radio" name="hra-response-time" value="same-day">
+                <input type="radio" name="hra-response-time" value="same-day" required>
                 <label class="form-field">Same day via call back option</label>
                 <br>
                 <input type="radio" name="hra-response-time" value="next-day">
@@ -444,7 +453,7 @@
                 <label class="form-field">Two weeks or more</label>
             </div>
 
-            <div class="question">
+            <div class="question multi">
                 <p>5. What, if anything, has made it difficult for you to obtain assistance from HRA? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="hra-difficulty" value="long-wait">
                 <label class="form-field">Long wait time responses</label>
@@ -473,14 +482,14 @@
             </div>
             <div class="question">
                 <p>6. Do you feel like HRA workers gave you information about your rights as a voucher holder?</p>
-                <input type="radio" name="hra-rights-info" value="yes">
+                <input type="radio" name="hra-rights-info" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="hra-rights-info" value="no">
                 <label class="form-field">No</label>
             </div>
 
-            <div class="question">
+            <div class="question multi">
                 <p>7. Have you ever been denied a housing opportunity for the following reasons? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="housing-denial" value="application-delays">
                 <label class="form-field">Application delays (landlord pulls out of process because HRA is taking too long to process paperwork)</label>
@@ -503,7 +512,7 @@
             </div>
             <div class="question">
                 <p>8. How often do you wish HRA had intervened when you experienced a housing issue? In what capacity?</p>
-                <input type="radio" name="hra-intervention" value="always">
+                <input type="radio" name="hra-intervention" value="always" required>
                 <label class="form-field">Always – HRA should have acted faster on my case and enforced landlord compliance.</label>
                 <br>
                 <input type="radio" name="hra-intervention" value="often">
@@ -522,7 +531,7 @@
             <h3>Part III. Interactions with Landlords/Brokers</h3>
             <div class="question">
                 <p>1. How often have you been denied housing due to your voucher?</p>
-                <input type="radio" name="voucher-denial-frequency" value="multiple-times-a-day">
+                <input type="radio" name="voucher-denial-frequency" value="multiple-times-a-day" required>
                 <label class="form-field">Multiple times a day</label>
                 <br>
                 <input type="radio" name="voucher-denial-frequency" value="daily">
@@ -537,7 +546,7 @@
                 <input type="radio" name="voucher-denial-frequency" value="every-few-months">
                 <label class="form-field">Every few months</label>
             </div>
-            <div class="question">
+            <div class="question multi">
                 <p>2. What motivates you to report SOI discrimination? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="soi-report-motivation" value="illegal">
                 <label class="form-field">It’s illegal and bad actors should be held accountable</label>
@@ -555,7 +564,7 @@
                 <label class="form-field">Other (fill-in)</label>
                 <input type="text" name="soi-report-motivation">
             </div>
-            <div class="question">
+            <div class="question multi">
                 <p>3. Have you ever been turned down from an apartment viewing as a voucher holder due to your <span class="note">(Check all that apply)</span>?</p>
                 <input type="checkbox" name="voucher-discrimination" value="gender">
                 <label class="form-field">Gender</label>
@@ -585,7 +594,7 @@
                 <input type="checkbox" name="voucher-discrimination" value="no">
                 <label class="form-field">No</label>
             </div>
-            <div class="question">
+            <div class="question multi">
                 <p>4. What borough are / were you looking for housing in? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="borough" value="brooklyn">
                 <label class="form-field">Brooklyn</label>
@@ -608,16 +617,16 @@
 
             <div class="question">
                 <p>5. Have you ever hired a real estate broker to help you find housing?</p>
-                <input type="radio" name="hired-broker" value="yes">
+                <input type="radio" name="hired-broker" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="hired-broker" value="no">
                 <label class="form-field">No</label>
             </div>
 
-            <div class="question conditional">
+            <div class="question conditional" condition-data="yes">
                 <p>6. Did you ever experience a landlord or broker requesting additional fees beyond the allowable $20 application fee?</p>
-                <input type="radio" name="extra-fees" value="yes" id="extra-fees-yes">
+                <input type="radio" name="extra-fees" value="yes" id="extra-fees-yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="extra-fees" value="no">
@@ -643,19 +652,19 @@
             <h3>Part IV. Next Steps</h3>
             <div class="question">
                 <p>1. Anything else you’d like to share with us today about your experience as a voucher holder?</p>
-                <textarea name="additional-comments" rows="4" placeholder="Type your response here..."></textarea>
+                <textarea name="additional-comments" style="width: 80%;" rows="4" placeholder="Type your response here..."></textarea>
             </div>
 
             <div class="question">
                 <p>2. Would you be interested in participating in a follow-up focus group interview?</p>
-                <input type="radio" name="follow-up-interest" value="yes">
+                <input type="radio" name="follow-up-interest" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="follow-up-interest" value="no">
                 <label class="form-field">No</label>
             </div>
 
-            <input id="submit-report" type="submit" value="Submit"></input>
+            <input id="submit-survey" type="submit" value="Submit"></input>
           </form>
       </div>
 
@@ -687,50 +696,64 @@
             otherOption.prop("checked", true).val($(this).val()); // update value dynamically
           }
         });
+        // FORM SUBMISSION
         $("form#demo-survey").submit(async function (e) {
             e.preventDefault();
-            let formValid = true;
+            let form = $(this)[0];
 
-            // validation, required for radio
-            $('input[type="radio"]').each(function () {
-              let name = $(this).attr("name");
-              if ($('input[name="' + name + '"]:checked').length == 0) {
-                  formValid = false;
-              } else {
-                  $(this).closest(".question").removeClass("error");
-              }
-            });
-            // validation, required for checkboxes
-            $('input[type="checkbox"][required]').each(function () {
-                let name = $(this).attr("name");
-                if ($('input[name="' + name + '"]:checked').length == 0) {
-                    isValid = false;
-                    $(this).closest(".question").addClass("error");
+            // first check validity, radios/others with required attr
+            if(form.checkValidity()) {
+              let isValid = true;
+              // now checkboxes
+              $("input[type='checkbox']").on("change", function() {
+                  $(this).closest("div.question.multi").find("input[type='checkbox']").each(function() {
+                      this.setCustomValidity(""); // remove error message when user interacts
+                      this.reportValidity();
+                  });
+              });
+              // count each group, is @ least 1 checkbox filled out?
+              $("div.question.multi").each(function(){
+                let checkboxes = $(this).children("input[type='checkbox']");
+                let checkedCount = checkboxes.filter(":checked").length;
+
+                if (checkedCount == 0) {
+                    checkboxes.each(function() {
+                        this.setCustomValidity("Please choose at least one answer.");
+                        this.reportValidity();
+                        isValid = false;
+                    });
                 } else {
-                    $(this).closest(".question").removeClass("error");
+                    checkboxes.each(function() {
+                        this.setCustomValidity("");
+                        this.reportValidity();
+                    });
                 }
-            });
-            // MAB: NEED TO ADD ERROR CSS AND ALERT IF NOT ALL FILLED OUT
-            // COULD JUST TRY REQUIRED ATTRIBUTE
-            // STOP SUBMIT IF NOT ALL FILLED OUT
-            // DISABLE BUTTON IF VALID, ONLY SUBMIT ONE TIME
+              });
 
-            alert("SUBMIT TEST!");
-            let formBody = formToJSON($("form#demo-survey")[0]);
-            console.log(formBody);
+              if (isValid) {
+                $("input#submit-survey").prop("disabled", true).attr("value", "Submitting...");
 
-            const response = await fetch('/.netlify/functions/submit-survey25', {
-                method: 'POST',
-                body: formBody
-            });
-            const data = await response.json();
-            let redirect;
-            if (data.statusCode == 200) {
-                alert("success");
-                window.location.href = "https://weunlock.nyc";
+                let formBody = formToJSON($("form#demo-survey")[0]);
+                console.log(formBody);
+
+                const response = await fetch('/.netlify/functions/submit-survey25', {
+                    method: 'POST',
+                    body: formBody
+                });
+                const data = await response.json();
+                let redirect;
+                if (data.statusCode == 200) {
+                    alert("success");
+                    window.location.href = "https://weunlock.nyc";
+                } else {
+                    alert("There has been an error submitting your survey data. Please reach out to Unlock NYC ASAP.");
+                }
+              }
             } else {
-                alert("There has been an error submitting your survey data. Please reach out to Unlock NYC ASAP.");
+              form.reportValidity();
             }
+
+
         });
 
       });
@@ -757,10 +780,6 @@
                   obj[key] = obj[key].join(", ");
               }
           });
-
-          /*formData.forEach((value, key) => {
-              obj[key] = value;
-              });*/
 
           return JSON.stringify(obj);
       }
