@@ -670,6 +670,13 @@
 
       <script>
       $(document).ready(function() {
+        // token validation
+        let params = new URLSearchParams(document.location.search);
+        let token = params.get("v");
+        if (token == "OV6Uvnas8ANcc68") {
+          $("form").hide();
+          window.location.href = "/expired-survey";
+        }
         // reveal conditional questions
         $("div.conditional input[type='radio']").change(function(){
           if($(this).val() == $(this).parent("div.conditional").attr("condition-data")) {
