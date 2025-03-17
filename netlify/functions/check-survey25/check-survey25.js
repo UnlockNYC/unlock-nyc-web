@@ -4,6 +4,8 @@ exports.handler = function(event, context, callback) {
   const data = JSON.parse(event.body);
   const token = data.token;
 
+  console.log(token);
+
   var base = new Airtable({ apiKey: process.env.AIRTABLE_DATADVOCACY_TOKEN }).base('appiQkR2Zrww4DQnz');
   // DATA/ADVOCACY BASE
 
@@ -17,6 +19,7 @@ exports.handler = function(event, context, callback) {
     filterByFormula: `{token}="${token}"`
   }).eachPage(function page(records, fetchNextPage) {
     records.forEach(function (record) {
+      console.log(record.id);
       if (record.get("token") == token) {
         found = true;
       }
