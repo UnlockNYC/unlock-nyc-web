@@ -692,7 +692,7 @@
         }
         else {
           $("form").show();
-          console.log("TEST PASSED");
+          console.log("token validated");
         }
 
         // reveal conditional questions
@@ -777,39 +777,36 @@
             } else {
               form.reportValidity();
             }
+        }); // end on submit
 
+        // turn formData into JSON, stringify for fetch request
+        function formToJSON(form) {
+            const formData = new FormData(form);
+            const obj = {};
 
-        });
+            formData.forEach((value, key) => {
+                if (obj[key]) {
+                    if (!Array.isArray(obj[key])) {
+                        obj[key] = [obj[key]]; // Convert single value to array
+                    }
+                    obj[key].push(value); // Add new value to array
+                } else {
+                    obj[key] = value;
+                }
+            });
 
-      });
+            // Convert arrays (checkbox groups) to comma-separated strings
+            Object.keys(obj).forEach((key) => {
+                if (Array.isArray(obj[key])) {
+                    obj[key] = obj[key].join(", ");
+                }
+            });
 
-      // turn formData into JSON, stringify for fetch request
-      function formToJSON(form) {
-          const formData = new FormData(form);
-          const obj = {};
+            obj["token"] = token;
 
-          formData.forEach((value, key) => {
-              if (obj[key]) {
-                  if (!Array.isArray(obj[key])) {
-                      obj[key] = [obj[key]]; // Convert single value to array
-                  }
-                  obj[key].push(value); // Add new value to array
-              } else {
-                  obj[key] = value;
-              }
-          });
-
-          // Convert arrays (checkbox groups) to comma-separated strings
-          Object.keys(obj).forEach((key) => {
-              if (Array.isArray(obj[key])) {
-                  obj[key] = obj[key].join(", ");
-              }
-          });
-
-          obj["token"] = token;
-
-          return JSON.stringify(obj);
-      }
+            return JSON.stringify(obj);
+        } // end form to json
+      }); // end document ready
       </script>
   </body>
 </html>
