@@ -1,5 +1,4 @@
 const Airtable = require('airtable');
-const fetch = require('node-fetch');
 
 exports.handler = function (event, context, callback) {
   var base = new Airtable({ apiKey: process.env.AIRTABLE_DATADVOCACY_TOKEN }).base('appiQkR2Zrww4DQnz');
@@ -46,7 +45,7 @@ exports.handler = function (event, context, callback) {
     "fldKEDuBZM7kk0GKX": surveyData["extra-fees"],  // encountered extra fees
     "fld6VUwUuPzB3d9PV": surveyData["extra-fees-type"],  // extra fees type
     "fldaxu0b70hPAK1co": surveyData["additional-comments"],  // additional comments
-    "fldnVlspAUMnFOUsA": surveyData["follow-up-interests"]  // speak more, follow up
+    "fldnVlspAUMnFOUsA": surveyData["follow-up-interest"]  // speak more, follow up
   }, function (err, record) {
     if (err) {
       console.error(err);
