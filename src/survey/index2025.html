@@ -773,6 +773,7 @@
           if ($(this).val() == "other") {
             let textInput = $(this).closest('div.question').find('input[type="text"]');
             textInput.prop('disabled', false).focus();
+            textInput.val("");
 
             textInput.on("input", function () {
               $(this).val(textInput.val());
