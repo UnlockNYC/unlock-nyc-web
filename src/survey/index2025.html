@@ -821,7 +821,7 @@
         $(document).on("input", 'input[type="text"]', function () {
           let otherOption = $(this).closest('.question').find('input[value="other"]');
           if (otherOption.length) {
-            otherOption.prop("checked", true).val($(this).val()); // update value dynamically
+            otherOption.prop("checked", true); // update value dynamically
           }
         });
         // FORM SUBMISSION
