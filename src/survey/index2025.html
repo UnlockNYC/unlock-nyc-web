@@ -152,7 +152,7 @@
                 <input type="radio" name="voucher-long" value="5+ years ago">
                 <label class="form-field">More than 5+ years ago</label>
             </div>
-            <div class="question">
+            <div class="question multi">
                 <p>2. What kind of voucher do you have or did you have?</p>
                 <input type="checkbox" name="voucher-type" value="CityFHEPS" required>
                 <label class="form-field">CityFHEPS</label>
@@ -455,7 +455,30 @@
             </div>
 
             <div class="question">
-                <p>2. How often do you interact with HRA regarding your voucher?</p>
+                <p>2. Which city agencies do you typically interact with when it comes to your voucher? (Check all that apply.)</p>
+                <input type="checkbox" name="voucher-agencies" value="HRA" required>
+                <label class="form-field">HRA</label>
+                <br>
+                <input type="checkbox" name="voucher-agencies" value="NYCHA">
+                <label class="form-field">NYCHA</label>
+                <br>
+                <input type="checkbox" name="voucher-agencies" value="HPD">
+                <label class="form-field">HPD</label>
+                <br>
+                <input type="checkbox" name="voucher-agencies" value="CAMBA">
+                <label class="form-field">CAMBA</label>
+                <br>
+                <input type="checkbox" name="voucher-agencies" value="other">
+                <label class="form-field">Other (fill-in)</label>
+                <input type="text" name="voucher-agencies">
+                <br>
+                <input type="checkbox" name="voucher-agencies" value="none">
+                <label class="form-field">None of the above</label>
+            </div>
+            
+
+            <div class="question">
+                <p>3. How often do you interact with HRA regarding your voucher?</p>
                 <input type="radio" name="hra-interaction" value="weekly" required>
                 <label class="form-field">Weekly</label>
                 <br>
@@ -470,10 +493,13 @@
                 <br>
                 <input type="radio" name="hra-interaction" value="rarely">
                 <label class="form-field">Rarely</label>
+                <br>
+                <input type="radio" name="hra-interaction" value="n/a">
+                <label class="form-field">Not applicable - I don’t interact with HRA</label>  
             </div>
 
             <div class="question multi">
-                <p>3. Which methods have you used to contact HRA about your voucher? <span class="note">(Check all that apply)</span></p>
+                <p>4. Which methods have you used to contact HRA about your voucher? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="hra-contact" value="in-person">
                 <label class="form-field">In-person office visits</label>
                 <br>
@@ -488,10 +514,12 @@
                 <br>
                 <input type="checkbox" name="hra-contact" value="case-worker">
                 <label class="form-field">Through my case worker or housing advocate</label>
+                <br>
+                <input type="radio" name="hra-contact" value="n/a">
+                <label class="form-field">Not applicable - I don’t interact with HRA</label>  
             </div>
-
             <div class="question">
-                <p>4. How long does it typically take for HRA to get back to you?</p>
+                <p>5. How long does it typically take for HRA to get back to you?</p>
                 <input type="radio" name="hra-response-time" value="same-day" required>
                 <label class="form-field">Same day via call back option</label>
                 <br>
@@ -505,10 +533,12 @@
                 <label class="form-field">Two weeks or more</label>
                 <input type="radio" name="hra-response-time" value="never">
                 <label class="form-field">They often don’t get back to me at all</label>
+                <br>
+                <input type="radio" name="hra-response-time" value="n/a">
+                <label class="form-field">Not applicable - I don’t interact with HRA</label>  
             </div>
-
             <div class="question multi">
-                <p>5. What, if anything, has made it difficult for you to obtain assistance from HRA? <span class="note">(Check all that apply)</span></p>
+                <p>6. What, if anything, has made it difficult for you to obtain assistance from HRA? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="hra-difficulty" value="long-wait">
                 <label class="form-field">Long wait time responses</label>
                 <br>
@@ -535,16 +565,19 @@
                 <label class="form-field">Not applicable</label>
             </div>
             <div class="question">
-                <p>6. Do you feel like HRA workers gave you information about your rights as a voucher holder?</p>
+                <p>7. Do you feel like HRA workers gave you information about your rights as a voucher holder?</p>
                 <input type="radio" name="hra-rights-info" value="yes" required>
                 <label class="form-field">Yes</label>
                 <br>
                 <input type="radio" name="hra-rights-info" value="no">
                 <label class="form-field">No</label>
+                <br>
+                <input type="radio" name="hra-rights-info" value="n/a">
+                <label class="form-field">Not applicable - I don’t interact with HRA</label>  
             </div>
 
             <div class="question multi">
-                <p>7. Have you ever been denied a housing opportunity for the following reasons? <span class="note">(Check all that apply)</span></p>
+                <p>8. Have you ever been denied a housing opportunity for the following reasons? <span class="note">(Check all that apply)</span></p>
                 <input type="checkbox" name="housing-denial" value="application-delays">
                 <label class="form-field">Application delays (landlord pulls out of process because HRA is taking too long to process paperwork)</label>
                 <br>
@@ -565,7 +598,7 @@
                 <label class="form-field">No, not applicable</label>
             </div>
             <div class="question">
-                <p>8. How often do you wish HRA had intervened when you experienced a housing issue? In what capacity?</p>
+                <p>9. How often do you wish HRA had intervened when you experienced a housing issue? In what capacity?</p>
                 <input type="radio" name="hra-intervention" value="always" required>
                 <label class="form-field">Always – HRA should have acted faster on my case and enforced landlord compliance.</label>
                 <br>
@@ -580,6 +613,9 @@
                 <br>
                 <input type="radio" name="hra-intervention" value="never">
                 <label class="form-field">Never – I did not experience housing issues that required HRA’s intervention.</label>
+                <br>
+                <input type="radio" name="hra-intervention" value="n/a">
+                <label class="form-field">Not applicable - I don’t interact with HRA</label>  
             </div>
 
             <h3>Part III. Interactions with Landlords/Brokers</h3>
