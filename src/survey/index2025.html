@@ -515,7 +515,7 @@
                 <input type="checkbox" name="hra-contact" value="case-worker">
                 <label class="form-field">Through my case worker or housing advocate</label>
                 <br>
-                <input type="radio" name="hra-contact" value="n/a">
+                <input type="checkbox" name="hra-contact" value="n/a">
                 <label class="form-field">Not applicable - I don’t interact with HRA</label>  
             </div>
             <div class="question">
@@ -531,6 +531,7 @@
                 <br>
                 <input type="radio" name="hra-response-time" value="two-weeks">
                 <label class="form-field">Two weeks or more</label>
+                <br>
                 <input type="radio" name="hra-response-time" value="never">
                 <label class="form-field">They often don’t get back to me at all</label>
                 <br>
@@ -872,7 +873,6 @@
                     body: formBody
                 });
                 if (response.status == 200) {
-                    alert("success");
                     window.location.href = "/thankyou-survey";
                 } else {
                     alert("There has been an error submitting your survey data. Please reach out to Unlock NYC ASAP.");
