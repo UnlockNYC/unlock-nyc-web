@@ -85,16 +85,18 @@ homeSlider:
       [Unlock NYC’s Rights Recorder] will support advocacy campaigns and
       movement-wide efforts to fight back and fix this broken system.
     author: 'Annie Carforo, housing advocate'
-latestBanner: 'Latest report: Serial Discriminators List'
-latestActionText: "Made possible by 500+ New Yorkers who shared 1,800+ tips of suspected SOI discrimination across all five boroughs, our inaugural Serial Discriminators List shines a light on who is locking voucher holders out of housing –\_and how we can hold them accountable."
+latestBanner: 'Latest report: Denial Tactics'
+latestActionText: >-
+  Made possible by 700+ New Yorkers who shared 2,000+ tips of suspected SOI
+  discrimination across all five boroughs, our latest report how landlords and
+  brokers have developed increasingly sophisticated tactics to fly under the
+  radar and evade enforcement.
 latestActionImage: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/home-nailah-megaphone-rally-protest.jpeg
 latestAlt: >-
   a group of people holding protest banners with a woman leading in front with a
   megaphone, in front of city hall in new york
-actionCaption: >-
-  Leadership Collective alum Nailah leads the launch of our Serial
-  Discriminators list at City Hall in October 2023
+actionCaption: Leadership Collective alum Nailah at City Hall in October 2023
 latestActionVideo: ''
 latestActionButton: 'yes'
 latestActionLink: /reports/serial-discriminators
