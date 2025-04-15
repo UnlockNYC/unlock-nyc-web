@@ -99,7 +99,7 @@ latestAlt: >-
 actionCaption: Leadership Collective alum Nailah at City Hall in October 2023
 latestActionVideo: ''
 latestActionButton: 'yes'
-latestActionLink: /reports/serial-discriminators
+latestActionLink: /reports/denial-tactics/
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 teamAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 teamTitle: >-
