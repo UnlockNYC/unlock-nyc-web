@@ -35,9 +35,9 @@ exports.handler = function(event, context, callback) {
   }).eachPage(function page(records, fetchNextPage) {
     records.forEach(function(record) {
       // console.log(record);
-      let email = record.get(emailField); // PROD BASE - email address column, advocate table
-      console.log(email);
-      if (email.indexOf(user.email) > -1) {
+      let email = record.get(emailField).toLowerCase(); // PROD BASE - email address column, advocate table, case insensitive
+      // console.log(email);
+      if (email.indexOf(user.email.toLowerCase()) > -1) {
         approval = true;
         console.log("MATCH, REQUEST APPROVED");
         responseBody.app_metadata.org = record.get(orgNameField); // PROD BASE - org name
