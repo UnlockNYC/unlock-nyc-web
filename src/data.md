@@ -58,12 +58,12 @@ blocksList:
       - buttonText: See more
 orangeBannerTitle: Use our data
 orangeBannerText: >-
-  Interested in partnering with Unlock NYC on a research or data-related
-  project? All requests are reviewed on a case-by-case basis by our Data &
-  Advocacy team and may require consensus from our Leadership Collective. Fill
-  out this form and we’ll get back to you shortly.
-orangeBannerButton: Make a Request
-orangeBannerLink: 'https://airtable.com/appiQkR2Zrww4DQnz/shrV4VpcZcy5BnmBE'
+  Thank you for your interest in receiving data from Unlock NYC! All new data
+  requests are on pause until 2026. Please circle back with us then. In the
+  meantime, you can view our source of income discrimination data on our
+  interactive citywide map and read our research reports on our Data page.
+orangeBannerButton: ''
+orangeBannerLink: ''
 _template: datapage
 ---
 
