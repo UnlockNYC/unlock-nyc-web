@@ -61,9 +61,9 @@ orangeBannerText: >-
   Thank you for your interest in receiving data from Unlock NYC! All new data
   requests are on pause until 2026. Please circle back with us then. In the
   meantime, you can view our source of income discrimination data on our
-  interactive citywide map and read our research reports on our Data page.
-orangeBannerButton: ''
-orangeBannerLink: ''
+  interactive citywide map and read our research reports on this page.
+orangeBannerButton: View our Map
+orangeBannerLink: 'https://weunlock.nyc/data/soi-map/'
 _template: datapage
 ---
 
