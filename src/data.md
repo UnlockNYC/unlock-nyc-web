@@ -62,7 +62,7 @@ orangeBannerText: >-
   requests are on pause until 2026. Please circle back with us then. In the
   meantime, you can view our source of income discrimination data on our
   interactive citywide map and read our research reports on this page.
-orangeBannerButton: View our Map
+orangeBannerButton: View SOI Map
 orangeBannerLink: 'https://weunlock.nyc/data/soi-map/'
 _template: datapage
 ---
