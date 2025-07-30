@@ -104,6 +104,9 @@ fundersList:
       https://www.wellsfargo.com/about/corporate-responsibility/community-giving/
 orangeBannerTitle: Ready to learn more? Get in touch.
 annualReports:
+  - year: '2024'
+    pdf: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/funders-annual-report-24.pdf
   - year: '2023'
     pdf: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/Unlock NYC FY23 Annual
