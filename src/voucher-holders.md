@@ -56,7 +56,7 @@ keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/key2.png'
 keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/key3.png'
 keyImage4: 'https://public-unlock.nyc3.digitaloceanspaces.com/key4.png'
 statistics:
-  - statNum: '2,000+'
+  - statNum: '3,000+'
     statText: reports collected
   - statNum: '600'
     statText: New Yorkers standing up against discrimination
