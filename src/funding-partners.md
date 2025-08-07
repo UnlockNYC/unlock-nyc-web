@@ -85,6 +85,8 @@ statsText: >
   financial investment required to create a truly diverse and inclusive
   workplace.
 fundersList:
+  - name: JPMorgan Chase Foundation
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-jpmc-logo.png'
   - name: Oak Foundation
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
