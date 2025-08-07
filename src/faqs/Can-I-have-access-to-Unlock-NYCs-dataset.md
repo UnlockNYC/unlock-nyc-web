@@ -6,9 +6,9 @@ answer: >
   your research question. On a case-by-case basis, we may have the interest and
   capacity to work with journalists on conducting more detailed analysis of our
   dataset and/or engaging in a data-sharing agreement. You can **submit a data
-  request here \[note: data requests currently on hold until early 2026 – check
-  back later]**. Please note that we are a small team and we prioritize the
-  privacy, security, and integrity of our community’s data, so requests that
+  request here \[note: data requests currently on hold until early 2026 – please
+  check back later]**. Please note that we are a small team and we prioritize
+  the privacy, security, and integrity of our community’s data, so requests that
   involve data-sharing agreements are normally not suitable for projects with
   tight turnarounds.
 tags:
