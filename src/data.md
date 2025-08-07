@@ -47,7 +47,11 @@ blocksList:
     buttonList:
       - buttonText: See more
   - title: Changing the narrative
-    text: "Voucher holders hold a diverse array of identities, backgrounds, and experiences. Through our disparate impact research, we are learning more about the ways that discrimination against vouchers impacts specific groups differently. We plan to expand this research area in 2024 –\_stay tuned!"
+    text: >-
+      Voucher holders hold a diverse array of identities, backgrounds, and
+      experiences. Through our disparate impact research, we are learning more
+      about the ways that discrimination against vouchers impacts specific
+      groups differently.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/data-research-megaphones-map.png
     alt: >-
@@ -58,12 +62,12 @@ blocksList:
       - buttonText: See more
 orangeBannerTitle: Use our data
 orangeBannerText: >-
-  Interested in partnering with Unlock NYC on a research or data-related
-  project? All requests are reviewed on a case-by-case basis by our Data &
-  Advocacy team and may require consensus from our Leadership Collective. Fill
-  out this form and we’ll get back to you shortly.
-orangeBannerButton: Make a Request
-orangeBannerLink: 'https://airtable.com/appiQkR2Zrww4DQnz/shrV4VpcZcy5BnmBE'
+  Thank you for your interest in receiving data from Unlock NYC! All new data
+  requests are on pause until 2026. Please circle back with us then. In the
+  meantime, you can view our source of income discrimination data on our
+  interactive citywide map and read our research reports on this page.
+orangeBannerButton: View SOI Map
+orangeBannerLink: 'https://weunlock.nyc/data/soi-map/'
 _template: datapage
 ---
 

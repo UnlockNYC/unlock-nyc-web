@@ -1451,7 +1451,7 @@ export default defineConfig({
               {
                 type: "object",
                 name: "fundersList",
-                label: "Current Funders",
+                label: "Supporters",
                 list: true,
                 itemProps: (item) => {
                   // Field values are accessed by item?.<Field name>

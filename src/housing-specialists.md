@@ -28,8 +28,8 @@ textAboveStats: >-
   Housing specialists and advocates love Unlock NYC because our tools are an
   opportunity for their clients to boost their confidence and find their voice.
 statistics:
-  - statNum: 500+
-    statText: 1-on-1 consultations with voucher holders
+  - statNum: up to 2x more effective
+    statText: our users secure housing at 2x the CityFHEPS 6-month average
   - statNum: 70%
     statText: of our repeat users report getting a viewing after initially being denied
   - statNum: 9 of 10
@@ -44,8 +44,7 @@ linksList:
       Nearly 20,000 New Yorkers have received a copy of *[Record It. Report
       It!](https://welcometocup.org/projects/record-it-report-it)*, our
       pocket-sized guide to your rights as a voucher holder and how to report
-      discrimination. Purchase copies for your clients in English and/or
-      Spanish.
+      discrimination. Request copies for your clients in English and/or Spanish.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-record-report-booklet-spanish.png
     alt: >-
@@ -57,11 +56,10 @@ linksList:
         buttonLink: 'https://airtable.com/app3RonGnLm3P4aVF/pagzUWBXHbPgSrfBj/form'
   - title: Build your skills at a virtual training
     content: >
-      **2024 training schedule coming soon!** Featuring real examples, practical
-      tips, and Q\&A with a directly-impacted facilitator, our 75-minute live
-      virtual training for housing specialists helps your staff recognize
-      warning signs of voucher discrimination and advocate effectively with
-      their clients.
+      Featuring real examples, practical tips, and Q\&A with a directly-impacted
+      facilitator, our 75-minute live virtual training for housing specialists
+      helps your staff recognize warning signs of voucher discrimination and
+      advocate effectively with their clients.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     alt: >-

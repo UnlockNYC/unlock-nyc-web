@@ -67,12 +67,12 @@ blocksList:
         buttonLink: /about
 statsTitle: Creating lasting impact and thriving futures
 statistics:
-  - statNum: '170+ '
+  - statNum: 500+
     statText: New Yorkers housed
   - statNum: 35+
     statText: community organizations supported
-  - statNum: $3.2m+
-    statText: taxpayer dollars saved
+  - statNum: 2K+
+    statText: investigations initiated
 statsText: >
   Unlock NYC prioritizes building a financially healthy future for our
   organization so that we can sustain and support our team's creativity,
@@ -85,6 +85,14 @@ statsText: >
   financial investment required to create a truly diverse and inclusive
   workplace.
 fundersList:
+  - name: Brooklyn Org
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-bko-logo.png'
+    link: 'https://brooklyn.org/'
+  - name: New York Community Trust
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-nyct-logo.png'
+    link: 'https://thenytrust.org/'
+  - name: JPMorgan Chase Foundation
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-jpmc-logo.png'
   - name: Oak Foundation
     logo: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/funders-oak-foundation-logo.png
@@ -104,6 +112,9 @@ fundersList:
       https://www.wellsfargo.com/about/corporate-responsibility/community-giving/
 orangeBannerTitle: Ready to learn more? Get in touch.
 annualReports:
+  - year: '2024'
+    pdf: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/funders-annual-report-24.pdf
   - year: '2023'
     pdf: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/Unlock NYC FY23 Annual

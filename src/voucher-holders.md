@@ -56,9 +56,9 @@ keyImage2: 'https://public-unlock.nyc3.digitaloceanspaces.com/key2.png'
 keyImage3: 'https://public-unlock.nyc3.digitaloceanspaces.com/key3.png'
 keyImage4: 'https://public-unlock.nyc3.digitaloceanspaces.com/key4.png'
 statistics:
-  - statNum: '2,000+'
+  - statNum: '3,000+'
     statText: reports collected
-  - statNum: '600'
+  - statNum: '1,100+'
     statText: New Yorkers standing up against discrimination
 quote: >-
   [My response from Unlock NYC] was SO different from every single agency I had
