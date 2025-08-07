@@ -85,6 +85,9 @@ statsText: >
   financial investment required to create a truly diverse and inclusive
   workplace.
 fundersList:
+  - name: Brooklyn Org
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-bko-logo.png'
+    link: 'https://brooklyn.org/'
   - name: New York Community Trust
     logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-nyct-logo.png'
     link: 'https://thenytrust.org/'
