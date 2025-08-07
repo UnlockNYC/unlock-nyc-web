@@ -67,7 +67,7 @@ blocksList:
         buttonLink: /about
 statsTitle: Creating lasting impact and thriving futures
 statistics:
-  - statNum: '170+ '
+  - statNum: 500+
     statText: New Yorkers housed
   - statNum: 35+
     statText: community organizations supported
