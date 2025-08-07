@@ -71,8 +71,8 @@ statistics:
     statText: New Yorkers housed
   - statNum: 35+
     statText: community organizations supported
-  - statNum: $3.2m+
-    statText: taxpayer dollars saved
+  - statNum: 2K+
+    statText: investigations initiated
 statsText: >
   Unlock NYC prioritizes building a financially healthy future for our
   organization so that we can sustain and support our team's creativity,
