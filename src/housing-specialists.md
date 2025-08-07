@@ -57,11 +57,10 @@ linksList:
         buttonLink: 'https://airtable.com/app3RonGnLm3P4aVF/pagzUWBXHbPgSrfBj/form'
   - title: Build your skills at a virtual training
     content: >
-      **2024 training schedule coming soon!** Featuring real examples, practical
-      tips, and Q\&A with a directly-impacted facilitator, our 75-minute live
-      virtual training for housing specialists helps your staff recognize
-      warning signs of voucher discrimination and advocate effectively with
-      their clients.
+      Featuring real examples, practical tips, and Q\&A with a directly-impacted
+      facilitator, our 75-minute live virtual training for housing specialists
+      helps your staff recognize warning signs of voucher discrimination and
+      advocate effectively with their clients.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-workshop-zoom-virtual-slideshow.png
     alt: >-
