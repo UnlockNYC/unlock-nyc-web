@@ -28,8 +28,8 @@ textAboveStats: >-
   Housing specialists and advocates love Unlock NYC because our tools are an
   opportunity for their clients to boost their confidence and find their voice.
 statistics:
-  - statNum: up to 2x faster
-    statText: our users report securing housing up to 2x faster than CityFHEPS average
+  - statNum: up to 2x more effective
+    statText: our users secure housing at 2x the CityFHEPS 6-month average
   - statNum: 70%
     statText: of our repeat users report getting a viewing after initially being denied
   - statNum: 9 of 10
