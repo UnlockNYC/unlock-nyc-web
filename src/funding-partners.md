@@ -85,6 +85,9 @@ statsText: >
   financial investment required to create a truly diverse and inclusive
   workplace.
 fundersList:
+  - name: New York Community Trust
+    logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-nyct-logo.png'
+    link: 'https://thenytrust.org/'
   - name: JPMorgan Chase Foundation
     logo: 'https://public-unlock.nyc3.digitaloceanspaces.com/funders-jpmc-logo.png'
   - name: Oak Foundation
