@@ -19,7 +19,7 @@
     "next-tinacms-dos": "8.0.0",
     "node-fetch": "2.x.x",
     "serverless-http": "^3.2.0",
-    "tinacms": "2.8.0"
+    "tinacms": "2.8.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0"
