@@ -7,8 +7,7 @@ templateClass: tmpl-home
 <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 <style>
 {% include "styles/home.css" %}
-  #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-  /* Mailchimp form style overrides */
+
 </style>
 {# The Home page uses this template–it extends the base template #}
 <div class="top-banner">
@@ -84,48 +83,67 @@ templateClass: tmpl-home
   </div>
 </div>
 <div class="banner-full bg-orange last-banner">
+    <style>
+        form#newsletter-form {
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+        }
+        form#newsletter-form input {
+            display: block;
+            font-size: 1.5em;
+            width:100%;
+            margin-bottom: 20px;
+            padding: 8px 3px;
+            border: none;
+        }
+        form#newsletter-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 2px;
+        }
+    </style>
   <h3>
     Unlock news, tips, and more!
   </h3>
   <p class="black">
       Subscribe below for occasional updates about what's new at Unlock NYC.
   </p>
-  <div id="mc_embed_shell">
-  <div id="mc_embed_signup" style="background-color: transparent; font-family: var(--page-font); margin: auto; max-width: 100%;">
-    <form action="https://nyc.us7.list-manage.com/subscribe/post?u=0ae2fa69280f8742acf76156d&amp;id=5f5419ccb9&amp;f_id=00afcee4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll">
-            <!--<div class="indicates-required">
-                <span class="asterisk">*</span> indicates required
-                </div>-->
-            <div class="mc-field-group">
-                <label for="mce-EMAIL">Your email <span class="asterisk">*</span></label>
-                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="border: none; border-radius: 0; font-size: 1.5em;" placeholder="me@me.com">
-            </div>
-            <div class="mc-field-group">
-                <label for="mce-FNAME">First name (optional) </label>
-                <input type="text" name="FNAME" class=" text" id="mce-FNAME" value="" style="border: none; border-radius: 0; font-size: 1.5em;">
-            </div>
-          <div id="mce-responses" class="clear foot">
-              <div class="response" id="mce-error-response" style="display: none;"></div>
-              <div class="response" id="mce-success-response" style="display: none;"></div>
-          </div>
-      <div aria-hidden="true" style="position: absolute; left: -5000px;">
-          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-          <input type="text" name="b_0ae2fa69280f8742acf76156d_5f5419ccb9" tabindex="-1" value="">
-      </div>
-      <div class="optionalParent">
-        <div class="clear foot" style="display: block !important; text-align: center;">
-            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Sign Up" style="background-color: Black; color: White;height: 48px;padding: 8px 16px;display: inline-block;border-radius: 8px;border: 1px solid Black;font-family: var(--page-font);font-size: 1rem;font-weight: 500;cursor: pointer;margin: auto;">
-        </div>
-      </div>
+  <form action="https://unlock-email-auto-9204.twil.io/add-newsletter-contact" method="POST" id="newsletter-form">
+    <label for="email">Your email*</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="me@me.com"
+      required
+    >
+
+    <label for="first_name">First name (optional)</label>
+    <input
+      type="text"
+      id="first_name"
+      name="first_name"
+    >
+
+    <!-- Honeypot field: hidden from humans -->
+    <div style="position: absolute; left: -9999px;" aria-hidden="true">
+      <label for="company">Company</label>
+      <input
+        type="text"
+        id="company"
+        name="company"
+        tabindex="-1"
+        autocomplete="off"
+      >
     </div>
+
+    <button type="submit" class="black">Sign Up</button>
   </form>
-  </div>
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[11]='MMERGE11';ftypes[11]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+  <div id="thanks-message" style="display:none;">✅ Thanks for signing up!</div>
 </div>
 
 <!-- NETLIFY advocate login-->
-<!-- MAB move to file?! -->
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   function checkIdentity() {
@@ -153,4 +171,22 @@ templateClass: tmpl-home
       // console.log('login', user);
   });
 
+</script>
+<!-- NEWSLETTER FORM ACTION -->
+<script>
+$('#newsletter-form').on('submit', async (e) => {
+  e.preventDefault(); // stop full page reload
+  const payload = Object.fromEntries(new FormData(e.target));
+  const response = await fetch(e.target.action, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+
+  if (response.ok) {
+   $("#thanks-message").show();
+   $("form#newsletter-form").hide();
+    e.target.reset();
+  }
+});
 </script>

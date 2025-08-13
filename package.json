@@ -1,7 +1,7 @@
 {
-  "name": "glitch-hello-eleventy",
-  "version": "0.1.0",
-  "description": "A simple blog, set up with Eleventy.",
+  "name": "unlock-nyc-website",
+  "version": "2.0.0",
+  "description": "built with eleventy",
   "scripts": {
     "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy"
@@ -28,7 +28,7 @@
     "node": "14"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-eleventy"
+    "url": "https://github.com/UnlockNYC/unlock-nyc-web/"
   },
   "glitch": {
     "projectType": "generated_static"
