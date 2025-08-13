@@ -217,3 +217,26 @@ div#team-wrap {
         height: auto;
     }
 }
+
+/* NEWSLETTER SIGNUP FORM, SENDGRID */
+
+form#newsletter-form {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+form#newsletter-form input {
+    display: block;
+    font-size: 1.5em;
+    width:100%;
+    margin-bottom: 20px;
+    padding: 8px 3px;
+    border: none;
+}
+
+form#newsletter-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 2px;
+}
