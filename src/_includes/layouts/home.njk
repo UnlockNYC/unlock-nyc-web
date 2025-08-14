@@ -155,6 +155,9 @@ templateClass: tmpl-home
 <script>
 $('#newsletter-form').on('submit', async (e) => {
   e.preventDefault(); // stop full page reload
+  $('#newsletter-form button').removeClass("black");
+  $('#newsletter-form button').addClass("white");
+  $('#newsletter-form button').html("...");
   const payload = Object.fromEntries(new FormData(e.target));
   const response = await fetch(e.target.action, {
     method: 'POST',
