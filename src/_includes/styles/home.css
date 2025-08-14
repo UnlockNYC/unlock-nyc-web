@@ -240,3 +240,8 @@ form#newsletter-form label {
     text-align: left;
     margin-bottom: 2px;
 }
+
+form#newsletter-form button:hover {
+    background-color: transparent;
+    color: Black;
+}
