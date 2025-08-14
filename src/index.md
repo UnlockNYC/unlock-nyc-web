@@ -85,21 +85,26 @@ homeSlider:
       [Unlock NYC’s Rights Recorder] will support advocacy campaigns and
       movement-wide efforts to fight back and fix this broken system.
     author: 'Annie Carforo, housing advocate'
-latestBanner: 'Latest report: Denial Tactics'
+latestBanner: >-
+  Coming Soon: “Uneven Access: How the NYC Human Resources Administration falls
+  short of supporting New Yorkers with housing vouchers"
 latestActionText: >-
-  Made possible by 700+ New Yorkers who shared 2,000+ tips of suspected SOI
-  discrimination across all five boroughs, our latest report how landlords and
-  brokers have developed increasingly sophisticated tactics to fly under the
-  radar and evade enforcement.
-latestActionImage: >-
-  https://public-unlock.nyc3.digitaloceanspaces.com/home-nailah-megaphone-rally-protest.jpeg
+  Launching in September 2025, “Uneven Access” is Unlock NYC’s upcoming report
+  revealing how systemic gaps at the NYC Human Resources Administration keep too
+  many New Yorkers with housing vouchers from securing the stable homes they
+  deserve. Sign up for our newsletter below to be alerted when the report is
+  live!
+latestActionImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-kamilah-poster.jpeg'
 latestAlt: >-
   a group of people holding protest banners with a woman leading in front with a
   megaphone, in front of city hall in new york
-actionCaption: Leadership Collective alum Nailah at City Hall in October 2023
+actionCaption: >-
+  Unlock NYC’s Activist-in-Residence, Kamilah Newton, taking a stand against
+  housing discrimination.
 latestActionVideo: ''
 latestActionButton: 'yes'
-latestActionLink: /reports/denial-tactics/
+latestActionLink: >-
+  https://nyc.us7.list-manage.com/subscribe?u=0ae2fa69280f8742acf76156d&id=5f5419ccb9
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 teamAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 teamTitle: >-
