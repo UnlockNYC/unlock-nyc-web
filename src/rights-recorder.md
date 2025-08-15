@@ -96,7 +96,7 @@ yellowBannerText: >-
   treatment. If you have a voucher, sign up here for special access to Unlock
   NYC's virtual and in-person events, latest resource guides, and other tools to
   help with your housing search.
-yellowBannerLink: 'http://eepurl.com/hnC4Bn'
+yellowBannerLink: 'https://cdn.forms-content.sg-form.com/33ba49ca-7889-11f0-b01b-e2dab1676f1d'
 _template: rightsrecorder
 ---
 

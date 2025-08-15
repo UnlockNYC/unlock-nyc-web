@@ -26,7 +26,8 @@ blocksList:
     button: 'yes'
     buttonList:
       - buttonText: Sign up
-        buttonLink: 'http://eepurl.com/hnC4Bn'
+        buttonLink: >-
+          https://cdn.forms-content.sg-form.com/33ba49ca-7889-11f0-b01b-e2dab1676f1d
   - title: Flex your rights
     text: >-
       Keep a paper trail of your search. You’ll be more confident, organized,
