@@ -1,3 +1,4 @@
+
 {
   "name": "unlock-nyc-website",
   "version": "2.0.0",
@@ -8,12 +9,12 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@tinacms/auth": "1.0.6",
+    "@tinacms/auth": "1.1.0",
     "@tinacms/cli": "^1.10.2",
     "airtable": "0.11.6",
     "aws-sdk": "2.1692.0",
     "eleventy-plugin-seo": "0.5.2",
-    "express": "^4.18.2",
+    "express": "^4.21.2",
     "jwt-decode": "3.1.2",
     "markdown-it-anchor": "^8.6.7",
     "next-tinacms-dos": "11.0.2",
@@ -30,13 +31,9 @@
   "repository": {
     "url": "https://github.com/UnlockNYC/unlock-nyc-web/"
   },
-  "glitch": {
-    "projectType": "generated_static"
-  },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
     "express"
   ]
 }
