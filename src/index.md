@@ -103,6 +103,7 @@ actionCaption: >-
   housing discrimination.
 latestActionVideo: ''
 latestActionButton: 'yes'
+latestButtonText: 'Sign Up'
 latestActionLink: 'https://cdn.forms-content.sg-form.com/33ba49ca-7889-11f0-b01b-e2dab1676f1d'
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 teamAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
