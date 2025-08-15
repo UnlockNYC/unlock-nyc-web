@@ -96,8 +96,8 @@ latestActionText: >-
   live!
 latestActionImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-kamilah-poster.jpeg'
 latestAlt: >-
-  a group of people holding protest banners with a woman leading in front with a
-  megaphone, in front of city hall in new york
+  a young woman holding a handmade poster that says "Discrimination makes
+  Vouchers Worthless" in front of city hall
 actionCaption: >-
   Unlock NYC’s Activist-in-Residence, Kamilah Newton, taking a stand against
   housing discrimination.
