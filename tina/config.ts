@@ -257,6 +257,11 @@ export default defineConfig({
               },
               {
                 type: "string",
+                name: "latestButtonText",
+                label: "Latest Action: Button Text",
+              },
+              {
+                type: "string",
                 name: "latestActionLink",
                 label: "Latest Action: Button Link",
               },

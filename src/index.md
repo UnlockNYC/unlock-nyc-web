@@ -103,6 +103,7 @@ actionCaption: >-
   housing discrimination.
 latestActionVideo: ''
 latestActionButton: 'yes'
+latestButtonText: 'Sign Up'
 latestActionLink: >-
   https://nyc.us7.list-manage.com/subscribe?u=0ae2fa69280f8742acf76156d&id=5f5419ccb9
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
