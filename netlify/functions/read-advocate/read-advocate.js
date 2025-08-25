@@ -44,7 +44,7 @@ exports.handler = function(event, context, callback) {
     base('Advocates').select({
       maxRecords: 1,
       fields: ["Email Address", "Advocate Client List", "Advocate Client List Names", "Full Org Client List", "Full Org List Names"],
-      filterByFormula: `{Email Address}="${decoded.email}"`
+      filterByFormula: `LOWER({Email Address})="${decoded.email.toLowerCase()}"`
     }).eachPage(function page(records, fetchNextPage) {
       records.forEach(function(record) {
         advocateId = record.getId();
