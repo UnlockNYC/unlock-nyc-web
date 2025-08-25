@@ -10,9 +10,6 @@
     <title>Advocate Login: Unlock NYC</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSD4KtZNkPXvMFeuyKLVIV_FdQtfQD34&libraries=places&loading=async&callback=initAutocomplete">
-        </script>
-    <!-- MAB, fix google api callback -->
 </head>
 
 <body>
@@ -29,7 +26,7 @@
 
         <form id="advocate-report" action="" method="post">
             <input type="hidden" name="advocate" id="advocate" value="">
-            <label class="form-field" for="client">Who are you reporting on behalf of today?</label>
+            <label class="form-field" for="clients-choice">Who are you reporting on behalf of today?</label>
             <p class="explainer">
                 Is the person that you are reporting on behalf missing from this list? <br>
                 <a id="full-org">👥 Check this list from your organization.</a><br>
@@ -57,7 +54,7 @@
                 report.
             </p>
             <textarea class="wide-text" rows="6" id="story" name="story"></textarea>
-            <label class="form-field" for="date">What date did the discrimination happen?</label>
+            <label class="form-field" for="incidentDate">What date did the discrimination happen?</label>
             <p class="explainer">
                 If the discriminatory treatment took place over more than one day, select the most recent date.
             </p>
@@ -116,6 +113,106 @@
             <input id="submit-report" type="submit" value="Continue"></input>
         </form>
     </div>
+    <script>
+      // Google Maps Places Autcomplete
+      // for address input form, code from:
+      // https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+
+      let autocomplete;
+      let addressField;
+
+      function initAutocomplete() {
+          addressField = document.querySelector("#reportAddress");
+          // Create the autocomplete object, restricting the search predictions to
+          // addresses in New York City
+          autocomplete = new google.maps.places.Autocomplete(addressField, {
+              componentRestrictions: {country: ["us"]},
+              fields: ["address_components", "geometry"],
+              types: ["address"],
+          });
+          const southwest = {lat: 40.4869, lng: -74.32030};
+          const northeast = {lat: 40.9365, lng: -73.0017};
+          const mapBounds = new google.maps.LatLngBounds(southwest, northeast);
+          autocomplete.setBounds(mapBounds);
+
+          //addressField.focus();
+          // When the user selects an address from the drop-down, populate the
+          // address fields in the form.
+          autocomplete.addListener("place_changed", fillInAddress);
+      }
+
+      function fillInAddress() {
+          // Get the place details from the autocomplete object.
+          const place = autocomplete.getPlace();
+          let address1 = "";
+          let postcode = "";
+
+          // Get each component of the address from the place details,
+          // and then fill-in the corresponding field on the form.
+          // place.address_components are google.maps.GeocoderAddressComponent objects
+          // which are documented at http://goo.gle/3l5i5Mr
+          for (const component of place.address_components) {
+              // @ts-ignore remove once typings fixed
+              const componentType = component.types[0];
+
+              switch (componentType) {
+                  case "street_number": {
+                      address1 = `${component.long_name} ${address1}`;
+                      break;
+                  }
+
+                  case "route": {
+                      address1 += `${component.short_name}, `;
+                      break;
+                  }
+
+                  case "sublocality_level_1": { /*city*/
+                      address1 += `${component.long_name}, `;
+                      break;
+                  }
+
+                  case "administrative_area_level_1": { /*state*/
+                      address1 += `${component.short_name} `;
+                      break;
+                  }
+
+                  case "postal_code": {
+                      postcode = `${component.long_name}${postcode}`;
+                      break;
+                  }
+
+                  /*case "postal_code_suffix": {
+                      postcode = `${postcode}-${component.long_name}`;
+                      break;
+                  }*/
+                  /*case "locality":
+                      document.querySelector("#locality").value = component.long_name;
+                      break;
+                  case "administrative_area_level_1": {
+                      document.querySelector("#state").value = component.short_name;
+                      break;
+                  }
+                  case "country": {
+                      document.querySelector("#country").value = component.long_name;
+                      break;
+                      }*/
+              }
+
+              addressField.value = address1 + postcode;
+
+              // After filling the form with address components from the Autocomplete
+              // prediction, set cursor focus on the second address line to encourage
+              // entry of subpremise information such as apartment, unit, or floor number.
+              //address2Field.focus();
+          }
+      }
+
+      // initAutocomplete();
+      window.initAutocomplete = initAutocomplete;
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSD4KtZNkPXvMFeuyKLVIV_FdQtfQD34&libraries=places&loading=async&callback=initAutocomplete">
+        </script>
+    <!-- MAB, fix google api callback -->
     <script>
         $(document).ready(async function () {
 
@@ -219,102 +316,6 @@
                 $("select#org-clients").show();
                 $("span#new-user").show();
             })
-
-            // Google Maps Places Autcomplete
-            // for address input form, code from:
-            // https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
-
-            let autocomplete;
-            let addressField;
-
-            function initAutocomplete() {
-                addressField = document.querySelector("#reportAddress");
-                // Create the autocomplete object, restricting the search predictions to
-                // addresses in New York City
-                autocomplete = new google.maps.places.Autocomplete(addressField, {
-                    componentRestrictions: {country: ["us"]},
-                    fields: ["address_components", "geometry"],
-                    types: ["address"],
-                });
-                const southwest = {lat: 40.4869, lng: -74.32030};
-                const northeast = {lat: 40.9365, lng: -73.0017};
-                const mapBounds = new google.maps.LatLngBounds(southwest, northeast);
-                autocomplete.setBounds(mapBounds);
-
-                //addressField.focus();
-                // When the user selects an address from the drop-down, populate the
-                // address fields in the form.
-                autocomplete.addListener("place_changed", fillInAddress);
-            }
-
-            function fillInAddress() {
-                // Get the place details from the autocomplete object.
-                const place = autocomplete.getPlace();
-                let address1 = "";
-                let postcode = "";
-
-                // Get each component of the address from the place details,
-                // and then fill-in the corresponding field on the form.
-                // place.address_components are google.maps.GeocoderAddressComponent objects
-                // which are documented at http://goo.gle/3l5i5Mr
-                for (const component of place.address_components) {
-                    // @ts-ignore remove once typings fixed
-                    const componentType = component.types[0];
-
-                    switch (componentType) {
-                        case "street_number": {
-                            address1 = `${component.long_name} ${address1}`;
-                            break;
-                        }
-
-                        case "route": {
-                            address1 += `${component.short_name}, `;
-                            break;
-                        }
-
-                        case "sublocality_level_1": { /*city*/
-                            address1 += `${component.long_name}, `;
-                            break;
-                        }
-
-                        case "administrative_area_level_1": { /*state*/
-                            address1 += `${component.short_name} `;
-                            break;
-                        }
-
-                        case "postal_code": {
-                            postcode = `${component.long_name}${postcode}`;
-                            break;
-                        }
-
-                        /*case "postal_code_suffix": {
-                            postcode = `${postcode}-${component.long_name}`;
-                            break;
-                        }*/
-                        /*case "locality":
-                            document.querySelector("#locality").value = component.long_name;
-                            break;
-                        case "administrative_area_level_1": {
-                            document.querySelector("#state").value = component.short_name;
-                            break;
-                        }
-                        case "country": {
-                            document.querySelector("#country").value = component.long_name;
-                            break;
-                            }*/
-                    }
-
-                    addressField.value = address1 + postcode;
-
-                    // After filling the form with address components from the Autocomplete
-                    // prediction, set cursor focus on the second address line to encourage
-                    // entry of subpremise information such as apartment, unit, or floor number.
-                    //address2Field.focus();
-                }
-            }
-
-            // initAutocomplete();
-            window.initAutocomplete = initAutocomplete;
 
             // submit form data
             $("form#advocate-report").submit(async function (e) {
