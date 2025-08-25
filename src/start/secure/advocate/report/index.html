@@ -10,8 +10,7 @@
     <title>Advocate Login: Unlock NYC</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSD4KtZNkPXvMFeuyKLVIV_FdQtfQD34&libraries=places&callback=initAutocomplete">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSD4KtZNkPXvMFeuyKLVIV_FdQtfQD34&libraries=places&loading=async&callback=initAutocomplete">
         </script>
     <!-- MAB, fix google api callback -->
 </head>
@@ -119,8 +118,6 @@
     </div>
     <script>
         $(document).ready(async function () {
-
-            window.initAutocomplete = initAutocomplete;
 
             let userToken = JSON.parse(window.localStorage.getItem("gotrue.user")).token;
             let userInfo = JSON.parse(window.localStorage.getItem("gotrue.user"));
@@ -316,7 +313,8 @@
                 }
             }
 
-            initAutocomplete();
+            // initAutocomplete();
+            window.initAutocomplete = initAutocomplete;
 
             // submit form data
             $("form#advocate-report").submit(async function (e) {
