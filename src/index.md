@@ -101,7 +101,7 @@ actionCaption: >-
   housing discrimination.
 latestActionVideo: ''
 latestActionButton: 'yes'
-latestButtonText: Download
+latestButtonText: Download Report
 latestActionLink: 'https://weunlock.nyc/reports/uneven-access/'
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 teamAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
