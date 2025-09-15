@@ -86,14 +86,12 @@ homeSlider:
       movement-wide efforts to fight back and fix this broken system.
     author: 'Annie Carforo, housing advocate'
 latestBanner: >-
-  Coming Soon: “Uneven Access: How the NYC Human Resources Administration falls
-  short of supporting New Yorkers with housing vouchers"
+  Latest Report: “Uneven Access: How the NYC Human Resources Administration
+  falls short of supporting New Yorkers with housing vouchers"
 latestActionText: >-
-  Launching in September 2025, “Uneven Access” is Unlock NYC’s upcoming report
-  revealing how systemic gaps at the NYC Human Resources Administration keep too
-  many New Yorkers with housing vouchers from securing the stable homes they
-  deserve. Sign up for our newsletter below to be alerted when the report is
-  live!
+  “Uneven Access” is Unlock NYC’s new report revealing how systemic gaps at the
+  NYC Human Resources Administration keep too many New Yorkers with housing
+  vouchers from securing the stable homes they deserve. Read it today!
 latestActionImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-kamilah-poster.jpeg'
 latestAlt: >-
   a young woman holding a handmade poster that says "Discrimination makes
@@ -103,8 +101,8 @@ actionCaption: >-
   housing discrimination.
 latestActionVideo: ''
 latestActionButton: 'yes'
-latestButtonText: 'Sign Up'
-latestActionLink: 'https://cdn.forms-content.sg-form.com/33ba49ca-7889-11f0-b01b-e2dab1676f1d'
+latestButtonText: Download
+latestActionLink: 'https://weunlock.nyc/reports/uneven-access/'
 teamImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 teamAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 teamTitle: >-
