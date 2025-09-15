@@ -26,9 +26,6 @@ reportSummary: >-
   Unfortunately, our research shows that HRA currently falls short of supporting
   voucher holders in their housing journey, and in fact replicates systemic
   disparities – and we have ideas on how to fix that. 
-keywords:
-  - Report
-  - '2025'
 reportPDF: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/Full%20Report%20%E2%80%93%20Uneven%20Access%20%E2%80%93%20Unlock%20NYC%20%E2%80%93%20Final.pdf
 eventTrack: true
