@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy",
-    "build:preview": "tinacms build --skip-cloud-checks"
+    "build:preview": "tinacms build eleventy --skip-cloud-checks"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
