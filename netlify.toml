@@ -101,3 +101,9 @@
 
 [functions]
     node_bundler = 'esbuild'
+
+[context.deploy-preview]
+    command = "npm run build:preview"
+
+[context.branch-deploy]
+    command = "npm run build:preview"
