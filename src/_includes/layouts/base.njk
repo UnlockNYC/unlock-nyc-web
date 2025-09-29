@@ -76,8 +76,8 @@
     /* CLEAN BUTTON LINKS */
     $("button").parent("a").css("text-decoration", "none");
 
-    /* AIRTABLE, SENDGRID EXTERNAL LINKS */
-    $("a[href*='airtable.com'], a[href*='https://cdn.forms-content.sg-form.com']").attr("target", "_blank");
+    /* EXTERNAL LINKS, NEW TAB */
+    $('a:not([href^="#"],[href^="/"],[href*="localhost"],[href*="https://weunlock.nyc"])').attr("target", "_blank");
   });
 
   </script>
