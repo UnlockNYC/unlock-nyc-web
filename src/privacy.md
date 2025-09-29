@@ -3,7 +3,7 @@ layout: layouts/policy.njk
 date: Last Modified
 title: Privacy Policy
 effective: 'December 28, 2020'
-revised: 'November 30, 2022'
+revised: 'September 29, 2025'
 _template: policy
 ---
 
