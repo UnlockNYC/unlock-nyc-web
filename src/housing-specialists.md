@@ -76,7 +76,7 @@ linksList:
       tools.
     image: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/housingspecialists-consulting-team-nyc-2.png
-    button: 'yes'
+    button: 'no'
     buttonList:
       - buttonText: Find a time
         buttonLink: 'https://calendly.com/ashley-eberhart/advocate-office-hours'
