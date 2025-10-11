@@ -21,7 +21,7 @@
     "next-tinacms-dos": "11.0.2",
     "node-fetch": "2.x.x",
     "serverless-http": "^3.2.0",
-    "tinacms": "^2.8.2"
+    "tinacms": "^2.8.3"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0"
