@@ -1,9 +1,9 @@
 ---
 title: >-
-  Corporate Landlords Are Findings New Ways to Discriminate Against Voucher
+  Corporate Landlords Are Finding New Ways to Discriminate Against Voucher
   Holders To Evade Enforcement
 excerpt: >-
-  Unlock NYC and CSSNY Unveil New Report Exposing  Evolving Tactics of Source of
+  Unlock NYC and CSSNY Unveil New Report Exposing Evolving Tactics of Source of
   Income Discrimination in NYC Rental Market 
 year: '2024'
 pdf: >-
