@@ -2009,7 +2009,7 @@ export default defineConfig({
               }, {
                 value: "Denial Tactics",
                 label: "Denial Tactics"
-              }, 
+              },
               {
                 value: "Uneven Access",
                 label: "Uneven Access"
