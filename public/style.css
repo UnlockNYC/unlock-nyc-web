@@ -45,6 +45,12 @@ dev: MAB
   background-color: var(--green);
 }
 
+/** MAIN CONTAINER **/
+
+main {
+    position: relative;
+}
+
 /** HEADER/NAV **/
 
 nav#main {
@@ -318,6 +324,30 @@ nav ul#top > li.active-header > a {
     display: block;
   }
 }
+
+/** POP-UP BANNER **/
+
+div#pop-banner {
+    width: 100%;
+    background-color: var(--yellow);
+    padding: 18px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+div#pop-banner p {
+    margin: 0;
+    line-height: inherit;
+    color: Black;
+    font-size: 18px;
+
+    em {
+        font-style:normal;
+        text-decoration:underline;
+    }
+}
+
 
 /** FOOTER/NAV **/
 

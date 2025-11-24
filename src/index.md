@@ -3,6 +3,11 @@ layout: layouts/home.njk
 bg: White
 blocksButtonColor: yellow
 title: Home
+popBanner: true
+popBannerText: >
+  Unlock Housing Justice by making a donation for Giving Tuesday!  ***Donate
+  today!***
+popBannerLink: 'https://www.every.org/unlock-nyc?viewport=desktop#/donate/card'
 bannerTitle: Unlock your next home
 bannerText: >-
   The tools you need to stand up for yourself on your housing search - created

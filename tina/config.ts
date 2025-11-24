@@ -56,6 +56,25 @@ export default defineConfig({
                 required: true
               },
               {
+                type: "boolean",
+                name: "popBanner",
+                label: "Pop-Up Banner?"
+              },
+              {
+                type: "rich-text",
+                name: "popBannerText",
+                label: "Pop-Up Banner Text",
+                toolbarOverride: ["bold", "italic"],
+                parser: {
+                  type: 'markdown',
+                },
+              },
+              {
+                type: "string",
+                name: "popBannerLink",
+                label: "Pop-Up Link Destination"
+              },
+              {
                 type: "string",
                 name: "bannerTitle",
                 label: "Banner Title"
