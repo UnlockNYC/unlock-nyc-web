@@ -3,7 +3,7 @@ layout: layouts/home.njk
 bg: White
 blocksButtonColor: yellow
 title: Home
-popBanner: true
+popBanner: false
 popBannerText: >
   Unlock Housing Justice by making a donation for Giving Tuesday!  ***Donate
   today!***
