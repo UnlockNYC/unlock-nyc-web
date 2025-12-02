@@ -122,6 +122,10 @@ annualReports:
   - year: '2022'
     pdf: >-
       https://public-unlock.nyc3.digitaloceanspaces.com/pdfs/funders-annual-report-22.pdf
+  - year: '2025'
+    pdf: >-
+      https://public-unlock.nyc3.digitaloceanspaces.com/Unlock NYC Annual Report
+      2025.pdf
 _template: funding
 ---
 
