@@ -5,8 +5,8 @@ blocksButtonColor: yellow
 title: Home
 popBanner: true
 popBannerText: >
-  Unlock Housing Justice by making a donation for Giving Tuesday!  ***Donate
-  today!***
+  There's still time to support Unlock NYC's $5,000 end-of-year fundraising
+  goal!  ***Donate today!***
 popBannerLink: 'https://www.every.org/unlock-nyc?viewport=desktop#/donate/card'
 bannerTitle: Unlock your next home
 bannerText: >-
