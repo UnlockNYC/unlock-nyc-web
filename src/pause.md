@@ -1,5 +1,5 @@
 ---
-title: Rights Recorder Pause
+title: Rights Recorder: Holiday Pause
 layout: layouts/simple.njk
 bg: var(--cream)
 ---
