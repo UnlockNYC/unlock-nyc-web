@@ -84,16 +84,23 @@
     $('a:not([href^="#"],[href^="/"],[href*="localhost"],[href*="https://weunlock.nyc"])').attr("target", "_blank");
 
     /* BANNER CLICK BEHAVIOR */
+    $("div#pop-banner").on("mouseenter", function() {
+      let bannerLink = $(this).attr("data-url");
+      if (bannerLink != "") {
+        $(this).css("cursor", "pointer");
+      }
+    });
     $("div#pop-banner").click(function() {
       let bannerLink = $(this).attr("data-url");
-      if (bannerLink.indexOf("every.org") > -1) {
-        $("a[href*='every.org']")[0].click();
+      if (bannerLink != "") {
+        if (bannerLink.indexOf("every.org") > -1) {
+          $("a[href*='every.org']")[0].click();
+        }
+        else {
+          $(this).attr("target", "_blank");
+          window.location.href = bannerLink;
+        }
       }
-      else {
-        $(this).attr("target", "_blank");
-        window.location.href = bannerLink;
-      }
-
     });
   });
 
