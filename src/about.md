@@ -8,9 +8,8 @@ bannerTitle: About Us
 aboutImage: >-
   https://public-unlock.nyc3.digitaloceanspaces.com/about-summerstage-PSA-top-image.png
 alt: >-
-  Colorful mab Unlock NYC PSA that reads "Do brokers and landlords keep saying
-  no to your voucher?" displayed in front of a concert crowd at Summerstage in
-  NYC
+  Colorful Unlock NYC PSA that reads "Do brokers and landlords keep saying no to
+  your voucher?" displayed in front of a concert crowd at Summerstage in NYC
 statistics:
   - statNum: 50+
     statText: years navigating the voucher system
