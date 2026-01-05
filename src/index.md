@@ -3,11 +3,9 @@ layout: layouts/home.njk
 bg: White
 blocksButtonColor: yellow
 title: Home
-popBanner: true
-popBannerText: >
-  There's still time to support Unlock NYC's $5,000 end-of-year fundraising
-  goal!  ***Donate today!***
-popBannerLink: 'https://www.every.org/unlock-nyc?viewport=desktop#/donate/card'
+popBanner: false
+popBannerText: ''
+popBannerLink: ''
 bannerTitle: Unlock your next home
 bannerText: >-
   The tools you need to stand up for yourself on your housing search - created
