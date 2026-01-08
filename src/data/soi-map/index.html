@@ -554,7 +554,7 @@
         <div id="action">
           <p>
             Do you live in District <span class="cd-number">XX</span>? If so,
-            contact your City Council Member to let them know that you want them 
+            contact your City Council Member to let them know that you want them
             to fight to end source of income discrimination.
           </p>
           <a id="email" href="https://www.weunlock.nyc" target="_blank">
@@ -847,16 +847,16 @@
               <strong>Fund the NYC Commission on Human Rights at $21 million dollars total, including:</strong>
                 <ul>
                   <li style="margin-bottom: 0;">Increased funding for additional staff lines; both attorneys and other critical support staff positions;</li>
-                  <li style="margin-bottom: 0;">Increased funding for OTPS so that CCHR is able to run robust public education and outreach campaigns. 
-                    This will allow CCHR to meet people who might otherwise be scared to report discrimination, in their own neighborhoods 
+                  <li style="margin-bottom: 0;">Increased funding for OTPS so that CCHR is able to run robust public education and outreach campaigns.
+                    This will allow CCHR to meet people who might otherwise be scared to report discrimination, in their own neighborhoods
                     and among trusted partners, where they will be more comfortable;
                   <li style="margin-bottom: 0;">Increased staff salaries to attract and retain talented attorneys.</li>
                 </ul>
             </li>
             <li>
-              <strong>Exempt the NYC Commission on Human Rights from the citywide hiring freeze and 2:1 allotment process</strong> by classifying 
-              positions at the Commission “critical.” What’s more, the Commission, whose budget is less than 1% of the total city budget, 
-              should be exempted from PEGS. 
+              <strong>Exempt the NYC Commission on Human Rights from the citywide hiring freeze and 2:1 allotment process</strong> by classifying
+              positions at the Commission “critical.” What’s more, the Commission, whose budget is less than 1% of the total city budget,
+              should be exempted from PEGS.
             </li>
             <li>
               <strong>Pass <a href="https://legistar.council.nyc.gov/LegislationDetail.aspx?ID=7258661&GUID=E3DEFD4A-C686-4F95-9758-64BE3F80AB3D&Options=ID|Text|&Search=1212" target="_blank">Intro 1212</a>, which will ban credit checks and minimum income requirements for voucher holders.</strong> This bill will help prevent a more subtle form of source of income discrimination, and will remove the systemic bias of credit history as a barrier for voucher holders.
@@ -1049,15 +1049,15 @@
 
         map.addSource("cityCouncilDistricts", {
           type: "geojson",
-          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/cd.geojson?v=2024",
+          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/cd-26test.geojson?v=2026",
         });
 
-        // cd data modified from here:
-        // https://www.nyc.gov/site/planning/data-maps/open-data/districts-download-metadata.page
+        // cd data modified from here: 01.2026 update
+        // https://www.nyc.gov/content/planning/pages/resources/datasets/city-council
 
         map.addSource("reports", {
           type: "geojson",
-          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/anonReports.geojson?v=2024",
+          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/anonReports-26test.geojson?v=2026"
         });
 
         /// adding layers ///
@@ -1085,8 +1085,6 @@
             source: "cityCouncilDistricts", // reference the data source
             layout: {},
             paint: {
-              //"fill-color": "#0080ff", // blue color fill
-              //"fill-opacity": 0.5,
               "fill-color": [
                 "interpolate",
                 ["linear"],
@@ -1262,7 +1260,6 @@
           let coordinates = e.features[0].geometry.coordinates.slice();
 
           // clean up member, email, neighborhoods strings
-          // MAB: could do this backend, rather than on fly ...
           if (cdData.member) {
             cdData.member = cdData.member.replace(/[\[\]\\\/"]/g, "");
           } else {
