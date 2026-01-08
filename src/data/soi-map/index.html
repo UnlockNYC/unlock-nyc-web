@@ -1049,7 +1049,8 @@
 
         map.addSource("cityCouncilDistricts", {
           type: "geojson",
-          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/cd-26test.geojson?v=2026-1",
+          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/cd-26test.geojson?v=2-2026",
+          'generateId': true
         });
 
         // cd data modified from here: 01.2026 update
@@ -1057,7 +1058,7 @@
 
         map.addSource("reports", {
           type: "geojson",
-          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/anonReports-26test.geojson?v=2026-1"
+          data: "https://public-unlock.nyc3.cdn.digitaloceanspaces.com/map/anonReports-26test.geojson?v=2-2026"
         });
 
         /// adding layers ///
@@ -1420,6 +1421,7 @@
               { source: "cityCouncilDistricts", id: hoveredStateId },
               { hover: true }
             );
+            console.log(e.features[0]);
           }
         });
 
