@@ -1,6 +1,6 @@
-<img src="https://cdn.glitch.me/dee07edd-bb63-4ffa-a606-d074a910b9c4%2FunlockSmall.png?v=1633719693017" alt="unlock nyc logo">
+<img src="https://public-unlock.nyc3.cdn.digitaloceanspaces.com/unlock-logo-small.png" alt="unlock nyc logo">
 
-**welcome!** Unlock NYC builds digital tools to make the apartment search process transparent, fair, and free from discrimination for all New Yorkers. 
+**welcome!** Unlock NYC builds digital tools to make the apartment search process transparent, fair, and free from discrimination for all New Yorkers.
 
 🤖🏡 This project hosts our main website.
 
@@ -16,7 +16,7 @@
 
 - **images/content CDN:** we use [Digital Ocean Spaces](https://www.digitalocean.com/products/spaces) as object storage.
 
-- **functions:** we use Netlify functions to authenticate advocates who have logins and are reporting on behalf of others, and to connect the Tina CMS Media Manager to Digital Ocean. 
+- **functions:** we use Netlify functions to authenticate advocates who have logins and are reporting on behalf of others, and to connect the Tina CMS Media Manager to Digital Ocean.
 
 ### project structure
 
@@ -29,7 +29,7 @@
 - `.eleventy.js` is the 11ty configuration file - it sets the output folder to `build`, and allows for the `styles` and `scripts` folders to be bundled into the output folder too so we can use them.
 
 - `tina/config.ts` is the Tina configuration file, for building out the schema of the CMS.
- 
+
 ### installation & contributing
 
 - to work on the site locally, download the code and in the root folder run:
@@ -47,13 +47,13 @@
 
 - having issues with TinaCMS build? check out their [Discord](https://discord.com/invite/tina-835168149439643678), it can be helpful!
 
-- another troubleshooting tip: if all else fails, try "reindexing" `main` from within TinaCloud (🦙) 
+- another troubleshooting tip: if all else fails, try "reindexing" `main` from within TinaCloud (🦙)
 
 ### documentation you might want to read
 
 - [Tina documentation](https://tina.io/docs/) - for configuring the CMS
 
-- [11ty documentation](https://www.11ty.dev/docs/config/) - there's so much here, if you go digging! 
+- [11ty documentation](https://www.11ty.dev/docs/config/) - there's so much here, if you go digging!
 
 ### fun tools you might need
 

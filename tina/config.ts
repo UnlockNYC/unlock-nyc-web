@@ -1775,7 +1775,8 @@ export default defineConfig({
               {
                 value: "Staff",
                 label: "Staff"
-              }, {
+              },
+              {
                 value: "Team",
                 label: "Team"
               },
@@ -1786,6 +1787,10 @@ export default defineConfig({
               {
                 value: "Advisors",
                 label: "Advsiors"
+              },
+              {
+                value: "Remember",
+                label: "Remember"
               }
             ]
           },
