@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@tinacms/auth": "1.1.0",
+    "@tinacms/auth": "1.1.2",
     "@tinacms/cli": "2.0.4",
     "airtable": "0.11.6",
     "aws-sdk": "2.1692.0",
