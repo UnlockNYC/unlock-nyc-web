@@ -32,7 +32,7 @@ export default defineConfig({
     collections: [
       {
         name: "page",
-        label: "Pages",
+        label: "Key Pages",
         path: "src",
         match: {
             include: '*',
@@ -41,6 +41,7 @@ export default defineConfig({
         ui: {
           allowedActions: {
             delete: false,
+            create: false
           }
         },
         templates: [
@@ -1744,7 +1745,68 @@ export default defineConfig({
                 label: "Orange Banner Link"
               },
             ]
-          },
+            },
+        ]
+      },
+      {
+        name: "gen_pages",
+        label: "Basic Pages",
+        path: "src/pages",
+        format: "md",
+        match: {
+            include: '*',
+        },
+        ui: {
+          allowedActions: {
+            delete: true,
+            create: true
+          }
+        },
+        templates: [
+          {
+            name: "simple",
+            label: "Basic Page",
+            defaultItem: () => {
+              return {
+                "layout": "layouts/simple.njk",
+                "bg": "var(--cream)"
+              };
+            },
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "rich-text",
+                parser: {
+                  type: 'markdown',
+                },
+                name: "content",
+                label: "Body Text",
+                isBody: true
+              },
+              {
+                type: "string",
+                name: "layout",
+                label: "Layout",
+                description: "Change only if you know the name of the backend *njk template you want for this page! <br> Otherwise, the default should be layouts/simple.njk",
+                ui: {
+                  component: "hidden"
+                }
+              },
+              {
+                type: "string",
+                name: "bg",
+                ui: {
+                  component: "hidden"
+                }
+              }
+            ]
+          }
         ]
       },
       {
