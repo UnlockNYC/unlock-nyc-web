@@ -11,6 +11,18 @@ div.top-banner {
     padding-top: 15vh;
 }
 
+img {
+    max-width: 100%;
+}
+
+div.banner-content ul li {
+    text-align: initial;
+}
+
+div.banner-content p {
+    color: var(--dark-grey-text);
+}
+
 </style>
 {# page template, extends the base template #}
 
@@ -22,7 +34,20 @@ div.top-banner {
       </h1>
       <div class="content">
           {{ content | safe }}
+
+          <p>
+            {% if button == 'yes' %}
+            {% for button in buttonList %}
+            <a href = "{{ button.buttonLink }}">
+                <button class="black" target="_blank">
+                    {{ button.buttonText }}
+                </button>
+            </a>
+            {% endfor %}
+            {% endif %}
+          </p>
       </div>
+
     </div>
   </div>
 </div>

@@ -1804,6 +1804,46 @@ export default defineConfig({
                 ui: {
                   component: "hidden"
                 }
+              },
+              {
+                type: "string",
+                name: "button",
+                label: "Include Button?",
+                options: [
+                  {
+                    value: "yes",
+                    label: "Yes"
+                  },
+                  {
+                    value: "no",
+                    label: "No"
+                  }
+                ]
+              },
+              {
+                type: "object",
+                name: "buttonList",
+                label: "Buttons",
+                list: true,
+                itemProps: (item) => {
+                  // Field values are accessed by item?.<Field name>
+                  return { label: item?.buttonText };
+                },
+                defaultItem: {
+                  buttonText: "Learn more",
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "buttonText",
+                    label: "Button Text",
+                  },
+                  {
+                    type: "string",
+                    name: "buttonLink",
+                    label: "Button Link",
+                  }
+                ]
               }
             ]
           }
