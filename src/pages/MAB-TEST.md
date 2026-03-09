@@ -2,6 +2,10 @@
 title: MAB TEST
 layout: layouts/simple.njk
 bg: var(--cream)
+button: 'yes'
+buttonList:
+  - buttonText: Learn more
+    buttonLink: 'https://www.nytimes.com'
 _template: simple
 ---
 
