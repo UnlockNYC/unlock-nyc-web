@@ -33,7 +33,7 @@ iconBlocksList:
     alt: A purple speech bubble graphic with a single question mark against a mustard yellow background
 yellowBannerTitle: Join our community of advocates
 yellowBannerText: 'Housing specialists, case managers, member advocates, and housing navigators from across New York City are standing up for a fair housing search. Sign up for exclusive resources, support, and opportunities to engage with others in this community.'
-yellowBannerLink: 'https://airtable.com/app3RonGnLm3P4aVF/shrJqMntMC9rpUdYT'
+yellowBannerLink: 'https://airtable.com/app3hfvKGK0twQQpw/pagotAzNtBLdVGr7b/form'
 _template: advocateportal
 ---
 
