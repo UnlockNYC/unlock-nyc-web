@@ -9,7 +9,7 @@ eleventyNavigation:
 title: For Housing Specialists
 bannerTitle: Housing Specialists
 bannerSubtitle: Report housing discrimination alongside your clients
-bannerText: 'As a housing specialist, case manager, or social worker, chances are you’ve seen the toll that housing discrimination takes. Join our Advocate Community for tools, events, and dialogue with peers.'
+bannerText: 'If you''re a housing specialist, case manager, or social worker, chances are you’ve seen the toll that housing discrimination takes. Join our Advocate Community for tools, events, and dialogue with peers.'
 topImage: 'https://public-unlock.nyc3.digitaloceanspaces.com/home-team-table.png'
 topImageAlt: 'two women tabling at an event, showing rings that say "love" and "train"'
 signUpLink: 'https://airtable.com/app3hfvKGK0twQQpw/pagotAzNtBLdVGr7b/form'
