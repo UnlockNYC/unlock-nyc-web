@@ -23,13 +23,13 @@ exports.handler = function(event, context, callback) {
 
   // field ids, airtable
   // from PROD REPORTS BASE
-  let emailField = "fldLmuivEk77Em12a"; //"fldDdJrgCAe1YD1xv"; //
-  let advNameField = "fldQfvuK81mXW8eRj"; //"fldI6KDv6htRgpemE";
-  let orgNameField = "flduDGKL29rAaLWRv"; //"fld04CrtAkQn3CYmR"; // the column labeled 'for online form', just string
+  let emailField = "fldDdJrgCAe1YD1xv";
+  let advNameField = "fldI6KDv6htRgpemE";
+  let orgNameField = "fld04CrtAkQn3CYmR"; // the column labeled 'for online form', just string
 
   // query airtable,
   // check for e-mail in approved partner list
-  base('Advocates STAGING').select({
+  base('Advocates').select({
     fields: [emailField, advNameField, orgNameField], // PROD BASE - email, name, org name
     returnFieldsByFieldId: true
   }).eachPage(function page(records, fetchNextPage) {

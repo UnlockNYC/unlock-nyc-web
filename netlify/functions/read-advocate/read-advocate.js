@@ -41,7 +41,7 @@ exports.handler = function(event, context, callback) {
     let advocateId;
     console.log(decoded.app_metadata.org);
     console.log(decoded.email);
-    base('Advocates STAGING').select({
+    base('Advocates').select({
       maxRecords: 1,
       fields: ["Email Address", "Advocate Client List", "Advocate Client List Names", "Full Org Client List", "Full Org List Names"],
       filterByFormula: `LOWER({Email Address})="${decoded.email.toLowerCase()}"`
