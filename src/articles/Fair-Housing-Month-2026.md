@@ -2,8 +2,9 @@
 title: 'Revisiting Fair Housing: Why Voucher Holders Are Still Being Locked Out in 2026'
 author: Jessica Valencia
 excerpt: 'As 2026’s Fair Housing Month comes to a close – a time meant to reaffirm our commitment to equity and access to housing – we are confronted with a troubling reality: for voucher holders, the promise of fair housing remains deeply out of reach.'
-tags:
-  - Rights Recorder
+image: 'https://public-unlock.nyc3.digitaloceanspaces.com/articles-unevenaccessrelaunch.png'
+alt: A padlock with a warning exclamation point against an orange background
+tags: []
 keywords:
   - blog
   - fairhousingmonth
