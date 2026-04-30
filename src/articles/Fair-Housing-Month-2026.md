@@ -11,7 +11,7 @@ keywords:
   - unevenaccess
 ---
 
-As 2026’s Fair Housing Month comes to a close – a time meant to reaffirm our commitment to equity and access to housing – we are confronted with a troubling reality: for voucher holders, the promise of fair housing remains deeply out of reach.
+As 2026’s Fair Housing Month comes to a close – a time meant to reaffirm our commitment to equity and access to housing – we are confronted with a troubling reality: for many voucher holders, the promise of fair housing remains deeply out of reach.
 
 ### What Fair Housing Was Meant to Do
 
