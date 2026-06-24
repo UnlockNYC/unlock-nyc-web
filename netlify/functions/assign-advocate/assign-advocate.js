@@ -23,9 +23,9 @@ exports.handler = function(event, context, callback) {
 
   // field ids, airtable
   // from PROD REPORTS BASE
-  let emailField = "fldDdJrgCAe1YD1xv";
-  let advNameField = "fldI6KDv6htRgpemE";
-  let orgNameField = "fld04CrtAkQn3CYmR"; // the column labeled 'for online form', just string
+  let emailField = "fldLmuivEk77Em12a"; /* MAB updated 26 advocate change */
+  let advNameField = "fldQfvuK81mXW8eRj"; /* MAB updated 26 advocate change */
+  let orgNameField = "flduDGKL29rAaLWRv"; /* MAB updated 26 advocate change */
 
   // query airtable,
   // check for e-mail in approved partner list
