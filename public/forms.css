@@ -64,10 +64,6 @@ a#full-org {
     cursor: pointer;
 }
 
-span#new-user {
-    display: none;
-}
-
 select#org-clients {
     display: none;
 }
