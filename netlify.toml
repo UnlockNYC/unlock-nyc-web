@@ -64,28 +64,28 @@
 # webinars, sept. 26
 [[redirects]]
   from = "/search"
-  to = "https://us02web.zoom.us/meeting/register/V8Fgp584Twy56nfKuFseOg"
+  to = "https://luma.com/vgvxlgu7"
   status = 301
   force = true
 
 # webinars, sept. 26
 [[redirects]]
   from = "/spot"
-  to = "https://us02web.zoom.us/meeting/register/dJmsAYvVRYqF8oK2WmLOuQ"
+  to = "https://luma.com/t94q4x47"
   status = 301
   force = true
 
 # webinars, sept. 26
 [[redirects]]
   from = "/speak-up"
-  to = "https://us02web.zoom.us/meeting/register/p29coKJHRxiCGWO5rcQ57A"
+  to = "https://luma.com/xq7jocst"
   status = 301
   force = true
 
 # webinars, sept. 26
 [[redirects]]
   from = "/makingmoves"
-  to = "https://us02web.zoom.us/meeting/register/VWKinsf6SSSsE7AXNzO4gQ"
+  to = "https://luma.com/i7a79ozs"
   status = 301
   force = true
 
