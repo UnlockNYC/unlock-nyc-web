@@ -3,8 +3,9 @@ layout: layouts/home.njk
 bg: White
 blocksButtonColor: yellow
 title: Home
-popBanner: false
-popBannerText: ''
+popBanner: true
+popBannerText: |
+  NEW: Join us every Tuesday at 6:30pm for a free virtual workshop about how to find an apartment with your voucher! [Sign up here](https://luma.com/weunlocknyc).
 popBannerLink: ''
 bannerTitle: Unlock your next home
 bannerText: The tools you need to stand up for yourself on your housing search - created with and led by tenants who've been there.
