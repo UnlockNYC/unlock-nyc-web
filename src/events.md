@@ -5,7 +5,7 @@ title: Upcoming Events
 _template: simple
 ---
 
-See what's going on with Unlock NYC
+See what's going on with Unlock NYC:
 
 <br>
 <iframe
