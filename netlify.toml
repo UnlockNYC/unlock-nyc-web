@@ -116,3 +116,6 @@
 [context.branch-deploy]
     command = "npm run build:preview"
     publish = "build"
+
+[build.environment]
+    NODE_VERSION = "22"
