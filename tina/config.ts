@@ -311,6 +311,28 @@ export default defineConfig({
             ],
           },
           {
+            name: "simple",
+            label: "Simple Key Page",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Page Title",
+                isTitle: true,
+                required: true
+              },
+              {
+                type: "rich-text",
+                parser: {
+                  type: 'markdown',
+                },
+                name: "content",
+                label: "Body Text",
+                isBody: true
+              }
+            ]
+          },
+          {
             name: "about",
             label: "About Page",
             fields: [
